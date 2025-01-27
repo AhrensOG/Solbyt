@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <div className="w-full flex justify-center items-center h-[calc(100vh-79.99px)]">
+    <div className="w-full flex justify-center items-center h-[calc(100vh-79.99px)] mt-[79.99px]">
       <div className="w-full h-full flex flex-col md:flex-row items-center justify-center text-center lg:text-left space-y-4 lg:space-y-0 lg:space-x-8 max-w-screen-xl">
         <div className="basis-[60%] sm:basis-[50%] md:basis-[60%] w-full text-center flex flex-col justify-center items-center gap-4">
           <motion.h1
