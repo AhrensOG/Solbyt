@@ -2,6 +2,7 @@
 import React from "react";
 import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
+import ServicesSection from "./ServiceSection";
 
 const HomePage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage: React.FC = () => {
       </header>
       <main>
         <Hero />
+        <ServicesSection />
       </main>
     </>
   );

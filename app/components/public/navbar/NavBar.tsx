@@ -1,14 +1,37 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isAtTop, setIsAtTop] = useState(true);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+        setIsMenuOpen(false)
+      } else {
+        setIsVisible(true);
+      }
+      setIsAtTop(currentScrollY === 0);
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   const MenuLinks = () => (
     <>
@@ -44,7 +67,14 @@ const NavBar: React.FC = () => {
   );
 
   return (
-    <nav className="w-full bg-white h-20">
+    <motion.nav
+      className={`fixed top-0 w-full bg-white h-20 z-50 transition-shadow duration-300 ${
+        isAtTop ? "" : "shadow-md"
+      }`}
+      initial={{ y: -100 }}
+      animate={{ y: isVisible ? 0 : -100 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="px-8 py-4 h-full flex items-center justify-between">
         <div className="text-xl tracking-widest text-blue-900 underline">
           <Link href="/" title="Ir a la página principal">
@@ -76,7 +106,7 @@ const NavBar: React.FC = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="md:hidden overflow-hidden bg-white w-full flex flex-col p-4 px-8 border-t border-gray-200"
+            className="absolute md:static md:hidden overflow-hidden bg-white w-full flex flex-col p-4 px-8 border-t border-gray-200 z-50"
             initial={{ maxHeight: 0 }}
             animate={{
               maxHeight: isMenuOpen ? 500 : 0,
@@ -93,7 +123,7 @@ const NavBar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   );
 };
 
