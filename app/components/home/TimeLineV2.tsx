@@ -1,0 +1,169 @@
+import React, { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { ShieldCheck, Headset, Code, Tag, Gauge } from "lucide-react";
+import LinesTimeLine from "./auxiliarComponents/LinesTimeLine";
+
+interface TimelineItem {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}
+
+const timelineData: TimelineItem[] = [
+  {
+    title: "Calidad Garantizada",
+    description:
+      "Ofrecemos servicios de la más alta calidad, asegurando estándares superiores en cada proyecto que realizamos.",
+    icon: <ShieldCheck size={48} className="text-indigo-500" />,
+  },
+  {
+    title: "Soporte Personalizado",
+    description:
+      "Nuestro equipo está disponible para ayudarte en cada paso. Resolución rápida y atención cercana son nuestra prioridad.",
+    icon: <Headset size={48} className="text-indigo-500" />,
+  },
+  {
+    title: "Tecnología Innovadora",
+    description:
+      "Utilizamos herramientas tecnológicas de vanguardia para brindar soluciones modernas y eficientes.",
+    icon: <Code size={48} className="text-indigo-500" />,
+  },
+  {
+    title: "Precios Competitivos",
+    description:
+      "Ofrecemos una excelente relación calidad-precio, asegurando que obtengas el mayor valor por tu inversión.",
+    icon: <Tag size={48} className="text-indigo-500" />,
+  },
+  {
+    title: "Velocidad y Eficiencia",
+    description:
+      "Nos destacamos por nuestra rapidez en la implementación, cumpliendo plazos ajustados sin comprometer la calidad.",
+    icon: <Gauge size={48} className="text-indigo-500" />,
+  },
+];
+
+const TimelineV2: React.FC = () => {
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [positions, setPositions] = useState<{ x: number; y: number }[]>([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const updatePositions = () => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    // Esperar al próximo frame de renderizado
+    requestAnimationFrame(() => {
+      const containerRect = container.getBoundingClientRect();
+      const cardRects = cardRefs.current.map((ref) =>
+        ref?.getBoundingClientRect()
+      );
+
+      const calculatedPositions = cardRects.map((rect) => {
+        if (!rect) return { x: 0, y: 0 };
+
+        // Calcular posiciones relativas al viewBox del SVG
+        const x =
+          ((rect.left - containerRect.left + rect.width / 2) /
+            containerRect.width) *
+          100;
+        const y =
+          ((rect.top - containerRect.top + rect.height / 2) /
+            containerRect.height) *
+          100;
+
+        return { x, y };
+      });
+
+      setPositions(calculatedPositions);
+    });
+  };
+
+  useEffect(() => {
+    if (isVisible) {
+      updatePositions();
+      window.addEventListener("resize", updatePositions);
+    }
+    return () => window.removeEventListener("resize", updatePositions);
+  }, [isVisible]);
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      onAnimationComplete={() => setIsVisible(true)}
+      className="py-16 bg-gradient-to-b from-white via-gray-100 to-white relative"
+    >
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-4xl font-extrabold text-gray-800 text-center mb-12">
+          ¿Por qué trabajar con nosotros?
+        </h2>
+
+        {isVisible ? (
+          <div
+            ref={containerRef}
+            className="relative flex flex-col lg:flex-row lg:justify-between items-start gap-8 md:gap-4 h-[500px]"
+          >
+            <LinesTimeLine positions={positions} />
+
+            {/* Tarjetas (se mantienen igual) */}
+            {timelineData.map((item, index) => (
+              <div
+                key={index}
+                className={`h-full w-full flex justify-center ${
+                  index % 2 === 0 ? "items-start" : "items-end"
+                }`}
+              >
+                <motion.div
+                  ref={(el) => {
+                    cardRefs.current[index] = el;
+                  }}
+                  className="relative bg-white shadow-lg rounded-full p-4 border-t-4 border-indigo-400 transform transition-transform hover:scale-105 h-64 max-w-64"
+                  whileHover={{ y: -10, scale: 1.05 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.2,
+                    delay: index * 0.2,
+                    ease: "easeOut",
+                  }}
+                  onAnimationComplete={() => {
+                    if (index === timelineData.length - 1) updatePositions();
+                  }}
+                >
+                  <div className="flex flex-col items-center">
+                    <div className="mb-2 hover:rotate-12 duration-200">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm text-center">
+                      {item.description}
+                    </p>
+                  </div>
+                </motion.div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="h-[500px] w-full" />
+        )}
+
+        {/* Llamada a la acción final */}
+        <div className="mt-12 text-center absolute bottom-20 max-w-52 w-full left-[calc(50%-104px)]">
+          <motion.button
+            className="w-full uppercase px-6 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            ¡Contáctanos ya!
+          </motion.button>
+        </div>
+      </div>
+    </motion.section>
+  );
+};
+
+export default TimelineV2;

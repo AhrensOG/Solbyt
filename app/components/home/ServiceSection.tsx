@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   Globe,
@@ -150,7 +150,7 @@ const services = [
   },
 ];
 
-export default function ServicesSection() {
+const ServiceSection: React.FC = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   return (
@@ -163,9 +163,15 @@ export default function ServicesSection() {
       }}
     >
       <div className="relative max-w-7xl mx-auto px-4 text-center z-10">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-8">
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.2 }}
+          className="text-4xl font-extrabold text-gray-800 mb-8"
+        >
           ¿Qué ofrecemos?
-        </h2>
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {services.map((service, index) => (
             <motion.div
@@ -272,4 +278,6 @@ export default function ServicesSection() {
       </div>
     </section>
   );
-}
+};
+
+export default ServiceSection;

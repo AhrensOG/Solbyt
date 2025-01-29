@@ -2,7 +2,10 @@
 import React from "react";
 import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
-import ServicesSection from "./ServiceSection";
+import ServiceSection from "./ServiceSection";
+import Timeline from "./TimeLine";
+import TimelineV2 from "./TimeLineV2";
+import ServiceSectionV2 from "./ServiceSectionV2";
 
 const HomePage: React.FC = () => {
   return (
@@ -12,7 +15,10 @@ const HomePage: React.FC = () => {
       </header>
       <main>
         <Hero />
-        <ServicesSection />
+        {/* <ServiceSection /> */}
+        <ServiceSectionV2 />
+        {/* <Timeline /> */}
+        <TimelineV2 />
       </main>
     </>
   );
