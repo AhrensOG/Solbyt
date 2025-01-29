@@ -18,6 +18,23 @@ const LinesTimeLine: React.FC<LinesTimeLineProps> = ({ positions }) => {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none"
     >
+      <defs>
+        <linearGradient
+          id="gradient-line"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="0%"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0%" stopColor="#6366f1" />
+          <stop offset="33%" stopColor="#a855f7" />
+          <stop offset="66%" stopColor="#ec4899" />
+          <stop offset="100%" stopColor="#6e8df5" />
+
+        </linearGradient>
+      </defs>
+
       {positions.map((pos, index) => {
         if (index === positions.length - 1) return null;
         const nextPos = positions[index + 1];
@@ -36,13 +53,13 @@ const LinesTimeLine: React.FC<LinesTimeLineProps> = ({ positions }) => {
           <motion.path
             key={index}
             d={`M ${pos.x} ${pos.y} C ${controlX1} ${controlY1}, ${controlX2} ${controlY2}, ${nextPos.x} ${nextPos.y}`}
-            stroke="#a78bfa"
-            strokeWidth="0.5"
+            stroke="url(#gradient-line)"
+            strokeWidth="0.3"
             fill="none"
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
             transition={{
-              duration: 3.5,
+              duration: 2,
               delay: index * 1,
               ease: "easeInOut",
             }}

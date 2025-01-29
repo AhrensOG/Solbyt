@@ -1,183 +1,237 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import {
+  ShieldCheck,
+  Headset,
+  Code,
+  Tag,
+  Gauge,
+  DollarSign,
+  Headphones,
+  Rocket,
+  Euro,
+  ChevronsUp,
+} from "lucide-react";
+import LinesTimeLine from "./auxiliarComponents/LinesTimeLine";
 
-const timelineData = [
+interface TimelineItem {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}
+
+const timelineData: TimelineItem[] = [
+  // {
+  //   title: "Precios Competitivos",
+  //   description:
+  //     "Ofrecemos una excelente relación calidad-precio, asegurando que obtengas el mayor valor por tu inversión.",
+  //   icon: <Euro size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Calidad Garantizada",
+  //   description:
+  //     "Ofrecemos servicios de la más alta calidad, asegurando estándares superiores en cada proyecto que realizamos.",
+  //   icon: <ShieldCheck size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Velocidad y Eficiencia",
+  //   description:
+  //     "Nos destacamos por nuestra rapidez en la implementación, cumpliendo plazos ajustados sin comprometer la calidad.",
+  //   icon: <Gauge size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Soporte Rápido y Directo",
+  //   description:
+  //     "Resolvemos tus dudas en tiempo récord para que no pierdas ni un minuto de productividad.",
+  //   icon: <Headphones size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Estrategias de Crecimiento",
+  //   description:
+  //     "No solo creamos, sino que te ayudamos a escalar y hacer crecer tu proyecto.",
+  //   icon: <Rocket size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Precios Transparentes",
+  //   description: "Sin costos ocultos ni sorpresas. Lo que ves es lo que pagas.",
+  //   icon: <DollarSign size={48} className="text-indigo-500" />,
+  // },
+  // {
+  //   title: "Soporte Personalizado",
+  //   description:
+  //     "Nuestro equipo está disponible para ayudarte en cada paso. Resolución rápida y atención cercana son nuestra prioridad.",
+  //   icon: <Headset size={48} className="text-indigo-500" />,
+  // },
+
+  // {
+  //   title: "Tecnología Innovadora",
+  //   description:
+  //     "Utilizamos herramientas tecnológicas de vanguardia para brindar soluciones modernas y eficientes.",
+  //   icon: <Code size={48} className="text-indigo-500" />,
+  // },
   {
-    title: "Calidad Garantizada",
-    description: "Ofrecemos servicios de la más alta calidad.",
+    title: "Inversión Inteligente",
+    description:
+      "Maximiza tu presupuesto con soluciones de alto impacto y precios competitivos.",
+    icon: <Euro size={48} className="text-indigo-500" />,
   },
   {
-    title: "Soporte Personalizado",
-    description: "Siempre estamos disponibles para ayudarte.",
+    title: "Calidad Certificada",
+    description:
+      "Desarrollamos con estándares de primer nivel para asegurar resultados impecables.",
+    icon: <ShieldCheck size={48} className="text-indigo-500" />,
   },
   {
-    title: "Tecnología Innovadora",
-    description: "Utilizamos las últimas herramientas tecnológicas.",
+    title: "Ejecución Exprés",
+    description:
+      "Velocidad sin sacrificar calidad. Cumplimos plazos ajustados con precisión milimétrica.",
+    icon: <Gauge size={48} className="text-indigo-500" />,
   },
   {
-    title: "Precios Competitivos",
-    description: "Garantizamos el mejor balance entre costo y valor.",
+    title: "Soporte 24/7",
+    description:
+      "Siempre disponibles. Resolvemos tus dudas en minutos, sin burocracia ni esperas.",
+    icon: <Headphones size={48} className="text-indigo-500" />,
   },
   {
-    title: "Implementación Rápida",
-    description: "Minimizamos tiempos de entrega sin comprometer calidad.",
+    title: "Estrategia Ganadora",
+    description:
+      "No solo creamos, diseñamos soluciones escalables para que tu negocio crezca sin límites.",
+    icon: <Rocket size={48} className="text-indigo-500" />,
   },
+
 ];
 
-export default function Timeline() {
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+const Timeline: React.FC = () => {
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [positions, setPositions] = useState<{ x: number; y: number }[]>([]);
+  const [isVisible, setIsVisible] = useState(false);
 
-  // Posiciones de las esferas en un tablero 3x2 (usando porcentajes para responsividad)
-  const gridPositions = [
-    { x: "10%", y: "20%" },
-    { x: "30%", y: "60%" },
-    { x: "50%", y: "20%" },
-    { x: "70%", y: "60%" },
-    { x: "90%", y: "20%" },
-  ];
+  const updatePositions = () => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    // Esperar al próximo frame de renderizado
+    requestAnimationFrame(() => {
+      const containerRect = container.getBoundingClientRect();
+      const cardRects = cardRefs.current.map((ref) =>
+        ref?.getBoundingClientRect()
+      );
+
+      const calculatedPositions = cardRects.map((rect) => {
+        if (!rect) return { x: 0, y: 0 };
+
+        // Calcular posiciones relativas al viewBox del SVG
+        const x =
+          ((rect.left - containerRect.left + rect.width / 2) /
+            containerRect.width) *
+          100;
+        const y =
+          ((rect.top - containerRect.top + rect.height / 2) /
+            containerRect.height) *
+          100;
+
+        return { x, y };
+      });
+
+      setPositions(calculatedPositions);
+    });
+  };
+
+  useEffect(() => {
+    if (isVisible) {
+      updatePositions();
+      window.addEventListener("resize", updatePositions);
+    }
+    return () => window.removeEventListener("resize", updatePositions);
+  }, [isVisible]);
 
   return (
-    <section className="py-16 bg-white relative">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
-          ¿Por qué trabajar con nosotros?
-        </h2>
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      onAnimationComplete={() => setIsVisible(true)}
+      className="py-28 bg-gradient-to-b from-white via-gray-50 to-white relative"
+    >
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            Más que un servicio, un aliado estratégico
+          </h2>
+          <p className="text-lg text-gray-600 mt-3">
+            No solo desarrollamos software, creamos soluciones pensadas para
+            impulsar tu negocio y hacerlo crecer con las mejores herramientas
+            tecnológicas.
+          </p>
+          <div className="w-36 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4"></div>
+        </div>
 
-        {/* Contenedor del timeline */}
-        <div className="relative w-full h-[500px]">
-          {/* Líneas curvas con SVG */}
-          {/* <svg
-            className="absolute inset-0 w-full h-full pointer-events-none"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
+        {isVisible ? (
+          <div
+            ref={containerRef}
+            className="relative flex flex-col lg:flex-row lg:justify-between items-start gap-8 md:gap-4 h-[500px]"
           >
-            {gridPositions.map((start, index) => {
-              const end = gridPositions[index + 1];
-              if (!end) return null;
+            <LinesTimeLine positions={positions} />
 
-              const startX = parseFloat(start.x);
-              const startY = parseFloat(start.y);
-              const endX = parseFloat(end.x);
-              const endY = parseFloat(end.y);
-
-              return (
-                <motion.path
-                  key={index}
-                  d={`M${startX} ${startY} C${(startX + endX) / 2} ${startY}, ${
-                    (startX + endX) / 2
-                  } ${endY}, ${endX} ${endY}`}
-                  stroke="#c3aed6"
-                  strokeWidth="1"
-                  fill="none"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{
-                    duration: 1 + index * 0.2,
-                    ease: "easeInOut",
-                  }}
-                />
-              );
-            })}
-          </svg> */}
-
-          {/* Esferas y tarjetas */}
-          {timelineData.map((item, index) => {
-            const position = gridPositions[index];
-            const isExpanded = selectedIndex === index;
-
-            return (
+            {/* Tarjetas (se mantienen igual) */}
+            {timelineData.map((item, index) => (
               <div
                 key={index}
-                className="absolute"
-                style={{
-                  top: position.y,
-                  left: position.x,
-                  transform: "translate(-50%, -50%)",
-                }}
+                className={`h-full w-full flex justify-center ${
+                  index % 2 === 0 ? "items-start" : "items-end"
+                }`}
               >
-                {/* Esfera interactiva */}
                 <motion.div
-                  className="relative w-24 h-24 rounded-full cursor-pointer"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)", // Colores inspirados en la imagen
+                  ref={(el) => {
+                    cardRefs.current[index] = el;
                   }}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() =>
-                    setSelectedIndex(selectedIndex === index ? null : index)
-                  }
+                  className="relative bg-white shadow-lg rounded-full p-4 border-t-4 border-indigo-400 transform transition-transform hover:scale-105 h-64 max-w-64"
+                  whileHover={{ y: -10, scale: 1.05 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.2,
+                    ease: "easeOut",
+                  }}
+                  onAnimationComplete={() => {
+                    if (index === timelineData.length - 1) updatePositions();
+                  }}
                 >
-                  {/* Partes de la esfera */}
-                  <motion.div
-                    className="absolute inset-0 w-full h-full rounded-full"
-                    style={{
-                      clipPath: "polygon(0 0, 50% 0, 50% 100%, 0 100%)",
-                      background:
-                        "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
-                    }}
-                    animate={{
-                      x: isExpanded ? -150 : 0,
-                    }}
-                    transition={{ duration: 0.5 }}
-                  />
-                  <motion.div
-                    className="absolute inset-0 w-full h-full rounded-full"
-                    style={{
-                      clipPath: "polygon(50% 0, 100% 0, 100% 100%, 50% 100%)",
-                      background:
-                        "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
-                    }}
-                    animate={{
-                      x: isExpanded ? 150 : 0,
-                    }}
-                    transition={{ duration: 0.5 }}
-                  />
-
-                  {/* Número en el centro */}
-                  {!isExpanded && (
-                    <motion.div
-                      className="absolute inset-0 flex items-center justify-center text-white"
-                      initial={{ opacity: 1 }}
-                      animate={{ opacity: isExpanded ? 0 : 1 }}
-                    >
-                      {index + 1}
-                    </motion.div>
-                  )}
-                </motion.div>
-
-                {/* Tarjeta Detallada (emerge desde el centro de la esfera) */}
-                {isExpanded && (
-                  <motion.div
-                    className="absolute bg-white shadow-xl p-6 rounded-lg w-72 text-center"
-                    style={{
-                      top: "-50%",
-                      left: "-100%",
-                      transform: "translate(-50%, -50%)",
-                    }}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.8 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <h3 className="text-lg font-bold text-gray-700 mb-2">
+                  <div className="flex flex-col items-center">
+                    <div className="mb-2 hover:rotate-12 duration-200">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
                       {item.title}
                     </h3>
-                    <p className="text-gray-500">{item.description}</p>
-                    <button
-                      className="mt-4 px-4 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-600 transition-colors"
-                      onClick={() => setSelectedIndex(null)}
-                    >
-                      Cerrar
-                    </button>
-                  </motion.div>
-                )}
+                    <p className="text-gray-500 text-sm text-center">
+                      {item.description}
+                    </p>
+                  </div>
+                </motion.div>
               </div>
-            );
-          })}
+            ))}
+          </div>
+        ) : (
+          <div className="h-[500px] w-full" />
+        )}
+
+        {/* Llamada a la acción final */}
+        <div className="mt-12 text-center absolute bottom-28 max-w-52 w-full left-[calc(50%-104px)]">
+          <motion.button
+            className="w-full uppercase px-6 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            ¡Contáctanos ya!
+          </motion.button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
-}
+};
+
+export default Timeline;

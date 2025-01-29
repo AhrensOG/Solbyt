@@ -44,7 +44,7 @@ export default function ServiceSectionV2() {
             className="w-full h-full absolute inset-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.5 }}
+            transition={{ duration: 0.8}}
           >
             <LinesBG color="#e79fc4" />
             <LinesBG color="#d06ef5" left="15" top="-20" />
@@ -55,9 +55,9 @@ export default function ServiceSectionV2() {
           {/* Marco del móvil */}
           <motion.div
             className="w-full h-full flex justify-center items-center"
-            initial={{ scale: 0.9, opacity: 0 }}
+            initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.7 }}
+            transition={{ duration: 1.5 }}
           >
             <div className="w-64 h-[500px] bg-black rounded-2xl mx-auto shadow-lg overflow-hidden z-10 relative">
               {/* Pantalla del móvil */}
@@ -65,9 +65,9 @@ export default function ServiceSectionV2() {
                 {/* Contenido dentro del móvil */}
                 <motion.div
                   className="w-[97%] h-[90%] bg-white rounded-md overflow-hidden shadow-md relative"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 1.9 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1.5 }}
                 >
                   <Image
                     src="/hero.webp"
