@@ -2,7 +2,7 @@
 import React from "react";
 import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
-import ServiceSection from "./ServiceSection";
+// import ServiceSection from "./ServiceSection";
 import Timeline from "./TimeLine";
 import ServiceSectionV2 from "./ServiceSectionV2";
 

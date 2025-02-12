@@ -32,9 +32,9 @@ const services = [
     cta: "Contáctanos para más información sobre desarrollo web.",
     icon: <Code size={48} />,
     secondaryIcons: [
-      <Globe size={24} />,
-      <Server size={24} />,
-      <Cloud size={24} />,
+      <Globe key="desarrollo-web-globe" size={24} />,
+      <Server key="desarrollo-web-server" size={24} />,
+      <Cloud key="desarrollo-web-cloud" size={24} />,
     ],
   },
   {
@@ -46,9 +46,9 @@ const services = [
     cta: "Descubre cómo mejorar la experiencia de tus usuarios.",
     icon: <Layout size={48} />,
     secondaryIcons: [
-      <Monitor size={24} />,
-      <CheckCircle size={24} />,
-      <PieChart size={24} />,
+      <Monitor key="uxui-monitor" size={24} />,
+      <CheckCircle key="uxui-checkcircle" size={24} />,
+      <PieChart key="uxui-piechart" size={24} />,
     ],
   },
   {
@@ -60,9 +60,9 @@ const services = [
     cta: "Solicita un análisis para automatizar tu negocio.",
     icon: <Settings size={48} />,
     secondaryIcons: [
-      <Link size={24} />,
-      <Gauge size={24} />,
-      <ShoppingCart size={24} />,
+      <Link key="automatizacion-link" size={24} />,
+      <Gauge key="automatizacion-gauge" size={24} />,
+      <ShoppingCart key="automatizacion-shoppingcart" size={24} />,
     ],
   },
   {
@@ -74,9 +74,9 @@ const services = [
     cta: "Descubre cómo podemos posicionar tu negocio online.",
     icon: <Globe size={48} />,
     secondaryIcons: [
-      <BarChart3 size={24} />,
-      <Zap size={24} />,
-      <Briefcase size={24} />,
+      <BarChart3 key="estrategia-barchart" size={24} />,
+      <Zap key="estrategia-zap" size={24} />,
+      <Briefcase key="estrategia-briefcase" size={24} />,
     ],
   },
   {
@@ -87,9 +87,9 @@ const services = [
     cta: "Solicita una integración avanzada para tu negocio.",
     icon: <Link size={48} />,
     secondaryIcons: [
-      <Layers size={24} />,
-      <Cloud size={24} />,
-      <Server size={24} />,
+      <Layers key="api-layers" size={24} />,
+      <Cloud key="api-cloud" size={24} />,
+      <Server key="api-server" size={24} />,
     ],
   },
   {
@@ -101,9 +101,9 @@ const services = [
     cta: "Agenda una consultoría gratuita.",
     icon: <Briefcase size={48} />,
     secondaryIcons: [
-      <Monitor size={24} />,
-      <PieChart size={24} />,
-      <Sparkles size={24} />,
+      <Monitor key="consultoria-monitor" size={24} />,
+      <PieChart key="consultoria-piechart" size={24} />,
+      <Sparkles key="consultoria-sparkles" size={24} />,
     ],
   },
   {
@@ -115,9 +115,9 @@ const services = [
     cta: "¡Anímate y lleva tu tienda al siguiente nivel!",
     icon: <ShoppingCart size={48} />,
     secondaryIcons: [
-      <Package size={24} />,
-      <BarChart3 size={24} />,
-      <CheckCircle size={24} />,
+      <Package key="ecommerce-package" size={24} />,
+      <BarChart3 key="ecommerce-barchart" size={24} />,
+      <CheckCircle key="ecommerce-checkcircle" size={24} />,
     ],
   },
   {
@@ -129,9 +129,9 @@ const services = [
     cta: "Haz que tu sitio más rápido y eficiente.",
     icon: <Gauge size={48} />,
     secondaryIcons: [
-      <Zap size={24} />,
-      <Layers size={24} />,
-      <BarChart3 size={24} />,
+      <Zap key="desempeno-zap" size={24} />,
+      <Layers key="desempeno-layers" size={24} />,
+      <BarChart3 key="desempeno-barchart" size={24} />,
     ],
   },
   {
@@ -143,9 +143,9 @@ const services = [
     cta: "Optimiza el corazón de tu sistema.",
     icon: <Server size={48} />,
     secondaryIcons: [
-      <Cloud size={24} />,
-      <ShieldCheck size={24} />,
-      <Package size={24} />,
+      <Cloud key="backend-cloud" size={24} />,
+      <ShieldCheck key="backend-shieldcheck" size={24} />,
+      <Package key="backend-package" size={24} />,
     ],
   },
 ];
@@ -175,7 +175,7 @@ const ServiceSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {services.map((service, index) => (
             <motion.div
-              key={index}
+              key={`${index}-${service.title}`}
               className={` ${
                 expandedIndex !== index
                   ? "border-transparent"
@@ -216,7 +216,10 @@ const ServiceSection: React.FC = () => {
                   {/* Logos Secundarios */}
                   <div className="flex space-x-4">
                     {service.secondaryIcons.map((icon, i) => (
-                      <div key={i} className="text-indigo-400">
+                      <div
+                        key={`${service.title}-icon-${i}`}
+                        className="text-indigo-400"
+                      >
                         {icon}
                       </div>
                     ))}

@@ -2,15 +2,10 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import {
   ShieldCheck,
-  Headset,
-  Code,
-  Tag,
   Gauge,
-  DollarSign,
   Headphones,
   Rocket,
   Euro,
-  ChevronsUp,
 } from "lucide-react";
 import LinesTimeLine from "./auxiliarComponents/LinesTimeLine";
 

@@ -4,7 +4,7 @@ interface LinesProps {
   color: string; // Tipo para el color de la línea
   top?: string; // Opcional para la posición superior
   left?: string; // Opcional para la posición izquierda
-  isInverted?: Boolean;
+  isInverted?: boolean;
 }
 
 const LinesBG: React.FC<LinesProps> = ({

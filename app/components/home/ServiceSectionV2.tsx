@@ -30,8 +30,8 @@ export default function ServiceSectionV2() {
             transition={{ duration: 0.6, delay: 1.7 }}
           >
             Write a paragraph that talks about your company here. You can talk
-            about your company's background, history, mission, vision, or
-            philosophy. Anything that will introduce your brand's persona to
+            about your companys background, history, mission, vision, or
+            philosophy. Anything that will introduce your brands persona to
             your clients. This will help build a connection between you and
             them, that hopefully leads into a working relationship.
           </motion.p>
