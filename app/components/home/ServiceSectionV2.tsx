@@ -10,11 +10,11 @@ export default function ServiceSectionV2() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1.5 }}
-      className="h-screen bg-white relative"
+      className="h-auto bg-white relative"
     >
-      <div className="flex flex-col md:flex-row items-center justify-between pl-4 gap-4 md:pl-8">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:pl-8">
         {/* Contenido de texto */}
-        <div className="md:w-1/2 text-center md:text-left">
+        <div className="px-4 md:w-1/2 text-center md:text-left">
           <motion.h2
             className="text-4xl font-extrabold text-gray-800 mb-4"
             initial={{ opacity: 0, x: -50 }}
@@ -38,7 +38,7 @@ export default function ServiceSectionV2() {
         </div>
 
         {/* Contenedor visual */}
-        <div className="md:w-1/2 h-screen relative overflow-hidden">
+        <div className="w-full md:w-1/2 h-screen relative overflow-hidden">
           {/* Fondo con líneas verticales */}
           <motion.div
             className="w-full h-full absolute inset-0"

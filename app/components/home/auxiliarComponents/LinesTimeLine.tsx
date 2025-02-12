@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 interface Position {
   x: number;
@@ -11,6 +11,18 @@ interface LinesTimeLineProps {
 }
 
 const LinesTimeLine: React.FC<LinesTimeLineProps> = ({ positions }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 1024); // 'lg' en Tailwind es 1024px
+    };
+
+    updateScreenSize(); // Verifica en la carga inicial
+    window.addEventListener("resize", updateScreenSize);
+    return () => window.removeEventListener("resize", updateScreenSize);
+  }, []);
+
   return (
     <svg
       className="absolute inset-0 w-full h-full pointer-events-none"
@@ -31,28 +43,24 @@ const LinesTimeLine: React.FC<LinesTimeLineProps> = ({ positions }) => {
           <stop offset="33%" stopColor="#a855f7" />
           <stop offset="66%" stopColor="#ec4899" />
           <stop offset="100%" stopColor="#6e8df5" />
-
         </linearGradient>
       </defs>
 
       {positions.map((pos, index) => {
         if (index === positions.length - 1) return null;
         const nextPos = positions[index + 1];
-        // Ajustar los puntos de control para crear una ondulación constante
-        // const controlX1 = pos.x + 15; // Punto de control 1 en X
-        // const controlY1 = pos.y + (nextPos.y > pos.y ? 55 : -55); // Punto de control 1 en Y
-        // const controlX2 = nextPos.x - 15; // Punto de control 2 en X
-        // const controlY2 = nextPos.y + (nextPos.y > pos.y ? -55 : 55); // Punto de control 2 en Y
 
-        const controlX1 = pos.x + 25; // Punto de control 1 en X
-        const controlY1 = pos.y + (nextPos.y > pos.y ? 0 : -0); // Punto de control 1 en Y
-        const controlX2 = nextPos.x - 25; // Punto de control 2 en X
-        const controlY2 = nextPos.y + (nextPos.y > pos.y ? -0 : 0); // Punto de control 2 en Y
+        // Lógica para líneas rectas en pantallas pequeñas y curvas en grandes
+        const pathD = isSmallScreen
+          ? `M ${pos.x} ${pos.y} L ${nextPos.x} ${nextPos.y}` // Línea recta
+          : `M ${pos.x} ${pos.y} C ${pos.x + 25} ${pos.y}, ${nextPos.x - 25} ${
+              nextPos.y
+            }, ${nextPos.x} ${nextPos.y}`; // Curva
 
         return (
           <motion.path
             key={index}
-            d={`M ${pos.x} ${pos.y} C ${controlX1} ${controlY1}, ${controlX2} ${controlY2}, ${nextPos.x} ${nextPos.y}`}
+            d={pathD}
             stroke="url(#gradient-line)"
             strokeWidth="0.3"
             fill="none"

@@ -166,7 +166,7 @@ const Timeline: React.FC = () => {
         {isVisible ? (
           <div
             ref={containerRef}
-            className="relative flex flex-col lg:flex-row lg:justify-between items-start gap-8 md:gap-4 h-[500px]"
+            className="relative flex flex-col lg:flex-row lg:justify-between items-start gap-20 lg:gap-8 h-auto lg:h-[500px]"
           >
             <LinesTimeLine positions={positions} />
 
@@ -215,9 +215,9 @@ const Timeline: React.FC = () => {
         )}
 
         {/* Llamada a la acción final */}
-        <div className="mt-12 text-center absolute bottom-28 max-w-52 w-full left-[calc(50%-104px)]">
+        <div className="mt-12 text-center  lg:absolute bottom-28 w-full lg:max-w-52 lg:left-[calc(50%-104px)]">
           <motion.button
-            className="w-full uppercase px-6 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
+            className="w-full max-w-52 uppercase px-6 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
