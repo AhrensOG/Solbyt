@@ -1,12 +1,7 @@
+"use client";
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import {
-  ShieldCheck,
-  Gauge,
-  Headphones,
-  Rocket,
-  Euro,
-} from "lucide-react";
+import { ShieldCheck, Gauge, Headphones, Rocket, Euro } from "lucide-react";
 import LinesTimeLine from "./auxiliarComponents/LinesTimeLine";
 
 interface TimelineItem {
@@ -94,7 +89,6 @@ const timelineData: TimelineItem[] = [
       "No solo creamos, diseñamos soluciones escalables para que tu negocio crezca sin límites.",
     icon: <Rocket size={48} className="text-indigo-500" />,
   },
-
 ];
 
 const Timeline: React.FC = () => {
@@ -148,11 +142,11 @@ const Timeline: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       onAnimationComplete={() => setIsVisible(true)}
-      className="py-28 bg-gradient-to-b from-white via-gray-50 to-white relative"
+      className="py-28 bg-gradient-to-b from-white via-purple-50 to-white relative"
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+          <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
             Más que un servicio, un aliado estratégico
           </h2>
           <p className="text-lg text-gray-600 mt-3">
@@ -217,11 +211,11 @@ const Timeline: React.FC = () => {
         {/* Llamada a la acción final */}
         <div className="mt-12 text-center  lg:absolute bottom-28 w-full lg:max-w-52 lg:left-[calc(50%-104px)]">
           <motion.button
-            className="w-full max-w-52 uppercase px-6 py-3 bg-indigo-500 text-white rounded-lg font-semibold hover:bg-indigo-600 transition-colors"
+            className="w-full max-w-52 uppercase px-6 py-3 inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            ¡Contáctanos ya!
+            ¡Hablemos!
           </motion.button>
         </div>
       </div>
