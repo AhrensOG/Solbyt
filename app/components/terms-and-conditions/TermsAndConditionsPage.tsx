@@ -71,7 +71,7 @@ const TermsAndConditionsPage: React.FC = () => {
               ADev no será responsable de daños directos, indirectos,
               incidentales o consecuentes derivados del uso o la imposibilidad
               de uso del sitio web. La información contenida en este sitio se
-              proporciona "tal cual" y sin garantías de ningún tipo.
+              proporciona &quot;tal cual&quot; y sin garantías de ningún tipo.
             </p>
           </div>
           <div className="pt-6">

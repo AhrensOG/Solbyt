@@ -50,13 +50,21 @@ const expertiseAreas: ExpertiseAreas[] = [
     title: "Estrategia Digital Integral",
     description:
       "Desarrollamos estrategias digitales personalizadas que integran análisis de mercado, tendencias tecnológicas y comportamientos del consumidor para crear planes de acción efectivos. Nuestro enfoque holístico garantiza una implementación coherente en todos los canales, maximizando la exposición, el engagement y asegurando una ventaja competitiva sostenible en el dinámico entorno digital.",
-    icon: <Lightbulb className="w-8 h-8 text-purple-600" />,
+    icon: (
+      <Lightbulb key="estrategia-primary" className="w-8 h-8 text-purple-600" />
+    ),
     secondaryIcons: [
-      <Globe className="w-8 h-8 text-blue-500" />,
-      <TrendingUp className="w-8 h-8 text-green-500" />,
-      <Target className="w-8 h-8 text-red-500" />,
-      <BarChart2 className="w-8 h-8 text-yellow-500" />,
-      <MapPin className="w-8 h-8 text-pink-500" />,
+      <Globe key="estrategia-secondary-0" className="w-8 h-8 text-blue-500" />,
+      <TrendingUp
+        key="estrategia-secondary-1"
+        className="w-8 h-8 text-green-500"
+      />,
+      <Target key="estrategia-secondary-2" className="w-8 h-8 text-red-500" />,
+      <BarChart2
+        key="estrategia-secondary-3"
+        className="w-8 h-8 text-yellow-500"
+      />,
+      <MapPin key="estrategia-secondary-4" className="w-8 h-8 text-pink-500" />,
     ],
   },
   {
@@ -64,13 +72,22 @@ const expertiseAreas: ExpertiseAreas[] = [
     title: "Desarrollo de Software Avanzado",
     description:
       "Nuestro equipo de desarrolladores especializados utiliza las tecnologías más punteras y metodologías ágiles para construir soluciones robustas y escalables. Desde aplicaciones móviles hasta sistemas empresariales, transformamos ideas complejas en productos innovadores que optimizan procesos, garantizan la seguridad y ofrecen un rendimiento excepcional en entornos exigentes.",
-    icon: <Code className="w-8 h-8 text-blue-600" />,
+    icon: <Code key="desarrollo-primary" className="w-8 h-8 text-blue-600" />,
     secondaryIcons: [
-      <GitBranch className="w-8 h-8 text-green-500" />,
-      <Server className="w-8 h-8 text-purple-500" />,
-      <Cpu className="w-8 h-8 text-pink-500" />,
-      <Database className="w-8 h-8 text-orange-500" />,
-      <Layers className="w-8 h-8 text-red-500" />,
+      <GitBranch
+        key="desarrollo-secondary-0"
+        className="w-8 h-8 text-green-500"
+      />,
+      <Server
+        key="desarrollo-secondary-1"
+        className="w-8 h-8 text-purple-500"
+      />,
+      <Cpu key="desarrollo-secondary-2" className="w-8 h-8 text-pink-500" />,
+      <Database
+        key="desarrollo-secondary-3"
+        className="w-8 h-8 text-orange-500"
+      />,
+      <Layers key="desarrollo-secondary-4" className="w-8 h-8 text-red-500" />,
     ],
   },
   {
@@ -78,13 +95,16 @@ const expertiseAreas: ExpertiseAreas[] = [
     title: "Diseño UX/UI Centrado en el Usuario",
     description:
       "Fusionamos creatividad y análisis para diseñar interfaces intuitivas y atractivas que maximizan la experiencia del usuario. Basamos nuestros diseños en investigaciones exhaustivas y las mejores prácticas de usabilidad, asegurando interacciones fluidas, visualmente impactantes y que convierten visitantes en clientes leales.",
-    icon: <Palette className="w-8 h-8 text-pink-600" />,
+    icon: <Palette key="diseno-primary" className="w-8 h-8 text-pink-600" />,
     secondaryIcons: [
-      <Monitor className="w-8 h-8 text-purple-500" />,
-      <Layout className="w-8 h-8 text-blue-500" />,
-      <FileText className="w-8 h-8 text-green-500" />,
-      <User className="w-8 h-8 text-orange-500" />,
-      <MessageSquare className="w-8 h-8 text-red-500" />,
+      <Monitor key="diseno-secondary-0" className="w-8 h-8 text-purple-500" />,
+      <Layout key="diseno-secondary-1" className="w-8 h-8 text-blue-500" />,
+      <FileText key="diseno-secondary-2" className="w-8 h-8 text-green-500" />,
+      <User key="diseno-secondary-3" className="w-8 h-8 text-orange-500" />,
+      <MessageSquare
+        key="diseno-secondary-4"
+        className="w-8 h-8 text-red-500"
+      />,
     ],
   },
   {
@@ -92,13 +112,13 @@ const expertiseAreas: ExpertiseAreas[] = [
     title: "Análisis de Datos Predictivo",
     description:
       "Convertimos grandes volúmenes de datos en insights estratégicos y accionables. A través de modelos predictivos y análisis estadístico avanzado, identificamos tendencias y patrones que permiten anticipar comportamientos del mercado, facilitando decisiones informadas que optimizan procesos y potencian el crecimiento de tu negocio.",
-    icon: <BarChart className="w-8 h-8 text-green-600" />,
+    icon: <BarChart key="datos-primary" className="w-8 h-8 text-green-600" />,
     secondaryIcons: [
-      <PieChart className="w-8 h-8 text-blue-500" />,
-      <LineChart className="w-8 h-8 text-purple-500" />,
-      <TrendingUp className="w-8 h-8 text-red-500" />,
-      <Database className="w-8 h-8 text-yellow-500" />,
-      <Settings className="w-8 h-8 text-pink-500" />,
+      <PieChart key="datos-secondary-0" className="w-8 h-8 text-blue-500" />,
+      <LineChart key="datos-secondary-1" className="w-8 h-8 text-purple-500" />,
+      <TrendingUp key="datos-secondary-2" className="w-8 h-8 text-red-500" />,
+      <Database key="datos-secondary-3" className="w-8 h-8 text-yellow-500" />,
+      <Settings key="datos-secondary-4" className="w-8 h-8 text-pink-500" />,
     ],
   },
   {
@@ -106,13 +126,24 @@ const expertiseAreas: ExpertiseAreas[] = [
     title: "Ciberseguridad de Vanguardia",
     description:
       "Implementamos soluciones integrales de ciberseguridad para proteger tus activos digitales contra amenazas cada vez más sofisticadas. Combinamos tecnologías de detección temprana, encriptación avanzada y monitoreo continuo para anticipar y mitigar riesgos, garantizando la integridad, confidencialidad y continuidad de tu negocio en un entorno digital en constante evolución.",
-    icon: <ShieldCheckIcon className="w-8 h-8 text-red-600" />,
+    icon: (
+      <ShieldCheckIcon
+        key="seguridad-primary"
+        className="w-8 h-8 text-red-600"
+      />
+    ),
     secondaryIcons: [
-      <Lock className="w-8 h-8 text-blue-500" />,
-      <Key className="w-8 h-8 text-green-500" />,
-      <AlertTriangle className="w-8 h-8 text-yellow-500" />,
-      <EyeOff className="w-8 h-8 text-purple-500" />,
-      <Server className="w-8 h-8 text-pink-500" />,
+      <Lock key="seguridad-secondary-0" className="w-8 h-8 text-blue-500" />,
+      <Key key="seguridad-secondary-1" className="w-8 h-8 text-green-500" />,
+      <AlertTriangle
+        key="seguridad-secondary-2"
+        className="w-8 h-8 text-yellow-500"
+      />,
+      <EyeOff
+        key="seguridad-secondary-3"
+        className="w-8 h-8 text-purple-500"
+      />,
+      <Server key="seguridad-secondary-4" className="w-8 h-8 text-pink-500" />,
     ],
   },
 ];
@@ -226,8 +257,8 @@ const AboutUs: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.25 }}
           >
-            <ChevronDownIcon className="size-4 sm:size-6 animate-pulse" /> Inicia Tu
-            Transformación Digital{" "}
+            <ChevronDownIcon className="size-4 sm:size-6 animate-pulse" />{" "}
+            Inicia Tu Transformación Digital{" "}
             <ChevronDownIcon className="size-4 sm:size-6 animate-pulse" />
           </motion.button>
         </div>
