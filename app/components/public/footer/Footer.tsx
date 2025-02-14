@@ -11,18 +11,21 @@ const Footer: React.FC = () => {
         <div className="flex space-x-6 mt-4 md:mt-0">
           <Link
             href="/terms-and-conditions"
+            target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
             Términos y condiciones
           </Link>
           <Link
-            href="/privacidad"
+            href="/privacy-policy"
+            target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
-            Política de Privacidad
+            Política de privacidad
           </Link>
           <Link
-            href="/contacto"
+            href="/contact"
+            target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
             Contacto

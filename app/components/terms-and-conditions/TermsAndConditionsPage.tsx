@@ -1,5 +1,6 @@
 import React from "react";
 import StaticNavBar from "../public/navbar/StaticNavBar";
+import Footer from "../public/footer/Footer";
 
 const TermsAndConditionsPage: React.FC = () => {
   return (
@@ -96,6 +97,7 @@ const TermsAndConditionsPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

@@ -134,7 +134,7 @@ const AboutUs: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1.5 }}
-      className="w-full bg-gradient-to-b from-white via-pink-50 to-white grid place-items-center p-4 sm:p-8"
+      className="w-full bg-gradient-to-b from-white via-blue-50 to-white grid place-items-center p-4 sm:p-8"
     >
       <div className="max-w-7xl flex flex-col items-center justify-center w-full">
         <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 mb-8 text-center">

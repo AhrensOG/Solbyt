@@ -6,7 +6,8 @@ import Timeline from "./TimeLine";
 import ServiceSectionV2 from "./ServiceSectionV2";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
-import Footer from "./Footer";
+import Footer from "../public/footer/Footer";
+import WorkInformation from "./WorkInformation";
 
 const HomePage: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
         <Timeline />
         <AboutUs />
         <Contact />
+        <WorkInformation />
         <Footer />
       </main>
     </>
