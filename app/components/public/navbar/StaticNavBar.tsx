@@ -12,21 +12,21 @@ const StaticNavBar: React.FC = () => {
         Inicio
       </Link>
       <Link
-        href="/#contacto"
+        href="/#contact"
         className="text-[#beb0fa] hover:text-[#beb0fa]/60 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección de contacto"
       >
         Contáctanos
       </Link>
       <Link
-        href="/#servicios"
+        href="/#services"
         className="text-[#cb6ce6] hover:text-[#cb6ce6]/60 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección de servicios"
       >
         Servicio
       </Link>
       <Link
-        href="/#sobre-nosotros"
+        href="/#about-us"
         className="text-gray-900 hover:text-gray-400 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección sobre nosotros"
       >

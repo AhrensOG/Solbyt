@@ -49,6 +49,7 @@ const ServiceSectionV2: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1.5 }}
+      id="services"
       className="py-10 md:py-0 h-auto bg-white relative"
     >
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:pl-8">

@@ -165,6 +165,7 @@ const AboutUs: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1.5 }}
+      id="about-us"
       className="w-full bg-gradient-to-b from-white via-blue-50 to-white grid place-items-center p-4 sm:p-8"
     >
       <div className="max-w-7xl flex flex-col items-center justify-center w-full">

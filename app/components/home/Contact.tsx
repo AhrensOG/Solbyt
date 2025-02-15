@@ -36,6 +36,7 @@ const Contact: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1.5 }}
+      id="contact"
       className="w-full py-16 px-4 sm:px-8 bg-gradient-to-b from-white via-pink-50 to-white"
     >
       <div className="max-w-7xl mx-auto">
