@@ -35,6 +35,7 @@ import {
   EyeOff,
   ChevronDownIcon,
 } from "lucide-react";
+import Link from "next/link";
 
 interface ExpertiseAreas {
   id: string;
@@ -252,16 +253,16 @@ const AboutUs: React.FC = () => {
             desafíos en oportunidades y llevar tu visión digital a la realidad.
             Estamos aquí para impulsar tu éxito en cada paso del camino.
           </p>
-          <motion.button
-            className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-sm sm:text-lg"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.25 }}
-          >
-            <ChevronDownIcon className="size-4 sm:size-6 animate-pulse" />{" "}
-            Inicia Tu Transformación Digital{" "}
-            <ChevronDownIcon className="size-4 sm:size-6 animate-pulse" />
-          </motion.button>
+          <Link href={"/#contact"}>
+            <motion.button
+              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-sm sm:text-lg"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.25 }}
+            >
+              Inicia Tu Transformación Digital
+            </motion.button>
+          </Link>
         </div>
       </div>
     </motion.section>

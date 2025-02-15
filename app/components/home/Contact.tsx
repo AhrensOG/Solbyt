@@ -39,8 +39,7 @@ const Contact: React.FC = () => {
       id="contact"
       className="w-full py-16 px-4 sm:px-8 bg-gradient-to-b from-white via-pink-50 to-white"
     >
-      <div className="max-w-7xl mx-auto">
-        {/* Texto de invitación */}
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,7 +56,6 @@ const Contact: React.FC = () => {
             siguiente paso hacia el futuro!
           </p>
         </motion.div>
-        {/* Formulario de contacto */}
         <motion.form
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

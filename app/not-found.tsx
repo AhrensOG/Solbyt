@@ -7,7 +7,7 @@ const NotFound: React.FC = () => {
   return (
     <main className="bg-white">
       <StaticNavBar />
-      <section className="w-full bg-gradient-to-b from-white via-pink-50 to-white py-20 px-4 sm:px-8 text-center">
+      <section className="mt-[80px] bg-gradient-to-b from-white via-pink-50 to-white w-full py-10 px-4 sm:px-8 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-8">
             404

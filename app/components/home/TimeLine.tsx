@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, Gauge, Headphones, Rocket, Euro } from "lucide-react";
 import LinesTimeLine from "./auxiliarComponents/LinesTimeLine";
+import Link from "next/link";
 
 interface TimelineItem {
   title: string;
@@ -210,13 +211,15 @@ const Timeline: React.FC = () => {
 
         {/* Llamada a la acción final */}
         <div className="mt-12 text-center  lg:absolute bottom-28 w-full lg:max-w-52 lg:left-[calc(50%-104px)]">
-          <motion.button
-            className="w-full max-w-52 uppercase px-6 py-3 inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            ¡Hablemos!
-          </motion.button>
+          <Link href={"/#contact"}>
+            <motion.button
+              className="w-full max-w-52 uppercase px-6 py-3 inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              ¡Hablemos!
+            </motion.button>
+          </Link>
         </div>
       </div>
     </motion.section>
