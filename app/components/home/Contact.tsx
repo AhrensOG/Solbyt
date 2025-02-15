@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { z } from "zod";
+import axios from "axios";
+import toast from "react-hot-toast";
+import Link from "next/link";
 
 interface ContactFormData {
   fullName: string;
@@ -10,6 +14,13 @@ interface ContactFormData {
   message: string;
 }
 
+const contactSchema = z.object({
+  fullName: z.string().min(1, "El nombre completo es obligatorio."),
+  email: z.string().email("Ingrese un email válido."),
+  business: z.string().min(1, "El sector de tu negocio es obligatorio."),
+  message: z.string().optional(),
+});
+
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>({
     fullName: "",
@@ -17,17 +28,77 @@ const Contact: React.FC = () => {
     business: "",
     message: "",
   });
+  const [errors, setErrors] = useState<Partial<ContactFormData>>({});
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: undefined }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const fieldErrors = result.error.flatten().fieldErrors;
+      setErrors({
+        fullName: fieldErrors.fullName ? fieldErrors.fullName[0] : undefined,
+        email: fieldErrors.email ? fieldErrors.email[0] : undefined,
+        business: fieldErrors.business ? fieldErrors.business[0] : undefined,
+        message: fieldErrors.message ? fieldErrors.message[0] : undefined,
+      });
+      toast.error("Por favor, revisa los campos e inténtalo nuevamente.", {
+        iconTheme: { primary: "#8B5CF6", secondary: "#ffffff" },
+      });
+      return;
+    }
+    setErrors({});
+
+    const payload = {
+      to: "ahrensog.es@gmail.com",
+      subject: `Nuevo mensaje de ${formData.fullName}`,
+      message: `Nombre: ${formData.fullName}\nEmail: ${
+        formData.email
+      }\nSector: ${formData.business}\nMensaje: ${
+        formData.message || "No se proporcionó mensaje adicional."
+      }`,
+    };
+
+    const loadingToastId = toast.loading("Solicitando auditoría gratuita...", {
+      iconTheme: { primary: "#8B5CF6", secondary: "#ffffff" },
+    });
+
+    try {
+      await axios.post("/api/sendgrid", payload);
+      toast.dismiss(loadingToastId);
+      toast.success(
+        "Recibimos tu solicitud correctamente. ¡Nos pondremos en contacto contigo lo antes posible!",
+        {
+          iconTheme: { primary: "#10B981", secondary: "#ffffff" },
+        }
+      );
+    } catch (error: any) {
+      toast.dismiss(loadingToastId);
+      toast.error(
+        <div>
+          Lo sentimos, hubo un inconveniente al enviar tu solicitud. Por favor,
+          inténtalo de nuevo o{" "}
+          <Link href="/contact" className="underline text-blue-600">
+            contáctanos
+          </Link>{" "}
+          directamente.
+        </div>,
+        {
+          iconTheme: { primary: "#F59E0B", secondary: "#ffffff" },
+        }
+      );
+      console.error(
+        "Error al enviar email:",
+        error.response?.data || error.message
+      );
+    }
   };
 
   return (
@@ -81,6 +152,9 @@ const Contact: React.FC = () => {
                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600 transition"
                 placeholder="Ingresa tu nombre"
               />
+              {errors.fullName && (
+                <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>
+              )}
             </div>
             <div>
               <label
@@ -99,6 +173,9 @@ const Contact: React.FC = () => {
                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600 transition"
                 placeholder="Ingresa tu email"
               />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              )}
             </div>
           </div>
           <div>
@@ -118,6 +195,9 @@ const Contact: React.FC = () => {
               className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-600 transition"
               placeholder="Ejemplo: e-commerce, salud, educación"
             />
+            {errors.business && (
+              <p className="text-red-500 text-sm mt-1">{errors.business}</p>
+            )}
           </div>
           <div>
             <label
@@ -135,6 +215,9 @@ const Contact: React.FC = () => {
               placeholder="Cuéntanos cómo podemos ayudarte"
               rows={4}
             ></textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
           <div className="text-center">
             <motion.button

@@ -8,6 +8,7 @@ import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Footer from "../public/footer/Footer";
 import WorkInformation from "./WorkInformation";
+import { Toaster } from "react-hot-toast";
 
 const HomePage: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage: React.FC = () => {
         <NavBar />
       </header>
       <main>
+        <Toaster position="top-center" />
         <Hero />
         {/* <ServiceSection /> */}
         <ServiceSectionV2 />

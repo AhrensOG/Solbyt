@@ -31,21 +31,21 @@ const ContactPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               <div className="flex items-center space-x-3">
                 <span className="text-purple-600 font-semibold">Email:</span>
-                <a
+                <Link
                   href="mailto:contacto@adev.com"
                   className="text-gray-800 hover:text-purple-600 transition"
                 >
                   contacto@adev.com
-                </a>
+                </Link>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="text-purple-600 font-semibold">Teléfono:</span>
-                <a
+                <Link
                   href="tel:+1234567890"
                   className="text-gray-800 hover:text-purple-600 transition"
                 >
                   +1 (234) 567-890
-                </a>
+                </Link>
               </div>
             </div>
           </div>
