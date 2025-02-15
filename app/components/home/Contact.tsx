@@ -225,7 +225,7 @@ const Contact: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.25 }}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg transition uppercase"
+              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg transition text-lg uppercase"
             >
               ¡Solicita tu asesoría gratis!
             </motion.button>

@@ -203,7 +203,7 @@ const AboutUs: React.FC = () => {
               <h4 className="text-2xl font-bold text-blue-700 mb-4 text-center">
                 Soluciones Integrales para Tu Éxito
               </h4>
-              <div className="bg-gray-100 p-6 rounded-lg w-full mb-4 h-[402px] sm:h-auto">
+              <div className="bg-gray-100 p-6 rounded-lg w-full mb-4">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentExpertise.id}
@@ -255,7 +255,7 @@ const AboutUs: React.FC = () => {
           </p>
           <Link href={"/#contact"}>
             <motion.button
-              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-sm sm:text-lg"
+              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg uppercase"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.25 }}
