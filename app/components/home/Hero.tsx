@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 0.5 }}
           className="relative h-72 w-72 md:w-full"
         >
           <Image
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             DESARROLLO DE SOFTWARE
           </motion.h1>
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.75 }}
           >
             SOLUCIONES INNOVADORAS
           </motion.h2>
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             className="text-xl font-semibold text-gray-800"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             Llevamos tus ideas al siguiente nivel.
           </motion.p>
