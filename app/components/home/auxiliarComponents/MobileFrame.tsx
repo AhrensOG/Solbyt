@@ -23,7 +23,8 @@ const MobileFrame: React.FC<MobileFrameProps> = ({ imageSrc }) => {
         >
           <Image
             src={imageSrc}
-            alt="Mobile Preview"
+            alt="Imagen en una vista móvil"
+            title="Vista formato móvil"
             fill
             className="object-center"
           />

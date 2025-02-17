@@ -1,8 +1,8 @@
 import React from "react";
+import Link from "next/link";
 import StaticNavBar from "../public/navbar/StaticNavBar";
 import Footer from "../public/footer/Footer";
 import { Twitter, Linkedin, Instagram } from "lucide-react";
-import Link from "next/link";
 
 const ContactPage: React.FC = () => {
   return (
@@ -33,6 +33,7 @@ const ContactPage: React.FC = () => {
                 <span className="text-purple-600 font-semibold">Email:</span>
                 <Link
                   href="mailto:contacto@adev.com"
+                  title="Ir a enviar correo"
                   className="text-gray-800 hover:text-purple-600 transition"
                 >
                   contacto@adev.com
@@ -42,6 +43,7 @@ const ContactPage: React.FC = () => {
                 <span className="text-purple-600 font-semibold">Teléfono:</span>
                 <Link
                   href="tel:+1234567890"
+                  title="Ir a llamar"
                   className="text-gray-800 hover:text-purple-600 transition"
                 >
                   +1 (234) 567-890
@@ -56,6 +58,7 @@ const ContactPage: React.FC = () => {
           <div className="flex justify-center space-x-6 mt-4">
             <Link
               href="https://twitter.com"
+              title="Ir a Twitter"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-purple-600 transition"
@@ -64,6 +67,7 @@ const ContactPage: React.FC = () => {
             </Link>
             <Link
               href="https://linkedin.com"
+              title="Ir a LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-purple-600 transition"
@@ -72,6 +76,7 @@ const ContactPage: React.FC = () => {
             </Link>
             <Link
               href="https://instagram.com"
+              title="Ir a Instagram"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-purple-600 transition"

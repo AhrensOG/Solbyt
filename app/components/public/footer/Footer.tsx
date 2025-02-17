@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex space-x-6 mt-4 md:mt-0">
           <Link
             href="/terms-and-conditions"
+            title="Ir a la página de Términos y Condiciones"
             target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
@@ -18,6 +19,7 @@ const Footer: React.FC = () => {
           </Link>
           <Link
             href="/privacy-policy"
+            title="Ir a la página de Política de Privacidad"
             target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
@@ -25,6 +27,7 @@ const Footer: React.FC = () => {
           </Link>
           <Link
             href="/contact"
+            title="Ir a la página de Contacto"
             target="_blank"
             className="text-gray-600 hover:text-purple-600 transition text-sm"
           >
@@ -35,6 +38,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 mt-6 flex items-center justify-center space-x-6">
         <Link
           href="https://twitter.com"
+          title="Ir a Twitter"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-purple-600 transition"
@@ -43,6 +47,7 @@ const Footer: React.FC = () => {
         </Link>
         <Link
           href="https://linkedin.com"
+          title="Ir a LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-purple-600 transition"
@@ -51,6 +56,7 @@ const Footer: React.FC = () => {
         </Link>
         <Link
           href="https://instagram.com"
+          title="Ir a Instagram"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-purple-600 transition"

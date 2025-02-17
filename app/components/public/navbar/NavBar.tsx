@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
         setIsVisible(false);
-        setIsMenuOpen(false)
+        setIsMenuOpen(false);
       } else {
         setIsVisible(true);
       }
@@ -38,6 +38,7 @@ const NavBar: React.FC = () => {
     <>
       <Link
         href="/"
+        title="Ir a la página principal"
         className="text-[#6aa9b6] hover:text-[#6aa9b6]/60 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la página de inicio"
       >
@@ -45,6 +46,7 @@ const NavBar: React.FC = () => {
       </Link>
       <Link
         href="/#contact"
+        title="Ir a la sección de Contacto"
         className="text-[#beb0fa] hover:text-[#beb0fa]/60 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección de contacto"
       >
@@ -52,6 +54,7 @@ const NavBar: React.FC = () => {
       </Link>
       <Link
         href="/#services"
+        title="Ir a la sección de Servicios"
         className="text-[#cb6ce6] hover:text-[#cb6ce6]/60 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección de servicios"
       >
@@ -59,6 +62,7 @@ const NavBar: React.FC = () => {
       </Link>
       <Link
         href="/#about-us"
+        title="Ir a la sección de Sobre Nosotros"
         className="text-gray-900 hover:text-gray-400 transition-all duration-200 text-lg py-2"
         aria-label="Ir a la sección sobre nosotros"
       >

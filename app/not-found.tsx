@@ -2,6 +2,26 @@ import React from "react";
 import Link from "next/link";
 import StaticNavBar from "./components/public/navbar/StaticNavBar";
 import Footer from "./components/public/footer/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "404 - Página no encontrada | ADev",
+  description:
+    "En ADev, nos esforzamos por brindar una experiencia excepcional. La página que has solicitado no se encuentra disponible o ha sido movida. Por favor, revisa la dirección URL o regresa a la página principal para continuar explorando nuestros innovadores servicios y soluciones tecnológicas.",
+  keywords: [
+    "404",
+    "página no encontrada",
+    "error",
+    "ADev",
+    "soluciones tecnológicas",
+    "servicios digitales",
+  ],
+  authors: [{ name: "ADev" }],
+  metadataBase: new URL("https://adev.com"),
+  alternates: {
+    canonical: "/404",
+  },
+};
 
 const NotFound: React.FC = () => {
   return (
