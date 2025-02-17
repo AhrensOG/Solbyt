@@ -3,32 +3,32 @@ import ContactPage from "../components/contact/ContactPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contacto - ADev | Impulsa tu Transformación Digital",
+  title: "Contacto - Solbyt | Impulsa tu Transformación Digital",
   description:
-    "¿Listo para transformar tu negocio? En ADev ofrecemos soluciones digitales innovadoras y personalizadas. Ponte en contacto con nosotros para iniciar tu camino hacia el éxito digital.",
+    "¿Listo para transformar tu negocio? En Solbyt ofrecemos soluciones digitales innovadoras y personalizadas. Ponte en contacto con nosotros para iniciar tu camino hacia el éxito digital.",
   keywords: [
     "contacto",
-    "ADev",
+    "Solbyt",
     "transformación digital",
     "soluciones digitales",
     "innovación",
     "negocios",
   ],
-  authors: [{ name: "ADev" }],
-  metadataBase: new URL("https://adev.com"),
+  authors: [{ name: "Solbyt" }],
+  metadataBase: new URL("https://solbyt.com"),
   alternates: {
     canonical: "/contacto",
   },
   openGraph: {
-    title: "Contacto - ADev | Impulsa tu Transformación Digital",
+    title: "Contacto - Solbyt | Impulsa tu Transformación Digital",
     description:
-      "¿Listo para transformar tu negocio? En ADev ofrecemos soluciones digitales innovadoras y personalizadas. Ponte en contacto con nosotros para iniciar tu camino hacia el éxito digital.",
-    url: "https://adev.com/contacto",
+      "¿Listo para transformar tu negocio? En Solbyt ofrecemos soluciones digitales innovadoras y personalizadas. Ponte en contacto con nosotros para iniciar tu camino hacia el éxito digital.",
+    url: "https://solbyt.com/contacto",
     type: "website",
     images: [
       {
-        url: "https://adev-ten.vercel.app/favicon.ico",
-        alt: "Contacto en ADev - Soluciones Digitales Innovadoras",
+        url: "https://solbyt-ten.vercel.app/favicon.ico",
+        alt: "Contacto en Solbyt - Soluciones Digitales Innovadoras",
         width: 256,
         height: 256,
       },

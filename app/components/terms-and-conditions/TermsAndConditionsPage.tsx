@@ -20,10 +20,10 @@ const TermsAndConditionsPage: React.FC = () => {
         <div className="max-w-4xl mx-auto space-y-10 divide-y divide-gray-200">
           <div className="pb-6">
             <p className="text-lg text-gray-700">
-              Bienvenido a ADev. Al acceder y utilizar nuestro sitio web, usted
-              acepta cumplir con los presentes Términos y Condiciones. Si no
-              está de acuerdo con ellos, por favor absténgase de utilizar este
-              sitio.
+              Bienvenido a Solbyt. Al acceder y utilizar nuestro sitio web,
+              usted acepta cumplir con los presentes Términos y Condiciones. Si
+              no está de acuerdo con ellos, por favor absténgase de utilizar
+              este sitio.
             </p>
           </div>
           <div className="pt-6">
@@ -58,7 +58,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </h2>
             <p className="text-gray-700 text-lg">
               Todo el contenido presente en este sitio, incluidos textos,
-              imágenes, logotipos y gráficos, es propiedad de ADev o de sus
+              imágenes, logotipos y gráficos, es propiedad de Solbyt o de sus
               respectivos titulares y está protegido por las leyes de propiedad
               intelectual.
             </p>
@@ -68,7 +68,7 @@ const TermsAndConditionsPage: React.FC = () => {
               Limitación de Responsabilidad
             </h2>
             <p className="text-gray-700 text-lg">
-              ADev no será responsable de daños directos, indirectos,
+              Solbyt no será responsable de daños directos, indirectos,
               incidentales o consecuentes derivados del uso o la imposibilidad
               de uso del sitio web. La información contenida en este sitio se
               proporciona &quot;tal cual&quot; y sin garantías de ningún tipo.
@@ -92,7 +92,7 @@ const TermsAndConditionsPage: React.FC = () => {
             <p className="text-gray-700 text-lg">
               Si tiene alguna pregunta o inquietud acerca de estos Términos y
               Condiciones, por favor contáctenos a través de nuestro formulario
-              de contacto o envíe un correo a: contacto@adev.com.
+              de contacto o envíe un correo a: contacto@solbyt.com.
             </p>
           </div>
         </div>

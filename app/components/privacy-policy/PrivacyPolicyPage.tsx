@@ -20,11 +20,11 @@ const PrivacyPolicyPage: React.FC = () => {
         <div className="max-w-4xl mx-auto space-y-10 divide-y divide-gray-200">
           <div className="pb-6">
             <p className="text-lg text-gray-700">
-              Bienvenido a ADev. En esta Política de Privacidad, explicamos cómo
-              recopilamos, usamos y protegemos la información personal que usted
-              nos proporciona a través de nuestro formulario de contacto. Al
-              utilizar nuestro sitio web, usted acepta las prácticas descritas
-              en este documento.
+              Bienvenido a Solbyt. En esta Política de Privacidad, explicamos
+              cómo recopilamos, usamos y protegemos la información personal que
+              usted nos proporciona a través de nuestro formulario de contacto.
+              Al utilizar nuestro sitio web, usted acepta las prácticas
+              descritas en este documento.
             </p>
           </div>
           <div className="pt-6">
@@ -85,7 +85,7 @@ const PrivacyPolicyPage: React.FC = () => {
               personales, así como a oponerse a su tratamiento en determinadas
               circunstancias. Para ejercer estos derechos, por favor contáctenos
               a través de nuestro formulario de contacto o envíe un correo a:
-              contacto@adev.com.
+              contacto@solbyt.com.
             </p>
           </div>
           <div className="pt-6">

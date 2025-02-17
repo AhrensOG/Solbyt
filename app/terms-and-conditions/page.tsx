@@ -3,18 +3,18 @@ import TermsAndConditionsPage from "../components/terms-and-conditions/TermsAndC
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Términos y Condiciones - ADev Oficial",
+  title: "Términos y Condiciones - Solbyt Oficial",
   description:
-    "Conoce los términos y condiciones que rigen el uso del sitio web de ADev. Nos comprometemos a ofrecer información clara y transparente, garantizando una experiencia segura y confiable en cada interacción.",
+    "Conoce los términos y condiciones que rigen el uso del sitio web de Solbyt. Nos comprometemos a ofrecer información clara y transparente, garantizando una experiencia segura y confiable en cada interacción.",
   keywords: [
     "Términos y Condiciones",
-    "ADev",
+    "Solbyt",
     "uso del sitio",
     "política",
     "servicios digitales",
   ],
-  authors: [{ name: "ADev" }],
-  metadataBase: new URL("https://adev.com"),
+  authors: [{ name: "Solbyt" }],
+  metadataBase: new URL("https://solbyt.com"),
   alternates: {
     canonical: "/terms-and-conditions",
   },

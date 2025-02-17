@@ -32,11 +32,11 @@ const ContactPage: React.FC = () => {
               <div className="flex items-center space-x-3">
                 <span className="text-purple-600 font-semibold">Email:</span>
                 <Link
-                  href="mailto:contacto@adev.com"
+                  href="mailto:contacto@solbyt.com"
                   title="Ir a enviar correo"
                   className="text-gray-800 hover:text-purple-600 transition"
                 >
-                  contacto@adev.com
+                  contacto@solbyt.com
                 </Link>
               </div>
               <div className="flex items-center space-x-3">

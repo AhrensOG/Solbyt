@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -46,10 +47,16 @@ const StaticNavBar: React.FC = () => {
       <div className="px-8 py-4 h-full flex items-center justify-between">
         <div className="text-xl tracking-widest text-blue-900 underline">
           <Link href="/" title="Ir a la página principal">
-            AHRENS
+            <Image
+              src={"/logo_1.png"}
+              width={150}
+              height={49}
+              alt="Logo de Solbyt"
+              title="Logo de Solbyt"
+            />
           </Link>
         </div>
-        <div className="hidden md:flex gap-8 uppercase tracking-widest">
+        <div className="hidden md:flex gap-8 uppercase tracking-widest min-h-[49px]">
           <MenuLinks />
         </div>
         <div className="block md:hidden uppercase tracking-widest">

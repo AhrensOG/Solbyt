@@ -9,7 +9,7 @@ const bebas_neue = Bebas_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "ADev",
+  title: "Solbyt",
   description: "Especializados en soluciónes digitales",
 };
 

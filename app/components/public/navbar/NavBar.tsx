@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
+import { Ellipsis, X } from "lucide-react";
 
 const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -83,26 +84,32 @@ const NavBar: React.FC = () => {
       <div className="px-8 py-4 h-full flex items-center justify-between">
         <div className="text-xl tracking-widest text-blue-900 underline">
           <Link href="/" title="Ir a la página principal">
-            AHRENS
+            <Image
+              src={"/logo_2.png"}
+              width={150}
+              height={49}
+              alt="Logo de Solbyt"
+              title="Logo de Solbyt"
+            />
           </Link>
         </div>
 
-        <div className="md:hidden">
+        <div className="md:hidden min-h-[49px] grid place-items-center">
           <button
             onClick={toggleMenu}
             aria-label="Abrir menú"
             aria-expanded={isMenuOpen ? "true" : "false"}
           >
             {isMenuOpen ? (
-              <XMarkIcon className="w-6 h-6 text-gray-800" />
+              <X className="w-6 h-6 text-gray-800" />
             ) : (
-              <Bars3Icon className="w-6 h-6 text-gray-800" />
+              <Ellipsis className="w-6 h-6 text-gray-800" />
             )}
           </button>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 uppercase tracking-widest">
+        <div className="hidden md:flex gap-8 uppercase tracking-widest min-h-[49px]">
           <MenuLinks />
         </div>
       </div>

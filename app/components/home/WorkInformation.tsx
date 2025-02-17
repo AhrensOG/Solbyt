@@ -10,9 +10,9 @@ const DigitalTransformationInfo: React.FC = () => {
             Cambiando el Juego
           </h1>
           <p className="text-xl text-gray-700">
-            En ADev impulsamos tu éxito digital con estrategias personalizadas,
-            soluciones tecnológicas innovadoras y un enfoque ágil para llevar tu
-            negocio a la era digital.
+            En Solbyt impulsamos tu éxito digital con estrategias
+            personalizadas, soluciones tecnológicas innovadoras y un enfoque
+            ágil para llevar tu negocio a la era digital.
           </p>
         </header>
         <article className="space-y-12">
@@ -23,7 +23,7 @@ const DigitalTransformationInfo: React.FC = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               La transformación digital no es simplemente la incorporación de
               nuevas tecnologías; es un cambio profundo en la cultura
-              empresarial. En ADev entendemos que integrar tecnología en cada
+              empresarial. En Solbyt entendemos que integrar tecnología en cada
               aspecto del negocio permite automatizar procesos, recopilar datos
               valiosos, personalizar la experiencia del cliente y tomar
               decisiones basadas en información real.
@@ -41,7 +41,7 @@ const DigitalTransformationInfo: React.FC = () => {
               directa con sus clientes.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              En ADev, combinamos diseño innovador, tecnologías de punta y
+              En Solbyt, combinamos diseño innovador, tecnologías de punta y
               metodologías ágiles para desarrollar proyectos que no solo mejoran
               la eficiencia operativa, sino que también potencian la experiencia
               del usuario.
@@ -77,7 +77,7 @@ const DigitalTransformationInfo: React.FC = () => {
               soluciones robustas y escalables.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              En ADev, adoptamos estas tecnologías para asegurar que cada
+              En Solbyt, adoptamos estas tecnologías para asegurar que cada
               proyecto esté a la vanguardia y preparado para los desafíos del
               mercado moderno.
             </p>
@@ -153,14 +153,14 @@ const DigitalTransformationInfo: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800">
-                  ¿Cómo puede ADev impulsar tu transformación digital?
+                  ¿Cómo puede Solbyt impulsar tu transformación digital?
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  ADev combina una estrategia digital personalizada, desarrollo
-                  de software innovador y metodologías ágiles para diseñar
-                  soluciones que automatizan procesos, mejoran la experiencia
-                  del usuario y ofrecen resultados medibles, asegurando un
-                  crecimiento sostenible en el mundo digital.
+                  Solbyt combina una estrategia digital personalizada,
+                  desarrollo de software innovador y metodologías ágiles para
+                  diseñar soluciones que automatizan procesos, mejoran la
+                  experiencia del usuario y ofrecen resultados medibles,
+                  asegurando un crecimiento sostenible en el mundo digital.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ const DigitalTransformationInfo: React.FC = () => {
         </article>
         <footer className="mt-16 text-center">
           <p className="text-xl text-gray-800 font-medium">
-            Con ADev, tu visión se convierte en una realidad digital. Descubre
+            Con Solbyt, tu visión se convierte en una realidad digital. Descubre
             el poder de la transformación digital y lleva tu negocio al
             siguiente nivel.
           </p>

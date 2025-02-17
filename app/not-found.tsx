@@ -5,19 +5,19 @@ import Footer from "./components/public/footer/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 - Página no encontrada | ADev",
+  title: "404 - Página no encontrada | Solbyt",
   description:
-    "En ADev, nos esforzamos por brindar una experiencia excepcional. La página que has solicitado no se encuentra disponible o ha sido movida. Por favor, revisa la dirección URL o regresa a la página principal para continuar explorando nuestros innovadores servicios y soluciones tecnológicas.",
+    "En Solbyt, nos esforzamos por brindar una experiencia excepcional. La página que has solicitado no se encuentra disponible o ha sido movida. Por favor, revisa la dirección URL o regresa a la página principal para continuar explorando nuestros innovadores servicios y soluciones tecnológicas.",
   keywords: [
     "404",
     "página no encontrada",
     "error",
-    "ADev",
+    "Solbyt",
     "soluciones tecnológicas",
     "servicios digitales",
   ],
-  authors: [{ name: "ADev" }],
-  metadataBase: new URL("https://adev.com"),
+  authors: [{ name: "Solbyt" }],
+  metadataBase: new URL("https://solbyt.com"),
   alternates: {
     canonical: "/404",
   },

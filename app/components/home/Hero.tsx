@@ -16,8 +16,8 @@ const Hero: React.FC = () => {
           >
             <Image
               src="/hero.webp"
-              alt="Fondo principal que destaca la innovación digital de ADev"
-              title="Fondo principal - ADev"
+              alt="Fondo principal que destaca la innovación digital de Solbyt"
+              title="Fondo principal - Solbyt"
               fill
               priority
               sizes="(max-width: 500px) 288px, 500px"
@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
             />
             <Image
               src="/hero-reverse.webp"
-              alt="Fondo principal que destaca la innovación digital de ADev"
-              title="Fondo principal - ADev"
+              alt="Fondo principal que destaca la innovación digital de Solbyt"
+              title="Fondo principal - Solbyt"
               fill
               priority
               sizes="(max-width: 500px) 288px, 500px"
