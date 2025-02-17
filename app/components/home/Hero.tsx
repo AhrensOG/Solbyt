@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -8,30 +8,29 @@ const Hero: React.FC = () => {
     <div className="bg-gradient-to-b from-white via-pink-50 to-white pb-20 md:pb-0 w-full flex justify-center items-center h-[calc(100vh-80px)] mt-[80px]">
       <div className="w-full h-full flex flex-col-reverse md:flex-row items-center justify-center text-center lg:text-left space-y-4 lg:space-y-0 lg:space-x-8 max-w-screen-xl">
         <div className="basis-[40%] sm:basis-[50%] md:basis-[40%]">
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="relative h-72 w-72 md:w-full"
-        >
-          <Image
-            src="/hero.webp"
-            alt="Hero Background"
-            fill
-            priority={true}
-            sizes="(max-width: 768px) 288px, 100vw"
-            className="overflow-visible object-cover"
-          />
-          <Image
-            src="/hero.webp"
-            alt="Hero Background"
-            fill
-            priority={true}
-            sizes="(max-width: 768px) 288px, 100vw"
-            className="overflow-visible object-cover rotate-90"
-          />
-        </motion.div>
-
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="relative h-72 min-w-72 w-full max-w-[500px]"
+          >
+            <Image
+              src="/hero.webp"
+              alt="Hero Background"
+              fill
+              priority
+              sizes="(max-width: 500px) 288px, 500px"
+              className="overflow-visible object-cover"
+            />
+            <Image
+              src="/hero-reverse.webp"
+              alt="Hero Background"
+              fill
+              priority
+              sizes="(max-width: 500px) 288px, 500px"
+              className="overflow-visible object-cover"
+            />
+          </motion.div>
         </div>
 
         <div className="basis-[60%] sm:basis-[50%] md:basis-[60%] w-full text-center flex flex-col justify-center items-center gap-4">
