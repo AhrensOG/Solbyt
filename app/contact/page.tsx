@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://solbyt-ten.vercel.app/favicon.ico",
+        url: "https://solbyt.vercel.app/favicon.ico",
         alt: "Contacto en Solbyt - Soluciones Digitales Innovadoras",
         width: 256,
         height: 256,
