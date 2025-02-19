@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
-
-const bebas_neue = Bebas_Neue({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { miriam_libre } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Solbyt",
@@ -20,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${bebas_neue.variable}`}>{children}</body>
+      <body className={`${miriam_libre.className}`}>{children}</body>
     </html>
   );
 }

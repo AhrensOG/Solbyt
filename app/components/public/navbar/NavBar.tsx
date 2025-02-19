@@ -85,7 +85,7 @@ const NavBar: React.FC = () => {
         <div className="text-xl tracking-widest text-blue-900 underline">
           <Link href="/" title="Ir a la página principal">
             <Image
-              src={"/logo.png"}
+              src={"/logo.svg"}
               width={150}
               height={49}
               alt="Logo de Solbyt"
