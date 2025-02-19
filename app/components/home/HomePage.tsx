@@ -1,9 +1,8 @@
 import React from "react";
 import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
-// import ServiceSection from "./ServiceSection";
 import Timeline from "./TimeLine";
-import ServiceSectionV2 from "./ServiceSectionV2";
+import ServiceSection from "./ServiceSection";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Footer from "../public/footer/Footer";
@@ -20,7 +19,7 @@ const HomePage: React.FC = () => {
         <Toaster position="top-center" />
         <Hero />
         {/* <ServiceSection /> */}
-        <ServiceSectionV2 />
+        <ServiceSection />
         <Timeline />
         <AboutUs />
         <Contact />
