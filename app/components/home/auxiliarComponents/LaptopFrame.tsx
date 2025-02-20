@@ -27,7 +27,7 @@ const LaptopFrame: React.FC<LaptopFrameProps> = ({ imageSrc }) => {
             src={imageSrc}
             alt="Desktop Preview"
             fill
-            className="object-cover"
+            className="object-center"
           />
         </motion.div>
       </div>
