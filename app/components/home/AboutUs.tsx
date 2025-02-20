@@ -1,8 +1,6 @@
 "use client";
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import Image from "next/image";
 import {
   ChevronLeft,
   ChevronRight,
@@ -10,8 +8,6 @@ import {
   Code,
   Palette,
   BarChart,
-  Lock,
-  ShieldCheckIcon,
   Globe,
   TrendingUp,
   Target,
@@ -27,13 +23,13 @@ import {
   FileText,
   User,
   MessageSquare,
-  PieChart,
-  LineChart,
   Settings,
-  Key,
-  AlertTriangle,
-  EyeOff,
-  ChevronDownIcon,
+  Zap,
+  Clock,
+  Repeat,
+  Workflow,
+  Cloud,
+  Users,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -109,42 +105,68 @@ const expertiseAreas: ExpertiseAreas[] = [
     ],
   },
   {
-    id: "datos",
-    title: "Análisis de Datos Predictivo",
+    id: "automatizacion",
+    title: "Automatización y Optimización de Procesos",
     description:
-      "Convertimos grandes volúmenes de datos en insights estratégicos y accionables. A través de modelos predictivos y análisis estadístico avanzado, identificamos tendencias y patrones que permiten anticipar comportamientos del mercado, facilitando decisiones informadas que optimizan procesos y potencian el crecimiento de tu negocio.",
-    icon: <BarChart key="datos-primary" className="w-8 h-8 text-green-600" />,
+      "Agilizamos y optimizamos procesos mediante la automatización inteligente. Implementamos soluciones personalizadas que reducen tiempos de ejecución, minimizan errores y mejoran la productividad. Desde flujos de trabajo automatizados hasta integración de IA en operaciones clave, aseguramos eficiencia y escalabilidad.",
+    icon: (
+      <Zap key="automatizacion-primary" className="w-8 h-8 text-blue-600" />
+    ),
     secondaryIcons: [
-      <PieChart key="datos-secondary-0" className="w-8 h-8 text-blue-500" />,
-      <LineChart key="datos-secondary-1" className="w-8 h-8 text-purple-500" />,
-      <TrendingUp key="datos-secondary-2" className="w-8 h-8 text-red-500" />,
-      <Database key="datos-secondary-3" className="w-8 h-8 text-yellow-500" />,
-      <Settings key="datos-secondary-4" className="w-8 h-8 text-pink-500" />,
+      <Settings
+        key="automatizacion-secondary-0"
+        className="w-8 h-8 text-purple-500"
+      />,
+      <Clock
+        key="automatizacion-secondary-1"
+        className="w-8 h-8 text-green-500"
+      />,
+      <Cpu
+        key="automatizacion-secondary-2"
+        className="w-8 h-8 text-yellow-500"
+      />,
+      <Repeat
+        key="automatizacion-secondary-3"
+        className="w-8 h-8 text-red-500"
+      />,
+      <Workflow
+        key="automatizacion-secondary-4"
+        className="w-8 h-8 text-pink-500"
+      />,
     ],
   },
   {
-    id: "seguridad",
-    title: "Ciberseguridad de Vanguardia",
+    id: "escalabilidad",
+    title: "Crecimiento y Escalabilidad Digital",
     description:
-      "Implementamos soluciones integrales de ciberseguridad para proteger tus activos digitales contra amenazas cada vez más sofisticadas. Combinamos tecnologías de detección temprana, encriptación avanzada y monitoreo continuo para anticipar y mitigar riesgos, garantizando la integridad, confidencialidad y continuidad de tu negocio en un entorno digital en constante evolución.",
+      "Potenciamos el crecimiento digital con estrategias y herramientas diseñadas para escalar tu negocio. Desde optimización de infraestructura hasta expansión de plataformas, garantizamos que tu empresa esté preparada para nuevas oportunidades, con tecnología robusta y adaptable a mercados dinámicos.",
     icon: (
-      <ShieldCheckIcon
-        key="seguridad-primary"
-        className="w-8 h-8 text-red-600"
+      <TrendingUp
+        key="escalabilidad-primary"
+        className="w-8 h-8 text-green-600"
       />
     ),
     secondaryIcons: [
-      <Lock key="seguridad-secondary-0" className="w-8 h-8 text-blue-500" />,
-      <Key key="seguridad-secondary-1" className="w-8 h-8 text-green-500" />,
-      <AlertTriangle
-        key="seguridad-secondary-2"
-        className="w-8 h-8 text-yellow-500"
+      <Server
+        key="escalabilidad-secondary-0"
+        className="w-8 h-8 text-blue-500"
       />,
-      <EyeOff
-        key="seguridad-secondary-3"
+      <Cloud
+        key="escalabilidad-secondary-1"
         className="w-8 h-8 text-purple-500"
       />,
-      <Server key="seguridad-secondary-4" className="w-8 h-8 text-pink-500" />,
+      <BarChart
+        key="escalabilidad-secondary-2"
+        className="w-8 h-8 text-orange-500"
+      />,
+      <Users
+        key="escalabilidad-secondary-3"
+        className="w-8 h-8 text-red-500"
+      />,
+      <Target
+        key="escalabilidad-secondary-4"
+        className="w-8 h-8 text-yellow-500"
+      />,
     ],
   },
 ];
@@ -167,17 +189,16 @@ const AboutUs: React.FC = () => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 1.5 }}
       id="about-us"
-      className="w-full bg-gradient-to-b from-white via-blue-50 to-white grid place-items-center p-4 sm:p-8"
-    >
+      className="w-full bg-gradient-to-b from-white via-blue-50 to-white grid place-items-center p-4 sm:p-8">
       <div className="max-w-7xl flex flex-col items-center justify-center w-full">
-        <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 mb-8 text-center">
-          Impulsando Tu Éxito Digital
+        <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500 mb-8 text-center">
+          Impulsando tu éxito digital
         </h2>
         <div className="w-full bg-white shadow-2xl rounded-2xl overflow-hidden mb-12">
           <div className="flex flex-col lg:flex-row items-start">
             <div className="lg:w-1/2 p-6 lg:p-8 flex flex-col justify-center bg-white">
               <h3 className="text-2xl font-bold text-purple-800 mb-4">
-                Nuestra Misión: Tu Transformación Digital
+                Nuestra misión: Tu transformación digital
               </h3>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 En el corazón de nuestra misión está el compromiso
@@ -201,7 +222,7 @@ const AboutUs: React.FC = () => {
             </div>
             <div className="lg:w-1/2 p-6 lg:p-8 flex flex-col justify-center bg-white">
               <h4 className="text-2xl font-bold text-blue-700 mb-4 text-center">
-                Soluciones Integrales para Tu Éxito
+                Soluciones integrales para tu éxito
               </h4>
               <div className="bg-gray-100 p-6 rounded-lg w-full mb-4">
                 <AnimatePresence mode="wait">
@@ -210,8 +231,7 @@ const AboutUs: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.5 }}
-                  >
+                    transition={{ duration: 0.5 }}>
                     <h5 className="text-xl font-semibold text-purple-800 mb-3 flex items-center">
                       <span className="mr-3">{currentExpertise.icon}</span>
                       {currentExpertise.title}
@@ -229,15 +249,13 @@ const AboutUs: React.FC = () => {
                 <button
                   onClick={() => changeExpertise(-1)}
                   className="p-3 hover:bg-purple-300 duration-300 text-white rounded-full transition flex items-center mr-4"
-                  aria-label="Área de experiencia anterior"
-                >
+                  aria-label="Área de experiencia anterior">
                   <ChevronLeft className="text-purple-600 size-10" />
                 </button>
                 <button
                   onClick={() => changeExpertise(1)}
                   className="p-3 hover:bg-pink-300 duration-300 text-white rounded-full transition flex items-center"
-                  aria-label="Siguiente área de experiencia"
-                >
+                  aria-label="Siguiente área de experiencia">
                   <ChevronRight className="text-pink-600 size-10" />
                 </button>
               </div>
@@ -246,7 +264,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="text-center grid place-items-center">
           <h3 className="text-3xl font-semibold text-gray-800 mb-4">
-            ¿Listo para Revolucionar tu Presencia Digital?
+            ¿Listo para revolucionar tu presencia digital?
           </h3>
           <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
             Descubre cómo nuestro equipo de expertos puede transformar tus
@@ -255,12 +273,11 @@ const AboutUs: React.FC = () => {
           </p>
           <Link href={"/#contact"}>
             <motion.button
-              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg uppercase"
+              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 uppercase"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.25 }}
-            >
-              Inicia Tu Transformación Digital
+              transition={{ duration: 0.25 }}>
+              Inicia tu transformación digital
             </motion.button>
           </Link>
         </div>

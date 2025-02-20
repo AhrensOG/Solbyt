@@ -5,9 +5,8 @@ const DigitalTransformationInfo: React.FC = () => {
     <section className="w-full bg-gradient-to-b from-white via-purple-50 to-white py-20 px-4 sm:px-8">
       <div className="max-w-6xl mx-auto">
         <header className="mb-12 text-center">
-          <h1 className="min-h-44 sm:min-h-40 md:min-h-24 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
-            Transformación Digital: Cómo el Desarrollo de Software Está
-            Cambiando el Juego
+          <h1 className="min-h-44 sm:min-h-40 md:min-h-24 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 mb-4">
+            Transformación digital: cómo el desarrollo de software está cambiando el Juego
           </h1>
           <p className="text-xl text-gray-700">
             En Solbyt impulsamos tu éxito digital con estrategias
@@ -31,7 +30,7 @@ const DigitalTransformationInfo: React.FC = () => {
           </section>
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-              El Rol Fundamental del Desarrollo de Software
+              El rol fundamental del desarrollo de software
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               El desarrollo de software se ha convertido en el pilar central de
@@ -49,7 +48,7 @@ const DigitalTransformationInfo: React.FC = () => {
           </section>
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-              Metodologías Ágiles y Colaboración
+              Metodologías ágiles y colaboración
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               Utilizamos metodologías ágiles como SCRUM para asegurar entregas
@@ -66,7 +65,7 @@ const DigitalTransformationInfo: React.FC = () => {
           </section>
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-              Tecnologías Clave para la Innovación
+              Tecnologías clave para la innovación
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               El panorama del desarrollo de software evoluciona con el avance de
@@ -84,7 +83,7 @@ const DigitalTransformationInfo: React.FC = () => {
           </section>
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-3">
-              Beneficios de la Transformación Digital
+              Beneficios de la transformación digital
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               La implementación de soluciones digitales personalizadas trae

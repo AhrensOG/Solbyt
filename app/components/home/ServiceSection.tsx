@@ -61,7 +61,7 @@ const ServiceSection: React.FC = () => {
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.25 }}
             className="pb-10">
-            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-indigo-500 to-pink-500 mb-4">
+            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-purple-500 mb-4">
               Soluciones que transforman tu futuro
             </h2>
             <p className="text-gray-600 leading-relaxed">

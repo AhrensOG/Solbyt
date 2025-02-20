@@ -23,21 +23,12 @@ const Hero: React.FC = () => {
               sizes="(max-width: 500px) 288px, 500px"
               className="overflow-visible object-cover"
             />
-            {/* <Image
-            //   src="/hero-reverse.webp"
-            //   alt="Fondo principal que destaca la innovación digital de Solbyt"
-            //   title="Fondo principal - Solbyt"
-            //   fill
-            //   priority
-            //   sizes="(max-width: 500px) 288px, 500px"
-            //   className="overflow-visible object-cover"
-            // /> */}
           </motion.div>
         </div>
 
         <div className="basis-[60%] sm:basis-[50%] md:basis-[60%] w-full text-center flex flex-col justify-center items-center gap-4">
           <motion.h1
-            className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500"
+            className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -45,7 +36,7 @@ const Hero: React.FC = () => {
             DESARROLLO DE SOFTWARE
           </motion.h1>
           <motion.h2
-            className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600"
+            className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-pink-500 to-purple-600"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}

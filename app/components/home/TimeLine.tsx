@@ -12,54 +12,6 @@ interface TimelineItem {
 }
 
 const timelineData: TimelineItem[] = [
-  // {
-  //   title: "Precios Competitivos",
-  //   description:
-  //     "Ofrecemos una excelente relación calidad-precio, asegurando que obtengas el mayor valor por tu inversión.",
-  //   icon: <Euro size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Calidad Garantizada",
-  //   description:
-  //     "Ofrecemos servicios de la más alta calidad, asegurando estándares superiores en cada proyecto que realizamos.",
-  //   icon: <ShieldCheck size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Velocidad y Eficiencia",
-  //   description:
-  //     "Nos destacamos por nuestra rapidez en la implementación, cumpliendo plazos ajustados sin comprometer la calidad.",
-  //   icon: <Gauge size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Soporte Rápido y Directo",
-  //   description:
-  //     "Resolvemos tus dudas en tiempo récord para que no pierdas ni un minuto de productividad.",
-  //   icon: <Headphones size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Estrategias de Crecimiento",
-  //   description:
-  //     "No solo creamos, sino que te ayudamos a escalar y hacer crecer tu proyecto.",
-  //   icon: <Rocket size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Precios Transparentes",
-  //   description: "Sin costos ocultos ni sorpresas. Lo que ves es lo que pagas.",
-  //   icon: <DollarSign size={48} className="text-indigo-500" />,
-  // },
-  // {
-  //   title: "Soporte Personalizado",
-  //   description:
-  //     "Nuestro equipo está disponible para ayudarte en cada paso. Resolución rápida y atención cercana son nuestra prioridad.",
-  //   icon: <Headset size={48} className="text-indigo-500" />,
-  // },
-
-  // {
-  //   title: "Tecnología Innovadora",
-  //   description:
-  //     "Utilizamos herramientas tecnológicas de vanguardia para brindar soluciones modernas y eficientes.",
-  //   icon: <Code size={48} className="text-indigo-500" />,
-  // },
   {
     title: "Inversión Inteligente",
     description:
@@ -147,7 +99,7 @@ const Timeline: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+          <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-500 to-blue-500">
             Más que un servicio, un aliado estratégico
           </h2>
           <p className="text-lg text-gray-600 mt-3">
@@ -155,7 +107,7 @@ const Timeline: React.FC = () => {
             impulsar tu negocio y hacerlo crecer con las mejores herramientas
             tecnológicas.
           </p>
-          <div className="w-36 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-4"></div>
+          <div className="w-36 h-1 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 mx-auto mt-4"></div>
         </div>
 
         {isVisible ? (
