@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "servicios digitales",
   ],
   authors: [{ name: "Solbyt" }],
-  metadataBase: new URL("https://solbyt.com"),
+  metadataBase: new URL("https://solbyt.tech"),
   alternates: {
     canonical: "/terms-and-conditions",
   },

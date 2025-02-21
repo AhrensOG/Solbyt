@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "negocios",
   ],
   authors: [{ name: "Solbyt" }],
-  metadataBase: new URL("https://solbyt.com"),
+  metadataBase: new URL("https://solbyt.tech"),
   alternates: {
     canonical: "/contacto",
   },
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "Contacto - Solbyt | Impulsa tu Transformación Digital",
     description:
       "¿Listo para transformar tu negocio? En Solbyt ofrecemos soluciones digitales innovadoras y personalizadas. Ponte en contacto con nosotros para iniciar tu camino hacia el éxito digital.",
-    url: "https://solbyt.com/contacto",
+    url: "https://solbyt.tech/contacto",
     type: "website",
     images: [
       {
-        url: "https://solbyt.vercel.app/favicon.ico",
+        url: "https://solbyt.tech/favicon.ico",
         alt: "Contacto en Solbyt - Soluciones Digitales Innovadoras",
         width: 256,
         height: 256,
