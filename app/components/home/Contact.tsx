@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
           iconTheme: { primary: "#10B981", secondary: "#ffffff" },
         }
       );
-    } catch (error: any) {
+    } catch (error) {
       toast.dismiss(loadingToastId);
       toast.error(
         <div>
@@ -95,9 +95,7 @@ const Contact: React.FC = () => {
         }
       );
       console.error(
-        "Error al enviar email:",
-        error.response?.data || error.message
-      );
+        "Error al enviar email:", error);
     }
   };
 
@@ -117,7 +115,7 @@ const Contact: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-purple-500 mb-8 text-center">
+          <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-solbyt-blue-500 via-solbyt-pink-500 to-purple-500 mb-8 text-center">
             ¿Listo para impulsar tu éxito digital?
           </h2>
           <p className="text-lg text-gray-600">
@@ -225,7 +223,7 @@ const Contact: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.25 }}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg transition text-lg uppercase"
+              className="bg-gradient-to-r from-solbyt-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg transition text-lg uppercase"
             >
               ¡Solicita tu asesoría gratis!
             </motion.button>

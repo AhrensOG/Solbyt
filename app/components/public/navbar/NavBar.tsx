@@ -101,9 +101,9 @@ const NavBar: React.FC = () => {
             aria-expanded={isMenuOpen ? "true" : "false"}
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-gray-800" />
+              <X className="w-6 h-6 text-solbyt-gray-800 " />
             ) : (
-              <Ellipsis className="w-6 h-6 text-gray-800" />
+              <Ellipsis className="w-6 h-6 text-solbyt-gray-800 " />
             )}
           </button>
         </div>

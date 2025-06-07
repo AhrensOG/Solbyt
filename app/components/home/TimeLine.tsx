@@ -107,7 +107,7 @@ const Timeline: React.FC = () => {
             impulsar tu negocio y hacerlo crecer con las mejores herramientas
             tecnológicas.
           </p>
-          <div className="w-36 h-1 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 mx-auto mt-4"></div>
+          <div className="w-36 h-1 bg-gradient-to-r from-solbyt-purple-600 via-solbyt-pink-500to-blue-500 mx-auto mt-4"></div>
         </div>
 
         {isVisible ? (
@@ -146,7 +146,7 @@ const Timeline: React.FC = () => {
                     <div className="mb-2 hover:rotate-12 duration-200">
                       {item.icon}
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
+                    <h3 className="text-lg font-semibold text-solbyt-gray-800  mb-2 text-center">
                       {item.title}
                     </h3>
                     <p className="text-gray-500 text-sm text-center">
@@ -165,7 +165,7 @@ const Timeline: React.FC = () => {
         <div className="mt-12 text-center  lg:absolute bottom-28 w-full lg:max-w-52 lg:left-[calc(50%-104px)]">
           <Link href={"/#contact"}>
             <motion.button
-              className="w-full max-w-52 uppercase px-6 py-3 inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg"
+              className="w-full max-w-52 uppercase px-6 py-3 inline-block bg-gradient-to-r from-solbyt-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 text-lg"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

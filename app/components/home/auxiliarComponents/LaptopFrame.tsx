@@ -9,7 +9,7 @@ interface LaptopFrameProps {
 const LaptopFrame: React.FC<LaptopFrameProps> = ({ imageSrc }) => {
   return (
     <motion.div
-      className="w-[90%] h-[300px] sm:h-[400px] md:h-[500px] bg-gray-800 rounded-t-lg mx-auto shadow-lg overflow-hidden z-10 relative border-8 border-gray-700"
+      className="w-[90%] h-[300px] sm:h-[400px] md:h-[500px] bg-solbyt-gray-800  rounded-t-lg mx-auto shadow-lg overflow-hidden z-10 relative border-8 border-gray-700"
       initial={{ scale: 0.9, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 1 }}

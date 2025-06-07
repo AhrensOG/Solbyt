@@ -191,7 +191,7 @@ const AboutUs: React.FC = () => {
       id="about-us"
       className="w-full bg-gradient-to-b from-white via-blue-50 to-white grid place-items-center p-4 sm:p-8">
       <div className="max-w-7xl flex flex-col items-center justify-center w-full">
-        <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500 mb-8 text-center">
+        <h2 className="min-h-24 sm:min-h-11 text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 via-blue-500 to-pink-500 mb-8 text-center">
           Impulsando tu éxito digital
         </h2>
         <div className="w-full bg-white shadow-2xl rounded-2xl overflow-hidden mb-12">
@@ -263,7 +263,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
         <div className="text-center grid place-items-center">
-          <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-3xl font-semibold text-solbyt-gray-800  mb-4">
             ¿Listo para revolucionar tu presencia digital?
           </h3>
           <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
@@ -273,7 +273,7 @@ const AboutUs: React.FC = () => {
           </p>
           <Link href={"/#contact"}>
             <motion.button
-              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 uppercase"
+              className="flex items-center justify-around max-w-96 w-full bg-gradient-to-r from-solbyt-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition-all duration-75 uppercase"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.25 }}>

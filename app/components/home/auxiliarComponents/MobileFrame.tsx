@@ -14,7 +14,7 @@ const MobileFrame: React.FC<MobileFrameProps> = ({ imageSrc }) => {
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800 flex items-center justify-center">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-solbyt-gray-800  flex items-center justify-center">
         <motion.div
           className="w-[97%] h-[90%] bg-white rounded-md overflow-hidden shadow-md relative"
           initial={{ opacity: 0 }}

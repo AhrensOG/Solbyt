@@ -34,7 +34,7 @@ const ContactPage: React.FC = () => {
                 <Link
                   href="mailto:solbyt.tech@gmail.com"
                   title="Ir a enviar correo"
-                  className="text-gray-800 hover:text-purple-600 transition"
+                  className="text-solbyt-gray-800  hover:text-purple-600 transition"
                 >
                   solbyt.tech@gmail.com
                 </Link>
@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
                 <Link
                   href="tel:+1234567890"
                   title="Ir a llamar"
-                  className="text-gray-800 hover:text-purple-600 transition"
+                  className="text-solbyt-gray-800  hover:text-purple-600 transition"
                 >
                   +1 (234) 567-890
                 </Link>

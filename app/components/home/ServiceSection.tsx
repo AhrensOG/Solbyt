@@ -61,7 +61,7 @@ const ServiceSection: React.FC = () => {
             exit={{ opacity: 0, x: 50 }}
             transition={{ duration: 0.25 }}
             className="pb-10">
-            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-pink-500 to-purple-500 mb-4">
+            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-solbyt-blue-500 via-solbyt-pink-500to-purple-500 mb-4">
               Soluciones que transforman tu futuro
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -79,7 +79,7 @@ const ServiceSection: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.25 }}>
-              <h3 className="text-xl font-extrabold text-gray-800 mb-4">
+              <h3 className="text-xl font-extrabold text-solbyt-gray-800  mb-4">
                 {carouselItems[currentIndex].title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -107,7 +107,7 @@ const ServiceSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.25 }}
-                className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-semibold uppercase">
+                className="px-6 py-3 bg-gradient-to-r from-solbyt-purple-600 to-pink-600 text-white rounded-lg font-semibold uppercase">
                 Descubre nuestras soluciones
               </motion.button>
             </Link>

@@ -8,7 +8,7 @@ const PrivacyPolicyPage: React.FC = () => {
       <StaticNavBar />
       <header className="mt-[80px] w-full bg-white border-b border-gray-200 py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
+          <h1 className="text-4xl font-bold text-solbyt-gray-800  text-center mb-4">
             Política de Privacidad
           </h1>
           <p className="text-xl text-gray-600 text-center">
@@ -28,7 +28,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Información que Recopilamos
             </h2>
             <p className="text-gray-700 text-lg">
@@ -41,7 +41,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Uso de la Información
             </h2>
             <p className="text-gray-700 text-lg">
@@ -53,7 +53,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Seguridad de los Datos
             </h2>
             <p className="text-gray-700 text-lg">
@@ -65,7 +65,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Conservación de Datos
             </h2>
             <p className="text-gray-700 text-lg">
@@ -77,7 +77,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Derechos del Usuario
             </h2>
             <p className="text-gray-700 text-lg">
@@ -89,7 +89,7 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Cambios en la Política
             </h2>
             <p className="text-gray-700 text-lg">

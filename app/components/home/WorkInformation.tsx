@@ -5,7 +5,7 @@ const DigitalTransformationInfo: React.FC = () => {
     <section className="w-full bg-gradient-to-b from-white via-purple-50 to-white py-20 px-4 sm:px-8">
       <div className="max-w-6xl mx-auto">
         <header className="mb-12 text-center">
-          <h1 className="min-h-44 sm:min-h-40 md:min-h-24 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 mb-4">
+          <h1 className="min-h-44 sm:min-h-40 md:min-h-24 text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-solbyt-purple-600 via-solbyt-pink-500 to-blue-500 mb-4">
             Transformación digital: cómo el desarrollo de software está cambiando el Juego
           </h1>
           <p className="text-xl text-gray-700">
@@ -16,7 +16,7 @@ const DigitalTransformationInfo: React.FC = () => {
         </header>
         <article className="space-y-12">
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               Introducción
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -29,7 +29,7 @@ const DigitalTransformationInfo: React.FC = () => {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               El rol fundamental del desarrollo de software
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -47,7 +47,7 @@ const DigitalTransformationInfo: React.FC = () => {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               Metodologías ágiles y colaboración
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -64,7 +64,7 @@ const DigitalTransformationInfo: React.FC = () => {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               Tecnologías clave para la innovación
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -82,7 +82,7 @@ const DigitalTransformationInfo: React.FC = () => {
             </p>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               Beneficios de la transformación digital
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -100,12 +100,12 @@ const DigitalTransformationInfo: React.FC = () => {
             </ul>
           </section>
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-3">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-3">
               Preguntas Frecuentes
             </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-solbyt-gray-800 ">
                   ¿Qué es la transformación digital?
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -116,7 +116,7 @@ const DigitalTransformationInfo: React.FC = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-solbyt-gray-800 ">
                   ¿Por qué es crucial el desarrollo de software en este proceso?
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -127,7 +127,7 @@ const DigitalTransformationInfo: React.FC = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-solbyt-gray-800 ">
                   ¿Cómo benefician las metodologías ágiles a tu estrategia
                   digital?
                 </h3>
@@ -140,7 +140,7 @@ const DigitalTransformationInfo: React.FC = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-solbyt-gray-800 ">
                   ¿Qué tecnologías son clave para la innovación digital?
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -151,7 +151,7 @@ const DigitalTransformationInfo: React.FC = () => {
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-gray-800">
+                <h3 className="text-2xl font-semibold text-solbyt-gray-800 ">
                   ¿Cómo puede Solbyt impulsar tu transformación digital?
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
@@ -166,7 +166,7 @@ const DigitalTransformationInfo: React.FC = () => {
           </section>
         </article>
         <footer className="mt-16 text-center">
-          <p className="text-xl text-gray-800 font-medium">
+          <p className="text-xl text-solbyt-gray-800  font-medium">
             Con Solbyt, tu visión se convierte en una realidad digital. Descubre
             el poder de la transformación digital y lleva tu negocio al
             siguiente nivel.

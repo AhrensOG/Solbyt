@@ -8,7 +8,7 @@ const TermsAndConditionsPage: React.FC = () => {
       <StaticNavBar />
       <header className="mt-[80px] w-full bg-white border-b border-gray-200 py-12">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-gray-800 text-center mb-4">
+          <h1 className="text-4xl font-bold text-solbyt-gray-800  text-center mb-4">
             Términos y Condiciones
           </h1>
           <p className="text-xl text-gray-600 text-center">
@@ -27,7 +27,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Uso del Sitio Web
             </h2>
             <p className="text-gray-700 text-lg">
@@ -40,7 +40,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Recopilación y Uso de Datos
             </h2>
             <p className="text-gray-700 text-lg">
@@ -53,7 +53,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Propiedad Intelectual
             </h2>
             <p className="text-gray-700 text-lg">
@@ -64,7 +64,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Limitación de Responsabilidad
             </h2>
             <p className="text-gray-700 text-lg">
@@ -75,7 +75,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Modificaciones a los Términos
             </h2>
             <p className="text-gray-700 text-lg">
@@ -86,7 +86,7 @@ const TermsAndConditionsPage: React.FC = () => {
             </p>
           </div>
           <div className="pt-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-2xl font-semibold text-solbyt-gray-800  mb-2">
               Contacto
             </h2>
             <p className="text-gray-700 text-lg">

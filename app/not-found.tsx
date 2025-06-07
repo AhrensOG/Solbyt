@@ -29,10 +29,10 @@ const NotFound: React.FC = () => {
       <StaticNavBar />
       <section className="mt-[80px] bg-gradient-to-b from-white via-pink-50 to-white w-full py-10 px-4 sm:px-8 text-center">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-8">
+          <h1 className="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-solbyt-purple-600 to-pink-600 mb-8">
             404
           </h1>
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-solbyt-gray-800  mb-4">
             Página no encontrada
           </h2>
           <p className="text-xl text-gray-700 mb-8">
@@ -42,7 +42,7 @@ const NotFound: React.FC = () => {
           </p>
           <Link
             href="/"
-            className="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition"
+            className="inline-block bg-gradient-to-r from-solbyt-purple-600 to-pink-600 text-white font-semibold px-8 py-4 rounded-lg hover:from-purple-700 hover:to-pink-700 transition"
           >
             Volver al inicio
           </Link>
