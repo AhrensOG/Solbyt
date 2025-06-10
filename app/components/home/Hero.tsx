@@ -1,13 +1,26 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import HeroInitialText from "./auxiliarComponents/HeroInitialText";
+import HeroSecondaryText from "./auxiliarComponents/HeroSecondaryText";
 
 const Hero: React.FC = () => {
+  const [showSecondary, setShowSecondary] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSecondary(true);
+    }, 1500); // Espera 3 segundos antes de mostrar el texto secundario
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="bg-gradient-to-b from-white via-pink-50 to-white pb-20 md:pb-0 w-full flex justify-center items-center h-[calc(100vh-80px)] mt-[80px]">
+    <div className="bg-gradient-to-b from-white via-pink-50 to-white pb-20 md:pb-0 w-full flex justify-center items-center md:min-h-[calc(100vh-80px)] mt-[80px]">
       <div className="w-full h-full flex flex-col-reverse md:flex-row-reverse items-center justify-center text-center lg:text-left space-y-4 lg:space-y-0 lg:space-x-8 max-w-screen-xl">
-        <div className="basis-[40%] sm:basis-[50%] md:basis-[40%]">
+        {/* Imagen */}
+        <div className="hidden md:block sm:basis-[50%] md:basis-[40%]">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -25,28 +38,28 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
 
-        <div className="basis-[60%] sm:basis-[50%] md:basis-[60%] w-full text-center flex flex-col justify-center items-center gap-4">
-          <motion.h1
-            className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 via-solbyt-pink-500 to-solbyt-blue-500"
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}>
-            DESARROLLO DE SOFTWARE
-          </motion.h1>
-          <motion.h2
-            className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-solbyt-blue-500 via-solbyt-pink-500 to-purple-600"
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75 }}>
-            SOLUCIONES INNOVADORAS
-          </motion.h2>
-          <motion.p
-            className="text-xl font-semibold text-solbyt-gray-800 "
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}>
-            Llevamos tus ideas al siguiente nivel.
-          </motion.p>
+        {/* Textos */}
+        <div className="basis-[60%] sm:basis-[50%] md:basis-[60%] w-full flex flex-col items-center lg:items-start">
+          <AnimatePresence mode="wait">
+            {!showSecondary ? (
+              <motion.div
+                key="initial"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}>
+                <HeroInitialText />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="secondary"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}>
+                <HeroSecondaryText />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

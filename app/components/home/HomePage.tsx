@@ -1,28 +1,35 @@
 import React from "react";
-import NavBar from "../public/navbar/NavBar";
+// import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
-import Timeline from "./TimeLine";
-import ServiceSection from "./ServiceSection";
-import AboutUs from "./AboutUs";
-import Contact from "./Contact";
+// import Timeline from "./TimeLine";
+// import ServiceSection from "./ServiceSection";
+// import AboutUs from "./AboutUs";
+// import Contact from "./Contact";
 import Footer from "../public/footer/Footer";
 import WorkInformation from "./WorkInformation";
 import { Toaster } from "react-hot-toast";
+import ServicesSection from "./V2/ServiceSection";
+import ProjectsSection from "./V2/ProjectSection";
+import CTASection from "./V2/CTASection";
+import ContactSection from "./V2/ContactSection";
+import Navbar from "../public/navbar/V2/NavBar";
 
 const HomePage: React.FC = () => {
   return (
     <>
       <header>
-        <NavBar />
+        <Navbar />
       </header>
       <main>
         <Toaster position="top-center" />
         <Hero />
-        {/* <ServiceSection /> */}
-        <ServiceSection />
-        <Timeline />
-        <AboutUs />
-        <Contact />
+        <ServicesSection />
+        {/* <Timeline /> */}
+        <ProjectsSection />
+        {/* <AboutUs /> */}
+        <CTASection />
+        {/* <Contact /> */}
+        <ContactSection />
         <WorkInformation />
         <Footer />
       </main>
