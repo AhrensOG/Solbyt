@@ -10,6 +10,7 @@ import {
   Smartphone,
   FileSearch,
 } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -65,7 +66,7 @@ const fadeInUp = {
 const ServicesSection: React.FC = () => {
   return (
     <section
-      id="servicios"
+      id="services"
       className="py-20 bg-gradient-to-b from-white via-pink-50 to-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
@@ -119,9 +120,12 @@ const ServicesSection: React.FC = () => {
             gratuita y te ayudaremos a encontrar la solución perfecta para tu
             negocio.
           </p>
-          <button className="border bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white sm:text-lg font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
+          <Link
+            href="https://calendly.com/solbyt-tech/30min"
+            target="_blank"
+            className="border bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white sm:text-lg font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
             Consulta gratuita
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

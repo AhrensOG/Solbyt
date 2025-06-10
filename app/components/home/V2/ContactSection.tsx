@@ -7,6 +7,10 @@ import { z } from "zod";
 import axios from "axios";
 import toast from "react-hot-toast";
 import Link from "next/link";
+import {
+  contact_confirmation_template_en,
+  contact_notification_template_en,
+} from "@/app/lib/templates/contact_confirmation";
 
 const contactSchema = z.object({
   fullName: z.string().min(1, "El nombre es obligatorio."),
@@ -52,25 +56,34 @@ const ContactSection: React.FC = () => {
       return;
     }
 
-    const payload = {
-      to: "guillermoahrens@gmail.com",
-      subject: `Nuevo mensaje de ${formData.fullName}`,
-      message: `Nombre: ${formData.fullName}\nEmail: ${
-        formData.email
-      }\nAsunto: ${formData.subject}\nMensaje: ${
-        formData.message || "Sin mensaje adicional"
-      }`,
-    };
+    const { fullName, email, subject, message } = formData;
 
-    const toastId = toast.loading("Enviando mensaje...");
+    const toastId = toast.loading("Enviando confirmación...");
 
     try {
-      await axios.post("/api/sendgrid", payload);
+      await axios.post("/api/sendgrid", {
+        to: email,
+        bcc: "solbyt.tech@gmail.com",
+        subject: "¡Hemos recibido tu mensaje en Solbyt!",
+        html: contact_confirmation_template_en(fullName),
+      });
+
+      await axios.post("/api/sendgrid", {
+        to: "solbyt.tech@gmail.com",
+        subject: `Nuevo mensaje de contacto: ${subject}`,
+        html: contact_notification_template_en(
+          fullName,
+          email,
+          subject,
+          message || ""
+        ),
+      });
+
       toast.dismiss(toastId);
-      toast.success("Mensaje enviado correctamente. Te contactaremos pronto.");
+      toast.success("Gracias por tu mensaje. Te contactaremos pronto.");
       setFormData({ fullName: "", email: "", subject: "", message: "" });
     } catch (error) {
-      console.log(error);
+      console.error(error);
       toast.dismiss(toastId);
       toast.error(
         <div>
@@ -85,7 +98,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2

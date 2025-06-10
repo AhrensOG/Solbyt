@@ -3,6 +3,7 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const CTASection: React.FC = () => {
   return (
@@ -61,14 +62,17 @@ const CTASection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.5 }}>
-            <button className="bg-white text-solbyt-purple-600 hover:bg-gray-100 sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
+            <Link
+              href="https://calendly.com/solbyt-tech/30min"
+              target="_blank"
+              className="bg-white text-solbyt-purple-600 hover:bg-gray-100 sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
               Agendar reunión gratuita
-            </button>
+            </Link>
 
-            <button className="border border-white text-white hover:bg-white/10 sm:text-lg font-medium flex items-center px-6 py-3 rounded-lg shadow transition-colors duration-300">
+            <Link href="/projects" className="border border-white text-white hover:bg-white/10 sm:text-lg font-medium flex items-center px-6 py-3 rounded-lg shadow transition-colors duration-300">
               Ver nuestros proyectos
               <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
+            </Link>
           </motion.div>
 
           <motion.p

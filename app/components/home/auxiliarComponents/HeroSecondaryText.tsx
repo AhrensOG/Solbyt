@@ -77,12 +77,15 @@ const HeroSecondaryText = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}>
-        <button className="flex items-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
+        <Link
+          href="https://calendly.com/solbyt-tech/30min"
+          target="_blank"
+          className="flex items-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
           <Calendar className="h-5 w-5" />
           Agendar reunión gratuita
-        </button>
+        </Link>
 
-        <Link href="#contacto">
+        <Link href="#contact">
           <button className="flex items-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
             Solicitar presupuesto
             <ArrowRight className="h-4 w-4" />

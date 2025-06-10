@@ -3,6 +3,7 @@
 import type React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const projects = [
   {
@@ -30,7 +31,7 @@ const projects = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section id="proyectos" className="py-20">
+    <section id="projects" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
@@ -100,9 +101,12 @@ const ProjectsSection: React.FC = () => {
             ¿Te gustaría ver más de nuestros proyectos o discutir cómo podemos
             ayudarte con el tuyo?
           </p>
-          <button className="bg-solbyt-blue-500 hover:bg-blue-600 text-white sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
+          <Link
+            href="https://calendly.com/solbyt-tech/30min"
+            target="_blank"
+            className="bg-solbyt-blue-500 hover:bg-blue-600 text-white sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
             Contactar para más información
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>
