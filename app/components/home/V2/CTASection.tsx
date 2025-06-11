@@ -4,8 +4,11 @@ import type React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const CTASection: React.FC = () => {
+  const translation = useTranslations("home_page.cta");
+
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Gradient background */}
@@ -43,7 +46,7 @@ const CTASection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}>
-            ¿Listo para transformar tu negocio con soluciones digitales?
+            {translation("title")}
           </motion.h2>
 
           <motion.p
@@ -52,8 +55,7 @@ const CTASection: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}>
-            Agenda una reunión gratuita con nuestros expertos y descubre cómo
-            podemos ayudarte a alcanzar tus objetivos.
+            {translation("subtitle")}
           </motion.p>
 
           <motion.div
@@ -66,11 +68,13 @@ const CTASection: React.FC = () => {
               href="https://calendly.com/solbyt-tech/30min"
               target="_blank"
               className="bg-white text-solbyt-purple-600 hover:bg-gray-100 sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
-              Agendar reunión gratuita
+              {translation("button_primary")}
             </Link>
 
-            <Link href="/projects" className="border border-white text-white hover:bg-white/10 sm:text-lg font-medium flex items-center px-6 py-3 rounded-lg shadow transition-colors duration-300">
-              Ver nuestros proyectos
+            <Link
+              href="/projects"
+              className="border border-white text-white hover:bg-white/10 sm:text-lg font-medium flex items-center px-6 py-3 rounded-lg shadow transition-colors duration-300">
+              {translation("button_secondary")}
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </motion.div>
@@ -81,7 +85,7 @@ const CTASection: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6, duration: 0.5 }}>
-            Sin compromisos. Sin costos ocultos. Solo soluciones que funcionan.
+            {translation("footer_note")}
           </motion.p>
         </div>
       </div>

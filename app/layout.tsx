@@ -1,20 +1,18 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { miriam_libre } from "./ui/fonts";
+import { headers } from "next/headers";
+import { miriam_libre } from "@/app/ui/fonts";
 
-export const metadata: Metadata = {
-  title: "Solbyt",
-  description: "Especializados en soluciónes digitales",
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const headersList = await headers();
+  const locale = headersList.get("x-locale") || "en";
+
   return (
-    <html lang="es">
-      <body className={`${miriam_libre.className}`}>{children}</body>
+    <html lang={locale}>
+      <body className={miriam_libre.className}>{children}</body>
     </html>
   );
 }

@@ -11,17 +11,20 @@ import {
   contact_confirmation_template_en,
   contact_notification_template_en,
 } from "@/app/lib/templates/contact_confirmation";
-
-const contactSchema = z.object({
-  fullName: z.string().min(1, "El nombre es obligatorio."),
-  email: z.string().email("Email inválido."),
-  subject: z.string().min(1, "El asunto es obligatorio."),
-  message: z.string().optional(),
-});
-
-type ContactFormData = z.infer<typeof contactSchema>;
+import { useTranslations } from "next-intl";
 
 const ContactSection: React.FC = () => {
+  const translation = useTranslations("home_page.contact");
+
+  const contactSchema = z.object({
+    fullName: z.string().min(1, translation("form.error.full_name")),
+    email: z.string().email(translation("form.error.email")),
+    subject: z.string().min(1, translation("form.error.subject")),
+    message: z.string().optional(),
+  });
+
+  type ContactFormData = z.infer<typeof contactSchema>;
+
   const [formData, setFormData] = useState<ContactFormData>({
     fullName: "",
     email: "",
@@ -50,7 +53,7 @@ const ContactSection: React.FC = () => {
         subject: fieldErrors.subject?.[0],
         message: fieldErrors.message?.[0],
       });
-      toast.error("Por favor completa los campos obligatorios.", {
+      toast.error(translation("toast.error"), {
         iconTheme: { primary: "#8B5CF6", secondary: "#fff" },
       });
       return;
@@ -58,7 +61,7 @@ const ContactSection: React.FC = () => {
 
     const { fullName, email, subject, message } = formData;
 
-    const toastId = toast.loading("Enviando confirmación...");
+    const toastId = toast.loading(translation("toast.sending"));
 
     try {
       await axios.post("/api/sendgrid", {
@@ -79,17 +82,16 @@ const ContactSection: React.FC = () => {
         ),
       });
 
-      toast.dismiss(toastId);
-      toast.success("Gracias por tu mensaje. Te contactaremos pronto.");
+      toast.success(translation("toast.success"), { id: toastId });
       setFormData({ fullName: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error(error);
       toast.dismiss(toastId);
       toast.error(
         <div>
-          Hubo un error. Por favor intenta nuevamente o{" "}
+          {translation("toast.failure.title")}{" "}
           <Link href="/contacto" className="underline text-blue-600">
-            contáctanos aquí
+            {translation("toast.failure.contact_button")}
           </Link>
           .
         </div>
@@ -107,7 +109,7 @@ const ContactSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}>
-            Contáctanos
+            {translation("section_title")}
           </motion.h2>
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
@@ -115,13 +117,12 @@ const ContactSection: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}>
-            Estamos listos para convertir tus ideas en soluciones digitales
-            efectivas
+            {translation("section_subtitle")}
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Contact Info (sin cambios) */}
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -130,12 +131,9 @@ const ContactSection: React.FC = () => {
             className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-gray-800">
-                ¿Cómo podemos ayudarte?
+                {translation("heading")}
               </h3>
-              <p className="text-gray-600 mb-6">
-                Estamos aquí para responder a tus preguntas y discutir cómo
-                nuestras soluciones digitales pueden impulsar tu negocio.
-              </p>
+              <p className="text-gray-600 mb-6">{translation("paragraph")}</p>
             </div>
 
             <div className="space-y-4">
@@ -144,8 +142,10 @@ const ContactSection: React.FC = () => {
                   <Mail className="h-6 w-6 text-solbyt-purple-600" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-800">Email</h4>
-                  <p className="text-gray-600">info@solbyt.com</p>
+                  <h4 className="font-medium text-gray-800">
+                    {translation("email.label")}
+                  </h4>
+                  <p className="text-gray-600">{translation("email.value")}</p>
                 </div>
               </div>
 
@@ -154,8 +154,10 @@ const ContactSection: React.FC = () => {
                   <Phone className="h-6 w-6 text-solbyt-blue-500" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-800">Teléfono</h4>
-                  <p className="text-gray-600">+34 123 456 789</p>
+                  <h4 className="font-medium text-gray-800">
+                    {translation("phone.label")}
+                  </h4>
+                  <p className="text-gray-600">{translation("phone.value")}</p>
                 </div>
               </div>
 
@@ -165,13 +167,13 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">
-                    Agenda una reunión
+                    {translation("meeting.label")}
                   </h4>
                   <p className="text-gray-600">
-                    Consulta gratuita de 30 minutos
+                    {translation("meeting.value")}
                   </p>
                   <button className="mt-2 bg-solbyt-purple-600 hover:bg-purple-700 text-white rounded-lg p-2 px-4 duration-300">
-                    Agendar ahora
+                    {translation("meeting.button")}
                   </button>
                 </div>
               </div>
@@ -179,20 +181,20 @@ const ContactSection: React.FC = () => {
 
             <div className="p-6 bg-solbyt-pink-50 rounded-xl">
               <h4 className="font-bold text-lg mb-2 text-gray-800">
-                ¿Por qué elegirnos?
+                {translation("why_us_title")}
               </h4>
               <ul className="space-y-2">
                 <li className="flex items-center space-x-2 text-gray-700">
                   <div className="h-1.5 w-1.5 rounded-full bg-solbyt-purple-600"></div>
-                  <span>Mejor relación calidad-precio</span>
+                  <span>{translation("why_us_list.0")}</span>
                 </li>
                 <li className="flex items-center space-x-2 text-gray-700">
                   <div className="h-1.5 w-1.5 rounded-full bg-solbyt-pink-500"></div>
-                  <span>Desarrollo rápido y eficiente</span>
+                  <span>{translation("why_us_list.1")}</span>
                 </li>
                 <li className="flex items-center space-x-2 text-gray-700">
                   <div className="h-1.5 w-1.5 rounded-full bg-solbyt-blue-500"></div>
-                  <span>Soluciones personalizadas a tus necesidades</span>
+                  <span>{translation("why_us_list.2")}</span>
                 </li>
               </ul>
             </div>
@@ -206,7 +208,7 @@ const ContactSection: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="bg-white p-8 rounded-xl shadow-md">
             <h3 className="text-xl font-bold mb-6 text-gray-800">
-              Envíanos un mensaje
+              {translation("form_title")}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -214,31 +216,32 @@ const ContactSection: React.FC = () => {
                   <label
                     htmlFor="fullName"
                     className="text-sm font-medium text-gray-700">
-                    Nombre
+                    {translation("form.full_name.label")}
                   </label>
                   <input
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleChange}
-                    placeholder="Tu nombre"
+                    placeholder={translation("form.full_name.placeholder")}
                     className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-solbyt-purple-600/20 focus:border-solbyt-purple-600"
                   />
                   {errors.fullName && (
                     <p className="text-red-500 text-sm">{errors.fullName}</p>
                   )}
                 </div>
+
                 <div className="space-y-2">
                   <label
                     htmlFor="email"
                     className="text-sm font-medium text-gray-700">
-                    Email
+                    {translation("form.email.label")}
                   </label>
                   <input
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="tu@email.com"
+                    placeholder={translation("form.email.placeholder")}
                     className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-solbyt-purple-600/20 focus:border-solbyt-purple-600"
                   />
                   {errors.email && (
@@ -251,13 +254,13 @@ const ContactSection: React.FC = () => {
                 <label
                   htmlFor="subject"
                   className="text-sm font-medium text-gray-700">
-                  Asunto
+                  {translation("form.subject.label")}
                 </label>
                 <input
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="¿En qué podemos ayudarte?"
+                  placeholder={translation("form.subject.placeholder")}
                   className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-solbyt-purple-600/20 focus:border-solbyt-purple-600"
                 />
                 {errors.subject && (
@@ -269,13 +272,13 @@ const ContactSection: React.FC = () => {
                 <label
                   htmlFor="message"
                   className="text-sm font-medium text-gray-700">
-                  Mensaje
+                  {translation("form.message.label")}
                 </label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Cuéntanos más sobre tu proyecto..."
+                  placeholder={translation("form.message.placeholder")}
                   rows={4}
                   className="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-solbyt-purple-600/20 focus:border-solbyt-purple-600"
                 />
@@ -285,11 +288,11 @@ const ContactSection: React.FC = () => {
                 type="submit"
                 className="w-full flex justify-center items-center gap-2 outline-none bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300">
                 <Send className="h-4 w-4" />
-                Enviar mensaje
+                {translation("form.button")}
               </button>
 
               <p className="text-xs text-gray-500 text-center mt-2">
-                Nos pondremos en contacto contigo en menos de 24 horas.
+                {translation("form.note")}
               </p>
             </form>
           </motion.div>

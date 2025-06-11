@@ -1,0 +1,170 @@
+{
+  "navbar": {
+    "logo_alt": "Solbyt Logo",
+    "logo_title": "Solbyt Logo",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "projects": "Projects",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "button": "Book a Meeting"
+  },
+  "home_page": {
+    "hero": {
+      "initial_text": {
+        "title": "SOFTWARE DEVELOPMENT",
+        "subtitle": "INNOVATIVE SOLUTIONS",
+        "description": "We take your ideas to the next level."
+      },
+      "secondary_text": {
+        "badge": "Tailored Digital Solutions",
+        "title": "We turn your ideas into digital solutions",
+        "description": "Custom software development, websites, and apps that boost your business growth with the best value for money on the market.",
+        "key_points": [
+          "Digitalization consulting",
+          "Process automation",
+          "Professional web development",
+          "Custom applications"
+        ],
+        "cta_schedule": "Book a free meeting",
+        "cta_budget": "Request a quote",
+        "trusted_by": "Trusted by:"
+      },
+      "image": {
+        "alt": "Solbyt Logo",
+        "title": "Solbyt"
+      },
+      "companies": [
+        { "name": "helloflatmate" },
+        { "name": "ViajeSeguro" },
+        { "name": "CleanNet" }
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We offer complete digital solutions to take your business to the next level",
+      "items": [
+        {
+          "title": "Web Development",
+          "description": "We create professional, responsive, and SEO-optimized websites that turn visitors into clients."
+        },
+        {
+          "title": "Custom Applications",
+          "description": "We develop tailor-made applications that perfectly meet your business’s specific needs."
+        },
+        {
+          "title": "Automation",
+          "description": "We automate repetitive processes to increase productivity and reduce operational costs."
+        },
+        {
+          "title": "System Analysis",
+          "description": "We assess your current systems to identify opportunities for improvement and optimization."
+        },
+        {
+          "title": "Digital Consulting",
+          "description": "We guide you through the digital transformation process with solutions tailored to your budget."
+        },
+        {
+          "title": "Software Development",
+          "description": "We create custom software that drives your company’s efficiency and growth."
+        }
+      ],
+      "button_card": "Learn more →",
+      "call_to_action": "Not sure which service you need? Schedule a free consultation and we’ll help you find the perfect solution for your business.",
+      "button_final": "Free Consultation"
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "description": "Digital solutions that have transformed businesses like yours",
+      "items": [
+        {
+          "title": "Hello Flatmate",
+          "description": "Platform to find flatmates compatible with your needs and lifestyle.",
+          "tags": ["Web Development", "UX/UI", "React"]
+        },
+        {
+          "title": "Viaje Seguro",
+          "description": "App providing real-time safety information about various tourist destinations.",
+          "tags": ["Mobile App", "API", "Geolocation"]
+        },
+        {
+          "title": "Clean Net",
+          "description": "Management system for cleaning companies to optimize routes and resources for maximum efficiency.",
+          "tags": ["Custom Software", "Automation", "Dashboard"]
+        }
+      ],
+      "button": "See more",
+      "call_to_action": "Would you like to see more of our projects or discuss how we can help with yours?",
+      "call_to_action_button": "Contact for more info"
+    },
+    "cta": {
+      "title": "Ready to transform your business with digital solutions?",
+      "subtitle": "Book a free meeting with our experts and discover how we can help you reach your goals.",
+      "button_primary": "Book Free Meeting",
+      "button_secondary": "View Our Projects",
+      "footer_note": "No commitments. No hidden fees. Just solutions that work."
+    },
+    "contact": {
+      "section_title": "Contact Us",
+      "section_subtitle": "We're ready to turn your ideas into effective digital solutions",
+      "heading": "How can we help you?",
+      "paragraph": "We’re here to answer your questions and discuss how our digital solutions can boost your business.",
+      "email": {
+        "label": "Email",
+        "value": "info@solbyt.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+41 762 726 491"
+      },
+      "meeting": {
+        "label": "Book a meeting",
+        "value": "Free 30-minute consultation",
+        "button": "Book now"
+      },
+      "why_us_title": "Why choose us?",
+      "why_us_list": [
+        "Best value for money",
+        "Fast and efficient development",
+        "Solutions tailored to your needs"
+      ],
+      "form_title": "Send us a message",
+      "form": {
+        "full_name": {
+          "label": "Full Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "your@email.com"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "How can we help you?"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Tell us more about your project..."
+        },
+        "button": "Send message",
+        "note": "We’ll get back to you within 24 hours.",
+        "error": {
+          "full_name": "Name is required",
+          "email": "Invalid email",
+          "subject": "Subject is required"
+        }
+      },
+      "toast": {
+        "error": "Please fill out the required fields.",
+        "sending": "Sending confirmation...",
+        "success": "Thank you for your message. We’ll be in touch soon.",
+        "failure": {
+          "title": "An error occurred. Please try again or",
+          "contact_button": "contact us here"
+        }
+      }
+    }
+  }
+}

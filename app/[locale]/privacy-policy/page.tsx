@@ -1,5 +1,5 @@
 import React from "react";
-import PrivacyPolicyPage from "../components/privacy-policy/PrivacyPolicyPage";
+import PrivacyPolicyPage from "../../components/privacy-policy/PrivacyPolicyPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

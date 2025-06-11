@@ -1,0 +1,176 @@
+{
+  "navbar": {
+    "logo_alt": "Logo de Solbyt",
+    "logo_title": "Logo de Solbyt",
+    "links": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "button": "Agendar Reunión"
+  },
+  "home_page": {
+    "hero": {
+      "initial_text": {
+        "title": "DESARROLLO DE SOFTWARE",
+        "subtitle": "SOLUCIONES INNOVADORAS",
+        "description": "Llevamos tus ideas al siguiente nivel."
+      },
+      "secondary_text": {
+        "badge": "Soluciones Digitales a Medida",
+        "title": "Transformamos tus ideas en soluciones digitales",
+        "description": "Desarrollo de software, páginas web y aplicaciones a medida que impulsan el crecimiento de tu negocio con la mejor relación calidad-precio del mercado.",
+        "key_points": [
+          "Asesoría en digitalización",
+          "Automatización de procesos",
+          "Desarrollo web profesional",
+          "Aplicaciones a medida"
+        ],
+        "cta_schedule": "Agendar reunión gratuita",
+        "cta_budget": "Solicitar presupuesto",
+        "trusted_by": "Empresas que confían en nosotros:"
+      },
+      "image": {
+        "alt": "Logo de Solbyt",
+        "title": "Solbyt"
+      },
+      "companies": [
+        {
+          "name": "helloflatmate"
+        },
+        {
+          "name": "ViajeSeguro"
+        },
+        {
+          "name": "CleanNet"
+        }
+      ]
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "description": "Ofrecemos soluciones digitales completas para impulsar tu negocio al siguiente nivel",
+      "items": [
+        {
+          "title": "Desarrollo Web",
+          "description": "Creamos sitios web profesionales, responsivos y optimizados para SEO que convierten visitantes en clientes."
+        },
+        {
+          "title": "Aplicaciones a Medida",
+          "description": "Desarrollamos aplicaciones personalizadas que se adaptan perfectamente a las necesidades específicas de tu negocio."
+        },
+        {
+          "title": "Automatización",
+          "description": "Automatizamos procesos repetitivos para aumentar la productividad y reducir costos operativos."
+        },
+        {
+          "title": "Análisis de Sistemas",
+          "description": "Evaluamos tus sistemas actuales para identificar oportunidades de mejora y optimización."
+        },
+        {
+          "title": "Asesoría Digital",
+          "description": "Te guiamos en el proceso de transformación digital con soluciones adaptadas a tu presupuesto."
+        },
+        {
+          "title": "Desarrollo de Software",
+          "description": "Creamos software personalizado que impulsa la eficiencia y el crecimiento de tu empresa."
+        }
+      ],
+      "button_card": "Saber más →",
+      "call_to_action": "¿No estás seguro de qué servicio necesitas? Agenda una consulta gratuita y te ayudaremos a encontrar la solución perfecta para tu negocio.",
+      "button_final": "Consulta gratuita"
+    },
+    "projects": {
+      "title": "Proyectos Destacados",
+      "description": "Soluciones digitales que han transformado negocios como el tuyo",
+      "items": [
+        {
+          "title": "Hello Flatmate",
+          "description": "Plataforma para encontrar compañeros de piso compatibles con tus necesidades y estilo de vida.",
+          "tags": ["Desarrollo Web", "UX/UI", "React"]
+        },
+        {
+          "title": "Viaje Seguro",
+          "description": "Aplicación que proporciona información en tiempo real sobre la seguridad en diferentes destinos turísticos.",
+          "tags": ["App Móvil", "API", "Geolocalización"]
+        },
+        {
+          "title": "Clean Net",
+          "description": "Sistema de gestión para empresas de limpieza que optimiza rutas y recursos para maximizar la eficiencia.",
+          "tags": ["Software a Medida", "Automatización", "Dashboard"]
+        }
+      ],
+      "button": "Ver más",
+      "call_to_action": "¿Te gustaría ver más de nuestros proyectos o discutir cómo podemos ayudarte con el tuyo?",
+      "call_to_action_button": "Contactar para más información"
+    },
+    "cta": {
+      "title": "¿Listo para transformar tu negocio con soluciones digitales?",
+      "subtitle": "Agenda una reunión gratuita con nuestros expertos y descubre cómo podemos ayudarte a alcanzar tus objetivos.",
+      "button_primary": "Agendar reunión gratuita",
+      "button_secondary": "Ver nuestros proyectos",
+      "footer_note": "Sin compromisos. Sin costos ocultos. Solo soluciones que funcionan."
+    },
+    "contact": {
+      "section_title": "Contáctanos",
+      "section_subtitle": "Estamos listos para convertir tus ideas en soluciones digitales efectivas",
+      "heading": "¿Cómo podemos ayudarte?",
+      "paragraph": "Estamos aquí para responder a tus preguntas y discutir cómo nuestras soluciones digitales pueden impulsar tu negocio.",
+      "email": {
+        "label": "Email",
+        "value": "info@solbyt.com"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "value": "+41 762 726 491"
+      },
+      "meeting": {
+        "label": "Agenda una reunión",
+        "value": "Consulta gratuita de 30 minutos",
+        "button": "Agendar ahora"
+      },
+      "why_us_title": "¿Por qué elegirnos?",
+      "why_us_list": [
+        "Mejor relación calidad-precio",
+        "Desarrollo rápido y eficiente",
+        "Soluciones personalizadas a tus necesidades"
+      ],
+      "form_title": "Envíanos un mensaje",
+      "form": {
+        "full_name": {
+          "label": "Nombre",
+          "placeholder": "Tu nombre"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "tu@email.com"
+        },
+        "subject": {
+          "label": "Asunto",
+          "placeholder": "¿En qué podemos ayudarte?"
+        },
+        "message": {
+          "label": "Mensaje",
+          "placeholder": "Cuéntanos más sobre tu proyecto..."
+        },
+        "button": "Enviar mensaje",
+        "note": "Nos pondremos en contacto contigo en menos de 24 horas.",
+        "error": {
+          "full_name": "El nombre es requerido",
+          "email": "Email inválido",
+          "subject": "El asunto es requerido"
+        }
+      },
+      "toast": {
+        "error": "Por favor completa los campos obligatorios.",
+        "sending": "Enviando confirmación...",
+        "success": "Gracias por tu mensaje. Te contactaremos pronto.",
+        "failure": {
+          "title": "Hubo un error. Por favor intenta nuevamente o",
+          "contact_button": "contáctanos aquí"
+        }
+      }
+    }
+  }
+}

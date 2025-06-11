@@ -1,5 +1,5 @@
 import React from "react";
-import TermsAndConditionsPage from "../components/terms-and-conditions/TermsAndConditionsPage";
+import TermsAndConditionsPage from "../../components/terms-and-conditions/TermsAndConditionsPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

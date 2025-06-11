@@ -4,32 +4,32 @@ import type React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
-const projects = [
-  {
-    title: "Hello Flatmate",
-    description:
-      "Plataforma para encontrar compañeros de piso compatibles con tus necesidades y estilo de vida.",
-    image: "/img_placeholder.webp",
-    tags: ["Desarrollo Web", "UX/UI", "React"],
-  },
-  {
-    title: "Viaje Seguro",
-    description:
-      "Aplicación que proporciona información en tiempo real sobre la seguridad en diferentes destinos turísticos.",
-    image: "/img_placeholder.webp",
-    tags: ["App Móvil", "API", "Geolocalización"],
-  },
-  {
-    title: "Clean Net",
-    description:
-      "Sistema de gestión para empresas de limpieza que optimiza rutas y recursos para maximizar la eficiencia.",
-    image: "/img_placeholder.webp",
-    tags: ["Software a Medida", "Automatización", "Dashboard"],
-  },
-];
+import { useTranslations } from "next-intl";
 
 const ProjectsSection: React.FC = () => {
+  const translation = useTranslations("home_page.projects");
+
+  const projects = [
+    {
+      title: translation("items.0.title"),
+      description: translation("items.0.description"),
+      image: "/img_placeholder.webp",
+      tags: translation.raw("items.0.tags") as string[],
+    },
+    {
+      title: translation("items.1.title"),
+      description: translation("items.1.description"),
+      image: "/img_placeholder.webp",
+      tags: translation.raw("items.1.tags") as string[],
+    },
+    {
+      title: translation("items.2.title"),
+      description: translation("items.2.description"),
+      image: "/img_placeholder.webp",
+      tags: translation.raw("items.2.tags") as string[],
+    },
+  ];
+
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -40,7 +40,7 @@ const ProjectsSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}>
-            Proyectos Destacados
+            {translation("title")}
           </motion.h2>
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
@@ -48,7 +48,7 @@ const ProjectsSection: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.5 }}>
-            Soluciones digitales que han transformado negocios como el tuyo
+            {translation("description")}
           </motion.p>
         </div>
 
@@ -65,6 +65,7 @@ const ProjectsSection: React.FC = () => {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
+                  title={project.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -84,7 +85,7 @@ const ProjectsSection: React.FC = () => {
                   ))}
                 </div>
                 <button className="text-solbyt-blue-500 hover:text-solbyt-blue-500 hover:bg-blue-50 p-0 flex items-center">
-                  Ver mas
+                  {translation("button")}
                 </button>
               </div>
             </motion.div>
@@ -98,14 +99,13 @@ const ProjectsSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}>
           <p className="text-lg text-gray-700 mb-6">
-            ¿Te gustaría ver más de nuestros proyectos o discutir cómo podemos
-            ayudarte con el tuyo?
+            {translation("call_to_action")}
           </p>
           <Link
             href="https://calendly.com/solbyt-tech/30min"
             target="_blank"
             className="bg-solbyt-blue-500 hover:bg-blue-600 text-white sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
-            Contactar para más información
+            {translation("call_to_action_button")}
           </Link>
         </motion.div>
       </div>

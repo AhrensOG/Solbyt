@@ -1,0 +1,170 @@
+{
+  "navbar": {
+    "logo_alt": "Logo de Solbyt",
+    "logo_title": "Logo de Solbyt",
+    "links": {
+      "home": "Accueil",
+      "services": "Services",
+      "projects": "Projets",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "button": "Planifier un rendez-vous"
+  },
+  "home_page": {
+    "hero": {
+      "initial_text": {
+        "title": "DÉVELOPPEMENT DE LOGICIELS",
+        "subtitle": "SOLUTIONS INNOVANTES",
+        "description": "Nous faisons passer vos idées au niveau supérieur."
+      },
+      "secondary_text": {
+        "badge": "Solutions numériques sur mesure",
+        "title": "Nous transformons vos idées en solutions numériques",
+        "description": "Développement de logiciels, sites web et applications sur mesure pour faire croître votre entreprise avec le meilleur rapport qualité-prix du marché.",
+        "key_points": [
+          "Conseil en digitalisation",
+          "Automatisation des processus",
+          "Développement web professionnel",
+          "Applications sur mesure"
+        ],
+        "cta_schedule": "Planifier un rendez-vous gratuit",
+        "cta_budget": "Demander un devis",
+        "trusted_by": "Des entreprises qui nous font confiance :"
+      },
+      "image": {
+        "alt": "Logo de Solbyt",
+        "title": "Solbyt"
+      },
+      "companies": [
+        { "name": "helloflatmate" },
+        { "name": "ViajeSeguro" },
+        { "name": "CleanNet" }
+      ]
+    },
+    "services": {
+      "title": "Nos Services",
+      "description": "Nous offrons des solutions numériques complètes pour faire évoluer votre entreprise",
+      "items": [
+        {
+          "title": "Développement Web",
+          "description": "Nous créons des sites professionnels, responsives et optimisés pour le SEO qui convertissent les visiteurs en clients."
+        },
+        {
+          "title": "Applications Sur Mesure",
+          "description": "Nous développons des applications personnalisées parfaitement adaptées aux besoins spécifiques de votre entreprise."
+        },
+        {
+          "title": "Automatisation",
+          "description": "Nous automatisons les tâches répétitives pour accroître la productivité et réduire les coûts opérationnels."
+        },
+        {
+          "title": "Analyse de Systèmes",
+          "description": "Nous évaluons vos systèmes actuels pour détecter des opportunités d’amélioration et d’optimisation."
+        },
+        {
+          "title": "Conseil Numérique",
+          "description": "Nous vous accompagnons dans votre transformation digitale avec des solutions adaptées à votre budget."
+        },
+        {
+          "title": "Développement de Logiciels",
+          "description": "Nous créons des logiciels sur mesure pour améliorer l'efficacité et la croissance de votre entreprise."
+        }
+      ],
+      "button_card": "En savoir plus →",
+      "call_to_action": "Vous ne savez pas quel service choisir ? Réservez une consultation gratuite et nous vous aiderons à trouver la solution idéale pour votre entreprise.",
+      "button_final": "Consultation gratuite"
+    },
+    "projects": {
+      "title": "Projets phares",
+      "description": "Des solutions numériques qui ont transformé des entreprises comme la vôtre",
+      "items": [
+        {
+          "title": "Hello Flatmate",
+          "description": "Plateforme pour trouver des colocataires compatibles avec vos besoins et votre style de vie.",
+          "tags": ["Développement Web", "UX/UI", "React"]
+        },
+        {
+          "title": "Viaje Seguro",
+          "description": "Application fournissant des informations en temps réel sur la sécurité dans différentes destinations touristiques.",
+          "tags": ["App Mobile", "API", "Géolocalisation"]
+        },
+        {
+          "title": "Clean Net",
+          "description": "Système de gestion pour les entreprises de nettoyage, optimisant les itinéraires et les ressources pour une efficacité maximale.",
+          "tags": ["Logiciel Sur Mesure", "Automatisation", "Dashboard"]
+        }
+      ],
+      "button": "Voir plus",
+      "call_to_action": "Souhaitez-vous découvrir davantage nos projets ou discuter de la manière dont nous pouvons vous accompagner ?",
+      "call_to_action_button": "Nous contacter pour en savoir plus"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre entreprise grâce à des solutions numériques ?",
+      "subtitle": "Planifiez un rendez-vous gratuit avec nos experts et découvrez comment nous pouvons vous aider à atteindre vos objectifs.",
+      "button_primary": "Planifier un rendez-vous gratuit",
+      "button_secondary": "Voir nos projets",
+      "footer_note": "Sans engagement. Aucun frais caché. Juste des solutions efficaces."
+    },
+    "contact": {
+      "section_title": "Contactez-nous",
+      "section_subtitle": "Nous sommes prêts à transformer vos idées en solutions numériques efficaces",
+      "heading": "Comment pouvons-nous vous aider ?",
+      "paragraph": "Nous sommes là pour répondre à vos questions et discuter de la façon dont nos solutions peuvent faire croître votre entreprise.",
+      "email": {
+        "label": "Email",
+        "value": "info@solbyt.com"
+      },
+      "phone": {
+        "label": "Téléphone",
+        "value": "+41 762 726 491"
+      },
+      "meeting": {
+        "label": "Planifier un rendez-vous",
+        "value": "Consultation gratuite de 30 minutes",
+        "button": "Réserver maintenant"
+      },
+      "why_us_title": "Pourquoi nous choisir ?",
+      "why_us_list": [
+        "Meilleur rapport qualité-prix",
+        "Développement rapide et efficace",
+        "Solutions personnalisées à vos besoins"
+      ],
+      "form_title": "Envoyez-nous un message",
+      "form": {
+        "full_name": {
+          "label": "Nom complet",
+          "placeholder": "Votre nom"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "votre@email.com"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Comment pouvons-nous vous aider ?"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Parlez-nous de votre projet..."
+        },
+        "button": "Envoyer le message",
+        "note": "Nous vous contacterons dans les 24 heures.",
+        "error": {
+          "full_name": "Le nom est requis",
+          "email": "Email invalide",
+          "subject": "Le sujet est requis"
+        }
+      },
+      "toast": {
+        "error": "Veuillez remplir les champs obligatoires.",
+        "sending": "Envoi de la confirmation...",
+        "success": "Merci pour votre message. Nous vous contacterons bientôt.",
+        "failure": {
+          "title": "Une erreur est survenue. Veuillez réessayer ou",
+          "contact_button": "contactez-nous ici"
+        }
+      }
+    }
+  }
+}

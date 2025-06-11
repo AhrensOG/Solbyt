@@ -11,45 +11,7 @@ import {
   FileSearch,
 } from "lucide-react";
 import Link from "next/link";
-
-const services = [
-  {
-    icon: <Globe className="h-10 w-10 text-solbyt-blue-500" />,
-    title: "Desarrollo Web",
-    description:
-      "Creamos sitios web profesionales, responsivos y optimizados para SEO que convierten visitantes en clientes.",
-  },
-  {
-    icon: <Smartphone className="h-10 w-10 text-solbyt-pink-500" />,
-    title: "Aplicaciones a Medida",
-    description:
-      "Desarrollamos aplicaciones personalizadas que se adaptan perfectamente a las necesidades específicas de tu negocio.",
-  },
-  {
-    icon: <Zap className="h-10 w-10 text-solbyt-purple-600" />,
-    title: "Automatización",
-    description:
-      "Automatizamos procesos repetitivos para aumentar la productividad y reducir costos operativos.",
-  },
-  {
-    icon: <BarChart2 className="h-10 w-10 text-solbyt-blue-500" />,
-    title: "Análisis de Sistemas",
-    description:
-      "Evaluamos tus sistemas actuales para identificar oportunidades de mejora y optimización.",
-  },
-  {
-    icon: <FileSearch className="h-10 w-10 text-solbyt-pink-500" />,
-    title: "Asesoría Digital",
-    description:
-      "Te guiamos en el proceso de transformación digital con soluciones adaptadas a tu presupuesto.",
-  },
-  {
-    icon: <Code className="h-10 w-10 text-solbyt-purple-600" />,
-    title: "Desarrollo de Software",
-    description:
-      "Creamos software personalizado que impulsa la eficiencia y el crecimiento de tu empresa.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -64,6 +26,41 @@ const fadeInUp = {
 };
 
 const ServicesSection: React.FC = () => {
+  const translation = useTranslations("home_page.services");
+
+  const services = [
+    {
+      icon: <Globe className="h-10 w-10 text-solbyt-blue-500" />,
+      title: translation("items.0.title"),
+      description: translation("items.0.description"),
+    },
+    {
+      icon: <Smartphone className="h-10 w-10 text-solbyt-pink-500" />,
+      title: translation("items.1.title"),
+      description: translation("items.1.description"),
+    },
+    {
+      icon: <Zap className="h-10 w-10 text-solbyt-purple-600" />,
+      title: translation("items.2.title"),
+      description: translation("items.2.description"),
+    },
+    {
+      icon: <BarChart2 className="h-10 w-10 text-solbyt-blue-500" />,
+      title: translation("items.3.title"),
+      description: translation("items.3.description"),
+    },
+    {
+      icon: <FileSearch className="h-10 w-10 text-solbyt-pink-500" />,
+      title: translation("items.4.title"),
+      description: translation("items.4.description"),
+    },
+    {
+      icon: <Code className="h-10 w-10 text-solbyt-purple-600" />,
+      title: translation("items.5.title"),
+      description: translation("items.5.description"),
+    },
+  ];
+
   return (
     <section
       id="services"
@@ -75,15 +72,14 @@ const ServicesSection: React.FC = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}>
-            Nuestros Servicios
+            {translation("title")}
           </motion.h2>
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}>
-            Ofrecemos soluciones digitales completas para impulsar tu negocio al
-            siguiente nivel
+            {translation("description")}
           </motion.p>
         </div>
 
@@ -103,7 +99,7 @@ const ServicesSection: React.FC = () => {
               </h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
               <button className="text-solbyt-purple-600 hover:text-solbyt-purple-600 hover:bg-purple-50 p-0">
-                Saber más →
+                {translation("button_card")}
               </button>
             </motion.div>
           ))}
@@ -116,15 +112,13 @@ const ServicesSection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}>
           <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-            ¿No estás seguro de qué servicio necesitas? Agenda una consulta
-            gratuita y te ayudaremos a encontrar la solución perfecta para tu
-            negocio.
+            {translation("call_to_action")}
           </p>
           <Link
             href="https://calendly.com/solbyt-tech/30min"
             target="_blank"
             className="border bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white sm:text-lg font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
-            Consulta gratuita
+            {translation("button_final")}
           </Link>
         </motion.div>
       </div>

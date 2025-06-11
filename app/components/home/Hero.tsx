@@ -4,14 +4,16 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import HeroInitialText from "./auxiliarComponents/HeroInitialText";
 import HeroSecondaryText from "./auxiliarComponents/HeroSecondaryText";
+import { useTranslations } from "next-intl";
 
 const Hero: React.FC = () => {
   const [showSecondary, setShowSecondary] = useState(false);
+  const translation = useTranslations("home_page.hero");
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSecondary(true);
-    }, 1500); // Espera 3 segundos antes de mostrar el texto secundario
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -28,8 +30,8 @@ const Hero: React.FC = () => {
             className="relative h-72 min-w-72 w-full max-w-[500px]">
             <Image
               src="/icon.svg"
-              alt="Logo Solbyt"
-              title="Solbyt"
+              alt={translation("image.alt")}
+              title={translation("image.title")}
               fill
               priority
               sizes="(max-width: 500px) 288px, 500px"
