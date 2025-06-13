@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: t("links.home"), href: "/" },
-    { name: t("links.services"), href: "#services" },
+    { name: t("links.services"), href: "/services" },
     { name: t("links.projects"), href: "#projects" },
     { name: t("links.about"), href: "#nosotros" },
     { name: t("links.contact"), href: "#contact" },
@@ -70,9 +70,12 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
 
-            <button className="ml-4 bg-solbyt-purple-600 hover:bg-purple-700 text-white px-4 py-1 rounded-lg">
+            <Link
+              href="https://calendly.com/solbyt-tech/30min"
+              target="_blank"
+              className="ml-4 bg-solbyt-purple-600 hover:bg-purple-700 text-white px-4 py-1 rounded-lg">
               {t("button")}
-            </button>
+            </Link>
 
             {/* Language Selector */}
             <div className="relative ml-4">

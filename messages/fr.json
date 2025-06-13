@@ -166,5 +166,359 @@
         }
       }
     }
+  },
+  "services_page": {
+    "services_hero": {
+      "badge": "Solutions Numériques Complètes",
+      "title": "Des services qui transforment votre entreprise",
+      "description": "De la consultation initiale au développement complet, nous proposons des solutions numériques complètes avec le meilleur rapport qualité-prix du marché.",
+      "benefits": [
+        {
+          "icon": "⚡",
+          "title": "Développement Rapide",
+          "description": "Livré en un temps record"
+        },
+        {
+          "icon": "💎",
+          "title": "Qualité Premium",
+          "description": "Code propre et évolutif"
+        },
+        {
+          "icon": "💰",
+          "title": "Prix Juste",
+          "description": "Aucun coût caché"
+        }
+      ],
+      "buttons": {
+        "cta_1": "Consultation gratuite",
+        "cta_2": "Voir des cas de réussite"
+      }
+    },
+    "services_grid": {
+      "title": "Nos Services",
+      "subtitle": "Des solutions complètes pour chaque étape de votre transformation numérique.",
+      "services": {
+        "desarrollo-web": {
+          "title": "Développement Web",
+          "subtitle": "Transformez votre site en un outil commercial",
+          "description": "Nous concevons des sites web rapides, sécurisés et optimisés pour le référencement, adaptés à vos objectifs et faciles à gérer.",
+          "features": [
+            "Design responsive centré sur l’expérience utilisateur",
+            "Stratégie SEO technique et de contenu",
+            "Performance rapide et navigation fluide",
+            "Gestion facile via un panneau personnalisé",
+            "Intégration avec les réseaux sociaux et formulaires",
+            "Certificat SSL et conformité RGPD"
+          ],
+          "examples": [
+            "Pages d’atterrissage",
+            "E-commerce simples",
+            "Sites d’entreprise",
+            "Blogs personnalisés"
+          ],
+          "timeframe": "3 à 5 semaines",
+          "startingPrice": "À partir de 1 200 €"
+        },
+        "aplicaciones-medida": {
+          "title": "Applications sur mesure",
+          "subtitle": "Nous digitalisons les processus réels de votre entreprise",
+          "description": "Nous créons des solutions adaptées à vos flux de travail, conçues par modules pour évoluer avec vous et optimiser vos ressources dès le départ.",
+          "features": [
+            "Architecture adaptée à vos processus",
+            "Interfaces épurées et évolutives",
+            "Modules conçus pour une croissance par phases",
+            "Base de données efficace et sécurisée",
+            "Intégration avec vos outils actuels",
+            "Support et améliorations continues"
+          ],
+          "examples": [
+            "CRM orienté ventes",
+            "Applications de réservation ou de rendez-vous",
+            "Panneaux de gestion",
+            "Outils internes"
+          ],
+          "timeframe": "À partir de 3 semaines par module",
+          "startingPrice": "À partir de 1 500 € par module"
+        },
+        "automatizacion": {
+          "title": "Automatisation des processus",
+          "subtitle": "Efficacité dans les tâches clés, sans friction",
+          "description": "Nous identifions les tâches répétitives et les automatisons étape par étape, augmentant la productivité et réduisant les erreurs sans perturber vos opérations actuelles.",
+          "features": [
+            "Analyse des processus manuels actuels",
+            "Priorisation selon l’impact et l’urgence",
+            "Automatisation sans interruption d’activité",
+            "Intégration avec vos systèmes existants",
+            "Tableau de bord avec indicateurs d’efficacité",
+            "Formation et support technique"
+          ],
+          "examples": [
+            "E-mails automatisés",
+            "Traitement des données",
+            "Rapports automatiques",
+            "Flux entre systèmes"
+          ],
+          "timeframe": "À partir de 2 semaines par flux",
+          "startingPrice": "À partir de 800 € par flux"
+        },
+        "analisis-sistemas": {
+          "title": "Analyse des systèmes",
+          "subtitle": "Nous détectons les erreurs avant qu’elles ne coûtent cher",
+          "description": "Nous auditons votre système pour identifier les erreurs, les goulets d’étranglement et les opportunités d’amélioration, en mettant l’accent sur la performance, l’évolutivité et la stabilité.",
+          "features": [
+            "Diagnostic du système actuel",
+            "Évaluation de la performance technique",
+            "Identification des points critiques",
+            "Revue de l’architecture et de la stack",
+            "Rapport d’amélioration priorisé",
+            "Conseil pour votre équipe actuelle"
+          ],
+          "examples": [
+            "Audit technique",
+            "Optimisation des bases de données",
+            "Amélioration de la sécurité",
+            "Évaluation de la stack"
+          ],
+          "timeframe": "1 à 2 semaines",
+          "startingPrice": "À partir de 700 €"
+        },
+        "asesoria-digital": {
+          "title": "Conseil en digitalisation",
+          "subtitle": "Digitalisez votre entreprise avec une feuille de route claire",
+          "description": "Nous vous guidons pour choisir les bons outils, optimiser les processus et réaliser une transformation digitale durable et rentable pour votre activité.",
+          "features": [
+            "Analyse de l’état digital actuel",
+            "Plan d’action avec des objectifs clairs",
+            "Choix des outils adaptés",
+            "Réorganisation des processus clés",
+            "Accompagnement pendant la transition",
+            "Suivi des progrès et des KPIs"
+          ],
+          "examples": [
+            "Migration vers le cloud",
+            "Digitalisation complète",
+            "Sélection d’ERP",
+            "Optimisation opérationnelle"
+          ],
+          "timeframe": "2 à 6 semaines",
+          "startingPrice": "À partir de 850 €"
+        },
+        "desarrollo-software": {
+          "title": "Développement de logiciels",
+          "subtitle": "Technologie adaptée à votre rythme de croissance",
+          "description": "Nous développons des logiciels sur mesure, par étapes, en mettant l’accent sur la stabilité, l’évolutivité et le retour sur investissement. Idéal pour les PME à la recherche d’efficacité.",
+          "features": [
+            "Développement modulaire par étapes",
+            "Architecture prête à évoluer",
+            "Intégration avec APIs et plateformes",
+            "Tests et documentation inclus",
+            "Tableau de bord en temps réel",
+            "Support évolutif et mises à jour régulières"
+          ],
+          "examples": [
+            "ERP pour PME",
+            "Outils de gestion interne",
+            "Plateformes multi-utilisateurs",
+            "APIs d’intégration"
+          ],
+          "timeframe": "À partir de 1 à 3 semaines par phase",
+          "startingPrice": "À partir de 1 200 € par phase"
+        }
+      },
+      "sections": {
+        "includes_title": "Ce qui est inclus",
+        "examples_title": "Exemples de projets :"
+      },
+      "buttons": {
+        "quote": "Demander un devis",
+        "more_info": "Plus d’informations",
+        "custom_project": "Décrire mon projet personnalisé"
+      },
+      "bottom_cta": {
+        "title": "Vous ne trouvez pas exactement ce dont vous avez besoin ?",
+        "description": "Chaque projet est unique. Parlez-nous de votre idée et nous créerons une solution entièrement personnalisée pour vous."
+      }
+    },
+    "pricing_calculator": {
+      "title": "Calculateur de Budget",
+      "subtitle": "Obtenez une estimation personnalisée pour votre projet en temps réel.",
+      "from": "À partir de",
+      "form": {
+        "title": "Configurez votre projet",
+        "service_type": "Type de service",
+        "complexity": "Complexité du projet",
+        "complexity_labels": {
+          "low": "Basique",
+          "medium": "Intermédiaire",
+          "high": "Avancé"
+        },
+        "features": "Fonctionnalités supplémentaires",
+        "timeline": "Urgence du projet",
+        "timeline_options": {
+          "normal": {
+            "label": "Normal",
+            "description": "4–8 semaines"
+          },
+          "urgent": {
+            "label": "Urgent",
+            "description": "2–4 semaines (+30%)"
+          }
+        }
+      },
+      "summary": {
+        "title": "Estimation totale",
+        "note": "Prix approximatif",
+        "details": {
+          "base": "Service de base :",
+          "complexity": "Complexité :",
+          "features": "Fonctionnalités :",
+          "urgency": "Urgence :"
+        },
+        "disclaimer": "* Ceci est une estimation. Le prix final peut varier selon les besoins spécifiques."
+      },
+      "buttons": {
+        "quote": "Demander un devis officiel",
+        "schedule": "Planifier une consultation gratuite"
+      },
+      "service_types": {
+        "web": {
+          "name": "Développement Web"
+        },
+        "app": {
+          "name": "Application sur mesure"
+        },
+        "automation": {
+          "name": "Automatisation"
+        },
+        "analysis": {
+          "name": "Analyse des systèmes"
+        },
+        "consulting": {
+          "name": "Conseil digital"
+        }
+      },
+      "features": {
+        "responsive": {
+          "name": "Design Responsive",
+          "price": 200
+        },
+        "cms": {
+          "name": "Panneau d’administration",
+          "price": 500
+        },
+        "ecommerce": {
+          "name": "E-commerce",
+          "price": 800
+        },
+        "api": {
+          "name": "Intégrations API",
+          "price": 400
+        },
+        "seo": {
+          "name": "Optimisation SEO",
+          "price": 300
+        },
+        "analytics": {
+          "name": "Analytique avancée",
+          "price": 250
+        },
+        "security": {
+          "name": "Sécurité avancée",
+          "price": 350
+        },
+        "mobile": {
+          "name": "Application mobile",
+          "price": 1200
+        }
+      }
+    },
+    "process_section": {
+      "title": "Notre Processus de Travail",
+      "subtitle": "Un processus transparent et efficace garantissant des résultats exceptionnels.",
+      "step_prefix": "Étape",
+      "steps": [
+        {
+          "title": "Consultation initiale",
+          "description": "Nous discutons de vos besoins, objectifs et budget lors d’un rendez-vous gratuit de 30 minutes.",
+          "duration": "30 min"
+        },
+        {
+          "title": "Analyse et proposition",
+          "description": "Nous analysons vos besoins et vous envoyons une proposition détaillée avec délais et coûts.",
+          "duration": "2–3 jours"
+        },
+        {
+          "title": "Développement",
+          "description": "Nous commençons le développement avec des mises à jour régulières et la possibilité de faire des ajustements.",
+          "duration": "Variable"
+        },
+        {
+          "title": "Livraison et lancement",
+          "description": "Nous effectuons des tests approfondis, vous formons à l'utilisation, puis lançons la solution.",
+          "duration": "1–2 jours"
+        },
+        {
+          "title": "Support continu",
+          "description": "Nous assurons un support technique et une maintenance pour garantir un fonctionnement optimal.",
+          "duration": "Continu"
+        }
+      ],
+      "bottom_cta": {
+        "title": "Transparence totale à chaque étape",
+        "description": "Nous maintenons une communication constante, vous montrons les progrès en temps réel et vous tenons informé de chaque décision importante.",
+        "tags": [
+          "Aucune surprise",
+          "Communication constante",
+          "Livraisons partielles",
+          "Retour continu"
+        ]
+      }
+    },
+    "faq_section": {
+      "title": "Questions Fréquemment Posées",
+      "subtitle": "Nous répondons aux questions les plus courantes sur nos services",
+      "faqs": [
+        {
+          "question": "Combien de temps faut-il pour développer un projet ?",
+          "answer": "Les délais varient selon la complexité du projet. Une landing page peut être prête en 2 à 3 semaines, tandis qu’une application complète peut prendre de 8 à 12 semaines. Nous fournissons toujours un planning détaillé avant de commencer."
+        },
+        {
+          "question": "Que comprend le support après le lancement ?",
+          "answer": "Notre support comprend la correction de bugs, les mises à jour de sécurité, la sauvegarde des données, le monitoring de base et l’assistance technique. La durée du support dépend du forfait choisi (1 à 6 mois inclus)."
+        },
+        {
+          "question": "Puis-je apporter des modifications pendant le développement ?",
+          "answer": "Absolument ! Nous travaillons avec une méthodologie agile qui permet des ajustements en cours de processus. Les changements mineurs sont inclus, tandis que les modifications majeures sont évaluées au cas par cas."
+        },
+        {
+          "question": "Offrez-vous une garantie sur vos travaux ?",
+          "answer": "Oui, nous offrons une garantie de 30 jours contre les défauts de fonctionnement après le lancement. Tous nos projets incluent également une période de support technique gratuite."
+        },
+        {
+          "question": "Comment gérez-vous la propriété intellectuelle ?",
+          "answer": "Une fois le paiement effectué, toute la propriété intellectuelle du projet (code, designs, contenu) vous appartient à 100 %. Nous vous remettons tous les fichiers sources et la documentation complète."
+        },
+        {
+          "question": "Travaillez-vous avec des entreprises étrangères ?",
+          "answer": "Oui, nous travaillons avec des clients du monde entier. Nous avons de l’expérience avec des projets internationaux et nous nous adaptons aux différents fuseaux horaires pour faciliter la communication."
+        },
+        {
+          "question": "Quelles technologies utilisez-vous ?",
+          "answer": "Nous utilisons des technologies modernes et éprouvées telles que React, Next.js, Node.js, Python, PostgreSQL, MongoDB, entre autres. Nous choisissons la technologie la plus adaptée aux besoins spécifiques de chaque projet."
+        },
+        {
+          "question": "Puis-je voir des exemples de projets précédents ?",
+          "answer": "Bien sûr. Nous disposons d’un portfolio avec des études de cas détaillées de projets comme helloflatmate, viaje seguro et clean net. Nous pouvons vous montrer des exemples similaires lors de la consultation initiale."
+        }
+      ],
+      "cta": {
+        "title": "Vous avez encore des questions ?",
+        "description": "Notre équipe est là pour vous aider. Planifiez une consultation gratuite ou contactez-nous directement pour des réponses personnalisées.",
+        "buttons": {
+          "schedule": "Planifier une consultation gratuite",
+          "whatsapp": "Contacter via WhatsApp"
+        }
+      }
+    }
   }
 }

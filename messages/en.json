@@ -166,5 +166,359 @@
         }
       }
     }
+  },
+  "services_page": {
+    "services_hero": {
+      "badge": "Complete Digital Solutions",
+      "title": "Services that transform your business",
+      "description": "From initial consulting to full development, we offer comprehensive digital solutions with the best value for money on the market.",
+      "benefits": [
+        {
+          "icon": "⚡",
+          "title": "Fast Development",
+          "description": "Delivered in record time"
+        },
+        {
+          "icon": "💎",
+          "title": "Premium Quality",
+          "description": "Clean and scalable code"
+        },
+        {
+          "icon": "💰",
+          "title": "Fair Pricing",
+          "description": "No hidden costs"
+        }
+      ],
+      "buttons": {
+        "cta_1": "Free consultation",
+        "cta_2": "See success stories"
+      }
+    },
+    "services_grid": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive solutions for every stage of your digital transformation.",
+      "services": {
+        "desarrollo-web": {
+          "title": "Web Development",
+          "subtitle": "Turn your website into a business tool",
+          "description": "We design fast, secure, and SEO-optimised websites tailored to your goals and easy to manage.",
+          "features": [
+            "Responsive design focused on user experience",
+            "Technical and content-based SEO strategy",
+            "Fast performance and smooth navigation",
+            "Easy management through custom panel",
+            "Integration with social media and forms",
+            "SSL certificate and GDPR compliance"
+          ],
+          "examples": [
+            "Landing pages",
+            "Simple e-commerce",
+            "Corporate websites",
+            "Custom blogs"
+          ],
+          "timeframe": "3-5 weeks",
+          "startingPrice": "From €1,200"
+        },
+        "aplicaciones-medida": {
+          "title": "Custom Applications",
+          "subtitle": "We digitalise your company’s real workflows",
+          "description": "We create solutions tailored to your operations, designed in modules to grow with you and optimise your resources from the start.",
+          "features": [
+            "Architecture adapted to your processes",
+            "Clean and scalable interfaces",
+            "Modules designed to grow in phases",
+            "Efficient and secure database",
+            "Integration with your current tools",
+            "Continuous support and improvements"
+          ],
+          "examples": [
+            "Sales-focused CRM",
+            "Booking or appointment apps",
+            "Management panels",
+            "Internal tools"
+          ],
+          "timeframe": "From 3 weeks per module",
+          "startingPrice": "From €1,500 per module"
+        },
+        "automatizacion": {
+          "title": "Process Automation",
+          "subtitle": "Efficiency in key tasks, without friction",
+          "description": "We identify repetitive tasks and automate them step-by-step, boosting productivity and reducing errors without disrupting your current operations.",
+          "features": [
+            "Analysis of current manual processes",
+            "Prioritisation based on impact and urgency",
+            "Automation without halting operations",
+            "Integration with your existing systems",
+            "Dashboard with efficiency metrics",
+            "Training and technical support"
+          ],
+          "examples": [
+            "Automated emails",
+            "Data processing",
+            "Automated reports",
+            "System-to-system flows"
+          ],
+          "timeframe": "From 2 weeks per flow",
+          "startingPrice": "From €800 per flow"
+        },
+        "analisis-sistemas": {
+          "title": "Systems Analysis",
+          "subtitle": "We detect failures before they become costly",
+          "description": "We audit your system to identify errors, bottlenecks, and improvement opportunities, focusing on performance, scalability, and stability.",
+          "features": [
+            "Diagnosis of current system",
+            "Technical performance evaluation",
+            "Detection of critical points",
+            "Architecture and stack review",
+            "Improvement report with priorities",
+            "Advisory support for your team"
+          ],
+          "examples": [
+            "Technical audits",
+            "Database optimisation",
+            "Security enhancements",
+            "Stack evaluation"
+          ],
+          "timeframe": "1-2 weeks",
+          "startingPrice": "From €700"
+        },
+        "asesoria-digital": {
+          "title": "Digital Advisory",
+          "subtitle": "Digitise your business with a clear roadmap",
+          "description": "We guide you to choose the right tools, optimise processes, and execute a sustainable and profitable digital transformation for your business.",
+          "features": [
+            "Analysis of current digital state",
+            "Action plan with clear objectives",
+            "Selection of suitable tools",
+            "Restructuring of key processes",
+            "Support during the transition",
+            "Review of progress and KPIs"
+          ],
+          "examples": [
+            "Cloud migration",
+            "Full digitalisation",
+            "ERP selection",
+            "Operational optimisation"
+          ],
+          "timeframe": "2-6 weeks",
+          "startingPrice": "From €850"
+        },
+        "desarrollo-software": {
+          "title": "Software Development",
+          "subtitle": "Technology tailored to your growth pace",
+          "description": "We build custom software in phases, focused on stability, scalability, and ROI. Ideal for SMEs seeking real efficiency.",
+          "features": [
+            "Modular development by stages",
+            "Architecture ready to scale",
+            "Integration with APIs and platforms",
+            "Testing and documentation included",
+            "Real-time metrics dashboard",
+            "Evolutionary support and regular upgrades"
+          ],
+          "examples": [
+            "ERP for SMEs",
+            "Internal management tools",
+            "Multi-user platforms",
+            "Integration APIs"
+          ],
+          "timeframe": "From 1-3 weeks per phase",
+          "startingPrice": "From €1,200 per phase"
+        }
+      },
+      "sections": {
+        "includes_title": "What’s included?",
+        "examples_title": "Project examples:"
+      },
+      "buttons": {
+        "quote": "Request a quote",
+        "more_info": "More information",
+        "custom_project": "Describe my custom project"
+      },
+      "bottom_cta": {
+        "title": "Not seeing exactly what you need?",
+        "description": "Every project is unique. Tell us your idea and we'll create a fully personalized solution for you."
+      }
+    },
+    "pricing_calculator": {
+      "title": "Budget Calculator",
+      "subtitle": "Get a personalised estimate for your project in real time.",
+      "from": "From",
+      "form": {
+        "title": "Configure your project",
+        "service_type": "Type of service",
+        "complexity": "Project complexity",
+        "complexity_labels": {
+          "low": "Basic",
+          "medium": "Intermediate",
+          "high": "Advanced"
+        },
+        "features": "Additional features",
+        "timeline": "Project urgency",
+        "timeline_options": {
+          "normal": {
+            "label": "Normal",
+            "description": "4–8 weeks"
+          },
+          "urgent": {
+            "label": "Urgent",
+            "description": "2–4 weeks (+30%)"
+          }
+        }
+      },
+      "summary": {
+        "title": "Total estimate",
+        "note": "Approximate price",
+        "details": {
+          "base": "Base service:",
+          "complexity": "Complexity:",
+          "features": "Features:",
+          "urgency": "Urgency:"
+        },
+        "disclaimer": "* This is an estimate. Final price may vary depending on specific requirements."
+      },
+      "buttons": {
+        "quote": "Request official quote",
+        "schedule": "Schedule free consultation"
+      },
+      "service_types": {
+        "web": {
+          "name": "Web Development"
+        },
+        "app": {
+          "name": "Custom Application"
+        },
+        "automation": {
+          "name": "Automation"
+        },
+        "analysis": {
+          "name": "Systems Analysis"
+        },
+        "consulting": {
+          "name": "Digital Consulting"
+        }
+      },
+      "features": {
+        "responsive": {
+          "name": "Responsive Design",
+          "price": 200
+        },
+        "cms": {
+          "name": "Admin Panel",
+          "price": 500
+        },
+        "ecommerce": {
+          "name": "E-commerce",
+          "price": 800
+        },
+        "api": {
+          "name": "API Integrations",
+          "price": 400
+        },
+        "seo": {
+          "name": "SEO Optimisation",
+          "price": 300
+        },
+        "analytics": {
+          "name": "Advanced Analytics",
+          "price": 250
+        },
+        "security": {
+          "name": "Advanced Security",
+          "price": 350
+        },
+        "mobile": {
+          "name": "Mobile App",
+          "price": 1200
+        }
+      }
+    },
+    "process_section": {
+      "title": "Our Work Process",
+      "subtitle": "A transparent and efficient process that guarantees exceptional results.",
+      "step_prefix": "Step",
+      "steps": [
+        {
+          "title": "Initial consultation",
+          "description": "We discuss your needs, goals, and budget in a free 30-minute meeting.",
+          "duration": "30 min"
+        },
+        {
+          "title": "Analysis and proposal",
+          "description": "We analyse your requirements and send you a detailed proposal with timelines and costs.",
+          "duration": "2–3 days"
+        },
+        {
+          "title": "Development",
+          "description": "We start development with regular updates and the possibility to make adjustments.",
+          "duration": "Variable"
+        },
+        {
+          "title": "Delivery and launch",
+          "description": "We run thorough tests, train you on usage, and launch your solution.",
+          "duration": "1–2 days"
+        },
+        {
+          "title": "Ongoing support",
+          "description": "We provide technical support and maintenance to ensure optimal performance.",
+          "duration": "Ongoing"
+        }
+      ],
+      "bottom_cta": {
+        "title": "Total transparency at every step",
+        "description": "We maintain constant communication, show you progress in real time, and keep you informed of every key decision.",
+        "tags": [
+          "No surprises",
+          "Constant communication",
+          "Partial deliveries",
+          "Ongoing feedback"
+        ]
+      }
+    },
+    "faq_section": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "We answer the most common questions about our services",
+      "faqs": [
+        {
+          "question": "How long does it take to develop a project?",
+          "answer": "Timelines vary depending on the project's complexity. A landing page can be ready in 2–3 weeks, while a complete application may take 8–12 weeks. We always provide a detailed schedule before starting."
+        },
+        {
+          "question": "What does post-launch support include?",
+          "answer": "Our support includes bug fixes, security updates, data backups, basic monitoring, and technical assistance. The support period varies based on the package (1–6 months included)."
+        },
+        {
+          "question": "Can I make changes during development?",
+          "answer": "Absolutely! We work with an agile methodology that allows adjustments throughout the process. Minor changes are included, while major modifications are assessed on a case-by-case basis."
+        },
+        {
+          "question": "Do you offer a warranty on your work?",
+          "answer": "Yes, we offer a 30-day warranty against malfunctions after launch. In addition, all our projects include a free technical support period."
+        },
+        {
+          "question": "How do you handle intellectual property?",
+          "answer": "Once payment is completed, all intellectual property of the project (code, designs, content) is 100% yours. We deliver all source files and full documentation."
+        },
+        {
+          "question": "Do you work with companies from other countries?",
+          "answer": "Yes, we work with clients worldwide. We have experience in international projects and adapt to different time zones to facilitate communication."
+        },
+        {
+          "question": "What technologies do you use?",
+          "answer": "We use modern and proven technologies such as React, Next.js, Node.js, Python, PostgreSQL, MongoDB, among others. We choose the best technology based on each project’s specific needs."
+        },
+        {
+          "question": "Can I see examples of past work?",
+          "answer": "Of course. We have a portfolio with detailed case studies of projects like helloflatmate, viaje seguro, and clean net. We can show you similar examples during the initial consultation."
+        }
+      ],
+      "cta": {
+        "title": "Still have questions?",
+        "description": "Our team is here to help. Schedule a free consultation or contact us directly for personalised answers.",
+        "buttons": {
+          "schedule": "Schedule free consultation",
+          "whatsapp": "Contact via WhatsApp"
+        }
+      }
+    }
   }
 }
