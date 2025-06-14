@@ -50,7 +50,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <button className="px-6 py-3 rounded-lg bg-solbyt-purple-600 hover:bg-purple-700 text-white text-sm font-semibold shadow transition">
+              <button className="px-6 py-3 rounded-lg bg-solbyt-purple-600 hover:bg-solbyt-purple-700 text-white text-sm font-semibold shadow transition duration-300">
                 {translation("buttons.quote")}
               </button>
               <button className="px-6 py-3 rounded-lg border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500/10 text-sm font-semibold transition flex items-center justify-center">

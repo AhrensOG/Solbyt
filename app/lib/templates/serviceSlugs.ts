@@ -1,7 +1,7 @@
 type Locale = "es" | "en" | "fr";
 type ServiceId =
   | "desarrollo-web"
-  | "aplicaciones-medida"
+  | "aplicaciones-a-medida"
   | "automatizacion"
   | "analisis-sistemas"
   | "asesoria-digital"
@@ -15,8 +15,8 @@ export const serviceSlugMap: ServiceSlugMap = {
     en: "web-development",
     fr: "developpement-web"
   },
-  "aplicaciones-medida": {
-    es: "aplicaciones-medida",
+  "aplicaciones-a-medida": {
+    es: "aplicaciones-a-medida",
     en: "custom-applications",
     fr: "applications-sur-mesure"
   },

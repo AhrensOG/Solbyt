@@ -3,6 +3,7 @@ import { getServiceIdBySlug } from "@/app/lib/templates/serviceSlugs";
 import { notFound } from "next/navigation";
 import WebDevelopment from "./all_services/web_development/WebDevelopment";
 import { Locale } from "@/i18n/navigation";
+import CustomApplications from "./all_services/custom_applications/CustomApplications";
 
 type Props = {
   params: {
@@ -25,6 +26,7 @@ const ServiceDetailPage = async ({ params }: Props) => {
   return (
     <>
       {serviceId === "desarrollo-web" && <WebDevelopment />}
+      {serviceId === "aplicaciones-a-medida" && <CustomApplications />}
       {/* Luego agregás aquí los otros casos con sus respectivos componentes */}
     </>
   );
