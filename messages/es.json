@@ -526,5 +526,213 @@
         }
       }
     }
+  },
+  "service_detail": {
+    "desarrollo-web": {
+      "hero": {
+        "badge": "Servicios • Desarrollo Web",
+        "title": "Desarrollo Web Profesional",
+        "subtitle": "Convertí tu sitio en una herramienta comercial efectiva",
+        "description": "Diseñamos sitios web rápidos, seguros y optimizados para buscadores. Adaptados a tus objetivos de negocio y fáciles de gestionar.",
+        "buttons": {
+          "quote": "Solicitar presupuesto gratuito",
+          "examples": "Ver ejemplos de proyectos"
+        },
+        "duration": "3-5 semanas",
+        "price": "Desde €1.200",
+        "image": {
+          "alt": "Desarrollo web profesional por Solbyt",
+          "tagline": "Sitios web que convierten visitantes en clientes",
+          "subtext": "Diseño profesional + Rendimiento + SEO"
+        }
+      },
+      "customer_value": {
+        "title": "Tu sitio web es la puerta de entrada a nuevos clientes",
+        "paragraph": "En el mundo digital actual, tu sitio web es mucho más que una simple presencia online. Es tu vendedor 24/7, tu carta de presentación y tu herramienta más poderosa para generar confianza y convertir visitantes en clientes.",
+        "cards": [
+          {
+            "title": "Mayor visibilidad online",
+            "text": "Un sitio web optimizado para SEO te permite ser encontrado por potenciales clientes cuando buscan productos o servicios como los tuyos en Lisboa y alrededores."
+          },
+          {
+            "title": "Confianza y credibilidad",
+            "text": "Un diseño web profesional transmite seriedad y genera la confianza necesaria para que los visitantes se conviertan en clientes, aumentando tu tasa de conversión."
+          },
+          {
+            "title": "Incremento en ventas",
+            "text": "Una experiencia de usuario optimizada, combinada con llamados a la acción estratégicos, se traduce directamente en más consultas, leads y ventas para tu negocio."
+          }
+        ]
+      },
+      "service_features": {
+        "title": "¿Qué incluye nuestro servicio de desarrollo web?",
+        "paragraph": "Creamos sitios web completos y optimizados que no solo lucen profesionales, sino que están diseñados estratégicamente para alcanzar tus objetivos de negocio.",
+        "features": {
+          "0": {
+            "title": "Diseño responsivo con foco en experiencia",
+            "description": "Sitios que se adaptan perfectamente a cualquier dispositivo, priorizando la experiencia del usuario para maximizar conversiones."
+          },
+          "1": {
+            "title": "Estrategia SEO técnico y de contenido",
+            "description": "Optimización para buscadores desde la estructura hasta el contenido, mejorando tu visibilidad en Google y otros buscadores."
+          },
+          "2": {
+            "title": "Rendimiento rápido y navegación fluida",
+            "description": "Sitios web optimizados para cargar rápidamente, reduciendo la tasa de rebote y mejorando la experiencia del usuario."
+          },
+          "3": {
+            "title": "Gestión sencilla mediante panel propio",
+            "description": "Interfaces administrativas intuitivas que te permiten actualizar contenido sin conocimientos técnicos."
+          },
+          "4": {
+            "title": "Integración con redes y formularios",
+            "description": "Conexión perfecta con tus redes sociales y sistemas de captura de leads para maximizar tu alcance."
+          },
+          "5": {
+            "title": "Certificado SSL y cumplimiento RGPD",
+            "description": "Sitios seguros con conexiones cifradas y cumplimiento de normativas de protección de datos europeas."
+          }
+        }
+      },
+      "work_process": {
+        "title": "Nuestro proceso de trabajo",
+        "paragraph": "Metodología clara y transparente para que sepas exactamente qué esperar en cada etapa del desarrollo de tu sitio web.",
+        "steps": [
+          {
+            "title": "Análisis y planificación",
+            "description": "Entendemos tus objetivos, analizamos tu competencia y definimos la estrategia digital más efectiva para tu negocio."
+          },
+          {
+            "title": "Diseño UX/UI",
+            "description": "Creamos wireframes y diseños visuales centrados en la experiencia del usuario y alineados con tu identidad de marca."
+          },
+          {
+            "title": "Desarrollo y programación",
+            "description": "Implementamos tu sitio con código limpio y optimizado, asegurando velocidad, seguridad y compatibilidad con todos los dispositivos."
+          },
+          {
+            "title": "Optimización SEO",
+            "description": "Aplicamos las mejores prácticas de SEO técnico y de contenido para mejorar tu posicionamiento en buscadores."
+          },
+          {
+            "title": "Pruebas y lanzamiento",
+            "description": "Realizamos pruebas exhaustivas de funcionalidad, rendimiento y seguridad antes de lanzar tu sitio al público."
+          },
+          {
+            "title": "Soporte y mantenimiento",
+            "description": "Te ofrecemos soporte continuo y actualizaciones periódicas para mantener tu sitio seguro, actualizado y optimizado."
+          }
+        ]
+      },
+      "use_cases": {
+        "title": "Soluciones adaptadas a tus necesidades",
+        "subtitle": "Desarrollamos diferentes tipos de sitios web según los objetivos específicos de tu negocio.",
+        "cases": {
+          "landing": {
+            "title": "Landing Pages",
+            "description": "Páginas de aterrizaje diseñadas para convertir visitantes en leads o clientes, con un objetivo específico y llamados a la acción estratégicos.",
+            "items": [
+              "Diseño enfocado en conversión",
+              "Formularios optimizados para captura de leads",
+              "Tiempo de carga ultrarrápido",
+              "Análisis de comportamiento del usuario",
+              "A/B testing para optimizar resultados"
+            ],
+            "imageAlt": "Ejemplo de landing page"
+          },
+          "ecommerce": {
+            "title": "E-commerce",
+            "description": "Tiendas online intuitivas y seguras que ofrecen una experiencia de compra fluida y aumentan tus ventas digitales.",
+            "items": [
+              "Catálogo de productos fácil de gestionar",
+              "Proceso de compra simplificado",
+              "Integración con pasarelas de pago seguras",
+              "Gestión de inventario y pedidos",
+              "Optimización para conversión de ventas"
+            ],
+            "imageAlt": "Ejemplo de e-commerce"
+          },
+          "corporativo": {
+            "title": "Sitios Corporativos",
+            "description": "Webs profesionales que reflejan la identidad de tu empresa y comunican eficazmente tus servicios y valores.",
+            "items": [
+              "Diseño alineado con tu identidad corporativa",
+              "Estructura clara y navegación intuitiva",
+              "Contenido persuasivo orientado a conversión",
+              "Integración con CRM y herramientas de marketing",
+              "Optimización SEO para keywords de negocio"
+            ],
+            "imageAlt": "Ejemplo de sitio corporativo"
+          },
+          "blog": {
+            "title": "Blogs Personalizados",
+            "description": "Plataformas de contenido optimizadas para SEO que posicionan tu marca como referente en tu sector y atraen tráfico cualificado.",
+            "items": [
+              "Estructura optimizada para SEO",
+              "Categorización inteligente de contenidos",
+              "Integración con redes sociales",
+              "Sistema de comentarios y engagement",
+              "Estrategia de contenidos para captación de leads"
+            ],
+            "imageAlt": "Ejemplo de blog personalizado"
+          }
+        }
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos tus dudas sobre nuestro servicio de desarrollo web profesional",
+        "questions": [
+          {
+            "question": "¿Cuánto tiempo tarda en desarrollarse un sitio web?",
+            "answer": "El tiempo de desarrollo varía según la complejidad del proyecto. Para sitios web estándar, nuestro plazo habitual es de 3 a 5 semanas desde la aprobación del diseño hasta el lanzamiento. Proyectos más complejos como e-commerce o plataformas personalizadas pueden requerir más tiempo. En la fase inicial de planificación, te proporcionaremos un cronograma detallado específico para tu proyecto."
+          },
+          {
+            "question": "¿Qué necesito proporcionar para iniciar el proyecto?",
+            "answer": "Para comenzar, necesitamos entender tus objetivos de negocio, público objetivo y preferencias de diseño. Es útil si puedes proporcionar: tu logo e identidad visual (si existe), ejemplos de sitios web que te gusten, contenido (textos e imágenes) para el sitio, y cualquier requisito específico que tengas. No te preocupes si no tienes todo esto preparado, podemos guiarte en el proceso y ofrecerte servicios adicionales de creación de contenido si los necesitas."
+          },
+          {
+            "question": "¿Cómo ayudan a que mi sitio aparezca en Google?",
+            "answer": "Implementamos una estrategia SEO integral desde la base del desarrollo. Esto incluye optimización técnica (estructura del sitio, velocidad de carga, metadatos), optimización de contenido (keywords estratégicas, estructura de contenido), y configuración de herramientas de análisis. Además, todos nuestros sitios son mobile-friendly y cumplen con las directrices de Google para un buen posicionamiento. Ofrecemos también servicios adicionales de SEO continuo para mejorar progresivamente tu posicionamiento."
+          },
+          {
+            "question": "¿Podré actualizar el contenido de mi web yo mismo?",
+            "answer": "¡Absolutamente! Desarrollamos todos nuestros sitios con sistemas de gestión de contenido intuitivos que te permiten actualizar textos, imágenes, productos y más sin conocimientos técnicos. Además, te proporcionamos formación personalizada y documentación para que puedas gestionar tu sitio con confianza. Para actualizaciones más complejas, siempre puedes contar con nuestro soporte técnico."
+          },
+          {
+            "question": "¿Qué incluye el mantenimiento del sitio web?",
+            "answer": "Nuestros planes de mantenimiento incluyen: actualizaciones de seguridad regulares, copias de seguridad periódicas, monitorización de rendimiento, soporte técnico por email, pequeñas actualizaciones de contenido, y reportes mensuales de rendimiento y tráfico. El mantenimiento es crucial para garantizar que tu sitio permanezca seguro, rápido y actualizado con las últimas tecnologías y estándares web."
+          },
+          {
+            "question": "¿Trabajan con empresas en Lisboa y alrededores?",
+            "answer": "Sí, trabajamos con empresas en Lisboa y toda Portugal, así como con clientes internacionales. Ofrecemos reuniones presenciales para clientes locales y videoconferencias para clientes remotos. Nuestra metodología de trabajo está diseñada para garantizar una comunicación fluida y resultados excepcionales independientemente de la ubicación geográfica."
+          }
+        ],
+        "cta": {
+          "title": "¿Tienes más preguntas?",
+          "text": "Estamos aquí para ayudarte. Contáctanos para una asesoría gratuita y conoce cómo podemos ayudarte a tener presencia online.",
+          "buttons": {
+            "schedule": "Agendar reunión",
+            "whatsapp": "Escribir por WhatsApp"
+          }
+        }
+      },
+      "cta_final": {
+        "title": "¿Listo para transformar tu presencia digital?",
+        "subtitle": "Convierte tu sitio web en una herramienta efectiva de marketing y ventas que impulse el crecimiento de tu negocio.",
+        "features": [
+          "Diseño profesional y atractivo",
+          "Optimizado para buscadores",
+          "Enfocado en conversión",
+          "Rápido y responsive",
+          "Fácil de gestionar",
+          "Soporte técnico continuo"
+        ],
+        "buttons": {
+          "quote": "Solicitar presupuesto gratuito",
+          "meeting": "Agendar consulta gratuita"
+        },
+        "disclaimer": "Sin compromisos. Respuesta en menos de 24 horas."
+      }
+    }
   }
 }

@@ -520,5 +520,213 @@
         }
       }
     }
+  },
+  "service_detail": {
+    "desarrollo-web": {
+      "hero": {
+        "badge": "Services • Développement Web",
+        "title": "Développement Web Professionnel",
+        "subtitle": "Transformez votre site en un outil commercial efficace",
+        "description": "Nous concevons des sites web rapides, sécurisés et optimisés pour les moteurs de recherche. Adaptés à vos objectifs commerciaux et faciles à gérer.",
+        "buttons": {
+          "quote": "Demander un devis gratuit",
+          "examples": "Voir des exemples de projets"
+        },
+        "duration": "3 à 5 semaines",
+        "price": "À partir de 1 200 €",
+        "image": {
+          "alt": "Développement web professionnel par Solbyt",
+          "tagline": "Des sites qui transforment les visiteurs en clients",
+          "subtext": "Design professionnel + Performance + SEO"
+        }
+      },
+      "customer_value": {
+        "title": "Votre site web est la porte d’entrée vers de nouveaux clients",
+        "paragraph": "Dans le monde numérique actuel, votre site web est bien plus qu’une simple présence en ligne. C’est votre commercial disponible 24h/24, votre carte de visite et votre outil le plus puissant pour instaurer la confiance et convertir les visiteurs en clients.",
+        "cards": [
+          {
+            "title": "Visibilité en ligne accrue",
+            "text": "Un site web optimisé pour le SEO vous permet d’être trouvé par des clients potentiels recherchant des produits ou services comme les vôtres à Lisbonne et dans les environs."
+          },
+          {
+            "title": "Confiance et crédibilité",
+            "text": "Un design web professionnel transmet du sérieux et inspire la confiance nécessaire pour convertir les visiteurs en clients, augmentant ainsi votre taux de conversion."
+          },
+          {
+            "title": "Augmentation des ventes",
+            "text": "Une expérience utilisateur optimisée, combinée à des appels à l’action stratégiques, se traduit directement par plus de demandes, de prospects et de ventes pour votre entreprise."
+          }
+        ]
+      },
+      "service_features": {
+        "title": "Que comprend notre service de développement web ?",
+        "paragraph": "Nous créons des sites web complets et optimisés qui ne se contentent pas d’être professionnels, mais qui sont conçus stratégiquement pour atteindre vos objectifs commerciaux.",
+        "features": {
+          "0": {
+            "title": "Design responsive centré sur l’expérience utilisateur",
+            "description": "Des sites qui s’adaptent parfaitement à tout appareil, en priorisant l’expérience utilisateur pour maximiser les conversions."
+          },
+          "1": {
+            "title": "Stratégie SEO technique et de contenu",
+            "description": "Optimisation pour les moteurs de recherche, de la structure au contenu, pour améliorer votre visibilité sur Google et autres moteurs."
+          },
+          "2": {
+            "title": "Performance rapide et navigation fluide",
+            "description": "Des sites web optimisés pour un chargement rapide, réduisant le taux de rebond et améliorant l’expérience utilisateur."
+          },
+          "3": {
+            "title": "Gestion facile via un panneau personnalisé",
+            "description": "Des interfaces d’administration intuitives qui vous permettent de mettre à jour le contenu sans compétences techniques."
+          },
+          "4": {
+            "title": "Intégration avec les réseaux sociaux et les formulaires",
+            "description": "Connexion fluide avec vos réseaux sociaux et systèmes de capture de leads pour maximiser votre portée."
+          },
+          "5": {
+            "title": "Certificat SSL et conformité RGPD",
+            "description": "Des sites sécurisés avec connexions cryptées et conformes aux réglementations européennes sur la protection des données."
+          }
+        }
+      },
+      "work_process": {
+        "title": "Notre processus de travail",
+        "paragraph": "Une méthodologie claire et transparente pour que vous sachiez exactement à quoi vous attendre à chaque étape du développement de votre site web.",
+        "steps": [
+          {
+            "title": "Analyse et planification",
+            "description": "Nous comprenons vos objectifs, analysons votre concurrence et définissons la stratégie digitale la plus efficace pour votre entreprise."
+          },
+          {
+            "title": "Design UX/UI",
+            "description": "Nous créons des wireframes et des designs visuels centrés sur l’expérience utilisateur et alignés avec votre identité de marque."
+          },
+          {
+            "title": "Développement et programmation",
+            "description": "Nous implémentons votre site avec un code propre et optimisé, garantissant vitesse, sécurité et compatibilité multi-appareils."
+          },
+          {
+            "title": "Optimisation SEO",
+            "description": "Nous appliquons les meilleures pratiques de SEO technique et de contenu pour améliorer votre positionnement sur les moteurs de recherche."
+          },
+          {
+            "title": "Tests et lancement",
+            "description": "Nous effectuons des tests complets de fonctionnalité, de performance et de sécurité avant de lancer votre site."
+          },
+          {
+            "title": "Support et maintenance",
+            "description": "Nous vous offrons un support continu et des mises à jour régulières pour garder votre site sécurisé, à jour et optimisé."
+          }
+        ]
+      },
+      "use_cases": {
+        "title": "Des solutions adaptées à vos besoins",
+        "subtitle": "Nous développons différents types de sites web en fonction des objectifs spécifiques de votre entreprise.",
+        "cases": {
+          "landing": {
+            "title": "Pages d’atterrissage",
+            "description": "Pages conçues pour convertir les visiteurs en leads ou clients, avec un objectif clair et des appels à l’action stratégiques.",
+            "items": [
+              "Design axé sur la conversion",
+              "Formulaires optimisés pour la capture de leads",
+              "Temps de chargement ultra-rapide",
+              "Analyse du comportement utilisateur",
+              "Tests A/B pour optimiser les résultats"
+            ],
+            "imageAlt": "Exemple de page d’atterrissage"
+          },
+          "ecommerce": {
+            "title": "E-commerce",
+            "description": "Boutiques en ligne intuitives et sécurisées offrant une expérience d’achat fluide et stimulant vos ventes numériques.",
+            "items": [
+              "Catalogue de produits facile à gérer",
+              "Processus d’achat simplifié",
+              "Intégration avec des passerelles de paiement sécurisées",
+              "Gestion des stocks et des commandes",
+              "Optimisation pour la conversion des ventes"
+            ],
+            "imageAlt": "Exemple de boutique e-commerce"
+          },
+          "corporativo": {
+            "title": "Sites corporatifs",
+            "description": "Sites professionnels reflétant l’identité de votre entreprise et communiquant efficacement vos services et valeurs.",
+            "items": [
+              "Design aligné avec votre identité d’entreprise",
+              "Structure claire et navigation intuitive",
+              "Contenu persuasif orienté conversion",
+              "Intégration avec CRM et outils marketing",
+              "Optimisation SEO pour les mots-clés business"
+            ],
+            "imageAlt": "Exemple de site corporatif"
+          },
+          "blog": {
+            "title": "Blogs personnalisés",
+            "description": "Plates-formes de contenu optimisées pour le SEO qui positionnent votre marque comme référence dans votre secteur et attirent un trafic qualifié.",
+            "items": [
+              "Structure optimisée pour le SEO",
+              "Catégorisation intelligente des contenus",
+              "Intégration avec les réseaux sociaux",
+              "Système de commentaires et d’interaction",
+              "Stratégie de contenu pour la génération de leads"
+            ],
+            "imageAlt": "Exemple de blog personnalisé"
+          }
+        }
+      },
+      "faq": {
+        "title": "Questions fréquentes",
+        "subtitle": "Nous répondons à vos questions sur notre service de développement web professionnel",
+        "questions": [
+          {
+            "question": "Combien de temps faut-il pour développer un site web ?",
+            "answer": "Le délai dépend de la complexité du projet. Pour un site standard, nous comptons généralement entre 3 et 5 semaines, de la validation du design jusqu’au lancement. Les projets plus complexes comme le e-commerce ou les plateformes personnalisées peuvent nécessiter plus de temps. Lors de la phase initiale de planification, nous vous fournirons un calendrier détaillé adapté à votre projet."
+          },
+          {
+            "question": "Que dois-je fournir pour commencer le projet ?",
+            "answer": "Nous devons comprendre vos objectifs, votre public cible et vos préférences en matière de design. Il est utile de nous fournir : votre logo et votre identité visuelle (si disponible), des exemples de sites que vous appréciez, le contenu (textes et images) du site, et tout besoin spécifique. Pas de souci si vous ne disposez pas encore de tout cela — nous vous accompagnons dans le processus et proposons des services de création de contenu si besoin."
+          },
+          {
+            "question": "Comment aidez-vous mon site à apparaître sur Google ?",
+            "answer": "Nous appliquons une stratégie SEO complète dès la base du développement. Cela inclut : l’optimisation technique (structure du site, vitesse de chargement, métadonnées), l’optimisation du contenu (mots-clés stratégiques, structure), et la configuration des outils d’analyse. Tous nos sites sont adaptés aux mobiles et respectent les directives de Google. Nous proposons également des services SEO continus pour améliorer progressivement votre positionnement."
+          },
+          {
+            "question": "Pourrai-je mettre à jour le contenu moi-même ?",
+            "answer": "Bien sûr ! Tous nos sites intègrent des systèmes de gestion de contenu intuitifs vous permettant de modifier textes, images, produits et plus encore, sans connaissances techniques. Nous fournissons aussi une formation personnalisée et une documentation pour que vous puissiez gérer votre site en toute confiance. Pour des mises à jour plus complexes, notre support technique est à votre disposition."
+          },
+          {
+            "question": "Que comprend la maintenance du site web ?",
+            "answer": "Nos forfaits de maintenance incluent : mises à jour de sécurité régulières, sauvegardes périodiques, surveillance des performances, support technique par e-mail, petites modifications de contenu, et rapports mensuels de trafic et de performance. La maintenance est essentielle pour garantir un site sécurisé, rapide et toujours à jour avec les dernières technologies."
+          },
+          {
+            "question": "Travaillez-vous avec des entreprises à Lisbonne et dans les environs ?",
+            "answer": "Oui, nous travaillons avec des entreprises à Lisbonne, dans tout le Portugal et à l’international. Nous proposons des réunions en présentiel pour les clients locaux, et à distance par visioconférence pour les autres. Notre méthode de travail garantit une communication fluide et des résultats de qualité, quelle que soit la localisation."
+          }
+        ],
+        "cta": {
+          "title": "Vous avez d’autres questions ?",
+          "text": "Nous sommes là pour vous aider. Contactez-nous pour une consultation gratuite et découvrez comment améliorer votre présence en ligne.",
+          "buttons": {
+            "schedule": "Planifier un rendez-vous",
+            "whatsapp": "Écrire via WhatsApp"
+          }
+        }
+      },
+      "cta_final": {
+        "title": "Prêt à transformer votre présence digitale ?",
+        "subtitle": "Transformez votre site web en un outil efficace de marketing et de vente pour stimuler la croissance de votre entreprise.",
+        "features": [
+          "Design professionnel et attrayant",
+          "Optimisé pour les moteurs de recherche",
+          "Axé sur la conversion",
+          "Rapide et responsive",
+          "Facile à gérer",
+          "Support technique continu"
+        ],
+        "buttons": {
+          "quote": "Demander un devis gratuit",
+          "meeting": "Planifier une consultation gratuite"
+        },
+        "disclaimer": "Sans engagement. Réponse en moins de 24 heures."
+      }
+    }
   }
 }

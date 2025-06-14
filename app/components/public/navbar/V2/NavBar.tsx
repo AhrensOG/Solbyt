@@ -8,6 +8,11 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
+import { getPathname, Locale } from "@/i18n/navigation";
+import {
+  getServiceIdBySlug,
+  getSlugByServiceId,
+} from "@/app/lib/templates/serviceSlugs";
 
 const Navbar: React.FC = () => {
   const t = useTranslations("navbar");
@@ -20,16 +25,61 @@ const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: t("links.home"), href: "/" },
-    { name: t("links.services"), href: "/services" },
+    { name: t("links.home"), href: `/${locale}` },
+    {
+      name: t("links.services"),
+      href: `/${locale}/${locale === "es" ? "servicios" : "services"}`,
+    },
     { name: t("links.projects"), href: "#projects" },
     { name: t("links.about"), href: "#nosotros" },
     { name: t("links.contact"), href: "#contact" },
   ];
 
-  const changeLanguage = (lang: string) => {
-    const path = pathname.replace(`/${locale}`, "");
-    router.push(`/${lang}${path}`);
+  const changeLanguage = (lang: "es" | "en" | "fr") => {
+    const pathWithoutLocale = pathname.replace(`/${locale}`, "") || "/";
+    const segments = pathWithoutLocale.split("/").filter(Boolean);
+
+    const isServiceDetail =
+      (segments[0] === "services" || segments[0] === "servicios") &&
+      segments[1];
+
+    if (isServiceDetail) {
+      const slug = segments[1];
+      const serviceId = getServiceIdBySlug(slug, locale as Locale);
+
+      if (!serviceId) {
+        router.push(`/${lang}`);
+        return;
+      }
+
+      const translatedSlug = getSlugByServiceId(serviceId, lang);
+
+      if (!translatedSlug) {
+        router.push(`/${lang}`);
+        return;
+      }
+
+      const newPath = getPathname({
+        href: {
+          pathname: "/services/[slug]",
+          params: { slug: translatedSlug },
+        },
+        locale: lang,
+      });
+
+      router.push(newPath);
+    } else {
+      const staticPath = pathWithoutLocale.startsWith("/")
+        ? pathWithoutLocale
+        : `/${pathWithoutLocale}`;
+      const newPath = getPathname({
+        href: staticPath as "/services", // ← se asume que es ruta estática conocida
+        locale: lang,
+      });
+
+      router.push(newPath);
+    }
+
     setDropdownOpen(false);
   };
 
@@ -91,7 +141,7 @@ const Navbar: React.FC = () => {
                     .map((lang) => (
                       <button
                         key={lang}
-                        onClick={() => changeLanguage(lang)}
+                        onClick={() => changeLanguage(lang as Locale)}
                         className="block w-full px-2.5 py-2 text-left text-solbyt-purple-600 font-bold hover:bg-gray-100">
                         {lang.toUpperCase()}
                       </button>
@@ -140,7 +190,7 @@ const Navbar: React.FC = () => {
                   <button
                     key={lang}
                     onClick={() => {
-                      changeLanguage(lang);
+                      changeLanguage(lang as Locale);
                       setIsOpen(false);
                     }}
                     className="px-3 py-1 border rounded-md text-gray-700 hover:bg-gray-100">

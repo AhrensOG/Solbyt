@@ -31,8 +31,8 @@ const HomePage: React.FC = () => {
         {/* <Contact /> */}
         <ContactSection />
         <WorkInformation />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 };

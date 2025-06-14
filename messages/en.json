@@ -520,5 +520,213 @@
         }
       }
     }
+  },
+  "service_detail": {
+    "desarrollo-web": {
+      "hero": {
+        "badge": "Services • Web Development",
+        "title": "Professional Web Development",
+        "subtitle": "Turn your site into an effective business tool",
+        "description": "We design fast, secure, and search engine optimised websites. Tailored to your business goals and easy to manage.",
+        "buttons": {
+          "quote": "Request a free quote",
+          "examples": "View project examples"
+        },
+        "duration": "3-5 weeks",
+        "price": "From €1,200",
+        "image": {
+          "alt": "Professional web development by Solbyt",
+          "tagline": "Websites that turn visitors into clients",
+          "subtext": "Professional design + Performance + SEO"
+        }
+      },
+      "customer_value": {
+        "title": "Your website is the gateway to new customers",
+        "paragraph": "In today's digital world, your website is much more than just an online presence. It's your 24/7 salesperson, your business card, and your most powerful tool to build trust and convert visitors into customers.",
+        "cards": [
+          {
+            "title": "Greater online visibility",
+            "text": "An SEO-optimised website allows you to be found by potential clients searching for products or services like yours in Lisbon and nearby areas."
+          },
+          {
+            "title": "Trust and credibility",
+            "text": "A professional web design conveys reliability and builds the trust needed for visitors to become clients, increasing your conversion rate."
+          },
+          {
+            "title": "Sales increase",
+            "text": "An optimised user experience, combined with strategic calls to action, translates directly into more enquiries, leads, and sales for your business."
+          }
+        ]
+      },
+      "service_features": {
+        "title": "What does our web development service include?",
+        "paragraph": "We create complete and optimised websites that not only look professional but are strategically designed to achieve your business goals.",
+        "features": {
+          "0": {
+            "title": "Responsive design focused on user experience",
+            "description": "Websites that perfectly adapt to any device, prioritising user experience to maximise conversions."
+          },
+          "1": {
+            "title": "Technical and content SEO strategy",
+            "description": "Search engine optimisation from structure to content, improving your visibility on Google and other search engines."
+          },
+          "2": {
+            "title": "Fast performance and smooth navigation",
+            "description": "Websites optimised for fast loading, reducing bounce rates and enhancing user experience."
+          },
+          "3": {
+            "title": "Easy management via custom panel",
+            "description": "Intuitive admin interfaces that let you update content without technical knowledge."
+          },
+          "4": {
+            "title": "Integration with social media and forms",
+            "description": "Seamless connection with your social networks and lead capture systems to maximise your reach."
+          },
+          "5": {
+            "title": "SSL certificate and GDPR compliance",
+            "description": "Secure websites with encrypted connections and compliance with European data protection regulations."
+          }
+        }
+      },
+      "work_process": {
+        "title": "Our work process",
+        "paragraph": "A clear and transparent methodology so you know exactly what to expect at every stage of your website development.",
+        "steps": [
+          {
+            "title": "Analysis and planning",
+            "description": "We understand your goals, analyse your competition, and define the most effective digital strategy for your business."
+          },
+          {
+            "title": "UX/UI design",
+            "description": "We create wireframes and visual designs focused on user experience and aligned with your brand identity."
+          },
+          {
+            "title": "Development and programming",
+            "description": "We implement your site with clean, optimised code, ensuring speed, security, and device compatibility."
+          },
+          {
+            "title": "SEO optimisation",
+            "description": "We apply the best technical and content SEO practices to improve your search engine rankings."
+          },
+          {
+            "title": "Testing and launch",
+            "description": "We carry out thorough functionality, performance, and security testing before launching your site."
+          },
+          {
+            "title": "Support and maintenance",
+            "description": "We provide ongoing support and periodic updates to keep your site secure, updated, and optimised."
+          }
+        ]
+      },
+      "use_cases": {
+        "title": "Solutions tailored to your needs",
+        "subtitle": "We develop different types of websites based on your business's specific goals.",
+        "cases": {
+          "landing": {
+            "title": "Landing Pages",
+            "description": "Landing pages designed to convert visitors into leads or customers, with a specific goal and strategic calls to action.",
+            "items": [
+              "Conversion-focused design",
+              "Optimised forms for lead capture",
+              "Ultra-fast loading time",
+              "User behaviour analysis",
+              "A/B testing to optimise results"
+            ],
+            "imageAlt": "Landing page example"
+          },
+          "ecommerce": {
+            "title": "E-commerce",
+            "description": "Intuitive and secure online stores that provide a smooth shopping experience and increase your digital sales.",
+            "items": [
+              "Easy-to-manage product catalogue",
+              "Simplified checkout process",
+              "Integration with secure payment gateways",
+              "Inventory and order management",
+              "Optimisation for sales conversion"
+            ],
+            "imageAlt": "E-commerce example"
+          },
+          "corporativo": {
+            "title": "Corporate Websites",
+            "description": "Professional websites that reflect your company's identity and effectively communicate your services and values.",
+            "items": [
+              "Design aligned with your corporate identity",
+              "Clear structure and intuitive navigation",
+              "Persuasive, conversion-oriented content",
+              "Integration with CRM and marketing tools",
+              "SEO optimisation for business keywords"
+            ],
+            "imageAlt": "Corporate website example"
+          },
+          "blog": {
+            "title": "Custom Blogs",
+            "description": "SEO-optimised content platforms that position your brand as a leader in your sector and attract qualified traffic.",
+            "items": [
+              "SEO-optimised structure",
+              "Smart content categorisation",
+              "Integration with social networks",
+              "Comment and engagement system",
+              "Content strategy for lead generation"
+            ],
+            "imageAlt": "Custom blog example"
+          }
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "We answer your questions about our professional web development service",
+        "questions": [
+          {
+            "question": "How long does it take to develop a website?",
+            "answer": "The development time depends on the complexity of the project. For standard websites, our usual timeframe is 3 to 5 weeks from design approval to launch. More complex projects like e-commerce or custom platforms may take longer. During the initial planning phase, we will provide you with a detailed timeline tailored to your project."
+          },
+          {
+            "question": "What do I need to provide to start the project?",
+            "answer": "To get started, we need to understand your business goals, target audience, and design preferences. It helps if you can provide: your logo and brand identity (if available), examples of websites you like, content (texts and images) for the site, and any specific requirements. Don’t worry if you don’t have everything ready—we’ll guide you through the process and can offer content creation services if needed."
+          },
+          {
+            "question": "How do you help my site appear on Google?",
+            "answer": "We implement a comprehensive SEO strategy from the ground up. This includes technical optimisation (site structure, loading speed, metadata), content optimisation (strategic keywords, content structure), and analytics setup. All our websites are mobile-friendly and comply with Google's guidelines for good ranking. We also offer ongoing SEO services to progressively improve your visibility."
+          },
+          {
+            "question": "Will I be able to update the content myself?",
+            "answer": "Absolutely! All our websites come with intuitive content management systems that let you update text, images, products, and more without technical knowledge. We also provide personalised training and documentation so you can confidently manage your site. For more advanced updates, you can always rely on our technical support."
+          },
+          {
+            "question": "What does website maintenance include?",
+            "answer": "Our maintenance plans include: regular security updates, periodic backups, performance monitoring, email support, small content updates, and monthly performance and traffic reports. Maintenance is crucial to ensure your site remains secure, fast, and up-to-date with the latest technologies and web standards."
+          },
+          {
+            "question": "Do you work with companies in Lisbon and surrounding areas?",
+            "answer": "Yes, we work with companies in Lisbon and throughout Portugal, as well as international clients. We offer in-person meetings for local clients and video calls for remote ones. Our work methodology ensures smooth communication and outstanding results regardless of location."
+          }
+        ],
+        "cta": {
+          "title": "Do you have more questions?",
+          "text": "We’re here to help. Contact us for a free consultation and find out how we can help you build an online presence.",
+          "buttons": {
+            "schedule": "Schedule a meeting",
+            "whatsapp": "Message via WhatsApp"
+          }
+        }
+      },
+      "cta_final": {
+        "title": "Ready to transform your digital presence?",
+        "subtitle": "Turn your website into an effective marketing and sales tool that drives your business growth.",
+        "features": [
+          "Professional and attractive design",
+          "Search engine optimised",
+          "Conversion-focused",
+          "Fast and responsive",
+          "Easy to manage",
+          "Ongoing technical support"
+        ],
+        "buttons": {
+          "quote": "Request a free quote",
+          "meeting": "Book a free consultation"
+        },
+        "disclaimer": "No commitment. Response within 24 hours."
+      }
+    }
   }
 }

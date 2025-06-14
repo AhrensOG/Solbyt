@@ -18,8 +18,8 @@ export default function ServicesPage() {
         <ProcessSection />
         <FaqSection />
         <CTASection />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
