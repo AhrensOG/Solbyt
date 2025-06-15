@@ -12,7 +12,7 @@ import { getPathname, Locale } from "@/i18n/navigation";
 import {
   getServiceIdBySlug,
   getSlugByServiceId,
-} from "@/app/lib/templates/serviceSlugs";
+} from "@/app/lib/serviceSlugs";
 
 const Navbar: React.FC = () => {
   const t = useTranslations("navbar");

@@ -3,7 +3,7 @@ type ServiceId =
   | "desarrollo-web"
   | "aplicaciones-a-medida"
   | "automatizacion"
-  | "analisis-sistemas"
+  | "analisis-de-sistemas"
   | "asesoria-digital"
   | "desarrollo-software";
 
@@ -25,8 +25,8 @@ export const serviceSlugMap: ServiceSlugMap = {
     en: "process-automation",
     fr: "automatisation-processus"
   },
-  "analisis-sistemas": {
-    es: "analisis-sistemas",
+  "analisis-de-sistemas": {
+    es: "analisis-de-sistemas",
     en: "systems-analysis",
     fr: "analyse-systemes"
   },
