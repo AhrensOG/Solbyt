@@ -21,7 +21,7 @@ export const serviceSlugMap: ServiceSlugMap = {
     fr: "applications-sur-mesure"
   },
   "automatizacion": {
-    es: "automatizacion",
+    es: "automatizacion-de-procesos",
     en: "process-automation",
     fr: "automatisation-processus"
   },

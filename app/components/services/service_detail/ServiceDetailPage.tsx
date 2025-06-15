@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import WebDevelopment from "./all_services/web_development/WebDevelopment";
 import { Locale } from "@/i18n/navigation";
 import CustomApplications from "./all_services/custom_applications/CustomApplications";
+import ProcessAutomation from "./all_services/process_automation/ProcessAutomation";
 
 type Props = {
   params: {
@@ -27,6 +28,7 @@ const ServiceDetailPage = async ({ params }: Props) => {
     <>
       {serviceId === "desarrollo-web" && <WebDevelopment />}
       {serviceId === "aplicaciones-a-medida" && <CustomApplications />}
+      {serviceId === "automatizacion" && <ProcessAutomation />}
       {/* Luego agregás aquí los otros casos con sus respectivos componentes */}
     </>
   );

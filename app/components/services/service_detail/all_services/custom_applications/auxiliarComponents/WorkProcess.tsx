@@ -1,4 +1,4 @@
-import { ArrowRight, Cog, Layers, Target, Zap } from "lucide-react";
+import { ArrowRight, Clock, Cog, Layers, Target, Zap } from "lucide-react";
 import React from "react";
 
 const WorkProcess = () => {
@@ -64,7 +64,6 @@ const WorkProcess = () => {
                 <div
                   className={`h-16 w-16 rounded-xl bg-gradient-to-r ${phase.color} flex items-center justify-center mb-4 shadow-md`}>
                   {phase.icon}
-                  {/* <div className="h-8 w-8 bg-white rounded-full" /> */}
                 </div>
                 <span className="text-sm font-semibold text-gray-500 tracking-widest uppercase mb-1">
                   {phase.phase}
@@ -76,7 +75,7 @@ const WorkProcess = () => {
                   {phase.description}
                 </p>
                 <div className="text-xs font-medium bg-gray-100 text-gray-600 px-3 py-1 rounded-full flex items-center gap-2">
-                  <div className="h-2.5 w-2.5 bg-gray-500 rounded-full" />
+                  <Clock className="h-3 w-3 mr-1" />
                   {phase.duration}
                 </div>
               </div>
