@@ -2,19 +2,19 @@
 import Footer from "@/app/components/public/footer/Footer";
 import Navbar from "@/app/components/public/navbar/V2/NavBar";
 import React from "react";
-import Hero from "../../shared/Hero";
 import {
+  ActivityIcon,
   ArrowRight,
-  BarChart3,
-  Calendar,
   Clock,
-  Cog,
   CreditCard,
-  Layers,
-  Zap,
+  Database,
+  FileTextIcon,
+  SearchIcon,
+  SettingsIcon,
+  Shield,
+  TargetIcon,
 } from "lucide-react";
 import ProblemsWeSolve from "./auxiliarComponents/ProblemsWeSolve";
-import Features from "./auxiliarComponents/Features";
 import {
   Activity,
   FileText,
@@ -23,10 +23,12 @@ import {
   Target,
   Users,
 } from "lucide-react";
-import UseCases from "./auxiliarComponents/UseCases";
-import WorkProcess from "./auxiliarComponents/WorkProcess";
-import FAQ from "./auxiliarComponents/FAQ";
-import CTA from "./auxiliarComponents/CTA";
+import Hero from "../../shared/Hero";
+import Features from "../../shared/Features";
+import UseCases from "../../shared/UseCases";
+import WorkProcess from "../../shared/WorkProcess";
+import FAQ from "../../shared/FAQ";
+import CTA from "../../shared/CTA";
 
 const SystemAnalysis = () => {
   const features = [
@@ -76,83 +78,83 @@ const SystemAnalysis = () => {
 
   const useCasesContent = [
     {
-      key: "crm",
-      title: "CRM enfocado en ventas",
+      key: "auditoria",
+      title: "Auditoría técnica completa",
       description:
-        "Sistema de gestión comercial que centraliza leads, automatiza seguimientos y optimiza el proceso de ventas con métricas en tiempo real.",
+        "Evaluación integral de todo el ecosistema tecnológico: código, arquitectura, infraestructura, procesos de desarrollo y documentación técnica.",
       features: [
-        "Pipeline visual de oportunidades comerciales",
-        "Automatización de seguimientos por email/WhatsApp",
-        "Dashboard con métricas de conversión",
-        "Integración con formularios web y redes sociales",
-        "Reportes de rendimiento por vendedor",
-        "Gestión de cotizaciones y propuestas",
+        "Revisión completa del código fuente y arquitectura",
+        "Análisis de vulnerabilidades y puntos de fallo",
+        "Evaluación de rendimiento y escalabilidad",
+        "Revisión de procesos de desarrollo y deployment",
+        "Análisis de documentación técnica y procedimientos",
+        "Recomendaciones priorizadas con roadmap de implementación",
       ],
+      titleCaseStudy: "Ideal para",
       caseStudy:
-        "Empresa de servicios aumentó 40% su tasa de conversión organizando mejor el seguimiento de leads.",
+        "Sistemas críticos, aplicaciones con problemas recurrentes, o antes de grandes actualizaciones",
       color: "blue",
-      icon: BarChart3,
-      titleCaseStudy: "Caso Real",
+      icon: SearchIcon,
       img: "/img_placeholder.webp",
     },
     {
-      key: "turnos",
-      title: "App de reservas o turnos",
+      key: "optimizacion",
+      title: "Optimización de base de datos",
       description:
-        "Plataforma de gestión de citas que permite a tus clientes reservar online mientras optimizas la ocupación de tu agenda y reduces cancelaciones.",
+        "Análisis especializado en rendimiento de bases de datos, optimización de consultas y estructura de datos para mejorar velocidad y eficiencia.",
       features: [
-        "Calendario inteligente con disponibilidad en tiempo real",
-        "Reservas online 24/7 desde web o app móvil",
-        "Recordatorios automáticos por SMS/email",
-        "Gestión de servicios, precios y duraciones",
-        "Panel administrativo para el equipo",
-        "Reportes de ocupación y ingresos",
+        "Análisis de consultas lentas y cuellos de botella",
+        "Optimización de índices y estructura de tablas",
+        "Revisión de procedimientos almacenados y triggers",
+        "Evaluación de estrategias de backup y recuperación",
+        "Análisis de uso de memoria y almacenamiento",
+        "Recomendaciones de escalabilidad horizontal/vertical",
       ],
+      titleCaseStudy: "Ideal para",
       caseStudy:
-        "Clínica dental redujo 60% las cancelaciones y aumentó 25% la ocupación con recordatorios automáticos.",
+        "Aplicaciones con problemas de rendimiento, bases de datos grandes, o sistemas con alta concurrencia",
       color: "purple",
-      icon: Calendar,
-      titleCaseStudy: "Caso Real",
+      icon: Database,
       img: "/img_placeholder.webp",
     },
     {
-      key: "panel",
-      title: "Panel de gestión",
+      key: "seguridad",
+      title: "Mejora de seguridad",
       description:
-        "Dashboard ejecutivo que centraliza información clave de diferentes áreas, facilitando la toma de decisiones con datos actualizados en tiempo real.",
+        "Evaluación exhaustiva de vulnerabilidades de seguridad, implementación de mejores prácticas y fortalecimiento de la protección de datos.",
       features: [
-        "Métricas financieras y operativas en tiempo real",
-        "Gráficos interactivos y reportes personalizables",
-        "Alertas automáticas por objetivos o anomalías",
-        "Integración con sistemas contables y de inventario",
-        "Acceso por roles y permisos diferenciados",
-        "Exportación de datos para análisis externos",
+        "Análisis de vulnerabilidades y vectores de ataque",
+        "Revisión de autenticación y autorización",
+        "Evaluación de cifrado y protección de datos",
+        "Análisis de configuraciones de servidor y red",
+        "Revisión de cumplimiento RGPD y normativas",
+        "Plan de respuesta a incidentes de seguridad",
       ],
+      titleCaseStudy: "Ideal para",
       caseStudy:
-        "Empresa logística redujo 50% el tiempo de análisis de datos con dashboard automatizado.",
+        "Sistemas que manejan datos sensibles, aplicaciones públicas, o empresas con requisitos de compliance",
       color: "pink",
-      icon: Settings,
-      titleCaseStudy: "Caso Real",
+      icon: Shield,
       img: "/img_placeholder.webp",
     },
     {
-      key: "internas",
-      title: "Herramientas internas",
+      key: "stack",
+      title: "Evaluación de stack tecnológico",
       description:
-        "Aplicaciones específicas para optimizar procesos internos únicos de tu empresa, desde gestión de recursos humanos hasta control de inventarios especializados.",
+        "  Análisis de las tecnologías utilizadas, su vigencia, compatibilidad y adecuación para los objetivos actuales y futuros del negocio.",
       features: [
-        "Gestión de empleados y control de asistencia",
-        "Sistemas de aprobaciones y flujos de trabajo",
-        "Control de inventarios con códigos QR/barras",
-        "Herramientas de comunicación interna",
-        "Gestión documental y archivo digital",
-        "Automatización de tareas repetitivas",
+        "Evaluación de tecnologías y frameworks utilizados",
+        "Análisis de obsolescencia y riesgos técnicos",
+        "Revisión de dependencias y librerías externas",
+        "Evaluación de escalabilidad del stack actual",
+        "Comparativa con alternativas modernas",
+        "Roadmap de migración y actualización tecnológica",
       ],
+      titleCaseStudy: "Ideal para",
       caseStudy:
-        "Empresa manufacturera automatizó control de inventario ahorrando 15 horas semanales de trabajo manual.",
+        "Sistemas legacy, aplicaciones con tecnologías obsoletas, o planificación de modernización tecnológica",
       color: "blue",
-      icon: Users,
-      titleCaseStudy: "Caso Real",
+      icon: SettingsIcon,
       img: "/img_placeholder.webp",
     },
   ];
@@ -160,78 +162,76 @@ const SystemAnalysis = () => {
   const phases = [
     {
       phase: "Fase 1",
-      title: "Análisis y planificación",
+      title: "Recopilación de información",
       description:
-        "Mapeo completo de procesos actuales, identificación de puntos críticos y definición de módulos prioritarios.",
+        "Análisis de documentación técnica, acceso a sistemas y entrevistas con el equipo técnico para entender el contexto.",
       color: "blue",
-      duration: "1-2 semanas",
-      icon: Target,
+      duration: "1-2 días",
+      icon: FileTextIcon,
       connectorIcon: ArrowRight,
     },
     {
       phase: "Fase 2",
-      title: "Diseño de arquitectura",
+      title: "Diagnóstico técnico",
       description:
-        "Creación de wireframes, definición de base de datos y diseño de interfaces centradas en la usabilidad.",
+        "Evaluación profunda del código, arquitectura, rendimiento y seguridad utilizando herramientas especializadas.",
       color: "purple",
-      duration: "1-2 semanas",
-      icon: Layers,
+      duration: "3-5 días",
+      icon: SearchIcon,
       connectorIcon: ArrowRight,
     },
     {
       phase: "Fase 3",
-      title: "Desarrollo del MVP",
+      title: "Análisis de resultados",
       description:
-        "Implementación del módulo principal con funcionalidades core para validar la solución en el entorno real.",
+        "Procesamiento de datos recopilados, identificación de patrones y clasificación de problemas por criticidad.",
       color: "pink",
-      duration: "2-4 semanas",
-      icon: Cog,
+      duration: "2-3 días",
+      icon: ActivityIcon,
       connectorIcon: ArrowRight,
     },
     {
       phase: "Fase 4",
-      title: "Escalado modular",
+      title: "Informe y recomendaciones",
       description:
-        "Expansión gradual con nuevos módulos basados en feedback real y necesidades emergentes del negocio.",
+        "Entrega de informe detallado con hallazgos, recomendaciones priorizadas y plan de acción específico.",
       color: "blue",
-      duration: "Continuo",
-      icon: Zap,
+      duration: "2-3 días",
+      icon: TargetIcon,
     },
   ];
 
   const faqs = [
     {
-      question:
-        "¿Cómo se integran las aplicaciones con nuestros sistemas actuales?",
+      question: "¿Qué nivel de acceso necesitan a nuestros sistemas?",
       answer:
-        "Realizamos un análisis técnico completo de tus sistemas existentes para diseñar integraciones nativas mediante APIs, conectores o sincronización de bases de datos. Nuestro objetivo es que la nueva aplicación funcione de forma transparente con tus herramientas actuales, manteniendo la continuidad operativa y evitando duplicación de datos. Trabajamos con los principales sistemas ERP, CRM, contables y de gestión del mercado.",
+        "El nivel de acceso depende del tipo de análisis solicitado. Para una auditoría completa, necesitamos acceso de solo lectura al código fuente, bases de datos de desarrollo/staging, y documentación técnica. Para análisis de rendimiento, requerimos acceso a logs y métricas del sistema. Siempre trabajamos bajo acuerdos de confidencialidad estrictos y nunca accedemos a datos de producción sensibles sin supervisión. Podemos trabajar con copias anonimizadas de datos cuando sea necesario.",
+    },
+    {
+      question: "¿El análisis afectará el funcionamiento normal del sistema?",
+      answer:
+        "No, nuestro análisis está diseñado para ser no intrusivo. Trabajamos principalmente con entornos de desarrollo y staging, documentación, y logs históricos. Cuando necesitamos analizar el entorno de producción, utilizamos herramientas de monitoreo pasivo que no afectan el rendimiento. Cualquier prueba que pueda tener impacto se coordina previamente y se realiza en horarios de baja actividad, siempre con la aprobación y supervisión de tu equipo técnico.",
+    },
+    {
+      question: "¿Qué incluye exactamente el informe de análisis?",
+      answer:
+        "El informe incluye un resumen ejecutivo con los hallazgos principales, análisis detallado de cada área evaluada (código, arquitectura, rendimiento, seguridad), lista priorizada de problemas encontrados clasificados por criticidad, recomendaciones específicas con estimaciones de tiempo y costo, roadmap de implementación sugerido, y anexos técnicos con evidencias y métricas. También incluimos una sesión de presentación para explicar los hallazgos y responder preguntas de tu equipo.",
+    },
+    {
+      question: "¿Pueden ayudar a implementar las mejoras recomendadas?",
+      answer:
+        "Absolutamente. Además del análisis, ofrecemos servicios de implementación de las mejoras recomendadas. Podemos trabajar directamente en la implementación, colaborar con tu equipo técnico interno, o proporcionar supervisión y consultoría durante el proceso. También ofrecemos capacitación específica para tu equipo en las nuevas prácticas y tecnologías recomendadas. Nuestro objetivo es asegurar que las recomendaciones se implementen correctamente y generen el impacto esperado.",
     },
     {
       question:
-        "¿Cuánto tiempo tarda en desarrollarse una aplicación completa?",
+        "¿Con qué frecuencia recomiendan realizar análisis de sistemas?",
       answer:
-        "El tiempo varía según la complejidad, pero trabajamos por módulos para acelerar el retorno de inversión. Un módulo básico puede estar listo en 3-4 semanas, mientras que aplicaciones completas suelen tomar 2-4 meses. La ventaja de nuestro enfoque modular es que puedes empezar a usar y obtener beneficios de los primeros módulos mientras desarrollamos el resto, validando la solución en el proceso real de trabajo.",
+        "La frecuencia depende de varios factores: sistemas críticos deberían analizarse anualmente, aplicaciones en crecimiento rápido cada 6-12 meses, y sistemas estables cada 2-3 años. También recomendamos análisis antes de grandes actualizaciones, migraciones, o cuando se detectan problemas de rendimiento. Para sistemas legacy o con tecnologías obsoletas, sugerimos evaluaciones más frecuentes. Ofrecemos planes de monitoreo continuo para clientes que requieren supervisión constante de la salud de sus sistemas.",
     },
     {
-      question: "¿Qué sucede si necesitamos cambios durante el desarrollo?",
+      question: "¿Qué diferencia su análisis de las herramientas automáticas?",
       answer:
-        "Nuestro proceso está diseñado para ser flexible. Trabajamos con metodología ágil que incluye revisiones semanales donde puedes ver el progreso y solicitar ajustes. Los cambios menores se incorporan sin costo adicional, mientras que modificaciones significativas se evalúan en conjunto para ajustar tiempos y presupuesto. Esta flexibilidad es clave para asegurar que el resultado final se adapte perfectamente a tus necesidades reales.",
-    },
-    {
-      question:
-        "¿Cómo garantizan la seguridad de nuestros datos empresariales?",
-      answer:
-        "Implementamos múltiples capas de seguridad: cifrado de datos en tránsito y reposo, autenticación de usuarios con diferentes niveles de acceso, copias de seguridad automáticas, y cumplimiento de normativas RGPD. Además, realizamos auditorías de seguridad periódicas y mantenemos los sistemas actualizados con los últimos parches de seguridad. Todos nuestros desarrollos incluyen logs de actividad para trazabilidad completa.",
-    },
-    {
-      question: "¿Ofrecen formación para que nuestro equipo use la aplicación?",
-      answer:
-        "Sí, incluimos formación personalizada como parte del servicio. Realizamos sesiones de capacitación adaptadas a cada rol de usuario, creamos documentación específica para tu aplicación, y ofrecemos soporte directo durante las primeras semanas de uso. También proporcionamos videos tutoriales y una base de conocimiento online para consultas futuras. Nuestro objetivo es que tu equipo se sienta cómodo y productivo desde el primer día.",
-    },
-    {
-      question: "¿Qué incluye el soporte técnico después del lanzamiento?",
-      answer:
-        "El soporte incluye resolución de incidencias técnicas, actualizaciones de seguridad, pequeñas mejoras de funcionalidad, y monitorización del rendimiento de la aplicación. Ofrecemos diferentes planes de soporte según tus necesidades: desde soporte básico por email hasta soporte premium con respuesta inmediata y acceso directo a nuestro equipo técnico. También incluimos reportes mensuales de uso y recomendaciones de optimización.",
+        "Mientras las herramientas automáticas detectan problemas superficiales, nuestro análisis combina tecnología avanzada con experiencia humana para entender el contexto de negocio. Evaluamos no solo qué está mal, sino por qué ocurre y cómo impacta tus objetivos específicos. Consideramos factores como el crecimiento esperado, restricciones presupuestarias, capacidades del equipo, y prioridades estratégicas. Nuestras recomendaciones son accionables y están adaptadas a tu realidad empresarial, no solo a mejores prácticas genéricas.",
     },
   ];
 
@@ -283,49 +283,47 @@ const SystemAnalysis = () => {
             overlaySubtitle: "Diagnóstico profundo + Soluciones priorizadas",
           }}
         />
+
         <ProblemsWeSolve />
+
         <Features items={features} titleGradient="purple" />
         <UseCases
           colorKey="purple"
-          title="Casos de uso"
-          subtitle="Soluciones personalizadas"
+          title="Tipos de análisis especializados"
+          subtitle="Cada sistema tiene necesidades específicas. Ofrecemos diferentes tipos de análisis técnico adaptados a tu situación particular y objetivos de negocio."
           cases={useCasesContent}
           imageSrc="/img_placeholder.webp"
         />
         <WorkProcess
           colorKey="purple"
-          title="El proceso"
-          subtitle="Soluciones personalizadas"
+          title="Metodología de análisis profundo"
+          subtitle="Nuestro proceso estructurado garantiza un diagnóstico completo y recomendaciones accionables que tu equipo puede implementar de forma segura y prioritaria."
           phases={phases}
         />
         <FAQ
           title="Preguntas frecuentes"
-          subtitle="Soluciones personalizadas"
-          ctaDescription="Estamos aquí para ayudarte. Contáctanos para una asesoría gratuita y conoce cómo podemos ayudarte a tener presencia online."
-          ctaPrimaryLabel="Agendar reunión"
-          ctaSecondaryLabel="Escribinos por whatsapp"
-          ctaTitle="¿Tienes más preguntas?"
+          subtitle="Resolvemos las dudas más comunes sobre nuestro servicio de análisis de sistemas"
           items={faqs}
           colorKey="purple"
         />
         <CTA
           colorKey="purple"
-          title="¿Listo para optimizar tus procesos desde el primer día?"
-          description="Desarrollamos la aplicación que tu empresa necesita, pensada por módulos para crecer contigo y adaptarse a tu forma única de trabajar."
+          title=" ¿Listo para prevenir problemas costosos?"
+          description="No esperes a que los problemas técnicos afecten tu negocio. Una auditoría preventiva puede ahorrarte miles de euros y dolores de cabeza futuros."
           features={[
-            "Arquitectura adaptada a tus procesos",
-            "Desarrollo modular escalable",
-            "Integración con sistemas actuales",
-            "Soporte técnico continuo",
+            "Diagnóstico completo en 1-2 semanas",
+            "Análisis no intrusivo",
+            "Recomendaciones priorizadas",
+            "Soporte en implementación",
           ]}
           buttons={[
             {
-              label: "Agendar reunión de análisis",
+              label: "Solicitar auditoría técnica",
               href: "/contacto",
               targetBlank: true,
             },
             {
-              label: "Solicitar presupuesto personalizado",
+              label: "Ver ejemplo de informe",
               href: "/contacto",
               variant: "outline",
               targetBlank: true,
