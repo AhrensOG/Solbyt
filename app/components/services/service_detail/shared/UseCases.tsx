@@ -24,7 +24,6 @@ type UseCasesProps = {
   colorKey: SolbytColor;
   title: string;
   subtitle: string;
-  imageSrc?: string;
   cases: UseCase[];
 };
 
@@ -32,7 +31,6 @@ const UseCases: React.FC<UseCasesProps> = ({
   colorKey,
   title,
   subtitle,
-  imageSrc,
   cases,
 }) => {
   const [selected, setSelected] = useState<string>(cases[0]?.key);
@@ -124,9 +122,9 @@ const UseCases: React.FC<UseCasesProps> = ({
               className={`${
                 use_cases_color_styles[content.color as SolbytColor].caseStudyBg
               } flex items-center justify-center p-6`}>
-              {imageSrc && (
+              {content.img && (
                 <Image
-                  src={imageSrc}
+                  src={content.img}
                   alt={content.title}
                   width={500}
                   height={400}

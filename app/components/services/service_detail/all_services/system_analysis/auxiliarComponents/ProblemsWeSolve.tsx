@@ -7,28 +7,28 @@ const ProblemsWeSolve = () => {
       icon: <AlertTriangle className="h-8 w-8 text-red-500" />,
       title: "Fallos críticos ocultos",
       description:
-        "Vulnerabilidades que pueden causar caídas del sistema en momentos críticos.",
+        "Errores que permanecen invisibles… hasta que paralizan todo en el peor momento.",
       gradient: "from-red-50 to-red-100/50",
     },
     {
       icon: <TrendingUp className="h-8 w-8 text-orange-500" />,
       title: "Rendimiento degradado",
       description:
-        "Lentitud progresiva que afecta la experiencia del usuario y las conversiones.",
+        "Tu sistema responde, pero cada vez más lento. Y eso aleja usuarios, clientes y oportunidades.",
       gradient: "from-orange-50 to-orange-100/50",
     },
     {
       icon: <Shield className="h-8 w-8 text-yellow-500" />,
       title: "Brechas de seguridad",
       description:
-        "Vulnerabilidades que exponen datos sensibles a ataques maliciosos.",
+        "Puntos débiles que podrían ser explotados y poner en riesgo datos sensibles o confidenciales.",
       gradient: "from-yellow-50 to-yellow-100/50",
     },
     {
       icon: <Database className="h-8 w-8 text-blue-500" />,
       title: "Escalabilidad limitada",
       description:
-        "Arquitectura que no soportará el crecimiento futuro del negocio.",
+        "Arquitecturas que hoy funcionan, pero no están listas para el crecimiento que se viene.",
       gradient: "from-blue-50 to-blue-100/50",
     },
   ];
@@ -38,11 +38,12 @@ const ProblemsWeSolve = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 to-solbyt-blue-500">
-            Problemas que detectamos antes de que exploten
+            Detectamos los fallos antes de que te cuesten caro
           </h2>
           <p className="text-lg text-gray-600">
-            Los sistemas pueden parecer estables, pero pueden ocultar fallos que
-            causan grandes pérdidas económicas, de datos o reputación.
+            Un sistema puede funcionar bien… hasta que deja de hacerlo. Los
+            fallos ocultos no solo afectan la operativa: pueden costarte dinero,
+            datos y reputación.
           </p>
         </div>
 

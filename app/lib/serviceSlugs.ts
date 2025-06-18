@@ -32,11 +32,11 @@ export const serviceSlugMap: ServiceSlugMap = {
   },
   "asesoria-digital": {
     es: "asesoria-digital",
-    en: "digital-advisory",
+    en: "digital-consulting",
     fr: "conseil-digitalisation"
   },
   "desarrollo-software": {
-    es: "desarrollo-software",
+    es: "desarrollo-de-software",
     en: "software-development",
     fr: "developpement-logiciel"
   }

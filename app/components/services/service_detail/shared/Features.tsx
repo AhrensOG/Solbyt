@@ -12,9 +12,16 @@ type FeaturesProps = {
     colorKey: string;
   }[];
   titleGradient: string;
+  title: string;
+  description: string;
 };
 
-const Features = ({ items, titleGradient }: FeaturesProps) => {
+const Features = ({
+  items,
+  titleGradient,
+  title,
+  description,
+}: FeaturesProps) => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
@@ -23,13 +30,9 @@ const Features = ({ items, titleGradient }: FeaturesProps) => {
             className={`text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r ${
               features_color_styles[titleGradient as SolbytColor].titleGradient
             }`}>
-            Nuestro proceso de diagnóstico integral
+            {title}
           </h2>
-          <p className="text-lg text-gray-600">
-            Realizamos una evaluación técnica exhaustiva que va más allá de los
-            síntomas superficiales, identificando las causas raíz de los
-            problemas y oportunidades de optimización.
-          </p>
+          <p className="text-lg text-gray-600">{description}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -547,20 +547,20 @@
         }
       },
       "customer_value": {
-        "title": "Tu sitio web es la puerta de entrada a nuevos clientes",
-        "paragraph": "En el mundo digital actual, tu sitio web es mucho más que una simple presencia online. Es tu vendedor 24/7, tu carta de presentación y tu herramienta más poderosa para generar confianza y convertir visitantes en clientes.",
+        "title": "Tu sitio web es la clave para atraer nuevos clientes",
+        "paragraph": "En un mundo cada vez más digital, tu sitio web no es solo una vitrina online: es tu mejor vendedor, tu primera impresión y el canal más eficaz para generar confianza y convertir visitas en oportunidades reales.",
         "cards": [
           {
-            "title": "Mayor visibilidad online",
-            "text": "Un sitio web optimizado para SEO te permite ser encontrado por potenciales clientes cuando buscan productos o servicios como los tuyos en Lisboa y alrededores."
+            "title": "Visibilidad real en Google",
+            "text": "Un sitio optimizado para buscadores te posiciona frente a clientes potenciales justo cuando están buscando lo que tú ofreces, especialmente en Lisboa y alrededores."
           },
           {
-            "title": "Confianza y credibilidad",
-            "text": "Un diseño web profesional transmite seriedad y genera la confianza necesaria para que los visitantes se conviertan en clientes, aumentando tu tasa de conversión."
+            "title": "Confianza desde el primer vistazo",
+            "text": "Un diseño profesional no solo luce bien, sino que transmite seriedad y credibilidad, dos factores clave para que un visitante dé el siguiente paso."
           },
           {
-            "title": "Incremento en ventas",
-            "text": "Una experiencia de usuario optimizada, combinada con llamados a la acción estratégicos, se traduce directamente en más consultas, leads y ventas para tu negocio."
+            "title": "Más consultas y ventas",
+            "text": "Mejorar la experiencia del usuario y usar llamados a la acción estratégicos convierte más visitas en contactos, y más contactos en clientes reales."
           }
         ]
       },

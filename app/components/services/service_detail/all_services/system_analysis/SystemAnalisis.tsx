@@ -36,42 +36,42 @@ const SystemAnalysis = () => {
       icon: <Search className="h-6 w-6 text-solbyt-purple-600" />,
       title: "Diagnóstico del sistema actual",
       description:
-        "Análisis completo de la arquitectura, código, base de datos y infraestructura para identificar problemas existentes y potenciales.",
+        "Revisamos a fondo tu arquitectura, código y bases de datos para detectar fallos, riesgos y oportunidades de mejora.",
       colorKey: "purple",
     },
     {
       icon: <Activity className="h-6 w-6 text-solbyt-blue-600" />,
       title: "Evaluación de rendimiento técnico",
       description:
-        "Medición detallada de tiempos de respuesta, uso de recursos, carga del servidor y optimización de consultas.",
+        "Medimos tiempos de respuesta, consumo de recursos y rendimiento general para detectar cuellos de botella técnicos.",
       colorKey: "blue",
     },
     {
       icon: <Target className="h-6 w-6 text-solbyt-pink-500" />,
       title: "Detección de puntos críticos",
       description:
-        "Identificación de componentes que representan riesgos de fallo, cuellos de botella y dependencias problemáticas.",
+        "Identificamos componentes sensibles al fallo que pueden afectar la estabilidad y escalabilidad de tu sistema.",
       colorKey: "pink",
     },
     {
       icon: <Settings className="h-6 w-6 text-solbyt-blue-500" />,
       title: "Revisión de arquitectura y stack",
       description:
-        "Evaluación de la estructura técnica, tecnologías utilizadas y su adecuación para los objetivos actuales y futuros.",
+        "Analizamos la adecuación de tu stack tecnológico y su capacidad para sostener los objetivos actuales y futuros.",
       colorKey: "blue",
     },
     {
       icon: <FileText className="h-6 w-6 text-solbyt-pink-500" />,
       title: "Informe de mejoras priorizadas",
       description:
-        "Documento detallado con recomendaciones clasificadas por urgencia, impacto y costo de implementación.",
+        "Te entregamos un plan claro y accionable, con recomendaciones clasificadas por impacto, urgencia y coste.",
       colorKey: "pink",
     },
     {
       icon: <Users className="h-6 w-6 text-solbyt-purple-500" />,
       title: "Asesoría para tu equipo actual",
       description:
-        "Sesiones de consultoría técnica para transferir conocimiento y capacitar a tu equipo en las mejores prácticas.",
+        "Acompañamos a tu equipo con sesiones técnicas para facilitar la implementación de las mejoras sugeridas.",
       colorKey: "purple",
     },
   ];
@@ -81,18 +81,18 @@ const SystemAnalysis = () => {
       key: "auditoria",
       title: "Auditoría técnica completa",
       description:
-        "Evaluación integral de todo el ecosistema tecnológico: código, arquitectura, infraestructura, procesos de desarrollo y documentación técnica.",
+        "Revisamos todo tu ecosistema digital: código, arquitectura, infraestructura y procesos de desarrollo para detectar riesgos y oportunidades.",
       features: [
-        "Revisión completa del código fuente y arquitectura",
-        "Análisis de vulnerabilidades y puntos de fallo",
+        "Inspección detallada del código y arquitectura",
+        "Detección de vulnerabilidades y fallos críticos",
         "Evaluación de rendimiento y escalabilidad",
-        "Revisión de procesos de desarrollo y deployment",
+        "Revisión de procesos de desarrollo y despliegue",
         "Análisis de documentación técnica y procedimientos",
-        "Recomendaciones priorizadas con roadmap de implementación",
+        "Informe con roadmap técnico de mejora",
       ],
       titleCaseStudy: "Ideal para",
       caseStudy:
-        "Sistemas críticos, aplicaciones con problemas recurrentes, o antes de grandes actualizaciones",
+        "Aplicaciones complejas, sistemas con errores recurrentes o en preparación para una gran actualización",
       color: "blue",
       icon: SearchIcon,
       img: "/img_placeholder.webp",
@@ -101,18 +101,18 @@ const SystemAnalysis = () => {
       key: "optimizacion",
       title: "Optimización de base de datos",
       description:
-        "Análisis especializado en rendimiento de bases de datos, optimización de consultas y estructura de datos para mejorar velocidad y eficiencia.",
+        "Mejoramos el rendimiento de tu base de datos mediante análisis de consultas, estructura de tablas y uso eficiente de recursos.",
       features: [
-        "Análisis de consultas lentas y cuellos de botella",
-        "Optimización de índices y estructura de tablas",
-        "Revisión de procedimientos almacenados y triggers",
-        "Evaluación de estrategias de backup y recuperación",
+        "Detección de consultas lentas y cuellos de botella",
+        "Optimización de índices y organización de tablas",
+        "Revisión de triggers y procedimientos almacenados",
+        "Evaluación de backup y recuperación",
         "Análisis de uso de memoria y almacenamiento",
-        "Recomendaciones de escalabilidad horizontal/vertical",
+        "Recomendaciones para escalar según la carga",
       ],
       titleCaseStudy: "Ideal para",
       caseStudy:
-        "Aplicaciones con problemas de rendimiento, bases de datos grandes, o sistemas con alta concurrencia",
+        "Aplicaciones con bases de datos pesadas, alta concurrencia o problemas de rendimiento persistente",
       color: "purple",
       icon: Database,
       img: "/img_placeholder.webp",
@@ -121,18 +121,18 @@ const SystemAnalysis = () => {
       key: "seguridad",
       title: "Mejora de seguridad",
       description:
-        "Evaluación exhaustiva de vulnerabilidades de seguridad, implementación de mejores prácticas y fortalecimiento de la protección de datos.",
+        "Auditamos la seguridad de tu sistema, detectamos vulnerabilidades y fortalecemos la protección de datos sensibles.",
       features: [
-        "Análisis de vulnerabilidades y vectores de ataque",
-        "Revisión de autenticación y autorización",
-        "Evaluación de cifrado y protección de datos",
-        "Análisis de configuraciones de servidor y red",
-        "Revisión de cumplimiento RGPD y normativas",
-        "Plan de respuesta a incidentes de seguridad",
+        "Análisis de posibles vectores de ataque",
+        "Evaluación de autenticación y control de accesos",
+        "Revisión de cifrado y gestión de datos",
+        "Inspección de configuraciones de red y servidor",
+        "Verificación de cumplimiento RGPD y normativas",
+        "Plan de respuesta ante incidentes",
       ],
       titleCaseStudy: "Ideal para",
       caseStudy:
-        "Sistemas que manejan datos sensibles, aplicaciones públicas, o empresas con requisitos de compliance",
+        "Sistemas expuestos públicamente, manejo de datos sensibles o con exigencias de compliance",
       color: "pink",
       icon: Shield,
       img: "/img_placeholder.webp",
@@ -141,18 +141,18 @@ const SystemAnalysis = () => {
       key: "stack",
       title: "Evaluación de stack tecnológico",
       description:
-        "  Análisis de las tecnologías utilizadas, su vigencia, compatibilidad y adecuación para los objetivos actuales y futuros del negocio.",
+        "Analizamos las tecnologías que usás y te ayudamos a definir si están alineadas con tus objetivos presentes y futuros.",
       features: [
-        "Evaluación de tecnologías y frameworks utilizados",
-        "Análisis de obsolescencia y riesgos técnicos",
-        "Revisión de dependencias y librerías externas",
-        "Evaluación de escalabilidad del stack actual",
-        "Comparativa con alternativas modernas",
-        "Roadmap de migración y actualización tecnológica",
+        "Evaluación de frameworks y librerías actuales",
+        "Detección de tecnologías obsoletas o riesgosas",
+        "Análisis de dependencias críticas",
+        "Capacidad de escalado del stack",
+        "Comparación con alternativas modernas",
+        "Roadmap de migración tecnológica si aplica",
       ],
       titleCaseStudy: "Ideal para",
       caseStudy:
-        "Sistemas legacy, aplicaciones con tecnologías obsoletas, o planificación de modernización tecnológica",
+        "Sistemas legacy, aplicaciones que necesitan modernización o redefinición tecnológica",
       color: "blue",
       icon: SettingsIcon,
       img: "/img_placeholder.webp",
@@ -164,7 +164,7 @@ const SystemAnalysis = () => {
       phase: "Fase 1",
       title: "Recopilación de información",
       description:
-        "Análisis de documentación técnica, acceso a sistemas y entrevistas con el equipo técnico para entender el contexto.",
+        "Analizamos documentación técnica, accedemos a entornos de desarrollo y hablamos con tu equipo para entender el contexto real del sistema.",
       color: "blue",
       duration: "1-2 días",
       icon: FileTextIcon,
@@ -174,7 +174,7 @@ const SystemAnalysis = () => {
       phase: "Fase 2",
       title: "Diagnóstico técnico",
       description:
-        "Evaluación profunda del código, arquitectura, rendimiento y seguridad utilizando herramientas especializadas.",
+        "Realizamos pruebas exhaustivas del código, la arquitectura, el rendimiento y la seguridad utilizando herramientas avanzadas.",
       color: "purple",
       duration: "3-5 días",
       icon: SearchIcon,
@@ -184,7 +184,7 @@ const SystemAnalysis = () => {
       phase: "Fase 3",
       title: "Análisis de resultados",
       description:
-        "Procesamiento de datos recopilados, identificación de patrones y clasificación de problemas por criticidad.",
+        "Procesamos los datos recolectados, identificamos patrones de falla y priorizamos los hallazgos según su impacto y criticidad.",
       color: "pink",
       duration: "2-3 días",
       icon: ActivityIcon,
@@ -194,7 +194,7 @@ const SystemAnalysis = () => {
       phase: "Fase 4",
       title: "Informe y recomendaciones",
       description:
-        "Entrega de informe detallado con hallazgos, recomendaciones priorizadas y plan de acción específico.",
+        "Presentamos un informe completo con todos los hallazgos, mejoras sugeridas y un plan de acción práctico para tu equipo.",
       color: "blue",
       duration: "2-3 días",
       icon: TargetIcon,
@@ -205,33 +205,32 @@ const SystemAnalysis = () => {
     {
       question: "¿Qué nivel de acceso necesitan a nuestros sistemas?",
       answer:
-        "El nivel de acceso depende del tipo de análisis solicitado. Para una auditoría completa, necesitamos acceso de solo lectura al código fuente, bases de datos de desarrollo/staging, y documentación técnica. Para análisis de rendimiento, requerimos acceso a logs y métricas del sistema. Siempre trabajamos bajo acuerdos de confidencialidad estrictos y nunca accedemos a datos de producción sensibles sin supervisión. Podemos trabajar con copias anonimizadas de datos cuando sea necesario.",
+        "Dependiendo del tipo de análisis, podemos requerir acceso de solo lectura al código fuente, entornos de desarrollo o staging, y documentación técnica. Para el análisis de rendimiento, accedemos a logs, métricas y configuraciones del sistema. Siempre trabajamos bajo estrictos acuerdos de confidencialidad y, cuando es necesario, utilizamos datos anonimizados. Nunca accedemos a datos sensibles de producción sin supervisión explícita.",
     },
     {
       question: "¿El análisis afectará el funcionamiento normal del sistema?",
       answer:
-        "No, nuestro análisis está diseñado para ser no intrusivo. Trabajamos principalmente con entornos de desarrollo y staging, documentación, y logs históricos. Cuando necesitamos analizar el entorno de producción, utilizamos herramientas de monitoreo pasivo que no afectan el rendimiento. Cualquier prueba que pueda tener impacto se coordina previamente y se realiza en horarios de baja actividad, siempre con la aprobación y supervisión de tu equipo técnico.",
+        "No. Nuestro enfoque es no intrusivo y se realiza principalmente sobre entornos de desarrollo, staging y datos históricos. En caso de requerir observación en producción, utilizamos herramientas pasivas que no interfieren con el rendimiento. Las pruebas que puedan implicar riesgo se planifican con tu equipo y se ejecutan en momentos de baja actividad.",
     },
     {
       question: "¿Qué incluye exactamente el informe de análisis?",
       answer:
-        "El informe incluye un resumen ejecutivo con los hallazgos principales, análisis detallado de cada área evaluada (código, arquitectura, rendimiento, seguridad), lista priorizada de problemas encontrados clasificados por criticidad, recomendaciones específicas con estimaciones de tiempo y costo, roadmap de implementación sugerido, y anexos técnicos con evidencias y métricas. También incluimos una sesión de presentación para explicar los hallazgos y responder preguntas de tu equipo.",
+        "Incluye: un resumen ejecutivo, análisis detallado por área (código, arquitectura, rendimiento, seguridad), listado priorizado de problemas, recomendaciones técnicas con estimaciones de implementación, y un roadmap de acción. También añadimos anexos técnicos con métricas y evidencias, más una sesión de presentación para resolver dudas con tu equipo.",
     },
     {
       question: "¿Pueden ayudar a implementar las mejoras recomendadas?",
       answer:
-        "Absolutamente. Además del análisis, ofrecemos servicios de implementación de las mejoras recomendadas. Podemos trabajar directamente en la implementación, colaborar con tu equipo técnico interno, o proporcionar supervisión y consultoría durante el proceso. También ofrecemos capacitación específica para tu equipo en las nuevas prácticas y tecnologías recomendadas. Nuestro objetivo es asegurar que las recomendaciones se implementen correctamente y generen el impacto esperado.",
+        "Sí. Podemos implementar directamente las mejoras, trabajar junto a tu equipo técnico o brindar supervisión y asesoría durante el proceso. También ofrecemos capacitaciones específicas para que tu equipo incorpore las mejores prácticas y tecnologías sugeridas.",
     },
     {
-      question:
-        "¿Con qué frecuencia recomiendan realizar análisis de sistemas?",
+      question: "¿Con qué frecuencia recomiendan realizar un análisis?",
       answer:
-        "La frecuencia depende de varios factores: sistemas críticos deberían analizarse anualmente, aplicaciones en crecimiento rápido cada 6-12 meses, y sistemas estables cada 2-3 años. También recomendamos análisis antes de grandes actualizaciones, migraciones, o cuando se detectan problemas de rendimiento. Para sistemas legacy o con tecnologías obsoletas, sugerimos evaluaciones más frecuentes. Ofrecemos planes de monitoreo continuo para clientes que requieren supervisión constante de la salud de sus sistemas.",
+        "Para sistemas críticos, sugerimos al menos una revisión anual. Para aplicaciones en crecimiento acelerado, cada 6-12 meses. Sistemas estables pueden revisarse cada 2-3 años. También es recomendable hacerlo antes de migraciones, actualizaciones o ante problemas persistentes. Ofrecemos planes de análisis recurrente para monitoreo continuo.",
     },
     {
       question: "¿Qué diferencia su análisis de las herramientas automáticas?",
       answer:
-        "Mientras las herramientas automáticas detectan problemas superficiales, nuestro análisis combina tecnología avanzada con experiencia humana para entender el contexto de negocio. Evaluamos no solo qué está mal, sino por qué ocurre y cómo impacta tus objetivos específicos. Consideramos factores como el crecimiento esperado, restricciones presupuestarias, capacidades del equipo, y prioridades estratégicas. Nuestras recomendaciones son accionables y están adaptadas a tu realidad empresarial, no solo a mejores prácticas genéricas.",
+        "Nuestro análisis va más allá de los diagnósticos superficiales. Combinamos herramientas técnicas con experiencia humana para entender el contexto real del negocio. Evaluamos causas raíz, impacto en objetivos, capacidades del equipo y prioridades estratégicas. El resultado son recomendaciones accionables, alineadas a tu realidad, no genéricas.",
     },
   ];
 
@@ -247,20 +246,18 @@ const SystemAnalysis = () => {
             text: "Servicios • Análisis de Sistemas",
             color: "purple",
           }}
-          title="Análisis de Sistemas"
-          subtitle="Detectamos fallos antes de que cuesten caro"
-          description="Auditamos tu sistema para identificar errores, cuellos de
-                  botella y oportunidades de mejora, con foco en rendimiento,
-                  escalabilidad y estabilidad."
+          title="Auditoría Técnica de Sistemas"
+          subtitle="Prevenimos fallos antes de que afecten tu negocio"
+          description="Auditamos tus sistemas para detectar errores críticos, cuellos de botella y oportunidades de optimización, con foco en rendimiento, escalabilidad y estabilidad operativa."
           buttons={[
             {
-              label: "Solicitar auditoría técnica",
+              label: "Solicitar diagnóstico técnico",
               href: "/contacto",
               variant: "primary",
               targetBlank: true,
             },
             {
-              label: "Ver ejemplo de informe",
+              label: "Explorar ejemplo de informe técnico",
               href: "/automatizacion#casos",
               variant: "outline",
               targetBlank: true,
@@ -279,20 +276,25 @@ const SystemAnalysis = () => {
           image={{
             src: "/img_placeholder.webp",
             alt: "Análisis de sistemas por Solbyt",
-            overlayTitle: "Prevención inteligente de problemas críticos",
-            overlaySubtitle: "Diagnóstico profundo + Soluciones priorizadas",
+            overlayTitle: "Prevención estratégica de riesgos técnicos",
+            overlaySubtitle: "Diagnóstico experto + Soluciones accionables",
           }}
         />
 
         <ProblemsWeSolve />
 
-        <Features items={features} titleGradient="purple" />
+        <Features
+          items={features}
+          title="Análisis técnico con impacto real"
+          description="Vamos más allá de los síntomas: identificamos la raíz de los problemas técnicos, evaluamos tu stack actual y proponemos mejoras priorizadas que tu equipo puede implementar de inmediato."
+          titleGradient="purple"
+        />
+
         <UseCases
           colorKey="purple"
           title="Tipos de análisis especializados"
           subtitle="Cada sistema tiene necesidades específicas. Ofrecemos diferentes tipos de análisis técnico adaptados a tu situación particular y objetivos de negocio."
           cases={useCasesContent}
-          imageSrc="/img_placeholder.webp"
         />
         <WorkProcess
           colorKey="purple"
@@ -308,13 +310,13 @@ const SystemAnalysis = () => {
         />
         <CTA
           colorKey="purple"
-          title=" ¿Listo para prevenir problemas costosos?"
-          description="No esperes a que los problemas técnicos afecten tu negocio. Una auditoría preventiva puede ahorrarte miles de euros y dolores de cabeza futuros."
+          title="¿Listo para anticiparte a los problemas críticos?"
+          description="Una auditoría técnica no es un gasto, es una inversión inteligente. Te ayudamos a detectar fallos antes de que se conviertan en pérdidas costosas."
           features={[
             "Diagnóstico completo en 1-2 semanas",
-            "Análisis no intrusivo",
-            "Recomendaciones priorizadas",
-            "Soporte en implementación",
+            "Análisis sin interrumpir tu operación",
+            "Informe claro con prioridades y soluciones",
+            "Soporte experto en cada etapa del proceso",
           ]}
           buttons={[
             {
@@ -329,7 +331,7 @@ const SystemAnalysis = () => {
               targetBlank: true,
             },
           ]}
-          note="Análisis inicial gratuito • Desarrollo por módulos • Resultados desde la primera fase"
+          note="Análisis inicial gratuito • Desarrollo por módulos • Resultados tangibles desde la primera fase"
         />
       </main>
       <Footer />

@@ -18,6 +18,16 @@ export const hero_color_styles = {
       outline: "border border-solbyt-purple-600 text-solbyt-purple-600 hover:bg-solbyt-purple-600/10",
     },
   },
+  pink: {
+    badge: "bg-solbyt-pink-500/10 text-solbyt-pink-500",
+    titleGradient: "from-solbyt-pink-500 via-solbyt-blue-500 to-solbyt-purple-600",
+    backgroundGradient: "from-white via-solbyt-pink-50 to-white",
+    glowGradient: "from-solbyt-pink-500/20 via-solbyt-blue-500/20 to-solbyt-purple-600/20",
+    buttons: {
+      primary: "bg-solbyt-pink-500 hover:bg-solbyt-pink-700 text-white",
+      outline: "border border-solbyt-pink-600 text-solbyt-pink-600 hover:bg-solbyt-pink-600/10",
+    },
+  },
 
 } as const;
 

@@ -8,12 +8,12 @@ const Benefits = () => {
         {/* TÍTULO */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-pink-500 to-solbyt-blue-500">
-            Software que evoluciona con tu empresa
+            Aplicaciones hechas para crecer con vos
           </h2>
           <p className="text-lg text-gray-600">
-            Nuestras aplicaciones a medida están diseñadas para adaptarse a tus
-            procesos únicos y crecer junto con tu negocio, optimizando cada
-            operación desde el primer día.
+            Diseñamos software que se adapta a tu forma de trabajar y evoluciona
+            con tu equipo. Digitalizamos lo que te hace único y optimizamos lo
+            que te hace crecer.
           </p>
         </div>
 
@@ -24,42 +24,42 @@ const Benefits = () => {
               icon: <Workflow className="h-8 w-8 text-solbyt-blue-500" />,
               title: "Arquitectura adaptada a tus procesos",
               description:
-                "Diseñamos la estructura técnica basándonos en cómo realmente funciona tu empresa, no en plantillas genéricas.",
+                "Construimos tu app desde cero según cómo funciona realmente tu negocio. Sin plantillas, sin límites.",
               gradient: "from-solbyt-blue-500/10 to-white",
             },
             {
               icon: <Layers className="h-8 w-8 text-solbyt-purple-600" />,
               title: "Interfaces limpias y escalables",
               description:
-                "Experiencias de usuario intuitivas que reducen la curva de aprendizaje y aumentan la productividad del equipo.",
+                "Diseñamos pantallas intuitivas que tu equipo puede usar sin entrenamientos largos ni complicaciones.",
               gradient: "from-solbyt-purple-600/10 to-white",
             },
             {
               icon: <Puzzle className="h-8 w-8 text-solbyt-pink-500" />,
-              title: "Módulos pensados para crecer por fases",
+              title: "Módulos que crecen por etapas",
               description:
-                "Implementación gradual que permite validar resultados e invertir de forma inteligente en cada etapa.",
+                "Empezá con lo esencial y sumá funcionalidades a medida que crece tu operación.",
               gradient: "from-solbyt-pink-500/10 to-white",
             },
             {
               icon: <Database className="h-8 w-8 text-solbyt-blue-500" />,
-              title: "Base de datos eficiente y segura",
+              title: "Datos seguros y siempre disponibles",
               description:
-                "Estructura de datos optimizada para consultas rápidas y protección total de la información empresarial.",
+                "Optimizamos la estructura de tu base de datos para que sea rápida, organizada y 100% protegida.",
               gradient: "from-solbyt-blue-500/10 to-white",
             },
             {
               icon: <Cog className="h-8 w-8 text-solbyt-purple-600" />,
-              title: "Integración con tus herramientas actuales",
+              title: "Integración con tus sistemas actuales",
               description:
-                "Conectamos tu nueva aplicación con sistemas existentes para mantener la continuidad operativa.",
+                "Conectamos la app con tus herramientas actuales para que todo fluya sin interrupciones ni duplicaciones.",
               gradient: "from-solbyt-purple-600/10 to-white",
             },
             {
               icon: <Shield className="h-8 w-8 text-solbyt-pink-500" />,
-              title: "Soporte y mejoras continuas",
+              title: "Soporte continuo y mejoras evolutivas",
               description:
-                "Acompañamiento técnico permanente y actualizaciones que mantienen tu software siempre competitivo.",
+                "Te acompañamos con mantenimiento, mejoras y nuevas funciones según lo que tu empresa necesite en cada etapa.",
               gradient: "from-solbyt-pink-500/10 to-white",
             },
           ].map((benefit, index) => (

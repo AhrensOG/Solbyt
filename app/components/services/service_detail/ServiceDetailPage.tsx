@@ -6,6 +6,8 @@ import { Locale } from "@/i18n/navigation";
 import CustomApplications from "./all_services/custom_applications/CustomApplications";
 import ProcessAutomation from "./all_services/process_automation/ProcessAutomation";
 import SystemAnalysis from "./all_services/system_analysis/SystemAnalisis";
+import DigitalizationConsulting from "./all_services/digitalization_consulting/DigitalizationConsulting";
+import SoftwareDevelopment from "./all_services/software_development/SoftwareDevelopment";
 
 type Props = {
   params: {
@@ -31,6 +33,8 @@ const ServiceDetailPage = async ({ params }: Props) => {
       {serviceId === "aplicaciones-a-medida" && <CustomApplications />}
       {serviceId === "automatizacion" && <ProcessAutomation />}
       {serviceId === "analisis-de-sistemas" && <SystemAnalysis />}
+      {serviceId === "asesoria-digital" && <DigitalizationConsulting />}
+      {serviceId === "desarrollo-software" && <SoftwareDevelopment />}
       {/* Luego agregás aquí los otros casos con sus respectivos componentes */}
     </>
   );
