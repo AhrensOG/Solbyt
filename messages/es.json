@@ -531,20 +531,16 @@
     "desarrollo-web": {
       "hero": {
         "badge": "Servicios • Desarrollo Web",
-        "title": "Desarrollo Web Profesional",
-        "subtitle": "Convertí tu sitio en una herramienta comercial efectiva",
-        "description": "Diseñamos sitios web rápidos, seguros y optimizados para buscadores. Adaptados a tus objetivos de negocio y fáciles de gestionar.",
-        "buttons": {
-          "quote": "Solicitar presupuesto gratuito",
-          "examples": "Ver ejemplos de proyectos"
-        },
-        "duration": "3-5 semanas",
-        "price": "Desde €1.200",
-        "image": {
-          "alt": "Desarrollo web profesional por Solbyt",
-          "tagline": "Sitios web que convierten visitantes en clientes",
-          "subtext": "Diseño profesional + Rendimiento + SEO"
-        }
+        "title": "Tu nuevo sitio web, más rápido y rentable",
+        "subtitle": "Convertimos tu presencia online en una máquina de ventas",
+        "description": "Creamos sitios profesionales, veloces y seguros, pensados para destacar en buscadores, reflejar tu identidad y generar resultados reales para tu negocio.",
+        "button_primary": "Solicitar presupuesto gratuito",
+        "button_secondary": "Ver ejemplos de proyectos",
+        "feature_time": "3-5 semanas",
+        "feature_price": "Desde €1.200",
+        "image_alt": "Desarrollo web profesional por Solbyt",
+        "image_overlay_title": "Sitios web que convierten visitantes en clientes",
+        "image_overlay_subtitle": "Diseño profesional + Rendimiento + SEO"
       },
       "customer_value": {
         "title": "Tu sitio web es la clave para atraer nuevos clientes",
@@ -564,174 +560,1366 @@
           }
         ]
       },
-      "service_features": {
+      "features": {
         "title": "¿Qué incluye nuestro servicio de desarrollo web?",
-        "paragraph": "Creamos sitios web completos y optimizados que no solo lucen profesionales, sino que están diseñados estratégicamente para alcanzar tus objetivos de negocio.",
-        "features": {
-          "0": {
-            "title": "Diseño responsivo con foco en experiencia",
-            "description": "Sitios que se adaptan perfectamente a cualquier dispositivo, priorizando la experiencia del usuario para maximizar conversiones."
-          },
-          "1": {
-            "title": "Estrategia SEO técnico y de contenido",
-            "description": "Optimización para buscadores desde la estructura hasta el contenido, mejorando tu visibilidad en Google y otros buscadores."
-          },
-          "2": {
-            "title": "Rendimiento rápido y navegación fluida",
-            "description": "Sitios web optimizados para cargar rápidamente, reduciendo la tasa de rebote y mejorando la experiencia del usuario."
-          },
-          "3": {
-            "title": "Gestión sencilla mediante panel propio",
-            "description": "Interfaces administrativas intuitivas que te permiten actualizar contenido sin conocimientos técnicos."
-          },
-          "4": {
-            "title": "Integración con redes y formularios",
-            "description": "Conexión perfecta con tus redes sociales y sistemas de captura de leads para maximizar tu alcance."
-          },
-          "5": {
-            "title": "Certificado SSL y cumplimiento RGPD",
-            "description": "Sitios seguros con conexiones cifradas y cumplimiento de normativas de protección de datos europeas."
-          }
-        }
-      },
-      "work_process": {
-        "title": "Nuestro proceso de trabajo",
-        "paragraph": "Metodología clara y transparente para que sepas exactamente qué esperar en cada etapa del desarrollo de tu sitio web.",
-        "steps": [
+        "description": "Creamos sitios web completos y optimizados que no solo lucen profesionales, sino que están diseñados estratégicamente para alcanzar tus objetivos de negocio.",
+        "items": [
           {
-            "title": "Análisis y planificación",
-            "description": "Entendemos tus objetivos, analizamos tu competencia y definimos la estrategia digital más efectiva para tu negocio."
+            "title": "Diseño responsive y profesional",
+            "description": "Interfaces personalizadas que se adaptan a todos los dispositivos, centradas en experiencia de usuario."
           },
           {
-            "title": "Diseño UX/UI",
-            "description": "Creamos wireframes y diseños visuales centrados en la experiencia del usuario y alineados con tu identidad de marca."
+            "title": "Optimización para buscadores",
+            "description": "Aplicamos buenas prácticas SEO desde el código para que tu sitio sea fácilmente indexado por Google."
           },
           {
-            "title": "Desarrollo y programación",
-            "description": "Implementamos tu sitio con código limpio y optimizado, asegurando velocidad, seguridad y compatibilidad con todos los dispositivos."
+            "title": "Velocidad y rendimiento superior",
+            "description": "Desarrollamos sitios ultrarrápidos, sin depender de plantillas pesadas ni CMS limitantes."
           },
           {
-            "title": "Optimización SEO",
-            "description": "Aplicamos las mejores prácticas de SEO técnico y de contenido para mejorar tu posicionamiento en buscadores."
+            "title": "Arquitectura moderna y escalable",
+            "description": "Desarrollamos tu sitio con tecnologías modernas que aseguran velocidad, seguridad y la posibilidad de crecer junto a tu negocio."
           },
           {
-            "title": "Pruebas y lanzamiento",
-            "description": "Realizamos pruebas exhaustivas de funcionalidad, rendimiento y seguridad antes de lanzar tu sitio al público."
+            "title": "Código limpio y personalizado",
+            "description": "Cada proyecto se construye desde cero según tus objetivos, sin plantillas genéricas ni soluciones prefabricadas."
           },
           {
-            "title": "Soporte y mantenimiento",
-            "description": "Te ofrecemos soporte continuo y actualizaciones periódicas para mantener tu sitio seguro, actualizado y optimizado."
+            "title": "Soporte técnico continuo",
+            "description": "Acompañamos el proyecto después del lanzamiento para ajustes, mejoras o nuevas funcionalidades según evoluciona tu negocio."
           }
         ]
       },
       "use_cases": {
         "title": "Soluciones adaptadas a tus necesidades",
         "subtitle": "Desarrollamos diferentes tipos de sitios web según los objetivos específicos de tu negocio.",
-        "cases": {
-          "landing": {
+        "id": "proyectos",
+        "cases": [
+          {
+            "key": "Landing Pages",
             "title": "Landing Pages",
             "description": "Páginas de aterrizaje diseñadas para convertir visitantes en leads o clientes, con un objetivo específico y llamados a la acción estratégicos.",
-            "items": [
+            "features": [
               "Diseño enfocado en conversión",
               "Formularios optimizados para captura de leads",
               "Tiempo de carga ultrarrápido",
               "Análisis de comportamiento del usuario",
               "A/B testing para optimizar resultados"
             ],
-            "imageAlt": "Ejemplo de landing page"
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Negocios que necesitan campañas de marketing efectivas, startups en etapa de validación, o lanzamientos de productos con foco en conversión."
           },
-          "ecommerce": {
+          {
+            "key": "E-commerce",
             "title": "E-commerce",
             "description": "Tiendas online intuitivas y seguras que ofrecen una experiencia de compra fluida y aumentan tus ventas digitales.",
-            "items": [
+            "features": [
               "Catálogo de productos fácil de gestionar",
               "Proceso de compra simplificado",
               "Integración con pasarelas de pago seguras",
               "Gestión de inventario y pedidos",
               "Optimización para conversión de ventas"
             ],
-            "imageAlt": "Ejemplo de e-commerce"
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Tiendas físicas que buscan digitalizarse, emprendedores que venden productos en redes sociales, o negocios que quieren escalar sus ventas online."
           },
-          "corporativo": {
+          {
+            "key": "Sitios Corporativos",
             "title": "Sitios Corporativos",
             "description": "Webs profesionales que reflejan la identidad de tu empresa y comunican eficazmente tus servicios y valores.",
-            "items": [
+            "features": [
               "Diseño alineado con tu identidad corporativa",
               "Estructura clara y navegación intuitiva",
               "Contenido persuasivo orientado a conversión",
               "Integración con CRM y herramientas de marketing",
               "Optimización SEO para keywords de negocio"
             ],
-            "imageAlt": "Ejemplo de sitio corporativo"
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Empresas que desean proyectar una imagen profesional, mejorar su comunicación institucional o captar clientes B2B desde su sitio web."
           },
-          "blog": {
+          {
+            "key": "Blogs Personalizados",
             "title": "Blogs Personalizados",
             "description": "Plataformas de contenido optimizadas para SEO que posicionan tu marca como referente en tu sector y atraen tráfico cualificado.",
-            "items": [
+            "features": [
               "Estructura optimizada para SEO",
               "Categorización inteligente de contenidos",
               "Integración con redes sociales",
               "Sistema de comentarios y engagement",
               "Estrategia de contenidos para captación de leads"
             ],
-            "imageAlt": "Ejemplo de blog personalizado"
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Profesionales que buscan posicionarse como referentes, agencias de marketing con estrategia de contenidos, o marcas que desean atraer tráfico orgánico calificado."
           }
-        }
+        ]
+      },
+      "work_process": {
+        "title": "Nuestro proceso de trabajo",
+        "subtitle": "Metodología clara y transparente para que sepas exactamente qué esperar en cada etapa del desarrollo de tu sitio web.",
+        "phases": [
+          {
+            "phase": "Fase 1",
+            "title": "Estrategia y planificación",
+            "description": "Nos reunimos para entender tus objetivos, analizamos a tu competencia y definimos una hoja de ruta personalizada para tu sitio web.",
+            "duration": "3-5 días hábiles"
+          },
+          {
+            "phase": "Fase 2",
+            "title": "Diseño UX/UI",
+            "description": "Creamos la arquitectura del sitio, wireframes y diseños visuales centrados en la experiencia del usuario y alineados con tu marca.",
+            "duration": "5-7 días hábiles"
+          },
+          {
+            "phase": "Fase 3",
+            "title": "Desarrollo y optimización",
+            "description": "Programamos tu sitio con código limpio, responsive y seguro. Incluimos SEO técnico y pruebas de rendimiento para garantizar velocidad y visibilidad.",
+            "duration": "8-12 días hábiles"
+          },
+          {
+            "phase": "Fase 4",
+            "title": "Lanzamiento y soporte",
+            "description": "Lanzamos tu sitio y te acompañamos con soporte técnico, mantenimiento, formación y mejoras continuas según tus necesidades.",
+            "duration": "2-3 días hábiles"
+          }
+        ]
       },
       "faq": {
         "title": "Preguntas frecuentes",
         "subtitle": "Resolvemos tus dudas sobre nuestro servicio de desarrollo web profesional",
-        "questions": [
+        "items": [
           {
             "question": "¿Cuánto tiempo tarda en desarrollarse un sitio web?",
-            "answer": "El tiempo de desarrollo varía según la complejidad del proyecto. Para sitios web estándar, nuestro plazo habitual es de 3 a 5 semanas desde la aprobación del diseño hasta el lanzamiento. Proyectos más complejos como e-commerce o plataformas personalizadas pueden requerir más tiempo. En la fase inicial de planificación, te proporcionaremos un cronograma detallado específico para tu proyecto."
+            "answer": "Depende de la complejidad y del contenido disponible. Para sitios estándar, estimamos entre 4 y 6 semanas. Proyectos más avanzados como tiendas online o plataformas a medida pueden requerir más tiempo. Al inicio del proyecto, te compartimos un cronograma detallado adaptado a tus necesidades."
           },
           {
             "question": "¿Qué necesito proporcionar para iniciar el proyecto?",
-            "answer": "Para comenzar, necesitamos entender tus objetivos de negocio, público objetivo y preferencias de diseño. Es útil si puedes proporcionar: tu logo e identidad visual (si existe), ejemplos de sitios web que te gusten, contenido (textos e imágenes) para el sitio, y cualquier requisito específico que tengas. No te preocupes si no tienes todo esto preparado, podemos guiarte en el proceso y ofrecerte servicios adicionales de creación de contenido si los necesitas."
+            "answer": "Lo más importante es que nos cuentes tus objetivos, tu público y si tenés alguna referencia visual. También ayuda contar con tu logo, identidad visual, textos o imágenes que quieras incluir. Si no tenés todo listo, no te preocupes: te guiamos paso a paso y podemos ayudarte con contenido también."
           },
           {
-            "question": "¿Cómo ayudan a que mi sitio aparezca en Google?",
-            "answer": "Implementamos una estrategia SEO integral desde la base del desarrollo. Esto incluye optimización técnica (estructura del sitio, velocidad de carga, metadatos), optimización de contenido (keywords estratégicas, estructura de contenido), y configuración de herramientas de análisis. Además, todos nuestros sitios son mobile-friendly y cumplen con las directrices de Google para un buen posicionamiento. Ofrecemos también servicios adicionales de SEO continuo para mejorar progresivamente tu posicionamiento."
+            "question": "¿Cómo hacen para que mi sitio aparezca en Google?",
+            "answer": "Aplicamos buenas prácticas de SEO desde el desarrollo: velocidad de carga, estructura optimizada, contenido estratégico y herramientas de análisis. Esto ayuda a que tu sitio sea visible en buscadores desde el primer día. También ofrecemos servicios adicionales de posicionamiento continuo si lo necesitás."
           },
           {
-            "question": "¿Podré actualizar el contenido de mi web yo mismo?",
-            "answer": "¡Absolutamente! Desarrollamos todos nuestros sitios con sistemas de gestión de contenido intuitivos que te permiten actualizar textos, imágenes, productos y más sin conocimientos técnicos. Además, te proporcionamos formación personalizada y documentación para que puedas gestionar tu sitio con confianza. Para actualizaciones más complejas, siempre puedes contar con nuestro soporte técnico."
+            "question": "¿Podré actualizar el contenido de mi web?",
+            "answer": "Nuestros sitios están desarrollados a medida y no utilizan CMS como WordPress. Si necesitás cambios frecuentes, te ofrecemos un plan de soporte o podemos crear un panel personalizado a pedido. Siempre vas a poder contar con nosotros para mantener tu web actualizada."
           },
           {
-            "question": "¿Qué incluye el mantenimiento del sitio web?",
-            "answer": "Nuestros planes de mantenimiento incluyen: actualizaciones de seguridad regulares, copias de seguridad periódicas, monitorización de rendimiento, soporte técnico por email, pequeñas actualizaciones de contenido, y reportes mensuales de rendimiento y tráfico. El mantenimiento es crucial para garantizar que tu sitio permanezca seguro, rápido y actualizado con las últimas tecnologías y estándares web."
+            "question": "¿Qué incluye el mantenimiento del sitio?",
+            "answer": "Incluye actualizaciones técnicas, copias de seguridad, mejoras de rendimiento y soporte por email. También podemos ayudarte con cambios puntuales en el contenido o nuevas funcionalidades según evolucione tu negocio."
           },
           {
-            "question": "¿Trabajan con empresas en Lisboa y alrededores?",
-            "answer": "Sí, trabajamos con empresas en Lisboa y toda Portugal, así como con clientes internacionales. Ofrecemos reuniones presenciales para clientes locales y videoconferencias para clientes remotos. Nuestra metodología de trabajo está diseñada para garantizar una comunicación fluida y resultados excepcionales independientemente de la ubicación geográfica."
+            "question": "¿Trabajan solo con empresas locales?",
+            "answer": "No. Trabajamos con empresas y emprendedores de todo el mundo. Nuestro proceso está pensado para funcionar perfectamente de forma remota, con comunicación clara, entregas organizadas y soporte continuo, sin importar dónde estés."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para llevar tu presencia digital al siguiente nivel?",
+        "description": "Desarrollamos sitios web personalizados que conectan con tu audiencia, proyectan profesionalismo y generan resultados reales para tu negocio.",
+        "features": [
+          "Diseño único y adaptado a tu marca",
+          "Arquitectura rápida y escalable",
+          "Optimización SEO desde el primer día",
+          "Soporte técnico directo y continuo"
+        ],
+        "buttons": {
+          "primary": "Solicitar presupuesto gratuito",
+          "secondary": "Agendar consulta gratuita"
+        },
+        "note": "Sin compromiso • Respuesta en menos de 24 horas"
+      }
+    },
+    "aplicaciones-medida": {
+      "hero": {
+        "badge": "Servicios • Aplicaciones a Medida",
+        "title": "Aplicaciones hechas a medida para tu negocio",
+        "subtitle": "Digitalizamos tus procesos reales, sin moldes ni limitaciones",
+        "description": "Creamos aplicaciones modulares que se adaptan a tu forma de trabajar, optimizan recursos y evolucionan con tu empresa desde el primer día.",
+        "button_primary": "Agendar reunión de análisis",
+        "button_secondary": "Ver casos de éxito",
+        "feature_time": "Desde 3 semanas por módulo",
+        "feature_price": "Desde €1.500 por módulo",
+        "image_alt": "Aplicaciones a medida por Solbyt",
+        "image_overlay_title": "Software que se adapta a tu negocio",
+        "image_overlay_subtitle": "Módulos escalables + Procesos optimizados"
+      },
+      "benefits": {
+        "title": "Aplicaciones hechas para crecer con vos",
+        "description": "Diseñamos software que se adapta a tu forma de trabajar y evoluciona con tu equipo. Digitalizamos lo que te hace único y optimizamos lo que te hace crecer.",
+        "items": [
+          {
+            "title": "Arquitectura adaptada a tus procesos",
+            "description": "Construimos tu app desde cero según cómo funciona realmente tu negocio. Sin plantillas, sin límites."
+          },
+          {
+            "title": "Interfaces limpias y escalables",
+            "description": "Diseñamos pantallas intuitivas que tu equipo puede usar sin entrenamientos largos ni complicaciones."
+          },
+          {
+            "title": "Módulos que crecen por etapas",
+            "description": "Empezá con lo esencial y sumá funcionalidades a medida que crece tu operación."
+          },
+          {
+            "title": "Datos seguros y siempre disponibles",
+            "description": "Optimizamos la estructura de tu base de datos para que sea rápida, organizada y 100% protegida."
+          },
+          {
+            "title": "Integración con tus sistemas actuales",
+            "description": "Conectamos la app con tus herramientas actuales para que todo fluya sin interrupciones ni duplicaciones."
+          },
+          {
+            "title": "Soporte continuo y mejoras evolutivas",
+            "description": "Te acompañamos con mantenimiento, mejoras y nuevas funciones según lo que tu empresa necesite en cada etapa."
+          }
+        ]
+      },
+      "use_cases": {
+        "id": "casos-de-exito",
+        "title": "Soluciones que transforman operaciones",
+        "subtitle": "Desarrollamos aplicaciones específicas para cada tipo de necesidad empresarial, desde gestión comercial hasta automatización de procesos internos.",
+        "cases": [
+          {
+            "key": "CRM",
+            "title": "CRM enfocado en ventas",
+            "description": "Centralizá tus leads, automatizá seguimientos y gestioná tus oportunidades de venta en un solo lugar, con métricas en tiempo real.",
+            "features": [
+              "Pipeline visual para seguimiento comercial",
+              "Recordatorios automáticos por email o WhatsApp",
+              "Dashboard de métricas y rendimiento por vendedor",
+              "Integración con formularios web y redes sociales",
+              "Gestión de cotizaciones y propuestas",
+              "Reportes automáticos para toma de decisiones"
+            ],
+            "titleCaseStudy": "Caso real",
+            "caseStudy": "Una empresa de servicios aumentó un 40% su conversión organizando mejor el seguimiento de leads y automatizando tareas repetitivas."
+          },
+          {
+            "key": "App",
+            "title": "App de reservas o turnos",
+            "description": "Permití que tus clientes reserven online 24/7 mientras optimizás tu agenda, reducís cancelaciones y ganás visibilidad sobre tu operación.",
+            "features": [
+              "Calendario con disponibilidad en tiempo real",
+              "Reservas desde web y app móvil",
+              "Recordatorios automáticos por SMS o email",
+              "Panel para gestión de servicios, precios y agenda",
+              "Acceso por roles para tu equipo",
+              "Reportes de ocupación y facturación"
+            ],
+            "titleCaseStudy": "Caso real",
+            "caseStudy": "Una clínica dental redujo un 60% las cancelaciones y aumentó la ocupación un 25% gracias a recordatorios automáticos y reservas online."
+          },
+          {
+            "key": "Panel",
+            "title": "Panel de gestión ejecutiva",
+            "description": "Centralizá información clave de distintas áreas en un panel visual que te ayude a tomar decisiones rápidas y basadas en datos.",
+            "features": [
+              "Indicadores financieros y operativos en tiempo real",
+              "Gráficos interactivos y reportes personalizables",
+              "Alertas por objetivos, límites o anomalías",
+              "Integración con sistemas contables e inventario",
+              "Accesos diferenciados por rol o área",
+              "Exportación de datos para informes externos"
+            ],
+            "titleCaseStudy": "Caso real",
+            "caseStudy": "Una empresa logística redujo en un 50% el tiempo de análisis con un panel de datos automatizado y accesible para cada área."
+          },
+          {
+            "key": "Herramientas",
+            "title": "Herramientas internas personalizadas",
+            "description": "Automatizá tareas administrativas, controlá recursos o diseñá flujos de trabajo adaptados a tu operación interna, sin depender de software genérico.",
+            "features": [
+              "Gestión de empleados y asistencia digital",
+              "Flujos de aprobación automatizados",
+              "Control de stock con código QR o de barras",
+              "Gestión documental y archivo digital",
+              "Canales internos de comunicación",
+              "Automatización de tareas repetitivas"
+            ],
+            "titleCaseStudy": "Caso real",
+            "caseStudy": "Una fábrica redujo 15 horas semanales de trabajo manual al digitalizar el control de inventario y los reportes de producción."
+          }
+        ]
+      },
+      "work_process": {
+        "title": "Metodología por fases escalables",
+        "subtitle": "Desarrollamos tu aplicación por módulos, permitiendo validar resultados e invertir de forma inteligente en cada etapa del crecimiento.",
+        "phases": [
+          {
+            "phase": "Fase 1",
+            "title": "Entendimiento del negocio",
+            "description": "Analizamos tus procesos actuales, detectamos cuellos de botella y definimos el primer módulo que generará impacto inmediato.",
+            "duration": "1–2 semanas"
+          },
+          {
+            "phase": "Fase 2",
+            "title": "Diseño funcional y visual",
+            "description": "Creamos wireframes, definimos estructura de datos y diseñamos interfaces claras, alineadas con la experiencia de tus usuarios.",
+            "duration": "1–2 semanas"
+          },
+          {
+            "phase": "Fase 3",
+            "title": "Desarrollo del primer módulo",
+            "description": "Construimos el módulo base (MVP) para que puedas comenzar a usarlo y validarlo con tu equipo en situaciones reales.",
+            "duration": "2–4 semanas"
+          },
+          {
+            "phase": "Fase 4",
+            "title": "Evolución por módulos",
+            "description": "Agregamos nuevos módulos o funcionalidades en base a feedback real, objetivos estratégicos y oportunidades de automatización.",
+            "duration": "Continuo"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos las dudas más comunes sobre el desarrollo de aplicaciones empresariales a medida",
+        "items": [
+          {
+            "question": "¿Cómo se integra la aplicación con nuestros sistemas actuales?",
+            "answer": "Antes de empezar, analizamos tus sistemas existentes y diseñamos integraciones que se ajusten a tu realidad: APIs, conectores o sincronización de bases de datos. El objetivo es que todo funcione de forma fluida, sin duplicar tareas ni perder información. Nos integramos con ERPs, CRMs, software contable y muchas otras herramientas del mercado."
+          },
+          {
+            "question": "¿Cuánto tiempo tarda en desarrollarse una aplicación completa?",
+            "answer": "Depende de la complejidad del proyecto. Un módulo básico puede estar listo en 3–4 semanas. Aplicaciones completas suelen desarrollarse en fases, y tardan entre 2 y 4 meses. Trabajamos de forma modular para que empieces a usar partes funcionales desde el principio y puedas validar resultados reales mientras seguimos construyendo."
+          },
+          {
+            "question": "¿Qué pasa si necesito hacer cambios durante el desarrollo?",
+            "answer": "Nuestro proceso es ágil y flexible. Tendrás reuniones periódicas para revisar avances y hacer ajustes. Cambios pequeños se aplican sin costo extra; para modificaciones mayores, revisamos juntos tiempos y presupuesto. Queremos que el resultado final sea exactamente lo que necesitás."
+          },
+          {
+            "question": "¿Qué medidas toman para proteger mis datos?",
+            "answer": "Aplicamos estándares altos de seguridad: cifrado de datos, acceso por niveles de usuario, backups automáticos y cumplimiento de normativas como RGPD. Además, monitoreamos el sistema, actualizamos componentes y registramos toda la actividad para asegurar trazabilidad y confianza."
+          },
+          {
+            "question": "¿Capacitan a mi equipo para usar la aplicación?",
+            "answer": "Sí, y lo hacemos de forma personalizada. Preparamos sesiones de formación según el rol de cada usuario, te entregamos documentación clara, grabamos tutoriales si lo necesitás y estamos disponibles durante las primeras semanas para cualquier duda. Queremos que tu equipo se sienta cómodo desde el primer día."
+          },
+          {
+            "question": "¿Qué incluye el soporte técnico después del lanzamiento?",
+            "answer": "El soporte puede incluir desde correcciones y mejoras hasta nuevas funcionalidades, dependiendo del plan que elijas. Siempre tendrás acceso a nuestro equipo técnico, monitoreo del sistema, actualizaciones de seguridad y recomendaciones para seguir mejorando tu aplicación."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Querés una app que se adapte a tu forma de trabajar?",
+        "description": "Creamos aplicaciones a medida que digitalizan tus procesos reales, te hacen ganar tiempo y evolucionan con tu empresa, módulo a módulo.",
+        "features": [
+          "Pensada para tus procesos reales",
+          "Escalable según tu crecimiento",
+          "Compatible con tus sistemas actuales",
+          "Soporte cercano y confiable"
+        ],
+        "buttons": {
+          "primary": "Agendar reunión de análisis",
+          "secondary": "Solicitar presupuesto personalizado"
+        },
+        "note": "Primera reunión sin compromiso • Propuesta en menos de 48h"
+      }
+    },
+    "automatizacion": {
+      "hero": {
+        "badge": "Servicios • Automatización de Procesos",
+        "title": "Automatizá tareas, ganá tiempo y productividad",
+        "subtitle": "Digitalizamos procesos repetitivos sin frenar tu operación",
+        "description": "Transformamos horas de trabajo manual en flujos automáticos que optimizan recursos, reducen errores y permiten que tu equipo se enfoque en lo que realmente importa.",
+        "button_primary": "Análisis gratuito de procesos",
+        "button_secondary": "Ver casos de automatización",
+        "feature_time": "Desde 2 semanas por flujo",
+        "feature_price": "Desde €800 por flujo",
+        "image_alt": "Automatización de procesos por Solbyt",
+        "image_overlay_title": "Libera tiempo para lo que realmente importa",
+        "image_overlay_subtitle": "Automatización inteligente + Procesos optimizados"
+      },
+      "benefits": {
+        "title": "Automatizá lo repetitivo. Enfocate en lo importante.",
+        "description": "Tu equipo merece más que perder tiempo en tareas mecánicas. La automatización libera su potencial estratégico.",
+        "cards": [
+          {
+            "stat": "75%",
+            "title": "Menos tiempo perdido",
+            "description": "Automatizá tareas repetitivas y liberá tiempo para lo que más importa.",
+            "color": "pink",
+            "icon": "TrendingUp"
+          },
+          {
+            "stat": "90%",
+            "title": "Reducción de errores",
+            "description": "Eliminá errores humanos en procesos clave con flujos automatizados.",
+            "color": "purple",
+            "icon": "Target"
+          },
+          {
+            "stat": "24/7",
+            "title": "Operación continua",
+            "description": "Procesos que funcionan todo el día, todos los días, sin supervisión.",
+            "color": "blue",
+            "icon": "Zap"
           }
         ],
         "cta": {
-          "title": "¿Tienes más preguntas?",
-          "text": "Estamos aquí para ayudarte. Contáctanos para una asesoría gratuita y conoce cómo podemos ayudarte a tener presencia online.",
-          "buttons": {
-            "schedule": "Agendar reunión",
-            "whatsapp": "Escribir por WhatsApp"
-          }
+          "question": "¿Cuánto tiempo puede ahorrar tu equipo?",
+          "text": "Si dedican 2 horas diarias a tareas repetitivas, podrías liberar más de 500 horas al año para actividades de alto impacto.",
+          "button_label": "Calcular mi ahorro potencial"
         }
       },
-      "cta_final": {
-        "title": "¿Listo para transformar tu presencia digital?",
-        "subtitle": "Convierte tu sitio web en una herramienta efectiva de marketing y ventas que impulse el crecimiento de tu negocio.",
+      "features": {
+        "title": "Nuestro enfoque paso a paso",
+        "description": "Implementamos automatización de forma gradual y estratégica, priorizando procesos con mayor impacto y asegurando una transición sin interrupciones.",
+        "items": [
+          {
+            "title": "Detección de cuellos de botella",
+            "description": "Analizamos tus procesos actuales para identificar tareas repetitivas y puntos críticos de mejora."
+          },
+          {
+            "title": "Priorización inteligente",
+            "description": "Enfocamos la automatización en lo que más impacto tiene: tareas costosas, lentas o con errores frecuentes."
+          },
+          {
+            "title": "Automatización sin interrupciones",
+            "description": "Implementamos los cambios paso a paso, sin frenar tu operación actual ni afectar a tu equipo."
+          },
+          {
+            "title": "Integración con tus herramientas",
+            "description": "Conectamos la automatización con tus sistemas actuales sin necesidad de reemplazar plataformas."
+          },
+          {
+            "title": "Resultados medibles en tiempo real",
+            "description": "Panel con métricas claras: horas ahorradas, tareas ejecutadas y mejoras de productividad."
+          },
+          {
+            "title": "Capacitación y soporte continuo",
+            "description": "Formamos a tu equipo y te acompañamos en cada etapa para asegurar el éxito de la automatización."
+          }
+        ]
+      },
+      "use_cases": {
+        "id": "casos-de-automatizacion",
+        "title": "Procesos que transformamos por ti",
+        "subtitle": "Desde comunicaciones automáticas hasta reportes complejos, automatizamos los procesos que más tiempo consumen en tu operación diaria.",
+        "cases": [
+          {
+            "key": "Emails",
+            "title": "Automatización de emails clave",
+            "description": "Automatizá el envío de correos repetitivos: seguimientos, recordatorios, notificaciones o reportes, sin mover un dedo.",
+            "features": [
+              "Secuencia de bienvenida automática para nuevos clientes",
+              "Seguimiento comercial sin intervención manual",
+              "Recordatorios de citas, vencimientos y pagos",
+              "Actualizaciones de pedidos o entregas",
+              "Emails de carrito abandonado",
+              "Reportes programados al equipo directivo"
+            ],
+            "titleCaseStudy": "Ahorro típico",
+            "caseStudy": "15–20 horas semanales en gestión manual de comunicaciones"
+          },
+          {
+            "key": "Datos",
+            "title": "Procesamiento automático de datos",
+            "description": "Reducí errores y tiempo perdido automatizando tareas como carga, validación o migración de datos.",
+            "features": [
+              "Importación automática desde archivos o plataformas",
+              "Limpieza y normalización de datos",
+              "Detección y fusión de duplicados",
+              "Sincronización entre bases de datos",
+              "Backups programados y archivado seguro",
+              "Migración estructurada entre sistemas"
+            ],
+            "titleCaseStudy": "Ahorro típico",
+            "caseStudy": "25–30 horas semanales en procesamiento manual de datos"
+          },
+          {
+            "key": "Reportes",
+            "title": "Reportes automáticos en tiempo real",
+            "description": "Obtené reportes financieros, comerciales o de rendimiento sin esperar a fin de mes ni recopilar datos a mano.",
+            "features": [
+              "Dashboards ejecutivos en tiempo real",
+              "Reportes de ventas, finanzas y marketing programados",
+              "Alertas automáticas por KPIs críticos",
+              "Distribución por email, Slack u otras herramientas",
+              "Comparativas periódicas de rendimiento",
+              "Análisis de productividad por equipo"
+            ],
+            "titleCaseStudy": "Ahorro típico",
+            "caseStudy": "10–15 horas semanales en creación manual de reportes"
+          },
+          {
+            "key": "Flujos",
+            "title": "Flujos automatizados entre sistemas",
+            "description": "Sincronizá tus herramientas para que trabajen en conjunto y eviten tareas repetitivas o errores de carga.",
+            "features": [
+              "Conexión CRM + marketing automation",
+              "Sincronización contable con ventas",
+              "Flujos desde formularios web a bases de datos",
+              "Conexión inventario + ecommerce",
+              "Aprobaciones internas automatizadas",
+              "Integración mediante APIs o middleware"
+            ],
+            "titleCaseStudy": "Ahorro típico",
+            "caseStudy": "20–25 horas semanales en tareas de integración manual"
+          }
+        ]
+      },
+      "work_process": {
+        "title": "Implementación sin interrupciones",
+        "subtitle": "Nuestro proceso garantiza una transición suave hacia la automatización, manteniendo la continuidad operativa en todo momento.",
+        "phases": [
+          {
+            "phase": "Paso 1",
+            "title": "Relevamiento y análisis",
+            "description": "Mapeamos tus procesos actuales, identificamos tareas repetitivas y detectamos oportunidades claras de automatización.",
+            "duration": "3–5 días"
+          },
+          {
+            "phase": "Paso 2",
+            "title": "Diseño del plan automatizable",
+            "description": "Definimos qué automatizar primero según impacto y facilidad, detallando los flujos, sistemas involucrados y resultados esperados.",
+            "duration": "1 semana"
+          },
+          {
+            "phase": "Paso 3",
+            "title": "Automatización progresiva",
+            "description": "Desarrollamos e implementamos por etapas, validando resultados desde el primer flujo sin afectar la operación diaria.",
+            "duration": "2–4 semanas"
+          },
+          {
+            "phase": "Paso 4",
+            "title": "Medición y expansión",
+            "description": "Monitoreamos resultados, optimizamos lo ya automatizado y extendemos a nuevos procesos según prioridades del negocio.",
+            "duration": "Continuo"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos las dudas más comunes sobre la automatización de procesos",
+        "items": [
+          {
+            "question": "¿Cómo identifican qué procesos se pueden automatizar?",
+            "answer": "Realizamos una auditoría completa de tus operaciones para detectar tareas repetitivas, lentas o propensas a errores. Luego priorizamos según impacto y facilidad de implementación. Nos enfocamos en procesos con reglas claras, alta frecuencia de ejecución y retorno rápido de inversión."
+          },
+          {
+            "question": "¿La automatización reemplaza a mi equipo?",
+            "answer": "No. Automatizamos tareas, no personas. Liberamos a tu equipo de tareas repetitivas para que puedan enfocarse en actividades más estratégicas y de mayor valor. Además, ofrecemos capacitación para adaptarse fácilmente al nuevo sistema."
+          },
+          {
+            "question": "¿Qué pasa si mis procesos cambian en el futuro?",
+            "answer": "Diseñamos automatizaciones flexibles que pueden ajustarse a cambios futuros. Nuestro enfoque modular permite modificar, ampliar o eliminar pasos fácilmente. También ofrecemos soporte continuo para ayudarte a adaptarte sin complicaciones."
+          },
+          {
+            "question": "¿Cuándo empiezo a ver resultados?",
+            "answer": "En la mayoría de los casos, el retorno se empieza a notar entre 2 y 6 meses. Verás mejoras desde el inicio: menos errores, más velocidad y ahorro de tiempo. Medimos todo con métricas claras como horas ahorradas y procesos optimizados."
+          },
+          {
+            "question": "¿Pueden integrarse con los sistemas que ya uso?",
+            "answer": "Sí. Nos especializamos en integrar automatización con tus herramientas actuales, como CRM, ERP, plataformas de ventas, contabilidad o e-commerce. Usamos APIs, conectores nativos o soluciones a medida sin necesidad de cambiar de sistema."
+          },
+          {
+            "question": "¿Qué soporte técnico ofrecen después?",
+            "answer": "Ofrecemos soporte técnico continuo: monitoreo, resolución de incidencias, actualizaciones y mejoras. Podés elegir entre niveles de soporte, desde asistencia básica por email hasta atención prioritaria. También recibís reportes con análisis y recomendaciones."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para automatizar y ahorrar tiempo real?",
+        "description": "Transformá tus procesos más repetitivos en flujos automáticos que te ahorren horas cada semana, sin cambiar tus sistemas actuales ni interrumpir tu operación.",
         "features": [
-          "Diseño profesional y atractivo",
-          "Optimizado para buscadores",
-          "Enfocado en conversión",
-          "Rápido y responsive",
-          "Fácil de gestionar",
-          "Soporte técnico continuo"
+          "Auditoría gratuita de procesos",
+          "Automatización sin fricciones",
+          "Retorno visible en 2 a 6 meses",
+          "Soporte técnico garantizado"
         ],
         "buttons": {
-          "quote": "Solicitar presupuesto gratuito",
-          "meeting": "Agendar consulta gratuita"
+          "primary": "Solicitar análisis gratuito",
+          "secondary": "Ver casos de automatización"
         },
-        "disclaimer": "Sin compromisos. Respuesta en menos de 24 horas."
+        "note": "Sin compromisos • Diagnóstico en menos de 48h • Resultados desde el primer mes"
+      }
+    },
+    "analisis-sistemas": {
+      "hero": {
+        "badge": "Servicios • Análisis de Sistemas",
+        "title": "Auditoría Técnica de Sistemas",
+        "subtitle": "Prevenimos fallos antes de que afecten tu negocio",
+        "description": "Auditamos tus sistemas para detectar errores críticos, cuellos de botella y oportunidades de optimización, con foco en rendimiento, escalabilidad y estabilidad operativa.",
+        "button_primary": "Solicitar diagnóstico técnico",
+        "button_secondary": "Explorar ejemplos de analisis",
+        "feature_time": "1-2 semanas",
+        "feature_price": "Desde €800",
+        "image_alt": "Análisis de sistemas por Solbyt",
+        "image_overlay_title": "Prevención estratégica de riesgos técnicos",
+        "image_overlay_subtitle": "Diagnóstico experto + Soluciones accionables"
+      },
+      "problems_we_solve": {
+        "title": "Detectamos los fallos antes de que te cuesten caro",
+        "description": "Un sistema puede funcionar bien… hasta que deja de hacerlo. Los fallos ocultos no solo afectan la operativa: pueden costarte dinero, datos y reputación.",
+        "cards": [
+          {
+            "title": "Fallos críticos ocultos",
+            "description": "Errores que permanecen invisibles… hasta que paralizan todo en el peor momento.",
+            "gradient": "from-red-50 to-red-100/50",
+            "icon": "AlertTriangle",
+            "iconColor": "text-red-500"
+          },
+          {
+            "title": "Rendimiento degradado",
+            "description": "Tu sistema responde, pero cada vez más lento. Y eso aleja usuarios, clientes y oportunidades.",
+            "gradient": "from-orange-50 to-orange-100/50",
+            "icon": "TrendingUp",
+            "iconColor": "text-orange-500"
+          },
+          {
+            "title": "Brechas de seguridad",
+            "description": "Puntos débiles que podrían ser explotados y poner en riesgo datos sensibles o confidenciales.",
+            "gradient": "from-yellow-50 to-yellow-100/50",
+            "icon": "Shield",
+            "iconColor": "text-yellow-500"
+          },
+          {
+            "title": "Escalabilidad limitada",
+            "description": "Arquitecturas que hoy funcionan, pero no están listas para el crecimiento que se viene.",
+            "gradient": "from-blue-50 to-blue-100/50",
+            "icon": "Database",
+            "iconColor": "text-blue-500"
+          }
+        ],
+        "cta": {
+          "question": "¿Cuánto te costaría una caída del sistema durante 4 horas?",
+          "text": "Además de las pérdidas directas, considera el impacto en la confianza del cliente, productividad del equipo y tiempo de recuperación. Una auditoría preventiva cuesta una fracción de lo que costarían estos riesgos.",
+          "button_label": "Evaluar mis riesgos actuales"
+        }
+      },
+      "features": {
+        "title": "Análisis técnico con impacto real",
+        "description": "Vamos más allá de los síntomas: identificamos la raíz de los problemas técnicos, evaluamos tu stack actual y proponemos mejoras priorizadas que tu equipo puede implementar de inmediato.",
+        "items": [
+          {
+            "title": "Diagnóstico del sistema actual",
+            "description": "Revisamos a fondo tu arquitectura, código y bases de datos para detectar fallos, riesgos y oportunidades de mejora."
+          },
+          {
+            "title": "Evaluación de rendimiento técnico",
+            "description": "Medimos tiempos de respuesta, consumo de recursos y rendimiento general para detectar cuellos de botella técnicos."
+          },
+          {
+            "title": "Detección de puntos críticos",
+            "description": "Identificamos componentes sensibles al fallo que pueden afectar la estabilidad y escalabilidad de tu sistema."
+          },
+          {
+            "title": "Revisión de arquitectura y stack",
+            "description": "Analizamos la adecuación de tu stack tecnológico y su capacidad para sostener los objetivos actuales y futuros."
+          },
+          {
+            "title": "Informe de mejoras priorizadas",
+            "description": "Te entregamos un plan claro y accionable, con recomendaciones clasificadas por impacto, urgencia y coste."
+          },
+          {
+            "title": "Asesoría para tu equipo actual",
+            "description": "Acompañamos a tu equipo con sesiones técnicas para facilitar la implementación de las mejoras sugeridas."
+          }
+        ]
+      },
+      "use_cases": {
+        "id": "ejemplos-de-analisis",
+        "title": "Tipos de análisis especializados",
+        "subtitle": "Cada sistema tiene necesidades específicas. Ofrecemos diferentes tipos de análisis técnico adaptados a tu situación particular y objetivos de negocio.",
+        "cases": [
+          {
+            "key": "auditoria",
+            "title": "Auditoría técnica completa",
+            "description": "Revisamos todo tu ecosistema digital: código, arquitectura, infraestructura y procesos de desarrollo para detectar riesgos y oportunidades.",
+            "features": [
+              "Inspección detallada del código y arquitectura",
+              "Detección de vulnerabilidades y fallos críticos",
+              "Evaluación de rendimiento y escalabilidad",
+              "Revisión de procesos de desarrollo y despliegue",
+              "Análisis de documentación técnica y procedimientos",
+              "Informe con roadmap técnico de mejora"
+            ],
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Aplicaciones complejas, sistemas con errores recurrentes o en preparación para una gran actualización"
+          },
+          {
+            "key": "optimizacion",
+            "title": "Optimización de base de datos",
+            "description": "Mejoramos el rendimiento de tu base de datos mediante análisis de consultas, estructura de tablas y uso eficiente de recursos.",
+            "features": [
+              "Detección de consultas lentas y cuellos de botella",
+              "Optimización de índices y organización de tablas",
+              "Revisión de triggers y procedimientos almacenados",
+              "Evaluación de backup y recuperación",
+              "Análisis de uso de memoria y almacenamiento",
+              "Recomendaciones para escalar según la carga"
+            ],
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Aplicaciones con bases de datos pesadas, alta concurrencia o problemas de rendimiento persistente"
+          },
+          {
+            "key": "seguridad",
+            "title": "Mejora de seguridad",
+            "description": "Auditamos la seguridad de tu sistema, detectamos vulnerabilidades y fortalecemos la protección de datos sensibles.",
+            "features": [
+              "Análisis de posibles vectores de ataque",
+              "Evaluación de autenticación y control de accesos",
+              "Revisión de cifrado y gestión de datos",
+              "Inspección de configuraciones de red y servidor",
+              "Verificación de cumplimiento RGPD y normativas",
+              "Plan de respuesta ante incidentes"
+            ],
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Sistemas expuestos públicamente, manejo de datos sensibles o con exigencias de compliance"
+          },
+          {
+            "key": "stack",
+            "title": "Evaluación de stack tecnológico",
+            "description": "Analizamos las tecnologías que usás y te ayudamos a definir si están alineadas con tus objetivos presentes y futuros.",
+            "features": [
+              "Evaluación de frameworks y librerías actuales",
+              "Detección de tecnologías obsoletas o riesgosas",
+              "Análisis de dependencias críticas",
+              "Capacidad de escalado del stack",
+              "Comparación con alternativas modernas",
+              "Roadmap de migración tecnológica si aplica"
+            ],
+            "titleCaseStudy": "Ideal para",
+            "caseStudy": "Sistemas legacy, aplicaciones que necesitan modernización o redefinición tecnológica"
+          }
+        ]
+      },
+      "work_process": {
+        "title": "Metodología de análisis profundo",
+        "subtitle": "Nuestro proceso estructurado garantiza un diagnóstico completo y recomendaciones accionables que tu equipo puede implementar de forma segura y prioritaria.",
+        "phases": [
+          {
+            "phase": "Fase 1",
+            "title": "Recopilación de información",
+            "description": "Analizamos documentación técnica, accedemos a entornos de desarrollo y hablamos con tu equipo para entender el contexto real del sistema.",
+            "duration": "1-2 días"
+          },
+          {
+            "phase": "Fase 2",
+            "title": "Diagnóstico técnico",
+            "description": "Realizamos pruebas exhaustivas del código, la arquitectura, el rendimiento y la seguridad utilizando herramientas avanzadas.",
+            "duration": "3-5 días"
+          },
+          {
+            "phase": "Fase 3",
+            "title": "Análisis de resultados",
+            "description": "Procesamos los datos recolectados, identificamos patrones de falla y priorizamos los hallazgos según su impacto y criticidad.",
+            "duration": "2-3 días"
+          },
+          {
+            "phase": "Fase 4",
+            "title": "Informe y recomendaciones",
+            "description": "Presentamos un informe completo con todos los hallazgos, mejoras sugeridas y un plan de acción práctico para tu equipo.",
+            "duration": "2-3 días"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos las dudas más comunes sobre nuestro servicio de análisis de sistemas",
+        "items": [
+          {
+            "question": "¿Qué nivel de acceso necesitan a nuestros sistemas?",
+            "answer": "Dependiendo del tipo de análisis, podemos requerir acceso de solo lectura al código fuente, entornos de desarrollo o staging, y documentación técnica. Para el análisis de rendimiento, accedemos a logs, métricas y configuraciones del sistema. Siempre trabajamos bajo estrictos acuerdos de confidencialidad y, cuando es necesario, utilizamos datos anonimizados. Nunca accedemos a datos sensibles de producción sin supervisión explícita."
+          },
+          {
+            "question": "¿El análisis afectará el funcionamiento normal del sistema?",
+            "answer": "No. Nuestro enfoque es no intrusivo y se realiza principalmente sobre entornos de desarrollo, staging y datos históricos. En caso de requerir observación en producción, utilizamos herramientas pasivas que no interfieren con el rendimiento. Las pruebas que puedan implicar riesgo se planifican con tu equipo y se ejecutan en momentos de baja actividad."
+          },
+          {
+            "question": "¿Qué incluye exactamente el informe de análisis?",
+            "answer": "Incluye: un resumen ejecutivo, análisis detallado por área (código, arquitectura, rendimiento, seguridad), listado priorizado de problemas, recomendaciones técnicas con estimaciones de implementación, y un roadmap de acción. También añadimos anexos técnicos con métricas y evidencias, más una sesión de presentación para resolver dudas con tu equipo."
+          },
+          {
+            "question": "¿Pueden ayudar a implementar las mejoras recomendadas?",
+            "answer": "Sí. Podemos implementar directamente las mejoras, trabajar junto a tu equipo técnico o brindar supervisión y asesoría durante el proceso. También ofrecemos capacitaciones específicas para que tu equipo incorpore las mejores prácticas y tecnologías sugeridas."
+          },
+          {
+            "question": "¿Con qué frecuencia recomiendan realizar un análisis?",
+            "answer": "Para sistemas críticos, sugerimos al menos una revisión anual. Para aplicaciones en crecimiento acelerado, cada 6-12 meses. Sistemas estables pueden revisarse cada 2-3 años. También es recomendable hacerlo antes de migraciones, actualizaciones o ante problemas persistentes. Ofrecemos planes de análisis recurrente para monitoreo continuo."
+          },
+          {
+            "question": "¿Qué diferencia su análisis de las herramientas automáticas?",
+            "answer": "Nuestro análisis va más allá de los diagnósticos superficiales. Combinamos herramientas técnicas con experiencia humana para entender el contexto real del negocio. Evaluamos causas raíz, impacto en objetivos, capacidades del equipo y prioridades estratégicas. El resultado son recomendaciones accionables, alineadas a tu realidad, no genéricas."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para anticiparte a los problemas críticos?",
+        "description": "Una auditoría técnica no es un gasto, es una inversión inteligente. Te ayudamos a detectar fallos antes de que se conviertan en pérdidas costosas.",
+        "features": [
+          "Diagnóstico completo en 1-2 semanas",
+          "Análisis sin interrumpir tu operación",
+          "Informe claro con prioridades y soluciones",
+          "Soporte experto en cada etapa del proceso"
+        ],
+        "buttons": [
+          {
+            "label": "Solicitar auditoría técnica",
+            "href": "/contacto",
+            "targetBlank": true
+          },
+          {
+            "label": "Ver ejemplo de informe",
+            "href": "/contacto",
+            "variant": "outline",
+            "targetBlank": true
+          }
+        ],
+        "note": "Análisis inicial gratuito • Desarrollo por módulos • Resultados tangibles desde la primera fase"
+      }
+    },
+    "asesoria-digital": {
+      "hero": {
+        "badge": {
+          "text": "Servicios • Estrategia Digital para Empresas",
+          "color": "blue"
+        },
+        "title": "Transformá tu negocio con asesoría digital estratégica",
+        "subtitle": "Estrategia, herramientas y acompañamiento para una digitalización efectiva",
+        "description": "Te acompañamos paso a paso para elegir las herramientas adecuadas, rediseñar procesos clave y lograr una transformación digital adaptada a tu negocio, sin perder el foco en rentabilidad y sostenibilidad.",
+        "buttons": [
+          {
+            "label": "Evaluar mi madurez digital",
+            "href": "/contacto",
+            "variant": "primary",
+            "targetBlank": true
+          },
+          {
+            "label": "Ver casos de transformación",
+            "href": "#casos-de-transformacion",
+            "variant": "outline"
+          }
+        ],
+        "features": [
+          {
+            "icon": "Clock",
+            "text": "2-6 semanas"
+          },
+          {
+            "icon": "CreditCard",
+            "text": "Desde €850"
+          }
+        ],
+        "image": {
+          "src": "/img_placeholder.webp",
+          "alt": "Asesoría en digitalización por Solbyt",
+          "overlayTitle": "Transformación digital estratégica y sostenible",
+          "overlaySubtitle": "Hoja de ruta clara + Herramientas adecuadas"
+        }
+      },
+      "digitalization_challenges": {
+        "title": "Digitalizar no es solo implementar tecnología",
+        "description": "Sin una estrategia clara, las herramientas digitales se convierten en gastos innecesarios. La verdadera transformación ocurre cuando la tecnología se alinea con tus procesos, tu equipo y tus objetivos.",
+        "result": "Resultado",
+        "cards": [
+          {
+            "title": "Sin estrategia clara",
+            "description": "Se adoptan herramientas sin entender los procesos ni definir metas medibles.",
+            "impact": "Desperdicio de recursos",
+            "gradient": "from-red-50 to-red-100/30",
+            "icon": "Target",
+            "iconColor": "text-red-500"
+          },
+          {
+            "title": "Resistencia al cambio",
+            "description": "Los equipos rechazan lo nuevo si no entienden cómo ni por qué usarlo.",
+            "impact": "Baja productividad",
+            "gradient": "from-orange-50 to-orange-100/30",
+            "icon": "Users",
+            "iconColor": "text-orange-500"
+          },
+          {
+            "title": "Herramientas inadecuadas",
+            "description": "Se eligen soluciones que no encajan con la operativa ni el nivel técnico del equipo.",
+            "impact": "Procesos ineficientes",
+            "gradient": "from-yellow-50 to-yellow-100/30",
+            "icon": "Settings",
+            "iconColor": "text-yellow-500"
+          }
+        ],
+        "cta": {
+          "question": "¿Sabés dónde está tu empresa en el camino digital?",
+          "text": "Te ayudamos a diagnosticar tu punto de partida y a construir una hoja de ruta adaptada a tus desafíos. Sin interrupciones. Con resultados desde el primer mes.",
+          "button_label": "Hacer diagnóstico gratuito"
+        }
+      },
+      "features": {
+        "titleGradient": "pink",
+        "title": "Nuestro enfoque estratégico y sostenible",
+        "description": "No vendemos tecnología, diseñamos transformaciones. Nuestro proceso garantiza que cada decisión digital esté alineada con tus objetivos de negocio y capacidades reales.",
+        "items": [
+          {
+            "title": "Diagnóstico digital inicial",
+            "description": "Analizamos tus procesos y herramientas actuales para establecer una línea base clara de tu nivel de digitalización.",
+            "colorKey": "blue"
+          },
+          {
+            "title": "Hoja de ruta personalizada",
+            "description": "Definimos un plan estratégico con objetivos claros, tiempos realistas y KPIs medibles para cada fase del proceso.",
+            "colorKey": "pink"
+          },
+          {
+            "title": "Elección tecnológica estratégica",
+            "description": "Te ayudamos a seleccionar herramientas que se integren a tu flujo de trabajo y escalen con tu negocio, sin sobredimensionar costos.",
+            "colorKey": "blue"
+          },
+          {
+            "title": "Optimización de procesos",
+            "description": "Rediseñamos los procesos clave para maximizar el valor de las herramientas digitales y eliminar cuellos de botella.",
+            "colorKey": "pink"
+          },
+          {
+            "title": "Soporte y cambio organizacional",
+            "description": "Acompañamos a tu equipo durante la implementación con capacitación, soporte técnico y estrategias de adopción.",
+            "colorKey": "purple"
+          },
+          {
+            "title": "Medición de impacto y ajustes",
+            "description": "Medimos resultados, evaluamos KPIs y realizamos mejoras continuas para asegurar el éxito sostenido de la transformación.",
+            "colorKey": "pink"
+          }
+        ]
+      },
+      "use_cases": {
+        "id": "casos-de-transformacion",
+        "title": "Soluciones adaptadas a tu realidad",
+        "subtitle": "Cada empresa tiene necesidades únicas de digitalización. Ofrecemos asesoría especializada según tu situación actual y objetivos específicos.",
+        "items": [
+          {
+            "key": "Migración Cloud",
+            "title": "Migración a la nube eficiente",
+            "description": "Trasladamos tus sistemas a la nube de forma segura y escalable, reduciendo costos y asegurando continuidad operativa.",
+            "features": [
+              "Análisis de tu infraestructura actual y nivel de preparación",
+              "Selección de proveedor cloud ideal (AWS, Azure, GCP)",
+              "Diseño de arquitectura adaptada a tus necesidades",
+              "Plan de migración por etapas con mínimo downtime",
+              "Optimización del uso de recursos y costos cloud",
+              "Capacitación en gestión y mantenimiento de la nube"
+            ],
+            "titleCaseStudy": "Beneficios comunes",
+            "caseStudy": "Hasta 50% de ahorro en infraestructura, alta disponibilidad (99.9%) y mayor agilidad operativa",
+            "color": "blue",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "Digitalización Total",
+            "title": "Transformación digital integral",
+            "description": "Digitalizamos todos tus procesos críticos para optimizar tu operación y mejorar la colaboración interna.",
+            "features": [
+              "Mapa completo de procesos actuales y oportunidades",
+              "Digitalización documental y gestión eficiente de archivos",
+              "Implementación de herramientas colaborativas (ej. Notion, Slack)",
+              "Automatización de tareas repetitivas y flujos claves",
+              "Integración de plataformas y eliminación de silos",
+              "Gestión del cambio y cultura digital interna"
+            ],
+            "titleCaseStudy": "Resultados habituales",
+            "caseStudy": "Hasta 60% de mejora en eficiencia, reducción de errores y mayor cohesión del equipo",
+            "color": "purple",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "Selección ERPs",
+            "title": "Selección e implementación de ERP",
+            "description": "Te ayudamos a elegir e implementar el ERP ideal, alineado a tus procesos, presupuesto y metas de crecimiento.",
+            "features": [
+              "Levantamiento de requisitos técnicos y funcionales",
+              "Comparativa objetiva entre opciones del mercado",
+              "Proyección de retorno sobre la inversión (ROI)",
+              "Diseño de implementación progresiva por módulos",
+              "Negociación con proveedores y gestión de contratos",
+              "Supervisión del proceso hasta el go-live"
+            ],
+            "titleCaseStudy": "Impacto frecuente",
+            "caseStudy": "Mejora en control operativo, visibilidad en tiempo real y reducción de costos administrativos",
+            "color": "pink",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "Optimización Operativa",
+            "title": "Optimización digital de operaciones",
+            "description": "Mejoramos procesos actuales con tecnología, eliminando ineficiencias y maximizando el uso de tus herramientas actuales.",
+            "features": [
+              "Auditoría de procesos y herramientas vigentes",
+              "Detección de puntos de mejora y automatización",
+              "Optimización de flujos de trabajo sin reemplazos drásticos",
+              "Integración fluida entre sistemas existentes",
+              "Implementación de automatizaciones puntuales",
+              "Seguimiento con indicadores de eficiencia"
+            ],
+            "titleCaseStudy": "Resultados concretos",
+            "caseStudy": "Productividad aumentada en 25-40% y mejor aprovechamiento del ecosistema digital ya instalado",
+            "color": "blue",
+            "img": "/img_placeholder.webp"
+          }
+        ]
+      },
+      "work_process": {
+        "title": "Metodología probada y efectiva",
+        "subtitle": "Nuestro proceso estructurado garantiza una transformación digital exitosa, minimizando riesgos y maximizando el retorno de inversión.",
+        "phases": [
+          {
+            "phase": "Fase 1",
+            "title": "Diagnóstico digital inicial",
+            "description": "Evaluamos tu estado actual: procesos, herramientas, nivel de adopción tecnológica y puntos de mejora.",
+            "duration": "3-5 días"
+          },
+          {
+            "phase": "Fase 2",
+            "title": "Diseño de hoja de ruta",
+            "description": "Creamos una estrategia digital personalizada, con objetivos claros, prioridades y plan de acción detallado.",
+            "duration": "1-2 semanas"
+          },
+          {
+            "phase": "Fase 3",
+            "title": "Implementación acompañada",
+            "description": "Te guiamos en la adopción de nuevas herramientas, optimización de procesos y gestión del cambio con tu equipo.",
+            "duration": "2-12 semanas"
+          },
+          {
+            "phase": "Fase 4",
+            "title": "Monitoreo y mejora continua",
+            "description": "Medimos resultados, ajustamos estrategias y te ayudamos a evolucionar de forma sostenida y basada en datos.",
+            "duration": "Continuo"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos las dudas más comunes sobre asesoría en digitalización empresarial",
+        "items": [
+          {
+            "question": "¿Cómo evalúan el nivel de madurez digital de mi empresa?",
+            "answer": "Utilizamos un framework estructurado que analiza tus procesos, herramientas, equipo y cultura digital. A través de entrevistas, auditorías técnicas y análisis funcional, obtenemos una visión clara de tu punto de partida y diseñamos recomendaciones para avanzar con confianza."
+          },
+          {
+            "question": "¿Qué pasa si mi equipo se resiste al cambio tecnológico?",
+            "answer": "La resistencia es normal. Por eso, incluimos estrategias de gestión del cambio desde el inicio: comunicación clara, capacitación gradual, participación del equipo y adopción progresiva. Nuestra experiencia demuestra que con el enfoque adecuado, los equipos se adaptan exitosamente."
+          },
+          {
+            "question": "¿Cuánto tarda una transformación digital completa?",
+            "answer": "Depende del alcance, pero trabajamos por fases. Algunos procesos se optimizan en semanas; otros, más complejos, en meses. Lo importante es que obtendrás valor desde el inicio y un plan realista para evolucionar paso a paso."
+          },
+          {
+            "question": "¿Cómo garantizan que las herramientas recomendadas sean las adecuadas?",
+            "answer": "No vendemos software. Evaluamos tus procesos, necesidades y recursos. Luego analizamos diferentes opciones del mercado y te ayudamos a elegir la mejor solución en función de funcionalidad, costo, escalabilidad y soporte."
+          },
+          {
+            "question": "¿Ofrecen soporte después de la implementación?",
+            "answer": "Sí. Brindamos acompañamiento según tus necesidades: sesiones de seguimiento, resolución de dudas, monitoreo de métricas clave y ajustes según los resultados. Nuestro objetivo es que la transformación funcione a largo plazo."
+          },
+          {
+            "question": "¿Qué retorno puedo esperar de la digitalización?",
+            "answer": "Los resultados varían, pero nuestros clientes suelen ver mejoras del 20-40% en eficiencia y reducciones del 15-30% en costos operativos. Establecemos métricas desde el inicio para que puedas medir el impacto real y ajustar lo necesario."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para transformar tu negocio con una estrategia digital clara?",
+        "description": "Te ayudamos a dar el salto digital con una hoja de ruta personalizada, herramientas adecuadas y acompañamiento experto en cada fase del proceso.",
+        "features": [
+          "Diagnóstico digital gratuito",
+          "Plan de acción estratégico",
+          "Implementación acompañada",
+          "Resultados medibles en semanas"
+        ],
+        "buttons": [
+          {
+            "label": "Solicitar diagnóstico gratuito",
+            "href": "/contacto",
+            "targetBlank": true
+          },
+          {
+            "label": "Conocer casos reales de éxito",
+            "href": "/automatizacion#casos",
+            "variant": "outline",
+            "targetBlank": true
+          }
+        ],
+        "note": "Sin compromiso • Primera propuesta en 48h • Retorno garantizado"
+      }
+    },
+    "desarrollo-software": {
+      "hero": {
+        "badge": {
+          "text": "Servicios • Desarrollo de Software",
+          "color": "purple"
+        },
+        "title": "Desarrollo de Software",
+        "subtitle": "Tecnología hecha a tu medida, lista para escalar",
+        "description": "Diseñamos software modular y a medida, ideal para pymes que buscan digitalizar procesos, crecer por etapas y maximizar su retorno de inversión sin comprometer estabilidad ni escalabilidad.",
+        "buttons": [
+          {
+            "label": "Planificar mi software",
+            "href": "/contacto",
+            "variant": "primary",
+            "targetBlank": true
+          },
+          {
+            "label": "Ver casos de desarrollo",
+            "href": "#casos-de-desarrollo",
+            "variant": "outline"
+          }
+        ],
+        "features": [
+          {
+            "icon": "Clock",
+            "text": "1-3 semanas por fase"
+          },
+          {
+            "icon": "CreditCard",
+            "text": "Desde €1.200 por fase"
+          }
+        ],
+        "image": {
+          "src": "/img_placeholder.webp",
+          "alt": "Desarrollo de software por Solbyt",
+          "overlayTitle": "Software que evoluciona con tu negocio",
+          "overlaySubtitle": "Fases modulares, impacto inmediato"
+        }
+      },
+      "traditional_software_development_problems": {
+        "title": "¿Tu software actual acompaña realmente tu crecimiento?",
+        "description": "Muchas pymes invierten en software que no se adapta a sus cambios, requiere grandes desembolsos iniciales y termina frenando su evolución. Nuestro enfoque modular resuelve esos problemas.",
+        "solution_prefix": "Solución",
+        "cards": [
+          {
+            "title": "Inversión inicial alta",
+            "description": "Software completo desde el inicio que requiere grandes desembolsos sin validar valor",
+            "solution": "Desarrollo por fases",
+            "gradient": "from-red-50 to-red-100/50",
+            "icon": "Target",
+            "iconColor": "text-red-500"
+          },
+          {
+            "title": "Rigidez y falta de adaptación",
+            "description": "Sistemas que no pueden modificarse cuando cambian las necesidades del negocio",
+            "solution": "Arquitectura modular",
+            "gradient": "from-orange-50 to-orange-100/50",
+            "icon": "Layers",
+            "iconColor": "text-orange-500"
+          },
+          {
+            "title": "Problemas de escalabilidad",
+            "description": "Software que no soporta el crecimiento y requiere reescritura completa",
+            "solution": "Diseño escalable",
+            "gradient": "from-yellow-50 to-yellow-100/50",
+            "icon": "TrendingUp",
+            "iconColor": "text-yellow-500"
+          }
+        ],
+        "cta": {
+          "title": "Evaluamos tu situación actual sin compromiso",
+          "description": "Diagnóstico gratuito de tus necesidades digitales y propuesta de desarrollo por fases, adaptada a tu presupuesto y objetivos reales.",
+          "button_label": "Solicitar evaluación gratuita"
+        }
+      },
+      "features": {
+        "titleGradient": "purple",
+        "title": "Desarrollo modular y escalable",
+        "description": "Nuestro enfoque por fases permite validar valor en cada etapa, optimizar la inversión y construir software robusto que crece junto con tu empresa.",
+        "items": [
+          {
+            "title": "Desarrollo por módulos escalables",
+            "description": "Construimos funcionalidades como bloques independientes que se integran perfectamente, permitiendo crecer a medida que tu negocio lo necesita."
+          },
+          {
+            "title": "Arquitectura lista para crecer",
+            "description": "Diseñamos sistemas preparados para soportar más usuarios, funcionalidades y datos sin necesidad de reescribir tu software."
+          },
+          {
+            "title": "Integración con tus sistemas actuales",
+            "description": "Conectamos tu software con APIs, herramientas y plataformas existentes, para que todo funcione en conjunto desde el primer día."
+          },
+          {
+            "title": "Calidad asegurada y documentación clara",
+            "description": "Incluimos pruebas automatizadas, revisión por pares y documentación técnica detallada para que tu equipo pueda mantener y escalar con confianza."
+          },
+          {
+            "title": "Panel de métricas integradas",
+            "description": "Visualizá en tiempo real cómo se está utilizando tu software, con dashboards personalizables para tomar decisiones informadas."
+          },
+          {
+            "title": "Evolución continua asegurada",
+            "description": "Ofrecemos mejoras constantes y desarrollo de nuevas funcionalidades basado en feedback real y necesidades cambiantes."
+          }
+        ]
+      },
+      "use_cases": {
+        "id": "casos-de-desarrollo",
+        "title": "Soluciones empresariales diseñadas para escalar",
+        "subtitle": "Diseñamos plataformas robustas y flexibles que crecen con vos. Adaptadas a tu ritmo, tu equipo y tus desafíos reales.",
+        "items": [
+          {
+            "key": "ERP para Pymes",
+            "title": "ERP para Pymes",
+            "description": "Software integral para gestionar tu empresa de forma centralizada. Ventas, inventario, finanzas y RRHH en un solo lugar, creciendo por módulos según tu ritmo.",
+            "features": [
+              "CRM y gestión de ventas integrados",
+              "Control de inventario con alertas inteligentes",
+              "Contabilidad automatizada y reportes financieros",
+              "Gestión de personal y nómina digital",
+              "Panel ejecutivo con indicadores clave (KPIs)",
+              "Conexión con bancos y servicios externos"
+            ],
+            "titleCaseStudy": "Implementación típica",
+            "caseStudy": "Fase 1: Ventas e inventario · Fase 2: Finanzas · Fase 3: Recursos Humanos",
+            "color": "purple",
+            "icon": "Cloud",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "Gestión Interna",
+            "title": "Gestión Interna",
+            "description": "Automatizá procesos internos como proyectos, tiempos y aprobaciones para ganar control, eficiencia y visibilidad en tu operación diaria.",
+            "features": [
+              "Gestión de proyectos y tareas por equipos",
+              "Control de tiempos y carga laboral",
+              "Flujos de aprobación automatizados",
+              "Gestión documental segura",
+              "Notificaciones internas y comunicación centralizada",
+              "Reportes de productividad y eficiencia"
+            ],
+            "titleCaseStudy": "Implementación típica",
+            "caseStudy": "Fase 1: Proyectos y tareas · Fase 2: Control de tiempo · Fase 3: Aprobaciones y reportes",
+            "color": "blue",
+            "icon": "Zap",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "Plataformas Multiusuario",
+            "title": "Plataformas Multiusuario",
+            "description": "Conectá a tus clientes, proveedores y colaboradores con una plataforma segura, intuitiva y personalizada según cada tipo de usuario.",
+            "features": [
+              "Portal de clientes con accesos personalizados",
+              "Plataforma para proveedores y equipos externos",
+              "Sistema de roles y permisos por área",
+              "Colaboración y mensajería en tiempo real",
+              "Marketplace interno para productos o servicios",
+              "Métricas de uso y comportamiento de usuarios"
+            ],
+            "titleCaseStudy": "Implementación típica",
+            "caseStudy": "Fase 1: Portal básico · Fase 2: Roles y permisos · Fase 3: Funcionalidades colaborativas",
+            "color": "pink",
+            "icon": "Settings",
+            "img": "/img_placeholder.webp"
+          },
+          {
+            "key": "APIs de Integración",
+            "title": "APIs de Integración",
+            "description": "Conectamos tus sistemas entre sí y con servicios externos, reduciendo el trabajo manual y mejorando la sincronización de datos.",
+            "features": [
+              "APIs RESTful para terceros",
+              "Conectores con ERP, CRM y otros sistemas",
+              "Sincronización automática de información",
+              "Webhooks para acciones en tiempo real",
+              "Documentación técnica para tu equipo",
+              "Logs y monitoreo de integraciones"
+            ],
+            "titleCaseStudy": "Implementación típica",
+            "caseStudy": "Fase 1: API básica · Fase 2: Integraciones clave · Fase 3: Automatizaciones complejas",
+            "color": "purple",
+            "icon": "TrendingUp",
+            "img": "/img_placeholder.webp"
+          }
+        ]
+      },
+      "work_process": {
+        "title": "Metodología ágil y escalable",
+        "subtitle": "Nuestro proceso de desarrollo garantiza entregas rápidas, calidad superior y evolución continua del software según las necesidades reales de tu negocio.",
+        "phases": [
+          {
+            "phase": "Fase 1",
+            "title": "Análisis y planificación",
+            "description": "Relevamos tus procesos, definimos objetivos claros y diseñamos la arquitectura técnica. Creamos un roadmap de desarrollo modular alineado a tus prioridades.",
+            "duration": "3-5 días"
+          },
+          {
+            "phase": "Fase 2",
+            "title": "Desarrollo del MVP",
+            "description": "Construimos el primer módulo funcional para validar el valor real del software. Esta fase entrega una solución ya operativa que puede ser utilizada desde el primer día.",
+            "duration": "1-3 semanas"
+          },
+          {
+            "phase": "Fase 3",
+            "title": "Testing y optimización",
+            "description": "Realizamos pruebas funcionales, de rendimiento y seguridad. Optimizamos la experiencia de usuario y preparamos todo para el despliegue en producción.",
+            "duration": "3-5 días"
+          },
+          {
+            "phase": "Fase 4",
+            "title": "Evolución continua",
+            "description": "A partir del uso real, priorizamos nuevas funcionalidades, mejoras técnicas y optimización continua. Mantenemos tu software siempre alineado al crecimiento del negocio.",
+            "duration": "Continuo"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Resolvemos las dudas más comunes sobre desarrollo de software empresarial modular",
+        "items": [
+          {
+            "question": "¿Cómo funciona el desarrollo por fases y por qué es mejor?",
+            "answer": "Desarrollar por fases permite lanzar el primer módulo rápidamente y obtener valor desde el inicio. Cada fase entrega una funcionalidad lista para usar. Esto reduce el riesgo, mejora el control del presupuesto y permite adaptar el software a medida que tu empresa evoluciona."
+          },
+          {
+            "question": "¿Qué tecnologías usan y cómo aseguran la escalabilidad?",
+            "answer": "Trabajamos con tecnologías modernas como React, Next.js, Node.js y PostgreSQL. Diseñamos el software con arquitectura modular y APIs bien definidas, lo que permite escalar usuarios, funcionalidades o integrar con nuevos sistemas sin rehacer lo anterior."
+          },
+          {
+            "question": "¿Qué incluye cada fase además del desarrollo?",
+            "answer": "Cada fase incluye: planificación detallada, desarrollo, testing automatizado, documentación técnica y funcional, y acompañamiento en el despliegue. También podés contar con soporte posterior o continuar con la siguiente fase cuando quieras."
+          },
+          {
+            "question": "¿Puedo agregar funcionalidades después del desarrollo?",
+            "answer": "Sí, nuestro enfoque modular está pensado justamente para eso. Podés agregar nuevos módulos o integrar servicios externos sin afectar lo ya construido. El software evoluciona con tu negocio."
+          },
+          {
+            "question": "¿Tienen soporte y mantenimiento después del lanzamiento?",
+            "answer": "Sí. Ofrecemos soporte básico (resolución de bugs, actualizaciones de seguridad) y soporte evolutivo con mejoras continuas, optimización y desarrollo de nuevas funcionalidades. Nos adaptamos a tus necesidades."
+          },
+          {
+            "question": "¿En cuánto tiempo se recupera la inversión?",
+            "answer": "Muchas pymes ven retorno desde la primera fase. Por ejemplo, automatizando tareas repetitivas, mejorando control de datos o reduciendo errores humanos. Te ayudamos a medir el impacto desde el inicio con métricas claras como tiempo ahorrado o errores evitados."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Listo para construir un software que crezca con tu negocio?",
+        "description": "Creamos software modular y escalable que se adapta a tus procesos reales, genera valor desde la primera fase e impulsa tu crecimiento con cada nuevo módulo.",
+        "features": [
+          "Fases con resultados visibles desde el inicio",
+          "Arquitectura sólida y escalable",
+          "Soporte y evolución continua",
+          "Optimización de procesos reales"
+        ],
+        "buttons": [
+          {
+            "label": "Planificar mi software",
+            "href": "/contacto",
+            "targetBlank": true
+          },
+          {
+            "label": "Ver casos de desarrollo",
+            "href": "/automatizacion#casos",
+            "variant": "outline",
+            "targetBlank": true
+          }
+        ],
+        "note": "Análisis de requerimientos sin costo • Entregas rápidas y modulables • Resultados desde el primer día"
+      }
+    }
+  },
+  "shared_components": {
+    "faq": {
+      "cta": {
+        "ctaTitle": "¿Tienes más preguntas?",
+        "ctaDescription": "Estamos aquí para ayudarte. Contáctanos para una asesoría gratuita y conoce cómo podemos ayudarte a tener presencia online.",
+        "ctaPrimaryLabel": "Agendar reunión",
+        "ctaSecondaryLabel": "Escríbenos por WhatsApp"
       }
     }
   }

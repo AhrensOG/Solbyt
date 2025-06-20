@@ -25,6 +25,7 @@ type UseCasesProps = {
   title: string;
   subtitle: string;
   cases: UseCase[];
+  id: string;
 };
 
 const UseCases: React.FC<UseCasesProps> = ({
@@ -32,13 +33,14 @@ const UseCases: React.FC<UseCasesProps> = ({
   title,
   subtitle,
   cases,
+  id,
 }) => {
   const [selected, setSelected] = useState<string>(cases[0]?.key);
   const content = cases.find((c) => c.key === selected) ?? cases[0];
   const Icon = content.icon;
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id={id} className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2

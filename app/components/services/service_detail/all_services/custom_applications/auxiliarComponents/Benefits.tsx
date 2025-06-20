@@ -1,74 +1,43 @@
-import { Cog, Database, Layers, Puzzle, Shield, Workflow } from "lucide-react";
 import React from "react";
+import { Cog, Database, Layers, Puzzle, Shield, Workflow } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Benefits = () => {
+  const translation = useTranslations("service_detail.aplicaciones-medida.benefits");
+
+  const data = translation.raw("items") as
+    | { title: string; description: string }[]
+    | undefined;
+
+const iconsArray = [
+  <Workflow key="workflow" className="h-8 w-8 text-solbyt-blue-500" />,
+  <Layers key="layers" className="h-8 w-8 text-solbyt-purple-600" />,
+  <Puzzle key="puzzle" className="h-8 w-8 text-solbyt-pink-500" />,
+  <Database key="database" className="h-8 w-8 text-solbyt-blue-500" />,
+  <Cog key="cog" className="h-8 w-8 text-solbyt-purple-600" />,
+  <Shield key="shield" className="h-8 w-8 text-solbyt-pink-500" />,
+];
+
+  if (!data) return null;
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        {/* TÍTULO */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-pink-500 to-solbyt-blue-500">
-            Aplicaciones hechas para crecer con vos
+          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-pink-500 to-solbyt-blue-500">
+            {translation("title")}
           </h2>
-          <p className="text-lg text-gray-600">
-            Diseñamos software que se adapta a tu forma de trabajar y evoluciona
-            con tu equipo. Digitalizamos lo que te hace único y optimizamos lo
-            que te hace crecer.
-          </p>
+          <p className="text-lg text-gray-600">{translation("description")}</p>
         </div>
 
-        {/* TARJETAS DE BENEFICIOS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              icon: <Workflow className="h-8 w-8 text-solbyt-blue-500" />,
-              title: "Arquitectura adaptada a tus procesos",
-              description:
-                "Construimos tu app desde cero según cómo funciona realmente tu negocio. Sin plantillas, sin límites.",
-              gradient: "from-solbyt-blue-500/10 to-white",
-            },
-            {
-              icon: <Layers className="h-8 w-8 text-solbyt-purple-600" />,
-              title: "Interfaces limpias y escalables",
-              description:
-                "Diseñamos pantallas intuitivas que tu equipo puede usar sin entrenamientos largos ni complicaciones.",
-              gradient: "from-solbyt-purple-600/10 to-white",
-            },
-            {
-              icon: <Puzzle className="h-8 w-8 text-solbyt-pink-500" />,
-              title: "Módulos que crecen por etapas",
-              description:
-                "Empezá con lo esencial y sumá funcionalidades a medida que crece tu operación.",
-              gradient: "from-solbyt-pink-500/10 to-white",
-            },
-            {
-              icon: <Database className="h-8 w-8 text-solbyt-blue-500" />,
-              title: "Datos seguros y siempre disponibles",
-              description:
-                "Optimizamos la estructura de tu base de datos para que sea rápida, organizada y 100% protegida.",
-              gradient: "from-solbyt-blue-500/10 to-white",
-            },
-            {
-              icon: <Cog className="h-8 w-8 text-solbyt-purple-600" />,
-              title: "Integración con tus sistemas actuales",
-              description:
-                "Conectamos la app con tus herramientas actuales para que todo fluya sin interrupciones ni duplicaciones.",
-              gradient: "from-solbyt-purple-600/10 to-white",
-            },
-            {
-              icon: <Shield className="h-8 w-8 text-solbyt-pink-500" />,
-              title: "Soporte continuo y mejoras evolutivas",
-              description:
-                "Te acompañamos con mantenimiento, mejoras y nuevas funciones según lo que tu empresa necesite en cada etapa.",
-              gradient: "from-solbyt-pink-500/10 to-white",
-            },
-          ].map((benefit, index) => (
+          {data.map((benefit, index) => (
             <div
               key={index}
-              className={`rounded-lg border-none shadow-lg hover:shadow-xl transition-transform duration-300 ease-out transform hover:scale-105 bg-gradient-to-br ${benefit.gradient}`}>
+              className="rounded-lg border-none shadow-lg hover:shadow-xl transition-transform duration-300 ease-out transform hover:scale-105 bg-gradient-to-br from-solbyt-pink-500/10 to-white">
               <div className="p-6">
                 <div className="h-16 w-16 rounded-xl bg-white shadow flex items-center justify-center mb-6 group-hover:shadow-md transition-shadow">
-                  {benefit.icon}
+                  {iconsArray[index]}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-gray-800">
                   {benefit.title}

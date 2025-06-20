@@ -7,6 +7,8 @@ import {
   faq_color_styles,
   SolbytColor,
 } from "@/app/lib/styles/faq_color_styles";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export type FAQItem = {
   question: string;
@@ -18,22 +20,10 @@ export type FAQProps = {
   title: string;
   subtitle: string;
   items: FAQItem[];
-  ctaTitle?: string;
-  ctaDescription?: string;
-  ctaPrimaryLabel?: string;
-  ctaSecondaryLabel?: string;
 };
 
-const FAQ: React.FC<FAQProps> = ({
-  colorKey,
-  title,
-  subtitle,
-  items,
-  ctaTitle = "¿Tienes más preguntas?",
-  ctaDescription = "Estamos aquí para ayudarte. Contáctanos para una asesoría gratuita y conoce cómo podemos ayudarte a tener presencia online.",
-  ctaPrimaryLabel = "Agendar reunión",
-  ctaSecondaryLabel = "Escribinos por whatsapp",
-}) => {
+const FAQ: React.FC<FAQProps> = ({ colorKey, title, subtitle, items }) => {
+  const translation = useTranslations("shared_components.faq.cta");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -112,17 +102,25 @@ const FAQ: React.FC<FAQProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}>
           <MessageCircle className="h-12 w-12 text-solbyt-purple-600 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold mb-4 text-gray-800">{ctaTitle}</h3>
+          <h3 className="text-2xl font-bold mb-4 text-gray-800">
+            {translation("ctaTitle")}
+          </h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            {ctaDescription}
+            {translation("ctaDescription")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-solbyt-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              {ctaPrimaryLabel}
-            </button>
-            <button className="border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500/10 px-6 py-2 rounded-lg font-medium transition-colors">
-              {ctaSecondaryLabel}
-            </button>
+            <Link
+              href="https://calendly.com/solbyt-tech/30min"
+              target="_blank"
+              className="bg-solbyt-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              {translation("ctaPrimaryLabel")}
+            </Link>
+            <Link
+              href="https://wa.me/41762726491"
+              target="_blank"
+              className="border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500/10 px-6 py-2 rounded-lg font-medium transition-colors">
+              {translation("ctaSecondaryLabel")}
+            </Link>
           </div>
         </motion.div>
       </div>

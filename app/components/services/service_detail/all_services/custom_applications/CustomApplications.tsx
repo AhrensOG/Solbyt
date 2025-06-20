@@ -21,85 +21,80 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const CustomApplications = () => {
+  const translation = useTranslations("service_detail.aplicaciones-medida");
+
   const useCasesContent = [
     {
-      key: "CRM",
-      title: "CRM enfocado en ventas",
-      description:
-        "Centralizá tus leads, automatizá seguimientos y gestioná tus oportunidades de venta en un solo lugar, con métricas en tiempo real.",
+      key: translation("use_cases.cases.0.key"),
+      title: translation("use_cases.cases.0.title"),
+      description: translation("use_cases.cases.0.description"),
       features: [
-        "Pipeline visual para seguimiento comercial",
-        "Recordatorios automáticos por email o WhatsApp",
-        "Dashboard de métricas y rendimiento por vendedor",
-        "Integración con formularios web y redes sociales",
-        "Gestión de cotizaciones y propuestas",
-        "Reportes automáticos para toma de decisiones",
+        translation("use_cases.cases.0.features.0"),
+        translation("use_cases.cases.0.features.1"),
+        translation("use_cases.cases.0.features.2"),
+        translation("use_cases.cases.0.features.3"),
+        translation("use_cases.cases.0.features.4"),
+        translation("use_cases.cases.0.features.5"),
       ],
-      titleCaseStudy: "Caso real",
-      caseStudy:
-        "Una empresa de servicios aumentó un 40% su conversión organizando mejor el seguimiento de leads y automatizando tareas repetitivas.",
+      titleCaseStudy: translation("use_cases.cases.0.titleCaseStudy"),
+      caseStudy: translation("use_cases.cases.0.caseStudy"),
       color: "blue",
       icon: BarChart3,
       img: "/img_placeholder.webp",
     },
     {
-      key: "App",
-      title: "App de reservas o turnos",
-      description:
-        "Permití que tus clientes reserven online 24/7 mientras optimizás tu agenda, reducís cancelaciones y ganás visibilidad sobre tu operación.",
+      key: translation("use_cases.cases.1.key"),
+      title: translation("use_cases.cases.1.title"),
+      description: translation("use_cases.cases.1.description"),
       features: [
-        "Calendario con disponibilidad en tiempo real",
-        "Reservas desde web y app móvil",
-        "Recordatorios automáticos por SMS o email",
-        "Panel para gestión de servicios, precios y agenda",
-        "Acceso por roles para tu equipo",
-        "Reportes de ocupación y facturación",
+        translation("use_cases.cases.1.features.0"),
+        translation("use_cases.cases.1.features.1"),
+        translation("use_cases.cases.1.features.2"),
+        translation("use_cases.cases.1.features.3"),
+        translation("use_cases.cases.1.features.4"),
+        translation("use_cases.cases.1.features.5"),
       ],
-      titleCaseStudy: "Caso real",
-      caseStudy:
-        "Una clínica dental redujo un 60% las cancelaciones y aumentó la ocupación un 25% gracias a recordatorios automáticos y reservas online.",
+      titleCaseStudy: translation("use_cases.cases.1.titleCaseStudy"),
+      caseStudy: translation("use_cases.cases.1.caseStudy"),
       color: "purple",
       icon: Calendar,
       img: "/img_placeholder.webp",
     },
     {
-      key: "Panel",
-      title: "Panel de gestión ejecutiva",
-      description:
-        "Centralizá información clave de distintas áreas en un panel visual que te ayude a tomar decisiones rápidas y basadas en datos.",
+      key: translation("use_cases.cases.2.key"),
+      title: translation("use_cases.cases.2.title"),
+      description: translation("use_cases.cases.2.description"),
       features: [
-        "Indicadores financieros y operativos en tiempo real",
-        "Gráficos interactivos y reportes personalizables",
-        "Alertas por objetivos, límites o anomalías",
-        "Integración con sistemas contables e inventario",
-        "Accesos diferenciados por rol o área",
-        "Exportación de datos para informes externos",
+        translation("use_cases.cases.2.features.0"),
+        translation("use_cases.cases.2.features.1"),
+        translation("use_cases.cases.2.features.2"),
+        translation("use_cases.cases.2.features.3"),
+        translation("use_cases.cases.2.features.4"),
+        translation("use_cases.cases.2.features.5"),
       ],
-      titleCaseStudy: "Caso real",
-      caseStudy:
-        "Una empresa logística redujo en un 50% el tiempo de análisis con un panel de datos automatizado y accesible para cada área.",
+      titleCaseStudy: translation("use_cases.cases.2.titleCaseStudy"),
+      caseStudy: translation("use_cases.cases.2.caseStudy"),
       color: "pink",
       icon: Settings,
       img: "/img_placeholder.webp",
     },
     {
-      key: "Herramientas",
-      title: "Herramientas internas personalizadas",
-      description:
-        "Automatizá tareas administrativas, controlá recursos o diseñá flujos de trabajo adaptados a tu operación interna, sin depender de software genérico.",
+      key: translation("use_cases.cases.3.key"),
+      title: translation("use_cases.cases.3.title"),
+      description: translation("use_cases.cases.3.description"),
       features: [
-        "Gestión de empleados y asistencia digital",
-        "Flujos de aprobación automatizados",
-        "Control de stock con código QR o de barras",
-        "Gestión documental y archivo digital",
-        "Canales internos de comunicación",
-        "Automatización de tareas repetitivas",
+        translation("use_cases.cases.3.features.0"),
+        translation("use_cases.cases.3.features.1"),
+        translation("use_cases.cases.3.features.2"),
+        translation("use_cases.cases.3.features.3"),
+        translation("use_cases.cases.3.features.4"),
+        translation("use_cases.cases.3.features.5"),
       ],
-      titleCaseStudy: "Caso real",
-      caseStudy:
-        "Una fábrica redujo 15 horas semanales de trabajo manual al digitalizar el control de inventario y los reportes de producción.",
+      titleCaseStudy: translation("use_cases.cases.3.titleCaseStudy"),
+      caseStudy: translation("use_cases.cases.3.caseStudy"),
       color: "blue",
       icon: Users,
       img: "/img_placeholder.webp",
@@ -108,79 +103,74 @@ const CustomApplications = () => {
 
   const phases = [
     {
-      phase: "Fase 1",
-      title: "Entendimiento del negocio",
-      description:
-        "Analizamos tus procesos actuales, detectamos cuellos de botella y definimos el primer módulo que generará impacto inmediato.",
+      phase: translation("work_process.phases.0.phase"),
+      title: translation("work_process.phases.0.title"),
+      description: translation("work_process.phases.0.description"),
+      duration: translation("work_process.phases.0.duration"),
       color: "blue",
-      duration: "1–2 semanas",
       icon: Target,
       connectorIcon: ArrowRight,
     },
     {
-      phase: "Fase 2",
-      title: "Diseño funcional y visual",
-      description:
-        "Creamos wireframes, definimos estructura de datos y diseñamos interfaces claras, alineadas con la experiencia de tus usuarios.",
+      phase: translation("work_process.phases.1.phase"),
+      title: translation("work_process.phases.1.title"),
+      description: translation("work_process.phases.1.description"),
+      duration: translation("work_process.phases.1.duration"),
       color: "purple",
-      duration: "1–2 semanas",
       icon: Layers,
       connectorIcon: ArrowRight,
     },
     {
-      phase: "Fase 3",
-      title: "Desarrollo del primer módulo",
-      description:
-        "Construimos el módulo base (MVP) para que puedas comenzar a usarlo y validarlo con tu equipo en situaciones reales.",
+      phase: translation("work_process.phases.2.phase"),
+      title: translation("work_process.phases.2.title"),
+      description: translation("work_process.phases.2.description"),
+      duration: translation("work_process.phases.2.duration"),
       color: "pink",
-      duration: "2–4 semanas",
       icon: Cog,
       connectorIcon: ArrowRight,
     },
     {
-      phase: "Fase 4",
-      title: "Evolución por módulos",
-      description:
-        "Agregamos nuevos módulos o funcionalidades en base a feedback real, objetivos estratégicos y oportunidades de automatización.",
+      phase: translation("work_process.phases.3.phase"),
+      title: translation("work_process.phases.3.title"),
+      description: translation("work_process.phases.3.description"),
+      duration: translation("work_process.phases.3.duration"),
       color: "blue",
-      duration: "Continuo",
       icon: Zap,
     },
   ];
 
   const faqs = [
     {
-      question:
-        "¿Cómo se integra la aplicación con nuestros sistemas actuales?",
-      answer:
-        "Antes de empezar, analizamos tus sistemas existentes y diseñamos integraciones que se ajusten a tu realidad: APIs, conectores o sincronización de bases de datos. El objetivo es que todo funcione de forma fluida, sin duplicar tareas ni perder información. Nos integramos con ERPs, CRMs, software contable y muchas otras herramientas del mercado.",
+      question: translation("faq.items.0.question"),
+      answer: translation("faq.items.0.answer"),
     },
     {
-      question:
-        "¿Cuánto tiempo tarda en desarrollarse una aplicación completa?",
-      answer:
-        "Depende de la complejidad del proyecto. Un módulo básico puede estar listo en 3–4 semanas. Aplicaciones completas suelen desarrollarse en fases, y tardan entre 2 y 4 meses. Trabajamos de forma modular para que empieces a usar partes funcionales desde el principio y puedas validar resultados reales mientras seguimos construyendo.",
+      question: translation("faq.items.1.question"),
+      answer: translation("faq.items.1.answer"),
     },
     {
-      question: "¿Qué pasa si necesito hacer cambios durante el desarrollo?",
-      answer:
-        "Nuestro proceso es ágil y flexible. Tendrás reuniones periódicas para revisar avances y hacer ajustes. Cambios pequeños se aplican sin costo extra; para modificaciones mayores, revisamos juntos tiempos y presupuesto. Queremos que el resultado final sea exactamente lo que necesitás.",
+      question: translation("faq.items.2.question"),
+      answer: translation("faq.items.2.answer"),
     },
     {
-      question: "¿Qué medidas toman para proteger mis datos?",
-      answer:
-        "Aplicamos estándares altos de seguridad: cifrado de datos, acceso por niveles de usuario, backups automáticos y cumplimiento de normativas como RGPD. Además, monitoreamos el sistema, actualizamos componentes y registramos toda la actividad para asegurar trazabilidad y confianza.",
+      question: translation("faq.items.3.question"),
+      answer: translation("faq.items.3.answer"),
     },
     {
-      question: "¿Capacitan a mi equipo para usar la aplicación?",
-      answer:
-        "Sí, y lo hacemos de forma personalizada. Preparamos sesiones de formación según el rol de cada usuario, te entregamos documentación clara, grabamos tutoriales si lo necesitás y estamos disponibles durante las primeras semanas para cualquier duda. Queremos que tu equipo se sienta cómodo desde el primer día.",
+      question: translation("faq.items.4.question"),
+      answer: translation("faq.items.4.answer"),
     },
     {
-      question: "¿Qué incluye el soporte técnico después del lanzamiento?",
-      answer:
-        "El soporte puede incluir desde correcciones y mejoras hasta nuevas funcionalidades, dependiendo del plan que elijas. Siempre tendrás acceso a nuestro equipo técnico, monitoreo del sistema, actualizaciones de seguridad y recomendaciones para seguir mejorando tu aplicación.",
+      question: translation("faq.items.5.question"),
+      answer: translation("faq.items.5.answer"),
     },
+  ];
+
+  const cta_features = [
+    translation("cta.features.0"),
+    translation("cta.features.1"),
+    translation("cta.features.2"),
+    translation("cta.features.3"),
   ];
 
   return (
@@ -191,85 +181,81 @@ const CustomApplications = () => {
       <main className="flex flex-col min-h-screen">
         <Hero
           generalColor="blue"
-          badge={{ text: "Servicios • Aplicaciones a Medida", color: "blue" }}
-          title="Aplicaciones hechas a medida para tu negocio"
-          subtitle="Digitalizamos tus procesos reales, sin moldes ni limitaciones"
-          description="Creamos aplicaciones modulares que se adaptan a tu forma de trabajar, optimizan recursos y evolucionan con tu empresa desde el primer día."
+          badge={{
+            text: translation("hero.badge"),
+            color: "blue",
+          }}
+          title={translation("hero.title")}
+          subtitle={translation("hero.subtitle")}
+          description={translation("hero.description")}
           buttons={[
             {
-              label: "Agendar reunión de análisis",
+              label: translation("hero.button_primary"),
               href: "/contacto",
               variant: "primary",
               targetBlank: true,
             },
             {
-              label: "Ver casos de éxito",
-              href: "/automatizacion#casos",
+              label: translation("hero.button_secondary"),
+              href: `#${translation("use_cases.id")}`,
               variant: "outline",
-              targetBlank: true,
             },
           ]}
           features={[
             {
               icon: <Clock className="h-4 w-4 text-solbyt-blue-500" />,
-              text: "Desde 3 semanas por módulo",
+              text: translation("hero.feature_time"),
             },
             {
               icon: <CreditCard className="h-4 w-4 text-solbyt-blue-500" />,
-              text: "Desde €1.500 por módulo",
+              text: translation("hero.feature_price"),
             },
           ]}
           image={{
             src: "/img_placeholder.webp",
-            alt: "Aplicaciones a medida por Solbyt",
-            overlayTitle: "Software que se adapta a tu negocio",
-            overlaySubtitle: " Módulos escalables + Procesos optimizados",
+            alt: translation("hero.image_alt"),
+            overlayTitle: translation("hero.image_overlay_title"),
+            overlaySubtitle: translation("hero.image_overlay_subtitle"),
           }}
         />
+
         <Benefits />
+
         <UseCases
           colorKey="blue"
-          title="Soluciones que transforman operaciones"
-          subtitle="Desarrollamos aplicaciones específicas para cada tipo de necesidad
-            empresarial, desde gestión comercial hasta automatización de procesos internos."
+          title={translation("use_cases.title")}
+          subtitle={translation("use_cases.subtitle")}
           cases={useCasesContent}
+          id={translation("use_cases.id")}
         />
+
         <WorkProcess
           colorKey="blue"
-          title="Metodología por fases escalables"
-          subtitle="Desarrollamos tu aplicación por módulos, permitiendo validar resultados e invertir de forma inteligente en cada etapa del crecimiento."
+          title={translation("work_process.title")}
+          subtitle={translation("work_process.subtitle")}
           phases={phases}
         />
+
         <FAQ
-          title="Preguntas frecuentes"
-          subtitle="Resolvemos las dudas más comunes sobre el desarrollo de aplicaciones empresariales a medida"
+          title={translation("faq.title")}
+          subtitle={translation("faq.subtitle")}
           items={faqs}
           colorKey="blue"
         />
+
         <CTA
           colorKey="blue"
-          title="¿Querés una app que se adapte a tu forma de trabajar?"
-          description="Creamos aplicaciones a medida que digitalizan tus procesos reales, te hacen ganar tiempo y evolucionan con tu empresa, módulo a módulo."
-          features={[
-            "Pensada para tus procesos reales",
-            "Escalable según tu crecimiento",
-            "Compatible con tus sistemas actuales",
-            "Soporte cercano y confiable",
-          ]}
+          title={translation("cta.title")}
+          description={translation("cta.description")}
+          features={cta_features}
           buttons={[
             {
-              label: "Agendar reunión de análisis",
+              label: translation("cta.buttons.primary"),
               href: "/contacto",
-              targetBlank: true,
-            },
-            {
-              label: "Solicitar presupuesto personalizado",
-              href: "/contacto",
-              variant: "outline",
               targetBlank: true,
             },
           ]}
-          note="Primera reunión sin compromiso • Propuesta en menos de 48h"
+          note={translation("cta.note")}
         />
       </main>
       <Footer />
