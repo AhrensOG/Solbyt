@@ -3,20 +3,22 @@ import { Cog, Database, Layers, Puzzle, Shield, Workflow } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const Benefits = () => {
-  const translation = useTranslations("service_detail.aplicaciones-medida.benefits");
+  const translation = useTranslations(
+    "service_detail.aplicaciones-medida.benefits"
+  );
 
   const data = translation.raw("items") as
     | { title: string; description: string }[]
     | undefined;
 
-const iconsArray = [
-  <Workflow key="workflow" className="h-8 w-8 text-solbyt-blue-500" />,
-  <Layers key="layers" className="h-8 w-8 text-solbyt-purple-600" />,
-  <Puzzle key="puzzle" className="h-8 w-8 text-solbyt-pink-500" />,
-  <Database key="database" className="h-8 w-8 text-solbyt-blue-500" />,
-  <Cog key="cog" className="h-8 w-8 text-solbyt-purple-600" />,
-  <Shield key="shield" className="h-8 w-8 text-solbyt-pink-500" />,
-];
+  const iconsArray = [
+    <Workflow key="workflow" className="h-8 w-8 text-solbyt-blue-500" />,
+    <Layers key="layers" className="h-8 w-8 text-solbyt-purple-600" />,
+    <Puzzle key="puzzle" className="h-8 w-8 text-solbyt-pink-500" />,
+    <Database key="database" className="h-8 w-8 text-solbyt-blue-500" />,
+    <Cog key="cog" className="h-8 w-8 text-solbyt-purple-600" />,
+    <Shield key="shield" className="h-8 w-8 text-solbyt-pink-500" />,
+  ];
 
   if (!data) return null;
 
