@@ -219,7 +219,8 @@
             "Custom blogs"
           ],
           "timeframe": "3-5 weeks",
-          "startingPrice": "From €1,200"
+          "startingPrice": "From €1,200",
+          "link": "/services/web-development"
         },
         "aplicaciones-medida": {
           "title": "Custom Applications",
@@ -240,7 +241,8 @@
             "Internal tools"
           ],
           "timeframe": "From 3 weeks per module",
-          "startingPrice": "From €1,500 per module"
+          "startingPrice": "From €1,500 per module",
+          "link": "/services/custom-applications"
         },
         "automatizacion": {
           "title": "Process Automation",
@@ -261,7 +263,8 @@
             "System-to-system flows"
           ],
           "timeframe": "From 2 weeks per flow",
-          "startingPrice": "From €800 per flow"
+          "startingPrice": "From €800 per flow",
+          "link": "/services/process-automation"
         },
         "analisis-sistemas": {
           "title": "Systems Analysis",
@@ -282,7 +285,8 @@
             "Stack evaluation"
           ],
           "timeframe": "1-2 weeks",
-          "startingPrice": "From €700"
+          "startingPrice": "From €700",
+          "link": "/services/systems-analysis"
         },
         "asesoria-digital": {
           "title": "Digital Advisory",
@@ -303,7 +307,8 @@
             "Operational optimisation"
           ],
           "timeframe": "2-6 weeks",
-          "startingPrice": "From €850"
+          "startingPrice": "From €850",
+          "link": "/services/digital-consulting"
         },
         "desarrollo-software": {
           "title": "Software Development",
@@ -324,7 +329,8 @@
             "Integration APIs"
           ],
           "timeframe": "From 1-3 weeks per phase",
-          "startingPrice": "From €1,200 per phase"
+          "startingPrice": "From €1,200 per phase",
+          "link": "/services/software-development"
         }
       },
       "sections": {

@@ -13,6 +13,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const ServicesGrid: React.FC = () => {
   const translation = useTranslations("services_page.services_grid");
@@ -31,6 +32,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.desarrollo-web.examples", 4),
       timeframe: translation("services.desarrollo-web.timeframe"),
       startingPrice: translation("services.desarrollo-web.startingPrice"),
+      link: translation("services.desarrollo-web.link"),
     },
     {
       id: "analisis-sistemas",
@@ -42,6 +44,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.analisis-sistemas.examples", 4),
       timeframe: translation("services.analisis-sistemas.timeframe"),
       startingPrice: translation("services.analisis-sistemas.startingPrice"),
+      link: translation("services.analisis-sistemas.link"),
     },
     {
       id: "asesoria-digital",
@@ -53,6 +56,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.asesoria-digital.examples", 4),
       timeframe: translation("services.asesoria-digital.timeframe"),
       startingPrice: translation("services.asesoria-digital.startingPrice"),
+      link: translation("services.asesoria-digital.link"),
     },
     {
       id: "automatizacion",
@@ -64,6 +68,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.automatizacion.examples", 4),
       timeframe: translation("services.automatizacion.timeframe"),
       startingPrice: translation("services.automatizacion.startingPrice"),
+      link: translation("services.automatizacion.link"),
     },
     {
       id: "aplicaciones-medida",
@@ -75,6 +80,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.aplicaciones-medida.examples", 4),
       timeframe: translation("services.aplicaciones-medida.timeframe"),
       startingPrice: translation("services.aplicaciones-medida.startingPrice"),
+      link: translation("services.aplicaciones-medida.link"),
     },
     {
       id: "desarrollo-software",
@@ -86,6 +92,7 @@ const ServicesGrid: React.FC = () => {
       examples: tArray("services.desarrollo-software.examples", 4),
       timeframe: translation("services.desarrollo-software.timeframe"),
       startingPrice: translation("services.desarrollo-software.startingPrice"),
+      link: translation("services.desarrollo-software.link"),
     },
   ];
 
@@ -174,13 +181,17 @@ const ServicesGrid: React.FC = () => {
 
                 {/* buttons */}
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <button className="flex-1 inline-flex items-center justify-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-700 text-white font-medium px-6 py-3 rounded-lg transition">
-                    {translation("buttons.quote")}
-                  </button>
-                  <button className="flex-1 inline-flex items-center justify-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-50 font-medium px-6 py-3 rounded-lg transition">
+                  <Link
+                    href={service.link}
+                    target="_blank"
+                    className="flex-1 inline-flex items-center justify-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-700 text-white font-medium px-6 py-3 rounded-lg transition">
                     {translation("buttons.more_info")}
                     <ArrowRight className="h-4 w-4" />
-                  </button>
+                  </Link>
+                  {/* <button className="flex-1 inline-flex items-center justify-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-50 font-medium px-6 py-3 rounded-lg transition">
+                    {translation("buttons.more_info")}
+                    <ArrowRight className="h-4 w-4" />
+                  </button> */}
                 </div>
               </div>
             </motion.div>

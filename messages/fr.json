@@ -219,7 +219,8 @@
             "Blogs personnalisés"
           ],
           "timeframe": "3 à 5 semaines",
-          "startingPrice": "À partir de 1 200 €"
+          "startingPrice": "À partir de 1 200 €",
+          "link": "/services/developpement-web"
         },
         "aplicaciones-medida": {
           "title": "Applications sur mesure",
@@ -240,7 +241,8 @@
             "Outils internes"
           ],
           "timeframe": "À partir de 3 semaines par module",
-          "startingPrice": "À partir de 1 500 € par module"
+          "startingPrice": "À partir de 1 500 € par module",
+          "link": "/services/applications-sur-mesure"
         },
         "automatizacion": {
           "title": "Automatisation des processus",
@@ -261,7 +263,8 @@
             "Flux entre systèmes"
           ],
           "timeframe": "À partir de 2 semaines par flux",
-          "startingPrice": "À partir de 800 € par flux"
+          "startingPrice": "À partir de 800 € par flux",
+          "link": "/services/automatisation-processus"
         },
         "analisis-sistemas": {
           "title": "Analyse des systèmes",
@@ -282,7 +285,8 @@
             "Évaluation de la stack"
           ],
           "timeframe": "1 à 2 semaines",
-          "startingPrice": "À partir de 700 €"
+          "startingPrice": "À partir de 700 €",
+          "link": "/services/analyse-systemes"
         },
         "asesoria-digital": {
           "title": "Conseil en digitalisation",
@@ -303,7 +307,8 @@
             "Optimisation opérationnelle"
           ],
           "timeframe": "2 à 6 semaines",
-          "startingPrice": "À partir de 850 €"
+          "startingPrice": "À partir de 850 €",
+          "link": "/services/conseil-digitalisation"
         },
         "desarrollo-software": {
           "title": "Développement de logiciels",
@@ -324,7 +329,8 @@
             "APIs d’intégration"
           ],
           "timeframe": "À partir de 1 à 3 semaines par phase",
-          "startingPrice": "À partir de 1 200 € par phase"
+          "startingPrice": "À partir de 1 200 € par phase",
+          "link": "/services/developpement-logiciel"
         }
       },
       "sections": {

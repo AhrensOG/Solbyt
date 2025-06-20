@@ -225,7 +225,8 @@
             "Blogs personalizados"
           ],
           "timeframe": "3-5 semanas",
-          "startingPrice": "Desde €1.200"
+          "startingPrice": "Desde €1.200",
+          "link": "/servicios/desarrollo-web"
         },
         "aplicaciones-medida": {
           "title": "Aplicaciones a Medida",
@@ -246,7 +247,8 @@
             "Herramientas internas"
           ],
           "timeframe": "Desde 3 semanas por módulo",
-          "startingPrice": "Desde €1.500 por módulo"
+          "startingPrice": "Desde €1.500 por módulo",
+          "link": "/servicios/aplicaciones-a-medida"
         },
         "automatizacion": {
           "title": "Automatización de Procesos",
@@ -267,7 +269,8 @@
             "Flujos entre sistemas"
           ],
           "timeframe": "Desde 2 semanas por flujo",
-          "startingPrice": "Desde €800 por flujo"
+          "startingPrice": "Desde €800 por flujo",
+          "link": "/servicios/automatizacion-de-procesos"
         },
         "analisis-sistemas": {
           "title": "Análisis de Sistemas",
@@ -288,7 +291,8 @@
             "Evaluación de stack"
           ],
           "timeframe": "1-2 semanas",
-          "startingPrice": "Desde €700"
+          "startingPrice": "Desde €700",
+          "link": "/servicios/analisis-de-sistemas"
         },
         "asesoria-digital": {
           "title": "Asesoría en Digitalización",
@@ -309,7 +313,8 @@
             "Optimización operativa"
           ],
           "timeframe": "2-6 semanas",
-          "startingPrice": "Desde €850"
+          "startingPrice": "Desde €850",
+          "link": "/servicios/asesoria-digital"
         },
         "desarrollo-software": {
           "title": "Desarrollo de Software",
@@ -330,7 +335,8 @@
             "APIs de integración"
           ],
           "timeframe": "Desde 1-3 semanas por fase",
-          "startingPrice": "Desde €1.200 por fase"
+          "startingPrice": "Desde €1.200 por fase",
+          "link": "/servicios/desarrollo-de-software"
         }
       },
       "sections": {
