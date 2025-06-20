@@ -16,7 +16,7 @@ const ServicesHero: React.FC = () => {
   }[];
 
   return (
-    <section className="bg-gradient-to-b from-white via-solbyt-pink-50 to-white pt-24 pb-20">
+    <section className="top-[77px] h-[calc(100vh-77px)] grid place-items-center bg-gradient-to-b from-white via-solbyt-pink-50 to-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge + Título + Párrafo */}

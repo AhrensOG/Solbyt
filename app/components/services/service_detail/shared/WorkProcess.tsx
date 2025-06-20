@@ -6,6 +6,7 @@ import {
 } from "@/app/lib/styles/work_process_color_styles";
 import { Clock } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 export type Phase = {
   phase: string;
@@ -33,7 +34,12 @@ const WorkProcess: React.FC<WorkProcessProps> = ({
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center mb-20">
+        <motion.div
+          className="max-w-3xl mx-auto text-center mb-20"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}>
           <h2
             className={`text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r ${
               work_process_color_styles[colorKey as SolbytColor].titleGradient
@@ -41,24 +47,33 @@ const WorkProcess: React.FC<WorkProcessProps> = ({
             {title}
           </h2>
           <p className="text-lg text-gray-600">{subtitle}</p>
-        </div>
+        </motion.div>
 
         <div className="relative flex flex-col items-center lg:flex-row justify-center gap-12 lg:gap-8 lg:items-stretch">
           {phases.map((phase, index) => {
             const Icon = phase.icon;
             const ConnectorIcon = phase.connectorIcon;
+
             return (
-              <div
+              <motion.div
                 key={index}
-                className="relative bg-white max-w-xs w-full rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-300 transform hover:scale-[1.03] text-center border">
+                className="relative bg-white max-w-xs w-full rounded-2xl shadow-xl hover:shadow-2xl transition-transform duration-300 transform hover:scale-[1.03] text-center border"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}>
                 <div className="p-6 flex flex-col items-center">
-                  <div
+                  <motion.div
                     className={`h-16 w-16 rounded-xl bg-gradient-to-r ${
                       work_process_color_styles[phase.color as SolbytColor]
                         .iconBg
-                    } flex items-center justify-center mb-4 shadow-md`}>
-                    {<Icon className="w-8 h-8 text-white" />}
-                  </div>
+                    } flex items-center justify-center mb-4 shadow-md`}
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.4, delay: index * 0.15 + 0.2 }}>
+                    <Icon className="w-8 h-8 text-white" />
+                  </motion.div>
                   <span className="text-sm font-semibold text-gray-500 tracking-widest uppercase mb-1">
                     {phase.phase}
                   </span>
@@ -79,7 +94,7 @@ const WorkProcess: React.FC<WorkProcessProps> = ({
                     <ConnectorIcon className="w-7 h-7 text-solbyt-purple-600" />
                   </div>
                 )}
-              </div>
+              </motion.div>
             );
           })}
         </div>

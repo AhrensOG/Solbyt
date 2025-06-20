@@ -30,7 +30,8 @@
         ],
         "cta_schedule": "Book a free meeting",
         "cta_budget": "Request a quote",
-        "trusted_by": "Trusted by:"
+        "trusted_by": "Trusted by:",
+        "cta_id": "contact"
       },
       "image": {
         "alt": "Solbyt Logo",
@@ -72,8 +73,9 @@
         }
       ],
       "button_card": "Learn more →",
-      "call_to_action": "Not sure which service you need? Schedule a free consultation and we’ll help you find the perfect solution for your business.",
-      "button_final": "Free Consultation"
+      "call_to_action": "Want to explore all our premium services? Visit our services page to discover how we can help your business grow.",
+      "button_final": "View Services",
+      "link": "/services"
     },
     "projects": {
       "title": "Featured Projects",
@@ -126,9 +128,9 @@
       },
       "why_us_title": "Why choose us?",
       "why_us_list": [
-        "Best value for money",
-        "Fast and efficient development",
-        "Solutions tailored to your needs"
+        "Superior quality guaranteed in every project",
+        "Customized and scalable solutions for your business",
+        "Close support and full commitment to your success"
       ],
       "form_title": "Send us a message",
       "form": {

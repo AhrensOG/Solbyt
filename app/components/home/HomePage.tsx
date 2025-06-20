@@ -1,14 +1,9 @@
 import React from "react";
-// import NavBar from "../public/navbar/NavBar";
 import Hero from "./Hero";
-// import Timeline from "./TimeLine";
-// import ServiceSection from "./ServiceSection";
-// import AboutUs from "./AboutUs";
-// import Contact from "./Contact";
 import Footer from "../public/footer/Footer";
 import WorkInformation from "./WorkInformation";
 import { Toaster } from "react-hot-toast";
-import ServicesSection from "./V2/ServiceSection";
+import ServicesSection from "./V2/ServicesSection";
 import ProjectsSection from "./V2/ProjectSection";
 import CTASection from "./V2/CTASection";
 import ContactSection from "./V2/ContactSection";
@@ -24,11 +19,8 @@ const HomePage: React.FC = () => {
         <Toaster position="top-center" />
         <Hero />
         <ServicesSection />
-        {/* <Timeline /> */}
         <ProjectsSection />
-        {/* <AboutUs /> */}
         <CTASection />
-        {/* <Contact /> */}
         <ContactSection />
         <WorkInformation />
       </main>

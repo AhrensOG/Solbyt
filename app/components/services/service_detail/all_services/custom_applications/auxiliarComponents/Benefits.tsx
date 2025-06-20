@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { Cog, Database, Layers, Puzzle, Shield, Workflow } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 const Benefits = () => {
   const translation = useTranslations(
@@ -26,17 +29,33 @@ const Benefits = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-pink-500 to-solbyt-blue-500">
+          <motion.h2
+            className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-pink-500 to-solbyt-blue-500"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6 }}>
             {translation("title")}
-          </h2>
-          <p className="text-lg text-gray-600">{translation("description")}</p>
+          </motion.h2>
+          <motion.p
+            className="text-lg text-gray-600"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.2, duration: 0.6 }}>
+            {translation("description")}
+          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data.map((benefit, index) => (
-            <div
+            <motion.div
               key={index}
-              className="rounded-lg border-none shadow-lg hover:shadow-xl transition-transform duration-300 ease-out transform hover:scale-105 bg-gradient-to-br from-solbyt-pink-500/10 to-white">
+              className="rounded-lg border-none shadow-lg hover:shadow-xl transition-transform duration-300 ease-out transform hover:scale-105 bg-gradient-to-br from-solbyt-pink-500/10 to-white"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}>
               <div className="p-6">
                 <div className="h-16 w-16 rounded-xl bg-white shadow flex items-center justify-center mb-6 group-hover:shadow-md transition-shadow">
                   {iconsArray[index]}
@@ -46,7 +65,7 @@ const Benefits = () => {
                 </h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

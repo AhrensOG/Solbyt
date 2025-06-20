@@ -3,6 +3,7 @@
 import React from "react";
 import { Target, Layers, TrendingUp } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
 
 const iconsMap = {
   Target: <Target className="h-8 w-8 text-red-500" />,
@@ -35,18 +36,27 @@ const TraditionalSoftwareDevelopmentProblems = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <motion.div
+          className="max-w-3xl mx-auto text-center mb-16"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 via-solbyt-blue-500 to-solbyt-pink-500">
             {translation("title")}
           </h2>
           <p className="text-lg text-gray-600">{translation("description")}</p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {cards.map(({ title, description, solution, gradient, icon }, i) => (
-            <div
+            <motion.div
               key={i}
-              className={`border-none shadow-lg hover:shadow-xl transition-all bg-gradient-to-br ${gradient} to-white`}>
+              className={`border-none shadow-lg hover:shadow-xl transition-all bg-gradient-to-br ${gradient} to-white`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: i * 0.15 }}>
               <div className="p-6 text-center">
                 <div className="h-16 w-16 rounded-full bg-white shadow-md flex items-center justify-center mx-auto mb-4">
                   {iconsMap[icon]}
@@ -59,19 +69,21 @@ const TraditionalSoftwareDevelopmentProblems = () => {
                   {translation("solution_prefix") || "Solución"}: {solution}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-solbyt-purple-600/5 via-solbyt-blue-500/5 to-solbyt-pink-500/5 rounded-xl p-8 text-center">
+        <motion.div
+          className="bg-gradient-to-r from-solbyt-purple-600/5 via-solbyt-blue-500/5 to-solbyt-pink-500/5 rounded-xl p-8 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}>
           <h3 className="text-xl font-bold mb-4 text-gray-800">{cta.title}</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             {cta.description}
           </p>
-          {/* <button className="px-6 py-3 rounded-lg text-sm font-semibold bg-solbyt-purple-500 hover:bg-solbyt-purple-600 text-white transition-colors">
-            {cta.button_label}
-          </button> */}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

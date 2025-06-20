@@ -10,34 +10,9 @@ const CTASection: React.FC = () => {
   const translation = useTranslations("home_page.cta");
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden grid place-items-center">
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-solbyt-purple-600/90 via-solbyt-pink-500/90 to-solbyt-blue-500/90 z-0"></div>
-
-      {/* Pattern overlay */}
-      <div className="absolute inset-0 opacity-10 z-0">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none">
-          <defs>
-            <pattern
-              id="grid"
-              width="8"
-              height="8"
-              patternUnits="userSpaceOnUse">
-              <path
-                d="M 8 0 L 0 0 0 8"
-                fill="none"
-                stroke="white"
-                strokeWidth="0.5"
-              />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
-      </div>
-
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2

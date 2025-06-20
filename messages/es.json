@@ -30,7 +30,8 @@
         ],
         "cta_schedule": "Agendar reunión gratuita",
         "cta_budget": "Solicitar presupuesto",
-        "trusted_by": "Empresas que confían en nosotros:"
+        "trusted_by": "Empresas que confían en nosotros:",
+        "cta_id": "contacto"
       },
       "image": {
         "alt": "Logo de Solbyt",
@@ -78,8 +79,9 @@
         }
       ],
       "button_card": "Saber más →",
-      "call_to_action": "¿No estás seguro de qué servicio necesitas? Agenda una consulta gratuita y te ayudaremos a encontrar la solución perfecta para tu negocio.",
-      "button_final": "Consulta gratuita"
+      "call_to_action": "¿Quieres conocer todos nuestros servicios premium? Visita nuestra página de servicios para descubrir cómo podemos ayudar a tu negocio a crecer.",
+      "button_final": "Ver servicios",
+      "link": "/servicios"
     },
     "projects": {
       "title": "Proyectos Destacados",
@@ -132,9 +134,9 @@
       },
       "why_us_title": "¿Por qué elegirnos?",
       "why_us_list": [
-        "Mejor relación calidad-precio",
-        "Desarrollo rápido y eficiente",
-        "Soluciones personalizadas a tus necesidades"
+        "Calidad superior garantizada en cada proyecto",
+        "Soluciones personalizadas y escalables para tu negocio",
+        "Soporte cercano y compromiso total con tu éxito"
       ],
       "form_title": "Envíanos un mensaje",
       "form": {

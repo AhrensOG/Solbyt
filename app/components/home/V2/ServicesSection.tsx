@@ -115,8 +115,7 @@ const ServicesSection: React.FC = () => {
             {translation("call_to_action")}
           </p>
           <Link
-            href="https://calendly.com/solbyt-tech/30min"
-            target="_blank"
+            href={translation("link")}
             className="border bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white sm:text-lg font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
             {translation("button_final")}
           </Link>

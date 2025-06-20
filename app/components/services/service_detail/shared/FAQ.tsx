@@ -33,6 +33,7 @@ const FAQ: React.FC<FAQProps> = ({ colorKey, title, subtitle, items }) => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
+        {/* Título y subtítulo */}
         <div className="text-center mb-16">
           <motion.h2
             className={`text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r ${
@@ -40,27 +41,29 @@ const FAQ: React.FC<FAQProps> = ({ colorKey, title, subtitle, items }) => {
             }`}
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5 }}>
             {title}
           </motion.h2>
+
           <motion.p
             className="text-lg text-gray-600 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: 0.2, duration: 0.5 }}>
             {subtitle}
           </motion.p>
         </div>
 
+        {/* FAQs */}
         <div className="max-w-4xl mx-auto space-y-4">
           {items.map((faq, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               className="bg-gray-50 rounded-xl overflow-hidden shadow-sm">
               <button
@@ -75,6 +78,7 @@ const FAQ: React.FC<FAQProps> = ({ colorKey, title, subtitle, items }) => {
                   }`}
                 />
               </button>
+
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
@@ -95,11 +99,12 @@ const FAQ: React.FC<FAQProps> = ({ colorKey, title, subtitle, items }) => {
           ))}
         </div>
 
+        {/* CTA final */}
         <motion.div
           className="mt-16 text-center bg-gradient-to-r from-solbyt-purple-600/10 via-solbyt-pink-500/10 to-solbyt-blue-500/10 rounded-2xl p-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}>
           <MessageCircle className="h-12 w-12 text-solbyt-purple-600 mx-auto mb-4" />
           <h3 className="text-2xl font-bold mb-4 text-gray-800">

@@ -15,6 +15,7 @@ import { useTranslations } from "next-intl";
 
 const ContactSection: React.FC = () => {
   const translation = useTranslations("home_page.contact");
+  const translation_cta = useTranslations("home_page.hero.secondary_text");
 
   const contactSchema = z.object({
     fullName: z.string().min(1, translation("form.error.full_name")),
@@ -100,7 +101,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id={translation_cta("cta_id")} className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
@@ -165,16 +166,21 @@ const ContactSection: React.FC = () => {
                 <div className="bg-solbyt-pink-500/10 p-3 rounded-full">
                   <Calendar className="h-6 w-6 text-solbyt-pink-500" />
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h4 className="font-medium text-gray-800">
                     {translation("meeting.label")}
                   </h4>
                   <p className="text-gray-600">
                     {translation("meeting.value")}
                   </p>
-                  <button className="mt-2 bg-solbyt-purple-600 hover:bg-purple-700 text-white rounded-lg p-2 px-4 duration-300">
-                    {translation("meeting.button")}
-                  </button>
+                  <div className="mt-4">
+                    <Link
+                      href="https://calendly.com/solbyt-tech/30min"
+                      target="_blank"
+                      className="bg-solbyt-purple-600 text-center w-auto hover:bg-purple-700 text-white rounded-lg p-2 px-4 duration-300">
+                      {translation("meeting.button")}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

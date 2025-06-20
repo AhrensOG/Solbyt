@@ -30,7 +30,8 @@
         ],
         "cta_schedule": "Planifier un rendez-vous gratuit",
         "cta_budget": "Demander un devis",
-        "trusted_by": "Des entreprises qui nous font confiance :"
+        "trusted_by": "Des entreprises qui nous font confiance :",
+        "cta_id": "contact"
       },
       "image": {
         "alt": "Logo de Solbyt",
@@ -72,8 +73,9 @@
         }
       ],
       "button_card": "En savoir plus →",
-      "call_to_action": "Vous ne savez pas quel service choisir ? Réservez une consultation gratuite et nous vous aiderons à trouver la solution idéale pour votre entreprise.",
-      "button_final": "Consultation gratuite"
+      "call_to_action": "Vous souhaitez découvrir tous nos services premium ? Visitez notre page services pour savoir comment nous pouvons aider votre entreprise à grandir.",
+      "button_final": "Voir les services",
+      "link": "/services"
     },
     "projects": {
       "title": "Projets phares",
@@ -126,9 +128,9 @@
       },
       "why_us_title": "Pourquoi nous choisir ?",
       "why_us_list": [
-        "Meilleur rapport qualité-prix",
-        "Développement rapide et efficace",
-        "Solutions personnalisées à vos besoins"
+        "Qualité supérieure garantie dans chaque projet",
+        "Solutions personnalisées et évolutives pour votre entreprise",
+        "Support proche et engagement total pour votre réussite"
       ],
       "form_title": "Envoyez-nous un message",
       "form": {

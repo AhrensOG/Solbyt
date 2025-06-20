@@ -94,7 +94,7 @@ const HeroSecondaryText = () => {
           {translation("cta_schedule")}
         </Link>
 
-        <Link href="#contact">
+        <Link href={`#${translation("cta_id")}`}>
           <button className="flex items-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
             {translation("cta_budget")}
             <ArrowRight className="h-4 w-4" />

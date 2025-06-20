@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const FaqSection: React.FC = () => {
   const t = useTranslations("services_page.faq_section");
@@ -38,8 +39,8 @@ const FaqSection: React.FC = () => {
           </motion.p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-4">
+        <div className="mx-auto">
+          <div className="space-y-4 mx-auto max-w-4xl">
             {faqs.map((faq, index) => (
               <motion.div
                 key={index}
@@ -94,12 +95,18 @@ const FaqSection: React.FC = () => {
               {t("cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-solbyt-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+              <Link
+                href="https://calendly.com/solbyt-tech/30min"
+                target="_blank"
+                className="bg-solbyt-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
                 {t("cta.buttons.schedule")}
-              </button>
-              <button className="border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500/10 px-6 py-2 rounded-lg font-medium transition-colors">
+              </Link>
+              <Link
+                href="https://wa.me/41762726491"
+                target="_blank"
+                className="border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500/10 px-6 py-2 rounded-lg font-medium transition-colors">
                 {t("cta.buttons.whatsapp")}
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
