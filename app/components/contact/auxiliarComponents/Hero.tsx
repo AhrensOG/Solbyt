@@ -3,30 +3,33 @@
 import type React from "react";
 import { motion } from "framer-motion";
 import { Calendar, MessageCircle, Phone, Mail, MailIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const Hero: React.FC = () => {
+  const translation = useTranslations("contact_page.hero");
+
   const contactMethods = [
     {
       icon: Calendar,
-      title: "Reunión",
-      description: "Agenda 30 min para analizar tu proyecto",
-      action: "Agendar reunión",
+      title: translation("methods.meeting.title"),
+      description: translation("methods.meeting.description"),
+      action: translation("methods.meeting.action"),
       href: "https://calendly.com/solbyt-tech/30min",
       primary: true,
     },
     {
       icon: MailIcon,
-      title: "Consulta rápida",
-      description: "Envíanos tus dudas o consultas por email",
-      action: "Escribir email",
+      title: translation("methods.email.title"),
+      description: translation("methods.email.description"),
+      action: translation("methods.email.action"),
       href: "mailto:info@solbyt.com",
       primary: false,
     },
     {
       icon: MessageCircle,
-      title: "WhatsApp",
-      description: "Habla directamente con nuestro equipo",
-      action: "Llamar ahora",
+      title: translation("methods.whatsapp.title"),
+      description: translation("methods.whatsapp.description"),
+      action: translation("methods.whatsapp.action"),
       href: "tel:+351123456789",
       primary: false,
     },
@@ -58,7 +61,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center px-4 py-2 rounded-full border border-gray-200 bg-gray-50/80 backdrop-blur-sm">
               <div className="w-2 h-2 rounded-full bg-green-500 mr-3 animate-pulse" />
               <span className="text-sm font-medium text-gray-700">
-                Disponibles para nuevos proyectos
+                {translation("badge")}
               </span>
             </div>
           </motion.div>
@@ -69,7 +72,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}>
-            Hablemos de tu próximo proyecto
+            {translation("title")}
           </motion.h1>
 
           {/* Description */}
@@ -78,12 +81,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}>
-            Transformamos ideas en soluciones digitales robustas. Cuéntanos tu
-            desafío y diseñaremos la{" "}
-            <span className="font-medium text-gray-900">
-              estrategia tecnológica perfecta
-            </span>{" "}
-            para tu negocio.
+            {translation("subtitle")}
           </motion.p>
 
           {/* Contact methods */}
@@ -158,16 +156,16 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.6 }}>
             <p className="text-sm text-gray-500 mb-4">
-              Respuesta garantizada en menos de 24 horas
+              {translation("guarantee")}
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-400">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                info@solbyt.com
+                {translation("contact.email")}
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                +41 76 272 64 91
+                {translation("contact.phone")}
               </div>
             </div>
           </motion.div>

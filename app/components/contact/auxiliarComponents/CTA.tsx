@@ -11,14 +11,12 @@ import {
   Phone,
 } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const CTA: React.FC = () => {
-  const benefits = [
-    "Consultoría inicial gratuita de 30 minutos",
-    "Propuesta personalizada en 24 horas",
-    "Sin compromisos ni costos ocultos",
-    "Metodología probada con +50 proyectos",
-  ];
+  const translation = useTranslations("contact_page.cta");
+
+  const benefits = translation.raw("benefits") as string[];
 
   return (
     <section className="py-20 bg-gradient-to-br from-solbyt-purple-600 via-solbyt-pink-500 to-solbyt-blue-500 text-white">
@@ -30,12 +28,11 @@ const CTA: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-              ¿Listo para transformar tu negocio digitalmente ?
+              {translation("title")}
             </h2>
 
             <p className="text-xl md:text-2xl opacity-90 mb-12 max-w-3xl mx-auto font-light">
-              Únete a las empresas que ya confían en Solbyt para impulsar su
-              crecimiento con tecnología de vanguardia
+              {translation("subtitle")}
             </p>
           </motion.div>
 
@@ -72,14 +69,14 @@ const CTA: React.FC = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-solbyt-purple-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl group">
                 <Calendar className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-200" />
-                Agendar consultoría gratuita
+                {translation("button_1")}
               </Link>
 
               <Link
                 href="mailto:info@solbyt.com?subject=Consulta sobre transformación digital"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-200 group">
                 <MessageCircle className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-200" />
-                Enviar consulta por email
+                {translation("button_2")}
                 <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </Link>
             </motion.div>
@@ -92,15 +89,16 @@ const CTA: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.9, duration: 0.6 }}>
             <p className="text-sm opacity-80 mb-4">
-              Respuesta garantizada en menos de 24 horas • Sin spam, solo valor
+              {translation("guarantee")}
             </p>
             <div className="flex flex-wrap justify-center items-center gap-8 text-sm opacity-70">
               <div className="flex gap-2 items-center">
                 <Mail />
-                info@solbyt.com
+                {translation("contact.email")}
               </div>
               <div className="flex gap-2 items-center">
-                <Phone /> +41 76 272 64 91
+                <Phone />
+                {translation("contact.phone")}
               </div>
             </div>
           </motion.div>

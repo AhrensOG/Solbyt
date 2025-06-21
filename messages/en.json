@@ -1972,6 +1972,33 @@
     }
   },
   "contact_page": {
+    "hero": {
+      "badge": "Available for new projects",
+      "title": "Let's talk about your next project",
+      "subtitle": "We turn ideas into robust digital solutions. Tell us about your challenge and we will design the perfect tech strategy for your business.",
+      "methods": {
+        "meeting": {
+          "title": "Meeting",
+          "description": "Schedule 30 min to discuss your project",
+          "action": "Schedule a meeting"
+        },
+        "email": {
+          "title": "Quick inquiry",
+          "description": "Send us your questions or inquiries by email",
+          "action": "Write an email"
+        },
+        "whatsapp": {
+          "title": "WhatsApp",
+          "description": "Talk directly with our team",
+          "action": "Call now"
+        }
+      },
+      "guarantee": "Response guaranteed within 24 hours",
+      "contact": {
+        "email": "info@solbyt.com",
+        "phone": "+41 76 272 64 91"
+      }
+    },
     "contact_form": {
       "title": "Tell us about your project",
       "subtitle": "Fill out the form and our team will get back to you with a personalised proposal within 24 hours",
@@ -2029,6 +2056,23 @@
         "success": "Message sent successfully!",
         "error": "Please check the required fields",
         "failure": "Failed to send. Please try again later."
+      }
+    },
+    "cta": {
+      "title": "Ready to digitally transform your business?",
+      "subtitle": "Join the companies that already trust Solbyt to drive their growth with cutting-edge technology",
+      "benefits": [
+        "Free 30-minute initial consultation",
+        "Personalised proposal within 24 hours",
+        "No commitments or hidden fees",
+        "Proven methodology with 50+ projects"
+      ],
+      "button_1": "Schedule free consultation",
+      "button_2": "Send inquiry by email",
+      "guarantee": "Response guaranteed within 24 hours • No spam, just value",
+      "contact": {
+        "email": "info@solbyt.com",
+        "phone": "+41 76 272 64 91"
       }
     }
   }
