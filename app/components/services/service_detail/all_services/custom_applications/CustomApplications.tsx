@@ -191,7 +191,7 @@ const CustomApplications = () => {
           buttons={[
             {
               label: translation("hero.button_primary"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               variant: "primary",
               targetBlank: true,
             },
@@ -251,7 +251,7 @@ const CustomApplications = () => {
           buttons={[
             {
               label: translation("cta.buttons.primary"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               targetBlank: true,
             },
           ]}

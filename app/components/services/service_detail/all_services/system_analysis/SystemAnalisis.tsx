@@ -231,7 +231,7 @@ const SystemAnalysis = () => {
           buttons={[
             {
               label: translation("hero.button_primary"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               variant: "primary",
               targetBlank: true,
             },
@@ -303,9 +303,9 @@ const SystemAnalysis = () => {
           buttons={[
             {
               label: translation("cta.buttons.0.label"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               targetBlank: true,
-            }
+            },
           ]}
           note={translation("cta.note")}
         />

@@ -232,7 +232,7 @@ const DigitalizationConsulting = () => {
           buttons={[
             {
               label: translation("hero.buttons.0.label"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               variant: "primary",
               targetBlank: true,
             },
@@ -299,7 +299,7 @@ const DigitalizationConsulting = () => {
           buttons={[
             {
               label: translation("cta.buttons.0.label"),
-              href: "/contacto",
+              href: "https://calendly.com/solbyt-tech/30min",
               targetBlank: true,
             },
           ]}
