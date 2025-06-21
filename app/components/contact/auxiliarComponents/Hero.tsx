@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="relative pt-28 pb-16 bg-white overflow-hidden">
+    <section className="relative top-[77px] min-h-[calc(100vh-77px)] py-10 pb-16 bg-white overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div
