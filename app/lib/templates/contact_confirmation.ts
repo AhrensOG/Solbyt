@@ -67,7 +67,7 @@ export const contact_confirmation_template_en = (name: string) => `
 
             <div style="background:#f9fafb;border-radius:8px;padding:20px;margin:25px 0;border:1px solid #e5e7eb;">
               <h3 style="margin:0 0 15px 0;color:#1f2937;font-size:18px;display:flex;align-items:center;">
-                <span style="background:#9333ea;color:white;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:10px;">✓</span>
+                <span style="background:#9333ea;color:white;border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;margin-right:10px;"></span>
                 What happens next?
               </h3>
               <ul style="margin:0;padding-left:20px;color:#4b5563">
@@ -95,40 +95,6 @@ export const contact_confirmation_template_en = (name: string) => `
                 </td>
               </tr>
             </table>
-
-            <!-- Value Section -->
-            <tr>
-              <td style="background: linear-gradient(135deg, #9333ea, #ec4899); border-radius: 12px; padding: 25px; margin: 30px 0; text-align: center;">
-                <h3 style="margin: 0 0 15px 0; color: #ffffff; font-size: 20px">Why choose Solbyt?</h3>
-
-                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0 auto; text-align: center;">
-                  <tr>
-                    <td align="center" style="padding: 10px;">
-                      <div style="color: rgba(255,255,255,0.95); text-align: center; min-width: 120px;">
-                        <div style="font-size: 24px; margin-bottom: 5px;">⚡</div>
-                        <div style="font-size: 14px; font-weight: 600;">Fast development</div>
-                      </div>
-                    </td>
-                    <td align="center" style="padding: 10px;">
-                      <div style="color: rgba(255,255,255,0.95); text-align: center; min-width: 120px;">
-                        <div style="font-size: 24px; margin-bottom: 5px;">💎</div>
-                        <div style="font-size: 14px; font-weight: 600;">Premium quality</div>
-                      </div>
-                    </td>
-                    <td align="center" style="padding: 10px;">
-                      <div style="color: rgba(255,255,255,0.95); text-align: center; min-width: 120px;">
-                        <div style="font-size: 24px; margin-bottom: 5px;">💰</div>
-                        <div style="font-size: 14px; font-weight: 600;">Best price</div>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-
-                <p style="font-size: 16px; color: #ffffff; margin-top: 30px;">
-                  Thank you for trusting us to take your project to the next level 🚀
-                </p>
-              </td>
-            </tr>
 
         <!-- Footer -->
         <tr>
@@ -167,7 +133,7 @@ export const contact_notification_template_en = (
       <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.05);padding:30px;">
         <tr>
           <td style="text-align:center;padding-bottom:20px;border-bottom:1px solid #e5e7eb;">
-            <h2 style="margin:0;font-size:24px;color:#111827">📥 New contact message</h2>
+            <h2 style="margin:0;font-size:24px;color:#111827">New contact message - (Home Form)</h2>
             <p style="margin:8px 0 0;font-size:14px;color:#6b7280">You have received a new message from your website</p>
           </td>
         </tr>
@@ -195,3 +161,45 @@ export const contact_notification_template_en = (
   </body>
 </html>
 `
+
+export const contact_notification_from_contact_page_template_en = (
+  name: string,
+  email: string,
+  subject: string,
+  message: string
+) => `
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>New Contact Message</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; color: #333;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 8px; padding: 20px;">
+        <tr>
+          <td>
+            <h2 style="color: #8B5CF6; margin-bottom: 24px;">New contact message from Solbyt</h2>
+
+            <p style="margin: 0 0 8px;"><strong>Name:</strong> ${name}</p>
+            <p style="margin: 0 0 8px;"><strong>Email:</strong> ${email}</p>
+            <p style="margin: 0 0 8px;"><strong>Service:</strong> ${subject}</p>
+
+            <div style="margin-top: 16px;">
+              <p style="margin: 0 0 4px;"><strong>Message:</strong></p>
+              <div style="background-color: #f1f5f9; padding: 12px; border-left: 4px solid #8B5CF6; white-space: pre-wrap;">
+                ${message || "<em>No additional message provided.</em>"}
+              </div>
+            </div>
+
+            <hr style="margin: 32px 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+            <p style="font-size: 12px; color: #888888;">
+              This email was generated automatically from the Solbyt contact form.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+`;

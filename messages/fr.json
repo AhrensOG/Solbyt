@@ -1970,5 +1970,66 @@
         "ctaSecondaryLabel": "Écrivez-nous sur WhatsApp"
       }
     }
+  },
+  "contact_page": {
+    "contact_form": {
+      "title": "Parlez-nous de votre projet",
+      "subtitle": "Remplissez le formulaire et notre équipe vous contactera avec une proposition personnalisée sous 24 heures",
+
+      "section_1_title": "Informations de contact",
+      "section_2_title": "Détails du projet",
+
+      "fields": {
+        "name": {
+          "label": "Nom complet *",
+          "placeholder": "Votre nom",
+          "error": "Le nom est requis"
+        },
+        "email": {
+          "label": "Email professionnel *",
+          "placeholder": "vous@entreprise.com",
+          "error": "Email invalide"
+        },
+        "company": {
+          "label": "Entreprise *",
+          "placeholder": "Nom de votre entreprise",
+          "error": "L'entreprise est requise"
+        },
+        "phone": {
+          "label": "Téléphone",
+          "placeholder": "+33 123 456 789"
+        },
+        "service": {
+          "label": "Service d’intérêt *",
+          "error": "Vous devez sélectionner un service"
+        },
+        "message": {
+          "label": "Description du projet *",
+          "placeholder": "Parlez-nous de votre projet, vos objectifs, vos défis actuels et ce que vous souhaitez accomplir avec la solution...",
+          "error": "Veuillez décrire votre projet"
+        }
+      },
+
+      "services": {
+        "desarrollo-web": "Développement Web",
+        "aplicaciones-medida": "Applications sur Mesure",
+        "automatizacion": "Automatisation des Processus",
+        "analisis-sistemas": "Analyse des Systèmes",
+        "asesoria-digital": "Conseil Numérique",
+        "desarrollo-software": "Développement de Logiciels"
+      },
+
+      "footer": {
+        "note": "Réponse garantie sous 24 heures",
+        "submit_button": "Envoyer la demande"
+      },
+
+      "toast": {
+        "loading": "Envoi de votre message...",
+        "success": "Message envoyé avec succès !",
+        "error": "Veuillez vérifier les champs obligatoires",
+        "failure": "Échec de l’envoi. Veuillez réessayer plus tard."
+      }
+    }
   }
 }

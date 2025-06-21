@@ -1976,5 +1976,66 @@
         "ctaSecondaryLabel": "Escríbenos por WhatsApp"
       }
     }
+  },
+  "contact_page": {
+    "contact_form": {
+      "title": "Cuéntanos sobre tu proyecto",
+      "subtitle": "Completa el formulario y nuestro equipo te contactará con una propuesta personalizada en menos de 24 horas",
+
+      "section_1_title": "Información de contacto",
+      "section_2_title": "Detalles del proyecto",
+
+      "fields": {
+        "name": {
+          "label": "Nombre completo *",
+          "placeholder": "Tu nombre",
+          "error": "El nombre es obligatorio"
+        },
+        "email": {
+          "label": "Email corporativo *",
+          "placeholder": "tu@empresa.com",
+          "error": "Email inválido"
+        },
+        "company": {
+          "label": "Empresa *",
+          "placeholder": "Nombre de tu empresa",
+          "error": "La empresa es obligatoria"
+        },
+        "phone": {
+          "label": "Teléfono",
+          "placeholder": "+351 123 456 789"
+        },
+        "service": {
+          "label": "Servicio de interés *",
+          "error": "Debes seleccionar un servicio"
+        },
+        "message": {
+          "label": "Descripción del proyecto *",
+          "placeholder": "Cuéntanos sobre tu proyecto, objetivos, desafíos actuales y qué esperas lograr con la solución...",
+          "error": "Por favor describe tu proyecto"
+        }
+      },
+
+      "services": {
+        "desarrollo-web": "Desarrollo Web",
+        "aplicaciones-medida": "Aplicaciones a Medida",
+        "automatizacion": "Automatización de Procesos",
+        "analisis-sistemas": "Análisis de Sistemas",
+        "asesoria-digital": "Asesoría Digital",
+        "desarrollo-software": "Desarrollo de Software"
+      },
+
+      "footer": {
+        "note": "Respuesta garantizada en 24 horas",
+        "submit_button": "Enviar consulta"
+      },
+
+      "toast": {
+        "loading": "Enviando tu mensaje...",
+        "success": "¡Mensaje enviado correctamente!",
+        "error": "Revisa los campos obligatorios",
+        "failure": "Error al enviar. Intenta nuevamente más tarde."
+      }
+    }
   }
 }

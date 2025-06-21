@@ -1970,5 +1970,66 @@
         "ctaSecondaryLabel": "Write to us on WhatsApp"
       }
     }
+  },
+  "contact_page": {
+    "contact_form": {
+      "title": "Tell us about your project",
+      "subtitle": "Fill out the form and our team will get back to you with a personalised proposal within 24 hours",
+
+      "section_1_title": "Contact Information",
+      "section_2_title": "Project Details",
+
+      "fields": {
+        "name": {
+          "label": "Full name *",
+          "placeholder": "Your name",
+          "error": "Name is required"
+        },
+        "email": {
+          "label": "Corporate email *",
+          "placeholder": "you@company.com",
+          "error": "Invalid email"
+        },
+        "company": {
+          "label": "Company *",
+          "placeholder": "Your company name",
+          "error": "Company is required"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "+351 123 456 789"
+        },
+        "service": {
+          "label": "Interested service *",
+          "error": "You must select a service"
+        },
+        "message": {
+          "label": "Project description *",
+          "placeholder": "Tell us about your project, goals, current challenges and what you want to achieve with the solution...",
+          "error": "Please describe your project"
+        }
+      },
+
+      "services": {
+        "desarrollo-web": "Web Development",
+        "aplicaciones-medida": "Custom Applications",
+        "automatizacion": "Process Automation",
+        "analisis-sistemas": "Systems Analysis",
+        "asesoria-digital": "Digital Consultancy",
+        "desarrollo-software": "Software Development"
+      },
+
+      "footer": {
+        "note": "Response guaranteed within 24 hours",
+        "submit_button": "Send enquiry"
+      },
+
+      "toast": {
+        "loading": "Sending your message...",
+        "success": "Message sent successfully!",
+        "error": "Please check the required fields",
+        "failure": "Failed to send. Please try again later."
+      }
+    }
   }
 }
