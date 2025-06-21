@@ -19,18 +19,18 @@
         "description": "Nous faisons passer vos idées au niveau supérieur."
       },
       "secondary_text": {
-        "badge": "Solutions numériques sur mesure",
-        "title": "Nous transformons vos idées en solutions numériques",
-        "description": "Développement de logiciels, sites web et applications sur mesure pour faire croître votre entreprise avec le meilleur rapport qualité-prix du marché.",
+        "badge": "Solutions métier haute performance",
+        "title": "Des logiciels qui évoluent avec votre entreprise",
+        "description": "Architecture solide, code propre et systèmes conçus pour durer. Pour les entreprises qui ont essayé des solutions bon marché et recherchent désormais une qualité professionnelle.",
         "key_points": [
-          "Conseil en digitalisation",
-          "Automatisation des processus",
-          "Développement web professionnel",
-          "Applications sur mesure"
+          "Architecture évolutive",
+          "Performance optimisée",
+          "Sécurité de niveau entreprise",
+          "Support technique à long terme"
         ],
-        "cta_schedule": "Planifier un rendez-vous gratuit",
-        "cta_budget": "Demander un devis",
-        "trusted_by": "Des entreprises qui nous font confiance :",
+        "cta_schedule": "Planifier une consultation gratuite",
+        "cta_budget": "Demander un devis technique",
+        "trusted_by": "Entreprises qui nous font confiance :",
         "cta_id": "contact"
       },
       "image": {
@@ -38,7 +38,7 @@
         "title": "Solbyt"
       },
       "companies": [
-        { "name": "helloflatmate" },
+        { "name": "HelloFlatmate" },
         { "name": "ViajeSeguro" },
         { "name": "CleanNet" }
       ]
@@ -167,33 +167,78 @@
           "contact_button": "contactez-nous ici"
         }
       }
+    },
+    "faq": {
+      "title": "Nous répondons à vos questions techniques",
+      "subtitle": "Réponses claires sur la transformation numérique, le développement logiciel et l'automatisation des processus",
+      "badge": "Questions fréquentes",
+
+      "faqs": [
+        {
+          "question": "Qu’est-ce que la transformation numérique et comment l’appliquer à mon entreprise ?",
+          "answer": "La transformation numérique consiste à intégrer les technologies digitales dans toutes les sphères de votre entreprise pour améliorer l'efficacité, réduire les coûts et créer de nouvelles opportunités de croissance. Chez Solbyt, nous mettons en œuvre cette transformation de manière progressive et stratégique : nous analysons vos processus actuels, identifions les axes d'amélioration et développons des solutions technologiques évolutives adaptées à votre rythme de croissance. Cela comprend l'automatisation des tâches répétitives jusqu'au développement de logiciels sur mesure optimisant vos opérations clés."
+        },
+        {
+          "question": "Combien de temps faut-il pour développer une solution logicielle personnalisée ?",
+          "answer": "La durée dépend de la complexité du projet, mais nous travaillons avec une méthodologie agile par phases pour accélérer le retour sur investissement. Un module de base peut être prêt en 2 à 4 semaines, tandis qu’une solution complète peut nécessiter 2 à 6 mois. L’avantage de notre approche modulaire est que vous pouvez commencer à bénéficier des premiers modules pendant que nous développons les suivants, en validant la solution dans votre environnement réel."
+        },
+        {
+          "question": "Quelles technologies utilise Solbyt dans ses projets ?",
+          "answer": "Nous utilisons des technologies modernes et évolutives, éprouvées dans le monde de l’entreprise : React/Next.js pour les interfaces utilisateurs, Node.js et Python pour les backends, des bases de données comme PostgreSQL et MongoDB, ainsi que des services cloud comme AWS et Azure. Notre sélection repose sur des critères de scalabilité, de sécurité, de maintenabilité et de support à long terme. Nous ne suivons pas les tendances, nous choisissons les technologies les plus adaptées pour garantir la pérennité de votre investissement."
+        },
+        {
+          "question": "Quels sont les avantages concrets de l’automatisation des processus internes ?",
+          "answer": "L’automatisation génère des bénéfices immédiats et mesurables : réduction de 60 à 80 % des erreurs humaines, gain de 15 à 30 heures par semaine sur les tâches répétitives, et amélioration de 40 à 60 % de la vitesse de traitement des données. Elle permet aussi à votre équipe de se concentrer sur des activités stratégiques à forte valeur ajoutée. Nos clients constatent généralement un retour sur investissement en 3 à 6 mois grâce à une productivité accrue, moins de reprises, et un meilleur contrôle des informations métier."
+        },
+        {
+          "question": "Solbyt propose-t-il un support et une maintenance après le développement ?",
+          "answer": "Oui, nous proposons des plans de support complets incluant les mises à jour de sécurité, la résolution d’incidents, l’optimisation des performances et l’évolution des fonctionnalités. Nous savons que le logiciel est un investissement à long terme, c’est pourquoi notre accompagnement technologique se poursuit après le lancement. Nous offrons plusieurs niveaux de support : du service basique avec réponse sous 48h jusqu’au service premium avec surveillance proactive et réponse immédiate, afin que votre solution reste performante et compétitive."
+        },
+        {
+          "question": "Qu’est-ce qui différencie Solbyt des autres agences ou freelances ?",
+          "answer": "Notre différence réside dans notre approche stratégique et notre qualité professionnelle : nous ne faisons pas que développer des logiciels, nous concevons des transformations numériques durables. Nous travaillons par phases pour valider la valeur à chaque étape, utilisons des technologies scalables pensées pour la croissance à long terme, et proposons un accompagnement technologique global au-delà du développement. Notre équipe associe expertise technique et compréhension des enjeux business pour créer des solutions qui produisent de vrais résultats mesurables."
+        }
+      ],
+
+      "cta": {
+        "title": "Vous avez une question spécifique sur votre projet ?",
+        "paragraph": "Vous avez une question spécifique ? Envoyez-nous un e-mail et l’un de nos experts en vous répondra avec une proposition personnalisée.",
+        "buttons": {
+          "book": "Réserver une consultation gratuite",
+          "email": "Envoyer une demande par e-mail"
+        }
+      }
     }
   },
   "services_page": {
     "services_hero": {
-      "badge": "Solutions Numériques Complètes",
-      "title": "Des services qui transforment votre entreprise",
-      "description": "De la consultation initiale au développement complet, nous proposons des solutions numériques complètes avec le meilleur rapport qualité-prix du marché.",
+      "badge": "Services de développement logiciel pour entreprises",
+      "title": "La technologie qui propulse votre croissance",
+      "description": "Nous développons des solutions numériques robustes et évolutives pour les entreprises recherchant des résultats durables et une croissance pérenne.",
       "benefits": [
         {
-          "icon": "⚡",
-          "title": "Développement Rapide",
-          "description": "Livré en un temps record"
+          "icon": "code",
+          "title": "Architecture évolutive",
+          "description": "Des systèmes conçus pour évoluer avec votre entreprise sans compromettre les performances"
         },
         {
-          "icon": "💎",
-          "title": "Qualité Premium",
-          "description": "Code propre et évolutif"
+          "icon": "database",
+          "title": "Performance optimisée",
+          "description": "Un code propre et efficace garantissant rapidité et stabilité à long terme"
         },
         {
-          "icon": "💰",
-          "title": "Prix Juste",
-          "description": "Aucun coût caché"
+          "icon": "shield",
+          "title": "Sécurité de niveau entreprise",
+          "description": "Protection des données et conformité aux normes internationales de sécurité"
         }
       ],
       "buttons": {
-        "cta_1": "Consultation gratuite",
-        "cta_2": "Voir des cas de réussite"
+        "cta_1": "Consultation stratégique",
+        "cta_2": "Explorer les services"
+      },
+      "trust": {
+        "label": "Entreprises qui font confiance à notre expertise technique",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "Clean Net"]
       }
     },
     "services_grid": {
@@ -340,7 +385,8 @@
       "buttons": {
         "quote": "Demander un devis",
         "more_info": "Plus d’informations",
-        "custom_project": "Décrire mon projet personnalisé"
+        "custom_project": "Décrire mon projet personnalisé",
+        "link_custom_project": "/contact"
       },
       "bottom_cta": {
         "title": "Vous ne trouvez pas exactement ce dont vous avez besoin ?",

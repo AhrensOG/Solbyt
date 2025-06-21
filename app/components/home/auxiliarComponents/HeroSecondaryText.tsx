@@ -95,7 +95,7 @@ const HeroSecondaryText = () => {
         </Link>
 
         <Link href={`#${translation("cta_id")}`}>
-          <button className="flex items-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-500 hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300">
+          <button className="flex items-center gap-2 border hover:bg-solbyt-blue-500 px-6 py-3 rounded-lg font-semibold border-gray-300 text-gray-700 hover:border-solbyt-blue-500 hover:text-solbyt-blue-500 hover:bg-solbyt-blue-500/5 transition-all duration-300">
             {translation("cta_budget")}
             <ArrowRight className="h-4 w-4" />
           </button>

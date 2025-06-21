@@ -19,18 +19,18 @@
         "description": "Llevamos tus ideas al siguiente nivel."
       },
       "secondary_text": {
-        "badge": "Soluciones Digitales a Medida",
-        "title": "Transformamos tus ideas en soluciones digitales",
-        "description": "Desarrollo de software, páginas web y aplicaciones a medida que impulsan el crecimiento de tu negocio con la mejor relación calidad-precio del mercado.",
+        "badge": "Soluciones empresariales de alto rendimiento",
+        "title": "Software que escala con tu negocio",
+        "description": "Arquitectura sólida, código limpio y sistemas que perduran. Para empresas que ya probaron soluciones baratas y ahora buscan calidad profesional.",
         "key_points": [
-          "Asesoría en digitalización",
-          "Automatización de procesos",
-          "Desarrollo web profesional",
-          "Aplicaciones a medida"
+          "Arquitectura escalable",
+          "Rendimiento optimizado",
+          "Seguridad de nivel empresarial",
+          "Soporte técnico a largo plazo"
         ],
-        "cta_schedule": "Agendar reunión gratuita",
-        "cta_budget": "Solicitar presupuesto",
-        "trusted_by": "Empresas que confían en nosotros:",
+        "cta_schedule": "Agendar consultoría gratuita",
+        "cta_budget": "Solicitar presupuesto técnico",
+        "trusted_by": "Empresas que confían en nuestra experiencia:",
         "cta_id": "contacto"
       },
       "image": {
@@ -173,33 +173,78 @@
           "contact_button": "contáctanos aquí"
         }
       }
+    },
+    "faq": {
+      "title": "Resolvemos tus dudas técnicas",
+      "subtitle": "Respuestas claras sobre transformación digital, desarrollo de software y automatización empresarial",
+      "badge": "Preguntas frecuentes",
+
+      "faqs": [
+        {
+          "question": "¿Qué es la transformación digital y cómo puede aplicarse en mi empresa?",
+          "answer": "La transformación digital es el proceso de integrar tecnologías digitales en todas las áreas de tu negocio para mejorar la eficiencia, reducir costos y crear nuevas oportunidades de crecimiento. En Solbyt aplicamos esta transformación de manera gradual y estratégica: analizamos tus procesos actuales, identificamos oportunidades de mejora y desarrollamos soluciones tecnológicas escalables que se adaptan a tu ritmo de crecimiento. Esto incluye desde la automatización de tareas repetitivas hasta el desarrollo de software a medida que optimiza tus operaciones principales."
+        },
+        {
+          "question": "¿Cuánto tiempo tarda desarrollar una solución de software personalizada?",
+          "answer": "El tiempo de desarrollo varía según la complejidad del proyecto, pero trabajamos con metodología ágil por fases para acelerar el retorno de inversión. Un módulo básico puede estar listo en 2-4 semanas, mientras que soluciones completas de desarrollo de software a medida pueden tomar 2-6 meses. La ventaja de nuestro enfoque modular es que puedes empezar a usar y obtener beneficios de los primeros módulos mientras desarrollamos el resto, validando la solución en tu entorno real de trabajo."
+        },
+        {
+          "question": "¿Qué tecnologías utiliza Solbyt en sus proyectos?",
+          "answer": "Utilizamos tecnologías escalables y modernas probadas en el mercado empresarial: React/Next.js para interfaces de usuario, Node.js y Python para backend, bases de datos como PostgreSQL y MongoDB, y servicios cloud como AWS y Azure. Nuestra selección tecnológica se basa en criterios de escalabilidad, seguridad, mantenibilidad y soporte a largo plazo. No seguimos modas tecnológicas, sino que elegimos el stack más adecuado para garantizar que tu inversión perdure y pueda evolucionar con tu negocio."
+        },
+        {
+          "question": "¿Qué beneficios concretos tiene automatizar procesos internos?",
+          "answer": "La automatización empresarial genera beneficios inmediatos y medibles: reducción del 60-80% en errores manuales, ahorro de 15-30 horas semanales en tareas repetitivas, y mejora del 40-60% en velocidad de procesamiento de datos. Además, libera a tu equipo para enfocarse en actividades estratégicas de mayor valor. Nuestros clientes típicamente ven retorno de inversión en 3-6 meses a través de mayor productividad, menos retrabajos y mejor control de la información empresarial."
+        },
+        {
+          "question": "¿Solbyt ofrece soporte y mantenimiento luego del desarrollo?",
+          "answer": "Sí, ofrecemos planes de soporte integral que incluyen actualizaciones de seguridad, resolución de incidencias, optimizaciones de rendimiento y evolución de funcionalidades. Entendemos que el software es una inversión a largo plazo, por eso nuestro servicio de consultoría tecnológica continúa después del lanzamiento. Proporcionamos diferentes niveles de soporte: desde básico con respuesta en 48 horas hasta premium con monitoreo proactivo y respuesta inmediata, asegurando que tu solución se mantenga actualizada y competitiva."
+        },
+        {
+          "question": "¿Qué hace diferente a Solbyt de otras agencias o freelances?",
+          "answer": "Nuestra diferencia está en el enfoque estratégico y la calidad empresarial: no solo desarrollamos software, sino que diseñamos transformaciones digitales sostenibles. Trabajamos con metodología por fases que permite validar valor en cada etapa, utilizamos tecnologías escalables pensadas para el crecimiento a largo plazo, y ofrecemos consultoría tecnológica integral que va más allá del desarrollo. Además, nuestro equipo combina experiencia técnica profunda con comprensión de negocio, lo que nos permite crear soluciones que realmente impulsan resultados empresariales medibles."
+        }
+      ],
+
+      "cta": {
+        "title": "¿Tienes una pregunta específica sobre tu proyecto?",
+        "paragraph": "¿Tienes una consulta específica? Escríbenos por email y uno de nuestros expertos te responderá con una propuesta personalizada.",
+        "buttons": {
+          "book": "Agendar consultoría gratuita",
+          "email": "Enviar consulta por email"
+        }
+      }
     }
   },
   "services_page": {
     "services_hero": {
-      "badge": "Soluciones Digitales Completas",
-      "title": "Servicios que transforman tu negocio",
-      "description": "Desde la consultoría inicial hasta el desarrollo completo, ofrecemos soluciones digitales integrales con la mejor relación calidad-precio del mercado.",
+      "badge": "Servicios de desarrollo empresarial",
+      "title": "Tecnología que impulsa tu crecimiento",
+      "description": "Desarrollamos soluciones digitales robustas y escalables para empresas que buscan resultados duraderos y crecimiento sostenible.",
       "benefits": [
         {
-          "icon": "⚡",
-          "title": "Desarrollo Rápido",
-          "description": "Entregamos en tiempo récord"
+          "icon": "code",
+          "title": "Arquitectura escalable",
+          "description": "Sistemas diseñados para crecer con tu negocio sin comprometer el rendimiento"
         },
         {
-          "icon": "💎",
-          "title": "Calidad Premium",
-          "description": "Código limpio y escalable"
+          "icon": "database",
+          "title": "Rendimiento optimizado",
+          "description": "Código limpio y eficiente que garantiza velocidad y estabilidad a largo plazo"
         },
         {
-          "icon": "💰",
-          "title": "Precio Justo",
-          "description": "Sin costos ocultos"
+          "icon": "shield",
+          "title": "Seguridad empresarial",
+          "description": "Protección de datos y cumplimiento de estándares internacionales de seguridad"
         }
       ],
       "buttons": {
-        "cta_1": "Consulta gratuita",
-        "cta_2": "Ver casos de éxito"
+        "cta_1": "Consultoría estratégica",
+        "cta_2": "Explorar servicios"
+      },
+      "trust": {
+        "label": "Empresas que confían en nuestra experiencia técnica",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "Clean Net"]
       }
     },
     "services_grid": {
@@ -346,7 +391,8 @@
       "buttons": {
         "quote": "Solicitar presupuesto",
         "more_info": "Más información",
-        "custom_project": "Describir mi proyecto personalizado"
+        "custom_project": "Describir mi proyecto personalizado",
+        "link_custom_project": "/contacto"
       },
       "bottom_cta": {
         "title": "¿No ves exactamente lo que necesitas?",

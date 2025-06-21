@@ -101,11 +101,11 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id={translation_cta("cta_id")} className="py-20 bg-gray-50">
+    <section id={translation_cta("cta_id")} className="py-32">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <motion.h2
-            className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 to-solbyt-blue-500"
+            className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 via-solbyt-pink-500 to-solbyt-blue-500"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

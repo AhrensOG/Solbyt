@@ -101,7 +101,7 @@ const ServicesGrid: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         {/* Main title */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 to-solbyt-blue-500">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-solbyt-purple-600 via-solbyt-pink-500 to-solbyt-blue-500 ">
             {translation("title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -188,10 +188,6 @@ const ServicesGrid: React.FC = () => {
                     {translation("buttons.more_info")}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                  {/* <button className="flex-1 inline-flex items-center justify-center gap-2 border border-solbyt-blue-500 text-solbyt-blue-500 hover:bg-solbyt-blue-50 font-medium px-6 py-3 rounded-lg transition">
-                    {translation("buttons.more_info")}
-                    <ArrowRight className="h-4 w-4" />
-                  </button> */}
                 </div>
               </div>
             </motion.div>
@@ -211,9 +207,12 @@ const ServicesGrid: React.FC = () => {
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             {translation("bottom_cta.description")}
           </p>
-          <button className="flex-1 inline-flex items-center justify-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-700 text-white font-medium px-6 py-3 rounded-lg transition">
+          <Link
+            href={translation("buttons.link_custom_project")}
+            target="_blank"
+            className="flex-1 inline-flex items-center justify-center gap-2 bg-solbyt-purple-600 hover:bg-solbyt-purple-700 text-white font-medium px-6 py-3 rounded-lg transition">
             {translation("buttons.custom_project")}
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -20,9 +20,9 @@ const HomePage: React.FC = () => {
         <Hero />
         <ServicesSection />
         <ProjectsSection />
-        <CTASection />
         <ContactSection />
         <WorkInformation />
+        <CTASection />
       </main>
       <Footer />
     </>
