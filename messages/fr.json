@@ -9,6 +9,13 @@
       "about": "À propos",
       "contact": "Contact"
     },
+    "href": {
+      "home": "/",
+      "services": "/services",
+      "projects": "/projets",
+      "about": "/a-propos",
+      "contact": "/contact"
+    },
     "button": "Planifier un rendez-vous"
   },
   "home_page": {

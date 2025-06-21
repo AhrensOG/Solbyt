@@ -9,13 +9,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { getPathname, Locale } from "@/i18n/navigation";
-import {
-  getServiceIdBySlug,
-  getSlugByServiceId,
-} from "@/app/lib/serviceSlugs";
+import { getServiceIdBySlug, getSlugByServiceId } from "@/app/lib/serviceSlugs";
 
 const Navbar: React.FC = () => {
-  const t = useTranslations("navbar");
+  const translation = useTranslations("navbar");
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -25,14 +22,14 @@ const Navbar: React.FC = () => {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: t("links.home"), href: `/${locale}` },
+    { name: translation("links.home"), href: translation("href.home") },
     {
-      name: t("links.services"),
-      href: `/${locale}/${locale === "es" ? "servicios" : "services"}`,
+      name: translation("links.services"),
+      href: translation("href.services"),
     },
-    { name: t("links.projects"), href: "#projects" },
-    { name: t("links.about"), href: "#nosotros" },
-    { name: t("links.contact"), href: "#contact" },
+    { name: translation("links.projects"), href: translation("href.projects") },
+    { name: translation("links.about"), href: translation("href.about") },
+    { name: translation("links.contact"), href: translation("href.contact") },
   ];
 
   const changeLanguage = (lang: "es" | "en" | "fr") => {
@@ -104,8 +101,8 @@ const Navbar: React.FC = () => {
               src="/logo.svg"
               width={150}
               height={49}
-              alt={t("logo_alt")}
-              title={t("logo_title")}
+              alt={translation("logo_alt")}
+              title={translation("logo_title")}
             />
           </Link>
 
@@ -124,7 +121,7 @@ const Navbar: React.FC = () => {
               href="https://calendly.com/solbyt-tech/30min"
               target="_blank"
               className="ml-4 bg-solbyt-purple-600 hover:bg-purple-700 text-white px-4 py-1 rounded-lg">
-              {t("button")}
+              {translation("button")}
             </Link>
 
             {/* Language Selector */}
@@ -181,7 +178,7 @@ const Navbar: React.FC = () => {
               <button
                 className="mt-4 bg-solbyt-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg"
                 onClick={() => setIsOpen(false)}>
-                {t("button")}
+                {translation("button")}
               </button>
 
               {/* Language Selector Mobile */}

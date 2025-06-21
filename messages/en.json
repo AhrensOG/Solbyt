@@ -9,6 +9,13 @@
       "about": "About Us",
       "contact": "Contact"
     },
+    "href": {
+      "home": "/",
+      "services": "/services",
+      "projects": "/projects",
+      "about": "/about-us",
+      "contact": "/contact"
+    },
     "button": "Book a Meeting"
   },
   "home_page": {

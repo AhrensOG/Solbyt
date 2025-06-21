@@ -9,6 +9,13 @@
       "about": "Nosotros",
       "contact": "Contacto"
     },
+    "href": {
+      "home": "/",
+      "services": "/servicios",
+      "projects": "/proyectos",
+      "about": "/nosotros",
+      "contact": "/contacto"
+    },
     "button": "Agendar Reunión"
   },
   "home_page": {
