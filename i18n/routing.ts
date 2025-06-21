@@ -15,6 +15,18 @@ export const routing = defineRouting({
       es: '/servicios/[slug]',
       en: '/services/[slug]',
       fr: '/services/[slug]'
+    },
+
+    '/contact': {
+      es: '/contacto',
+      en: '/contact',
+      fr: '/contact'
+    },
+
+    '/about': {
+      es: '/nosotros',
+      en: '/about',
+      fr: '/a-propos'
     }
   }
 });

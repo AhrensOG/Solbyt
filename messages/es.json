@@ -2088,5 +2088,199 @@
         "phone": "+41 76 272 64 91"
       }
     }
+  },
+  "about_page": {
+    "hero": {
+      "badge": "Conoce a Solbyt",
+      "title": "Transformamos ideas en soluciones digitales",
+      "description": "Somos un equipo de expertos en tecnología dedicados a impulsar el crecimiento empresarial a través de <strong>software escalable</strong> y <strong>estrategias digitales</strong> que generan resultados reales.",
+      "cta_primary": "Trabajemos juntos",
+      "cta_secondary": "Conoce nuestra historia",
+      "cta_secondary_link": "historia",
+      "stats": {
+        "0": {
+          "value": "50+",
+          "label": "Asesorías realizadas"
+        },
+        "1": {
+          "value": "100%",
+          "label": "Clientes satisfechos"
+        },
+        "2": {
+          "value": "5+",
+          "label": "Años de experiencia"
+        }
+      }
+    },
+    "story": {
+      "id": "historia",
+      "title": "Nuestra historia",
+
+      "paragraph_1": {
+        "before_highlight": "Solbyt nació con una misión clara: ",
+        "highlight": "hacer accesible la tecnología empresarial de alto nivel",
+        "after_highlight": ". Fundada por los hermanos Guillermo y Gabriel Ahrens, surge de su experiencia directa colaborando con pymes que necesitaban soluciones digitales robustas, pero al alcance de su realidad operativa."
+      },
+
+      "paragraph_2": "Guillermo, con una sólida trayectoria como desarrollador de software y consultor de sistemas, y Gabriel, especializado en dirección técnica y producto digital, combinaron su experiencia para crear una empresa que tradujera la tecnología en resultados concretos. Ambos trabajaron de cerca con negocios reales, entendiendo sus cuellos de botella y desafíos operativos desde adentro.",
+
+      "paragraph_3": {
+        "before_highlight": "Tras años observando cómo muchas empresas quedaban atrapadas en software ineficiente, procesos manuales y transformaciones digitales inconclusas, decidieron construir algo diferente. No querían ser una agencia más, sino ",
+        "highlight": "un aliado tecnológico que comprenda el negocio desde adentro",
+        "after_highlight": ", con soluciones adaptadas a cada etapa de crecimiento."
+      },
+
+      "paragraph_4": {
+        "before_highlight_1": "Hoy, Solbyt es sinónimo de ",
+        "highlight_1": "excelencia técnica, automatización real y resultados medibles",
+        "after_highlight_1": ". Cada sistema que desarrollamos está pensado para escalar. Cada proceso que automatizamos libera tiempo y recursos. Y cada estrategia que diseñamos tiene un objetivo: ",
+        "highlight_2": "impulsar el crecimiento sostenible de nuestros clientes",
+        "after_highlight_2": "."
+      },
+
+      "pillars": [
+        {
+          "title": "Innovación",
+          "description": "Tecnología de vanguardia aplicada a problemas reales"
+        },
+        {
+          "title": "Crecimiento",
+          "description": "Soluciones que escalan con tu negocio"
+        },
+        {
+          "title": "Resultados",
+          "description": "Enfoque en ROI y valor empresarial medible"
+        }
+      ]
+    },
+    "values": {
+      "title": "Nuestros valores fundamentales",
+      "subtitle": "Los principios que guían cada decisión y definen nuestra forma de trabajar",
+      "items": [
+        {
+          "title": "Compromiso",
+          "description": "Nos involucramos profundamente en cada proyecto, tratando tu éxito como nuestro propio éxito. Cada línea de código y cada decisión estratégica está pensada para generar el máximo valor."
+        },
+        {
+          "title": "Estrategia",
+          "description": "No desarrollamos por desarrollar. Cada solución nace de un análisis profundo de tu negocio, mercado y objetivos. La tecnología es el medio, tu crecimiento es el fin."
+        },
+        {
+          "title": "Tecnología",
+          "description": "Utilizamos las mejores herramientas y metodologías del mercado, pero siempre priorizando estabilidad, escalabilidad y mantenibilidad sobre las modas tecnológicas."
+        },
+        {
+          "title": "Resultados",
+          "description": "Medimos nuestro éxito por el tuyo. ROI, eficiencia operativa, crecimiento de ventas: nos enfocamos en métricas que realmente importan para tu negocio."
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "Qué nos hace diferentes",
+      "subtitle": "No somos una agencia más. Somos partners tecnológicos comprometidos con tu éxito",
+
+      "list": [
+        {
+          "title": "Equipo multidisciplinario",
+          "description": "Desarrollo, diseño UX/UI, automatización y estrategia de negocio trabajando en perfecta sincronía"
+        },
+        {
+          "title": "Metodología ágil",
+          "description": "Entregas rápidas, feedback continuo y adaptación constante para maximizar el valor en cada sprint"
+        },
+        {
+          "title": "Impacto empresarial real",
+          "description": "Nos enfocamos en métricas que importan: ROI, eficiencia operativa y crecimiento sostenible"
+        },
+        {
+          "title": "Valor sobre precio",
+          "description": "No competimos en precio, sino en resultados. Invertimos en calidad para generar valor a largo plazo"
+        }
+      ],
+
+      "why_title": "¿Por qué elegir Solbyt?",
+      "why_description": {
+        "before_highlight": "Mientras otros se enfocan en entregar rápido y barato, nosotros nos enfocamos en entregar ",
+        "highlight": "valor duradero",
+        "after_highlight": ". Cada proyecto es una inversión en el futuro de tu negocio."
+      },
+
+      "benefits": [
+        "Código limpio y arquitectura escalable",
+        "Documentación completa y transferencia de conocimiento",
+        "Soporte técnico continuo y evolutivo",
+        "Metodología probada en +50 proyectos",
+        "Enfoque en ROI y métricas empresariales",
+        "Transparencia total en procesos y costos"
+      ],
+
+      "quote": {
+        "text": "No buscamos ser los más baratos, sino los que mejor entienden tu negocio y generan el mayor impacto con tecnología.",
+        "author": "Filosofía Solbyt"
+      }
+    },
+    "team_extended": {
+      "title": "Somos más que dos personas",
+      "subtitle": "Detrás de cada proyecto hay un equipo multidisciplinario de profesionales comprometidos con la excelencia",
+
+      "roles": [
+        {
+          "title": "Desarrolladores Senior",
+          "description": "Expertos en tecnologías modernas y arquitecturas escalables",
+          "count": "Alta experiencia"
+        },
+        {
+          "title": "Diseñadores UX/UI",
+          "description": "Especialistas en experiencia de usuario e interfaces intuitivas",
+          "count": "Diseño centrado"
+        },
+        {
+          "title": "Analistas de Negocio",
+          "description": "Consultores que traducen necesidades empresariales en soluciones técnicas",
+          "count": "Visión estratégica"
+        },
+        {
+          "title": "Especialistas en Automatización",
+          "description": "Expertos en optimización de procesos y flujos de trabajo",
+          "count": "Enfoque eficiente"
+        }
+      ],
+
+      "philosophy": {
+        "title": "Nuestro equipo extendido",
+        "description": "Cada proyecto cuenta con un equipo dedicado de especialistas que trabajan en perfecta sincronía. No subcontratamos: cada miembro es parte integral de Solbyt y comparte nuestra visión de excelencia.",
+        "bullets": [
+          "Selección rigurosa basada en experiencia y valores",
+          "Formación continua en las últimas tecnologías",
+          "Metodologías ágiles y comunicación transparente",
+          "Compromiso personal con el éxito de cada proyecto"
+        ],
+        "image_caption_title": "Profesionales especializados",
+        "image_caption_subtitle": "trabajando en proyectos activos"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para construir tu próxima solución digital?",
+      "subtitle": "Transformemos juntos tu visión en una realidad tecnológica que impulse el crecimiento de tu negocio",
+
+      "benefits": [
+        "Consultoría estratégica personalizada",
+        "Propuesta técnica detallada",
+        "Roadmap de implementación",
+        "Sin compromisos ni costos ocultos"
+      ],
+
+      "button_primary": "Agendar consultoría gratuita",
+      "button_secondary": "Enviar consulta detallada",
+      "button_secondary_link": "/contacto",
+
+      "footer_note": "Respuesta garantizada en 24 horas • Clientes en 3 continentes",
+
+      "features": {
+        "agile": "Desarrollo ágil",
+        "secure": "Código seguro",
+        "global": "Soporte global"
+      }
+    }
   }
 }

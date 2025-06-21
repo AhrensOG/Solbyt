@@ -2082,5 +2082,194 @@
         "phone": "+41 76 272 64 91"
       }
     }
+  },
+  "about_page": {
+    "hero": {
+      "badge": "Découvrez Solbyt",
+      "title": "Nous transformons les idées en solutions numériques",
+      "description": "Nous sommes une équipe d'experts en technologie dédiée à stimuler la croissance des entreprises grâce à des <strong>logiciels évolutifs</strong> et des <strong>stratégies digitales</strong> qui produisent des résultats concrets.",
+      "cta_primary": "Travaillons ensemble",
+      "cta_secondary": "Découvrez notre histoire",
+      "cta_secondary_link": "histoire",
+      "stats": {
+        "0": {
+          "value": "50+",
+          "label": "Conseils réalisés"
+        },
+        "1": {
+          "value": "100%",
+          "label": "Clients satisfaits"
+        },
+        "2": {
+          "value": "5+",
+          "label": "Années d'expérience"
+        }
+      }
+    },
+    "story": {
+      "id": "histoire",
+      "title": "Notre histoire",
+      "paragraph_1": {
+        "before_highlight": "Solbyt est né avec une mission claire : ",
+        "highlight": "rendre la technologie d'entreprise de haut niveau accessible",
+        "after_highlight": ". Fondée par les frères Guillermo et Gabriel Ahrens, l'entreprise est issue de leur expérience directe auprès de PME ayant besoin de solutions numériques robustes et adaptées à leur réalité opérationnelle."
+      },
+      "paragraph_2": "Guillermo, fort d'une solide expérience en tant que développeur logiciel et consultant systèmes, et Gabriel, spécialisé en direction technique et produit digital, ont uni leurs compétences pour créer une entreprise qui traduit la technologie en résultats concrets. Tous deux ont travaillé au plus près des entreprises pour comprendre leurs blocages et défis opérationnels de l'intérieur.",
+      "paragraph_3": {
+        "before_highlight": "Après avoir vu de nombreuses entreprises piégées dans des logiciels inefficaces, des processus manuels ou des transformations numériques inachevées, ils ont décidé de créer quelque chose de différent. Ils ne voulaient pas être une agence de plus, mais ",
+        "highlight": "un partenaire technologique qui comprend l'entreprise de l'intérieur",
+        "after_highlight": ", avec des solutions adaptées à chaque étape de croissance."
+      },
+      "paragraph_4": {
+        "before_highlight_1": "Aujourd’hui, Solbyt est synonyme de ",
+        "highlight_1": "excellence technique, automatisation réelle et résultats mesurables",
+        "after_highlight_1": ". Chaque système que nous développons est conçu pour évoluer. Chaque processus automatisé permet de gagner du temps et des ressources. Chaque stratégie est pensée pour ",
+        "highlight_2": "stimuler la croissance durable de nos clients",
+        "after_highlight_2": "."
+      },
+      "pillars": [
+        {
+          "title": "Innovation",
+          "description": "Technologie de pointe appliquée à des problèmes concrets"
+        },
+        {
+          "title": "Croissance",
+          "description": "Des solutions qui évoluent avec votre entreprise"
+        },
+        {
+          "title": "Résultats",
+          "description": "Accent mis sur le ROI et la valeur métier mesurable"
+        }
+      ]
+    },
+    "values": {
+      "title": "Nos valeurs fondamentales",
+      "subtitle": "Les principes qui guident chaque décision et définissent notre manière de travailler",
+      "items": [
+        {
+          "title": "Engagement",
+          "description": "Nous nous investissons pleinement dans chaque projet, en considérant votre réussite comme la nôtre. Chaque ligne de code et chaque décision stratégique visent à générer une valeur maximale."
+        },
+        {
+          "title": "Stratégie",
+          "description": "Nous ne développons pas pour développer. Chaque solution est issue d'une analyse approfondie de votre entreprise, de votre marché et de vos objectifs. La technologie est un moyen, votre croissance est la finalité."
+        },
+        {
+          "title": "Technologie",
+          "description": "Nous utilisons les meilleurs outils et méthodologies du marché, en privilégiant toujours la stabilité, l’évolutivité et la maintenabilité aux tendances passagères."
+        },
+        {
+          "title": "Résultats",
+          "description": "Notre réussite se mesure à la vôtre. ROI, efficacité opérationnelle, croissance des ventes — nous nous concentrons sur les indicateurs qui comptent vraiment pour votre activité."
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "Ce qui nous rend différents",
+      "subtitle": "Nous ne sommes pas une agence de plus. Nous sommes des partenaires technologiques engagés pour votre réussite",
+
+      "list": [
+        {
+          "title": "Équipe pluridisciplinaire",
+          "description": "Développement, design UX/UI, automatisation et stratégie d’entreprise en parfaite harmonie"
+        },
+        {
+          "title": "Méthodologie agile",
+          "description": "Livraisons rapides, retours constants et adaptation continue pour maximiser la valeur à chaque sprint"
+        },
+        {
+          "title": "Impact réel sur l’entreprise",
+          "description": "Nous nous concentrons sur ce qui compte : ROI, efficacité opérationnelle et croissance durable"
+        },
+        {
+          "title": "Valeur plutôt que prix",
+          "description": "Nous ne cherchons pas à être les moins chers, mais à obtenir des résultats. Nous investissons dans la qualité pour créer de la valeur à long terme"
+        }
+      ],
+
+      "why_title": "Pourquoi choisir Solbyt ?",
+      "why_description": {
+        "before_highlight": "Tandis que d'autres se concentrent sur la rapidité et le prix, nous nous concentrons sur la livraison de ",
+        "highlight": "valeur durable",
+        "after_highlight": ". Chaque projet est un investissement dans l’avenir de votre entreprise."
+      },
+
+      "benefits": [
+        "Code propre et architecture évolutive",
+        "Documentation complète et transfert de connaissances",
+        "Support technique continu et évolutif",
+        "Méthodologie éprouvée sur plus de 50 projets",
+        "Focus sur le ROI et les indicateurs de performance",
+        "Transparence totale sur les processus et les coûts"
+      ],
+
+      "quote": {
+        "text": "Nous ne cherchons pas à être les moins chers, mais à comprendre au mieux votre activité et générer le plus grand impact avec la technologie.",
+        "author": "Philosophie Solbyt"
+      }
+    },
+    "team_extended": {
+      "title": "Nous sommes bien plus que deux",
+      "subtitle": "Derrière chaque projet se cache une équipe pluridisciplinaire de professionnels engagés pour l'excellence",
+
+      "roles": [
+        {
+          "title": "Développeurs senior",
+          "description": "Experts en technologies modernes et architectures évolutives",
+          "count": "Expertise élevée"
+        },
+        {
+          "title": "Designers UX/UI",
+          "description": "Spécialistes de l’expérience utilisateur et des interfaces intuitives",
+          "count": "Design centré utilisateur"
+        },
+        {
+          "title": "Analystes métier",
+          "description": "Consultants qui traduisent les besoins métiers en solutions techniques",
+          "count": "Vision stratégique"
+        },
+        {
+          "title": "Spécialistes en automatisation",
+          "description": "Experts en optimisation des processus et des flux de travail",
+          "count": "Efficacité ciblée"
+        }
+      ],
+
+      "philosophy": {
+        "title": "Notre équipe étendue",
+        "description": "Chaque projet bénéficie d'une équipe dédiée travaillant en parfaite synchronisation. Nous ne sous-traitons pas : chaque membre fait partie intégrante de Solbyt et partage notre vision d'excellence.",
+        "bullets": [
+          "Sélection rigoureuse basée sur l'expérience et les valeurs",
+          "Formation continue sur les dernières technologies",
+          "Méthodologies agiles et communication transparente",
+          "Engagement personnel dans la réussite de chaque projet"
+        ],
+        "image_caption_title": "Professionnels spécialisés",
+        "image_caption_subtitle": "travaillant sur des projets actifs"
+      }
+    },
+    "cta": {
+      "title": "Prêt à créer votre prochaine solution digitale ?",
+      "subtitle": "Transformons ensemble votre vision en une réalité technologique qui booste la croissance de votre entreprise",
+
+      "benefits": [
+        "Consultation stratégique personnalisée",
+        "Proposition technique détaillée",
+        "Feuille de route de mise en œuvre",
+        "Sans engagement ni coûts cachés"
+      ],
+
+      "button_primary": "Réserver une consultation gratuite",
+      "button_secondary": "Envoyer une demande détaillée",
+      "button_secondary_link": "/contact",
+
+      "footer_note": "Réponse garantie sous 24h • Clients sur 3 continents",
+
+      "features": {
+        "agile": "Développement agile",
+        "secure": "Code sécurisé",
+        "global": "Support mondial"
+      }
+    }
   }
 }

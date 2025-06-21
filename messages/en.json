@@ -2082,5 +2082,194 @@
         "phone": "+41 76 272 64 91"
       }
     }
+  },
+  "about_page": {
+    "hero": {
+      "badge": "Meet Solbyt",
+      "title": "We transform ideas into digital solutions",
+      "description": "We are a team of technology experts dedicated to driving business growth through <strong>scalable software</strong> and <strong>digital strategies</strong> that deliver real results.",
+      "cta_primary": "Let’s work together",
+      "cta_secondary": "Discover our story",
+      "cta_secondary_link": "history",
+      "stats": {
+        "0": {
+          "value": "50+",
+          "label": "Advisory sessions completed"
+        },
+        "1": {
+          "value": "100%",
+          "label": "Satisfied clients"
+        },
+        "2": {
+          "value": "5+",
+          "label": "Years of experience"
+        }
+      }
+    },
+    "story": {
+      "id": "history",
+      "title": "Our story",
+      "paragraph_1": {
+        "before_highlight": "Solbyt was founded with a clear mission: ",
+        "highlight": "to make high-level business technology accessible",
+        "after_highlight": ". Created by brothers Guillermo and Gabriel Ahrens, it emerged from their direct experience working with SMEs that needed robust digital solutions aligned with their operational reality."
+      },
+      "paragraph_2": "Guillermo, with a solid background as a software developer and systems consultant, and Gabriel, specialised in technical leadership and digital product development, combined their experience to build a company that turns technology into tangible results. Both worked closely with real businesses, understanding their bottlenecks and operational challenges from within.",
+      "paragraph_3": {
+        "before_highlight": "After years of seeing companies stuck with inefficient software, manual processes and unfinished digital transformations, they decided to build something different. They didn’t want to be just another agency, but ",
+        "highlight": "a tech partner that understands the business from the inside",
+        "after_highlight": ", offering solutions tailored to each stage of growth."
+      },
+      "paragraph_4": {
+        "before_highlight_1": "Today, Solbyt stands for ",
+        "highlight_1": "technical excellence, true automation and measurable results",
+        "after_highlight_1": ". Every system we build is designed to scale. Every process we automate saves time and resources. And every strategy we design has one goal: ",
+        "highlight_2": "to drive sustainable growth for our clients",
+        "after_highlight_2": "."
+      },
+      "pillars": [
+        {
+          "title": "Innovation",
+          "description": "Cutting-edge technology applied to real-world problems"
+        },
+        {
+          "title": "Growth",
+          "description": "Solutions that scale with your business"
+        },
+        {
+          "title": "Results",
+          "description": "Focus on ROI and measurable business value"
+        }
+      ]
+    },
+    "values": {
+      "title": "Our core values",
+      "subtitle": "The principles that guide every decision and define how we work",
+      "items": [
+        {
+          "title": "Commitment",
+          "description": "We deeply engage in every project, treating your success as our own. Every line of code and strategic decision is aimed at delivering maximum value."
+        },
+        {
+          "title": "Strategy",
+          "description": "We don’t build for the sake of it. Every solution stems from deep analysis of your business, market, and goals. Technology is the means — your growth is the goal."
+        },
+        {
+          "title": "Technology",
+          "description": "We use the best tools and methodologies in the market, always prioritising stability, scalability, and maintainability over fleeting trends."
+        },
+        {
+          "title": "Results",
+          "description": "We measure our success by yours. ROI, operational efficiency, sales growth — we focus on metrics that truly matter to your business."
+        }
+      ]
+    },
+    "differentiators": {
+      "title": "What makes us different",
+      "subtitle": "We are not just another agency. We are tech partners committed to your success",
+
+      "list": [
+        {
+          "title": "Multidisciplinary team",
+          "description": "Development, UX/UI design, automation, and business strategy working in perfect harmony"
+        },
+        {
+          "title": "Agile methodology",
+          "description": "Fast deliveries, constant feedback, and continuous adaptation to maximise value in each sprint"
+        },
+        {
+          "title": "Real business impact",
+          "description": "We focus on what matters: ROI, operational efficiency, and sustainable growth"
+        },
+        {
+          "title": "Value over price",
+          "description": "We don’t compete on price, but on results. We invest in quality to create long-term value"
+        }
+      ],
+
+      "why_title": "Why choose Solbyt?",
+      "why_description": {
+        "before_highlight": "While others focus on delivering fast and cheap, we focus on delivering ",
+        "highlight": "lasting value",
+        "after_highlight": ". Every project is an investment in your business's future."
+      },
+
+      "benefits": [
+        "Clean code and scalable architecture",
+        "Complete documentation and knowledge transfer",
+        "Ongoing and evolving technical support",
+        "Proven methodology in 50+ projects",
+        "Focus on ROI and business metrics",
+        "Full transparency in processes and costs"
+      ],
+
+      "quote": {
+        "text": "We don’t aim to be the cheapest, but to understand your business best and generate the greatest impact with technology.",
+        "author": "Solbyt Philosophy"
+      }
+    },
+    "team_extended": {
+      "title": "We’re more than two people",
+      "subtitle": "Behind every project is a multidisciplinary team of professionals committed to excellence",
+
+      "roles": [
+        {
+          "title": "Senior Developers",
+          "description": "Experts in modern technologies and scalable architectures",
+          "count": "High expertise"
+        },
+        {
+          "title": "UX/UI Designers",
+          "description": "Specialists in user experience and intuitive interfaces",
+          "count": "User-focused design"
+        },
+        {
+          "title": "Business Analysts",
+          "description": "Consultants who translate business needs into technical solutions",
+          "count": "Strategic vision"
+        },
+        {
+          "title": "Automation Specialists",
+          "description": "Experts in process and workflow optimisation",
+          "count": "Efficiency-focused"
+        }
+      ],
+
+      "philosophy": {
+        "title": "Our extended team",
+        "description": "Each project is supported by a dedicated team of specialists working in full synchrony. We don’t outsource — every member is an integral part of Solbyt and shares our vision of excellence.",
+        "bullets": [
+          "Rigorous selection based on experience and values",
+          "Continuous training in the latest technologies",
+          "Agile methodologies and transparent communication",
+          "Personal commitment to the success of each project"
+        ],
+        "image_caption_title": "Specialised professionals",
+        "image_caption_subtitle": "working on active projects"
+      }
+    },
+    "cta": {
+      "title": "Ready to build your next digital solution?",
+      "subtitle": "Let’s turn your vision into a technology-powered reality that fuels your business growth",
+
+      "benefits": [
+        "Personalised strategic consultancy",
+        "Detailed technical proposal",
+        "Implementation roadmap",
+        "No obligations or hidden costs"
+      ],
+
+      "button_primary": "Book free consultation",
+      "button_secondary": "Send detailed enquiry",
+      "button_secondary_link": "/contact",
+
+      "footer_note": "Reply guaranteed within 24h • Clients across 3 continents",
+
+      "features": {
+        "agile": "Agile development",
+        "secure": "Secure code",
+        "global": "Global support"
+      }
+    }
   }
 }

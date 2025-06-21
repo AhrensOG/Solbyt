@@ -1,6 +1,6 @@
 import React from "react";
-import ContactPage from "../../../components/contact/ContactPage";
 import type { Metadata } from "next";
+import ContactPage from "@/app/components/contact/ContactPage";
 
 export const metadata: Metadata = {
   title: "Contacto - Solbyt | Impulsa tu Transformación Digital",
