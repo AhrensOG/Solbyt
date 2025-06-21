@@ -1,5 +1,5 @@
 import React from "react";
-import ContactPage from "../../components/contact/ContactPage";
+import ContactPage from "../../../components/contact/ContactPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
