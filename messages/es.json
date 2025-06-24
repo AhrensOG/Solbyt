@@ -2421,5 +2421,96 @@
         "brands": ["HelloFlatmate", "Viaje Seguro", "CleanNet"]
       }
     }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Lea detenidamente estos términos antes de utilizar nuestro sitio.",
+    "sections": {
+      "intro": "Bienvenido a Solbyt. Al acceder y utilizar nuestro sitio web, usted acepta cumplir con los presentes Términos y Condiciones. Si no está de acuerdo con ellos, por favor absténgase de utilizar este sitio.",
+      "usageTitle": "Uso del Sitio Web",
+      "usageText": "Nuestro sitio web está diseñado para ofrecer información sobre nuestros servicios de transformación digital y soluciones tecnológicas. No contamos con funcionalidades de inicio de sesión ni áreas restringidas; el uso del sitio se limita a la visualización de información y al envío de consultas a través del formulario de contacto o mediante el agendamiento en Calendly.",
+      "dataTitle": "Recopilación y Uso de Datos",
+      "dataText": "Los únicos datos personales que recopilamos son aquellos que usted nos proporciona voluntariamente a través de los formularios de contacto o al agendar una consulta. Esta información se utiliza exclusivamente para responder a sus consultas y mejorar nuestros servicios. Nos comprometemos a tratar sus datos con confidencialidad y a no compartirlos con terceros sin su consentimiento expreso.",
+      "ipTitle": "Propiedad Intelectual",
+      "ipText": "Todo el contenido presente en este sitio, incluidos textos, imágenes, logotipos y gráficos, es propiedad de Solbyt o de sus respectivos titulares y está protegido por las leyes de propiedad intelectual.",
+      "liabilityTitle": "Limitación de Responsabilidad",
+      "liabilityText": "Solbyt no será responsable de daños directos, indirectos, incidentales o consecuentes derivados del uso o la imposibilidad de uso del sitio web. La información contenida en este sitio se proporciona \"tal cual\" y sin garantías de ningún tipo.",
+      "modificationTitle": "Modificaciones a los Términos",
+      "modificationText": "Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor a partir de su publicación en el sitio web, por lo que recomendamos revisar estos términos de manera periódica.",
+      "contactTitle": "Contacto",
+      "contactText": "Si tiene alguna pregunta o inquietud acerca de estos Términos y Condiciones, por favor contáctenos a través de nuestro formulario de contacto o envíe un correo a: contacto@solbyt.com.",
+      "lastUpdateTitle": "Última actualización",
+      "lastUpdateText": "Estos términos fueron actualizados por última vez el 24 de junio de 2025."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Su privacidad es nuestra prioridad.",
+    "intro": "Bienvenido a Solbyt. En esta Política de Privacidad, explicamos cómo recopilamos, usamos y protegemos la información personal que usted nos proporciona a través de nuestros formularios o integraciones externas como Calendly. Al utilizar nuestro sitio web, usted acepta las prácticas descritas en este documento.",
+    "sections": {
+      "dataCollected": {
+        "title": "Información que Recopilamos",
+        "content": "Nuestro sitio web no cuenta con sistemas de inicio de sesión ni áreas restringidas. Los únicos datos personales que recopilamos son los que usted nos proporciona voluntariamente, como su nombre, correo electrónico, sector o área en la que opera su negocio y cualquier otro mensaje que desee incluir."
+      },
+      "dataUse": {
+        "title": "Uso de la Información",
+        "content": "Utilizamos la información recopilada únicamente para responder a sus consultas, mejorar nuestros servicios y mantener una comunicación efectiva con usted. No compartimos ni vendemos sus datos personales sin su consentimiento."
+      },
+      "userResponsibility": {
+        "title": "Responsabilidad del Usuario",
+        "content": "Usted es responsable de garantizar que la información que proporciona es veraz, actualizada y no infringe derechos de terceros."
+      },
+      "dataSecurity": {
+        "title": "Seguridad de los Datos",
+        "content": "Implementamos medidas técnicas y organizativas para proteger sus datos personales. Aunque no podemos garantizar seguridad absoluta, trabajamos para minimizar cualquier riesgo."
+      },
+      "dataRetention": {
+        "title": "Conservación de Datos",
+        "content": "Conservamos sus datos durante el tiempo necesario para responder a sus solicitudes o según lo exijan las leyes aplicables. Luego, los eliminamos de forma segura."
+      },
+      "userRights": {
+        "title": "Derechos del Usuario",
+        "content": "Usted tiene derecho a acceder, modificar o eliminar sus datos personales. Para ejercer estos derechos, contáctenos a través del formulario de contacto o por correo a contacto@solbyt.com."
+      },
+      "policyChanges": {
+        "title": "Cambios en la Política",
+        "content": "Nos reservamos el derecho de modificar esta política en cualquier momento. Los cambios entrarán en vigor al publicarse en el sitio. Recomendamos revisarla periódicamente."
+      },
+      "lastUpdate": {
+        "title": "Última actualización",
+        "content": "Esta política fue actualizada por última vez el 24 de junio de 2025."
+      }
+    }
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "subtitle": "Utilizamos cookies para mejorar su experiencia.",
+    "intro": "En Solbyt, utilizamos cookies con el objetivo de optimizar la funcionalidad del sitio, analizar el tráfico y ofrecer una experiencia personalizada. Al continuar navegando, usted acepta el uso de cookies según esta política.",
+    "sections": {
+      "whatAreCookies": {
+        "title": "¿Qué son las cookies?",
+        "content": "Las cookies son pequeños archivos de texto que un sitio web guarda en su navegador cuando lo visita. Estas permiten al sitio recordar sus acciones y preferencias durante un período de tiempo."
+      },
+      "howWeUseCookies": {
+        "title": "¿Cómo usamos las cookies?",
+        "content": "Utilizamos cookies para entender cómo los visitantes navegan por nuestro sitio, identificar contenidos populares y mejorar nuestros servicios. No utilizamos cookies para recopilar datos personales sin su consentimiento."
+      },
+      "typesOfCookies": {
+        "title": "Tipos de cookies que utilizamos",
+        "content": "Utilizamos cookies esenciales para el funcionamiento del sitio y cookies analíticas que nos ayudan a entender el comportamiento del usuario. No empleamos cookies publicitarias ni de terceros."
+      },
+      "controlCookies": {
+        "title": "Cómo controlar las cookies",
+        "content": "Puede configurar su navegador para rechazar todas o algunas cookies, o para que le avise cuando los sitios web establezcan cookies. Sin embargo, desactivar algunas cookies puede afectar la funcionalidad del sitio."
+      },
+      "changesToPolicy": {
+        "title": "Cambios en esta política",
+        "content": "Nos reservamos el derecho de modificar esta política de cookies en cualquier momento. Las actualizaciones se publicarán en esta página."
+      },
+      "lastUpdate": {
+        "title": "Última actualización",
+        "content": "24 de junio de 2025"
+      }
+    }
   }
 }

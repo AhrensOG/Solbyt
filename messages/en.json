@@ -2410,5 +2410,97 @@
         "brands": ["HelloFlatmate", "Viaje Seguro", "CleanNet"]
       }
     }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "subtitle": "Please read these terms carefully before using our website.",
+    "sections": {
+      "intro": "Welcome to Solbyt. By accessing and using our website, you agree to comply with these Terms and Conditions. If you do not agree with them, please refrain from using this site.",
+      "usageTitle": "Website Use",
+      "usageText": "Our website is designed to provide information about our digital transformation and technology services. It does not include login functionalities or restricted areas; use is limited to viewing information and sending inquiries via the contact form.",
+      "dataTitle": "Data Collection and Use",
+      "dataText": "The only personal data we collect is what you voluntarily provide through the contact form. This information is used solely to respond to your inquiries and improve our services. We are committed to keeping your data confidential and will not share it with third parties without your explicit consent.",
+      "ipTitle": "Intellectual Property",
+      "ipText": "All content on this site, including text, images, logos, and graphics, is the property of Solbyt or its respective owners and is protected by intellectual property laws.",
+      "liabilityTitle": "Limitation of Liability",
+      "liabilityText": "Solbyt is not liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this website. The information provided is \"as is\" without warranties of any kind.",
+      "modificationTitle": "Changes to the Terms",
+      "modificationText": "We reserve the right to modify these Terms and Conditions at any time. Changes will take effect upon publication on the website. We recommend reviewing these terms periodically.",
+      "contactTitle": "Contact",
+      "contactText": "If you have any questions or concerns about these Terms and Conditions, please contact us via our contact form or send an email to: contacto@solbyt.com.",
+      "lastUpdateTitle": "Last Updated",
+      "lastUpdateText": "These Terms and Conditions were last updated on June 24, 2025."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is our priority.",
+    "intro": "Welcome to Solbyt. In this Privacy Policy, we explain how we collect, use, and protect the personal information you provide through our contact forms or third-party tools like Calendly. By using our website, you accept the practices described in this document.",
+    "sections": {
+      "dataCollected": {
+        "title": "Information We Collect",
+        "content": "Our website does not require login or contain restricted areas. We only collect personal data that you voluntarily provide, such as your name, email address, business sector, and any message you choose to send."
+      },
+      "dataUse": {
+        "title": "Use of Information",
+        "content": "We use the collected information solely to respond to your inquiries, improve our services, and maintain effective communication with you. We do not share or sell your data without your consent."
+      },
+      "userResponsibility": {
+        "title": "User Responsibility",
+        "content": "You are responsible for ensuring the information you provide is accurate, up-to-date, and does not violate third-party rights."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data. While we cannot guarantee absolute security, we work to minimize any risk."
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "content": "We retain your data as long as necessary to respond to your inquiries or as required by law. After that, we securely delete your data."
+      },
+      "userRights": {
+        "title": "User Rights",
+        "content": "You have the right to access, modify, or delete your personal data. To exercise these rights, contact us via the contact form or at contacto@solbyt.com."
+      },
+      "policyChanges": {
+        "title": "Policy Changes",
+        "content": "We reserve the right to modify this policy at any time. Changes will take effect upon publication. We recommend reviewing it periodically."
+      },
+      "lastUpdate": {
+        "title": "Last Updated",
+        "content": "This policy was last updated on June 24, 2025."
+      }
+    }
+  },
+
+  "cookies": {
+    "title": "Cookie Policy",
+    "subtitle": "We use cookies to improve your experience.",
+    "intro": "At Solbyt, we use cookies to enhance site functionality, analyze traffic, and deliver a personalised experience. By continuing to browse, you agree to the use of cookies under this policy.",
+    "sections": {
+      "whatAreCookies": {
+        "title": "What are cookies?",
+        "content": "Cookies are small text files that a website saves in your browser when you visit it. They allow the site to remember your actions and preferences over time."
+      },
+      "howWeUseCookies": {
+        "title": "How do we use cookies?",
+        "content": "We use cookies to understand how visitors navigate our site, identify popular content, and improve our services. We do not use cookies to collect personal data without your consent."
+      },
+      "typesOfCookies": {
+        "title": "Types of cookies we use",
+        "content": "We use essential cookies for site functionality and analytics cookies to understand user behaviour. We do not use advertising or third-party cookies."
+      },
+      "controlCookies": {
+        "title": "How to control cookies",
+        "content": "You can configure your browser to reject all or some cookies, or to notify you when websites set cookies. However, disabling some cookies may affect site functionality."
+      },
+      "changesToPolicy": {
+        "title": "Changes to this policy",
+        "content": "We reserve the right to modify this cookie policy at any time. Updates will be published on this page."
+      },
+      "lastUpdate": {
+        "title": "Last update",
+        "content": "24 June 2025"
+      }
+    }
   }
 }

@@ -33,6 +33,24 @@ export const routing = defineRouting({
       es: '/proyectos',
       en: '/projects',
       fr: '/projets'
+    },
+
+    '/terms-and-conditions': {
+      es: '/terminos-y-condiciones',
+      en: '/terms-and-conditions',
+      fr: '/conditions-generales'
+    },
+
+    '/privacy-policy': {
+      es: '/politica-de-privacidad',
+      en: '/privacy-policy',
+      fr: '/politique-de-confidentialite'
+    },
+
+    '/cookies': {
+      es: '/cookies',
+      en: '/cookies',
+      fr: '/cookies'
     }
   }
 });

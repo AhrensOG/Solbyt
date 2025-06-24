@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import Footer from "../public/footer/Footer";
 import Navbar from "../public/navbar/V2/NavBar";
 
-const PrivacyPolicyPage: React.FC = () => {
-  const translation = useTranslations("privacyPolicy");
+const CookiesPage: React.FC = () => {
+  const translation = useTranslations("cookies");
 
   return (
     <>
@@ -29,21 +29,19 @@ const PrivacyPolicyPage: React.FC = () => {
             </div>
 
             {[
-              "dataCollected",
-              "dataUse",
-              "userResponsibility",
-              "dataSecurity",
-              "dataRetention",
-              "userRights",
-              "policyChanges",
+              "whatAreCookies",
+              "howWeUseCookies",
+              "typesOfCookies",
+              "controlCookies",
+              "changesToPolicy",
               "lastUpdate",
-            ].map((sectionKey) => (
-              <div className="pt-6" key={sectionKey}>
+            ].map((key) => (
+              <div className="pt-6" key={key}>
                 <h2 className="text-2xl font-semibold text-solbyt-gray-800 mb-2">
-                  {translation(`sections.${sectionKey}.title`)}
+                  {translation(`sections.${key}.title`)}
                 </h2>
                 <p className="text-gray-700 text-lg">
-                  {translation(`sections.${sectionKey}.content`)}
+                  {translation(`sections.${key}.content`)}
                 </p>
               </div>
             ))}
@@ -55,4 +53,4 @@ const PrivacyPolicyPage: React.FC = () => {
   );
 };
 
-export default PrivacyPolicyPage;
+export default CookiesPage;
