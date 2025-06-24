@@ -98,9 +98,12 @@ const ServicesSection: React.FC = () => {
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
-              <button className="text-solbyt-purple-600 hover:text-solbyt-purple-600 hover:bg-purple-50 p-0">
+              <Link
+                href={translation("link")}
+                target="_blank"
+                className="text-solbyt-purple-600 hover:text-solbyt-purple-600 hover:bg-purple-50 p-0">
                 {translation("button_card")}
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -116,6 +119,7 @@ const ServicesSection: React.FC = () => {
           </p>
           <Link
             href={translation("link")}
+            target="_blank"
             className="border bg-solbyt-purple-600 hover:bg-solbyt-purple-600/90 text-white sm:text-lg font-semibold px-6 py-3 rounded-lg shadow transition-colors duration-300">
             {translation("button_final")}
           </Link>
