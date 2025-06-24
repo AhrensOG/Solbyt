@@ -1,0 +1,8 @@
+# robots.txt – Solbyt
+
+User-agent: *
+Allow: /
+
+# No hay secciones privadas que bloquear
+
+Sitemap: https://www.solbyt.tech/sitemap.xml

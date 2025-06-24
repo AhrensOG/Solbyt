@@ -1,7 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import StaticNavBar from "./components/public/navbar/StaticNavBar";
-import Footer from "./components/public/footer/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -25,9 +23,8 @@ export const metadata: Metadata = {
 
 const NotFound: React.FC = () => {
   return (
-    <main className="bg-white">
-      <StaticNavBar />
-      <section className="mt-[80px] bg-gradient-to-b from-white via-pink-50 to-white w-full py-10 px-4 sm:px-8 text-center">
+    <main className="bg-white h-screen grid place-items-center">
+      <section className="bg-gradient-to-b from-white via-pink-50 to-white w-full py-10 px-4 sm:px-8 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-solbyt-purple-600 to-pink-600 mb-8">
             404
@@ -37,8 +34,7 @@ const NotFound: React.FC = () => {
           </h2>
           <p className="text-xl text-gray-700 mb-8">
             Lo sentimos, la página que buscas no existe o ha sido movida. Por
-            favor, regresa a la página principal o utiliza el menú para explorar
-            nuestros servicios.
+            favor, regresa a la página principal.
           </p>
           <Link
             href="/"
@@ -47,7 +43,6 @@ const NotFound: React.FC = () => {
           </Link>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };
