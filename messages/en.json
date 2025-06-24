@@ -1997,7 +1997,7 @@
         "whatsapp": {
           "title": "WhatsApp",
           "description": "Talk directly with our team",
-          "action": "Call now"
+          "action": "Write us now"
         }
       },
       "guarantee": "Response guaranteed within 24 hours",
@@ -2269,6 +2269,145 @@
         "agile": "Agile development",
         "secure": "Secure code",
         "global": "Global support"
+      }
+    }
+  },
+  "projects_page": {
+    "hero": {
+      "badge": "Tangible impact",
+      "title": "Tech solutions with measurable impact",
+      "subtitle": "At Solbyt, we design custom systems that solve real-world challenges, streamline operations, and drive sustainable growth.",
+      "valuePropositions": {
+        "automation": {
+          "title": "Smart Automation",
+          "description": "We digitalise key processes to reduce errors and boost operational efficiency."
+        },
+        "growth": {
+          "title": "Strategic Growth",
+          "description": "We build digital tools that increase sales and expand your presence in new markets."
+        },
+        "digitalPresence": {
+          "title": "Digital Transformation",
+          "description": "We elevate your business with robust, scalable solutions aligned with your long-term vision."
+        }
+      },
+      "trustedBy": {
+        "label": "Trusted by",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "Clean Net"]
+      }
+    },
+    "featuredProjects": {
+      "sectionTitle": "Real cases of technological transformation",
+      "sectionSubtitle": "Projects designed to optimise processes, automate operations, and accelerate business growth.",
+      "projects": {
+        "helloflatmate": {
+          "tagline": "Operational Automation",
+          "name": "HelloFlatmate",
+          "description": "Comprehensive redesign of the management model for shared rentals, replacing manual processes with full automation through custom software.",
+          "challenge": "Manual management of contracts, collections, and communications required dedicated staff, leading to inefficiencies and frequent errors.",
+          "solution": "Digital platform that centralises electronic contracts, automates payments and reminders, and streamlines overall administration.",
+          "before": "Manual processes requiring dedicated staff for repetitive tasks",
+          "after": "Automated system that handles contracts, payments, and notifications independently",
+          "impact": "Significant reduction in errors and fixed operating costs",
+          "keyFeatures": [
+            "Electronic contracts",
+            "Automated payments",
+            "Smart notifications",
+            "Unified admin panel"
+          ],
+          "technologies": [
+            "Digital Management",
+            "Payment Automation",
+            "Electronic Contracting",
+            "Custom Web Platform"
+          ]
+        },
+        "viajeseguro": {
+          "tagline": "Commercial Expansion",
+          "name": "Viaje Seguro",
+          "description": "Transformation of a traditional transport service into a digital platform with automated bookings, passenger management, and regional commercial growth.",
+          "challenge": "Phone-based bookings limited business expansion and created operational inefficiencies.",
+          "solution": "Online booking system available 24/7 with QR boarding codes, automatic cancellations, and a professional user experience.",
+          "before": "Phone reservations and informal passenger tracking",
+          "after": "Digital platform managing bookings, changes, and boarding automatically",
+          "impact": "Significant increase in sales and a fully professional customer experience",
+          "keyFeatures": [
+            "24/7 online bookings",
+            "QR boarding codes",
+            "Automated cancellations",
+            "Self-managed rescheduling"
+          ],
+          "technologies": [
+            "Digital Booking System",
+            "QR for Boarding",
+            "Client Management",
+            "Commercial Automation"
+          ]
+        },
+        "cleannet": {
+          "tagline": "Digital Presence",
+          "name": "CleanNet",
+          "description": "Full digitalisation of a traditional cleaning company, improving online visibility, streamlining contact, and expanding acquisition channels.",
+          "challenge": "Sole reliance on word of mouth, with no online presence or modern contact options.",
+          "solution": "Professional website optimised for conversions, direct WhatsApp integration, and enhanced search engine visibility.",
+          "before": "Clients obtained exclusively through personal recommendations",
+          "after": "Active online presence with optimised site and WhatsApp contact",
+          "impact": "Constant increase in leads and enhanced credibility for new clients",
+          "keyFeatures": [
+            "Professional website",
+            "Direct WhatsApp contact",
+            "SEO focused on results",
+            "Conversion-driven design"
+          ],
+          "technologies": [
+            "Professional Web Presence",
+            "WhatsApp Integration",
+            "Local SEO",
+            "Responsive Design"
+          ]
+        }
+      },
+      "transformation": {
+        "title": "Transformation achieved",
+        "before": "Previous situation:",
+        "after": "Implemented solution:",
+        "impact": "Result obtained:"
+      },
+      "technologiesTitle": "Implemented solutions",
+      "bottomCTA": {
+        "title": "More than development, transformation",
+        "description": "More than just writing code, we design digital strategies that enhance efficiency and scale businesses. Every project is an opportunity to automate, professionalise, and grow.",
+        "pillars": {
+          "automation": {
+            "title": "Automation",
+            "description": "Repetitive tasks turned into efficient, controlled processes"
+          },
+          "growth": {
+            "title": "Expansion",
+            "description": "New commercial channels that increase your reach"
+          },
+          "digital": {
+            "title": "Digitalisation",
+            "description": "Professional online presence for traditional businesses"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to turn your business into a real success story?",
+      "subtitle": "It all starts with a strategic conversation. Let’s talk about your next big step.",
+      "benefits": [
+        "Free initial diagnosis",
+        "Tailored strategic proposal",
+        "Ongoing technical and strategic support"
+      ],
+      "buttons": {
+        "whatsapp": "Chat now on WhatsApp",
+        "calendar": "Book a strategic meeting"
+      },
+      "trustedBy": {
+        "label": "Brands that already trusted us:",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "CleanNet"]
       }
     }
   }

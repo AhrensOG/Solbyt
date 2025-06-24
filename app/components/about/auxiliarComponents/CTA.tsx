@@ -62,14 +62,14 @@ const CTA: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.7, duration: 0.6 }}>
-              <a
+              <Link
                 href="https://calendly.com/solbyt-tech/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-solbyt-purple-600 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl group">
                 <Calendar className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-200" />
                 {translation("button_primary")}
-              </a>
+              </Link>
 
               <Link
                 href={translation("button_secondary_link")}

@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
       title: translation("methods.whatsapp.title"),
       description: translation("methods.whatsapp.description"),
       action: translation("methods.whatsapp.action"),
-      href: "tel:+351123456789",
+      href: "https://wa.me/41762726491",
       primary: false,
     },
   ];

@@ -2003,7 +2003,7 @@
         "whatsapp": {
           "title": "WhatsApp",
           "description": "Habla directamente con nuestro equipo",
-          "action": "Llamar ahora"
+          "action": "Escríbenos"
         }
       },
       "guarantee": "Respuesta garantizada en menos de 24 horas",
@@ -2280,6 +2280,145 @@
         "agile": "Desarrollo ágil",
         "secure": "Código seguro",
         "global": "Soporte global"
+      }
+    }
+  },
+  "projects_page": {
+    "hero": {
+      "badge": "Impacto tangible",
+      "title": "Soluciones tecnológicas con impacto medible",
+      "subtitle": "En Solbyt, diseñamos sistemas personalizados que resuelven desafíos reales, optimizan procesos y generan crecimiento sostenible.",
+      "valuePropositions": {
+        "automation": {
+          "title": "Automatización Inteligente",
+          "description": "Digitalizamos procesos clave para reducir errores y aumentar la eficiencia operativa."
+        },
+        "growth": {
+          "title": "Crecimiento Estratégico",
+          "description": "Creamos herramientas digitales que impulsan ventas y expanden tu presencia en nuevos mercados."
+        },
+        "digitalPresence": {
+          "title": "Transformación Digital",
+          "description": "Elevamos tu negocio al entorno digital con soluciones robustas, escalables y alineadas a tu visión."
+        }
+      },
+      "trustedBy": {
+        "label": "Confían en nosotros",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "Clean Net"]
+      }
+    },
+    "featuredProjects": {
+      "sectionTitle": "Casos reales de transformación tecnológica",
+      "sectionSubtitle": "Proyectos diseñados para optimizar procesos, automatizar operaciones y acelerar el crecimiento empresarial.",
+      "projects": {
+        "helloflatmate": {
+          "tagline": "Automatización Operativa",
+          "name": "HelloFlatmate",
+          "description": "Rediseño integral del modelo de gestión para alquileres compartidos, sustituyendo procesos manuales por automatización total a través de software personalizado.",
+          "challenge": "La gestión manual de contratos, cobros y comunicaciones requería personal dedicado, era ineficiente y propensa a errores.",
+          "solution": "Plataforma digital que centraliza contratos electrónicos, automatiza pagos y recordatorios, y optimiza la administración del negocio.",
+          "before": "Procesos manuales que requerían personal exclusivo para tareas repetitivas",
+          "after": "Sistema automatizado que gestiona contratos, pagos y notificaciones sin intervención humana",
+          "impact": "Disminución drástica de errores y reducción de los costos operativos fijos",
+          "keyFeatures": [
+            "Contratos electrónicos",
+            "Pagos automáticos",
+            "Notificaciones inteligentes",
+            "Panel de administración unificado"
+          ],
+          "technologies": [
+            "Gestión Digital",
+            "Automatización de Pagos",
+            "Contratos Electrónicos",
+            "Plataforma Web Personalizada"
+          ]
+        },
+        "viajeseguro": {
+          "tagline": "Expansión Comercial",
+          "name": "Viaje Seguro",
+          "description": "Transformación de un servicio de transporte tradicional en una plataforma digital con reservas automatizadas, gestión de pasajeros y expansión comercial regional.",
+          "challenge": "La dependencia de reservas telefónicas limitaba el crecimiento y generaba problemas operativos en la gestión de pasajeros.",
+          "solution": "Sistema de reservas online 24/7 con generación de códigos QR, gestión automática de cancelaciones y experiencia de usuario digital profesional.",
+          "before": "Reservas manuales por teléfono y seguimiento informal de pasajeros",
+          "after": "Plataforma digital que permite gestionar reservas, cambios y abordajes de forma automatizada",
+          "impact": "Aumento significativo en ventas y mejora total de la experiencia del cliente",
+          "keyFeatures": [
+            "Reservas web 24/7",
+            "QR de abordaje",
+            "Cancelaciones automatizadas",
+            "Reagendamiento sin intervención manual"
+          ],
+          "technologies": [
+            "Sistema de Reservas Digital",
+            "QR para Abordaje",
+            "Gestión de Clientes",
+            "Automatización Comercial"
+          ]
+        },
+        "cleannet": {
+          "tagline": "Presencia Digital",
+          "name": "CleanNet",
+          "description": "Digitalización completa de una empresa tradicional de limpieza, mejorando su visibilidad online, facilitando el contacto comercial y ampliando sus canales de captación.",
+          "challenge": "Dependencia exclusiva del boca a boca, sin presencia online ni formas modernas de contacto.",
+          "solution": "Sitio web profesional optimizado para conversiones, integración directa con WhatsApp y posicionamiento en buscadores.",
+          "before": "Clientes obtenidos únicamente por recomendaciones personales",
+          "after": "Presencia online activa con sitio optimizado y contacto directo vía WhatsApp",
+          "impact": "Aumento constante en consultas comerciales y mayor credibilidad ante nuevos clientes",
+          "keyFeatures": [
+            "Sitio web profesional",
+            "Contacto directo por WhatsApp",
+            "SEO orientado a resultados",
+            "Diseño optimizado para conversiones"
+          ],
+          "technologies": [
+            "Presencia Web Profesional",
+            "Integración con WhatsApp",
+            "SEO Local Optimizado",
+            "Diseño Responsive"
+          ]
+        }
+      },
+      "transformation": {
+        "title": "Transformación lograda",
+        "before": "Situación previa:",
+        "after": "Solución aplicada:",
+        "impact": "Resultado obtenido:"
+      },
+      "technologiesTitle": "Soluciones implementadas",
+      "bottomCTA": {
+        "title": "Más que desarrollo, transformación",
+        "description": "Más que escribir código, diseñamos estrategias digitales que mejoran la eficiencia y escalan negocios. Cada proyecto es una oportunidad para automatizar, profesionalizar y crecer.",
+        "pillars": {
+          "automation": {
+            "title": "Automatización",
+            "description": "Tareas repetitivas convertidas en procesos eficientes y controlados"
+          },
+          "growth": {
+            "title": "Expansión",
+            "description": "Nuevos canales comerciales que amplían tu alcance"
+          },
+          "digital": {
+            "title": "Digitalización",
+            "description": "Presencia online profesional para negocios tradicionales"
+          }
+        }
+      }
+    },
+    "cta": {
+      "title": "¿Listo para transformar tu negocio en un caso de éxito real?",
+      "subtitle": "Todo comienza con una conversación estratégica. Conversemos sobre tu próximo salto.",
+      "benefits": [
+        "Diagnóstico inicial sin coste",
+        "Propuesta estratégica adaptada a tu negocio",
+        "Acompañamiento técnico y estratégico continuo"
+      ],
+      "buttons": {
+        "whatsapp": "Habla ahora por WhatsApp",
+        "calendar": "Reserva una reunión estratégica"
+      },
+      "trustedBy": {
+        "label": "Marcas que ya confiaron en nosotros:",
+        "brands": ["HelloFlatmate", "Viaje Seguro", "CleanNet"]
       }
     }
   }
