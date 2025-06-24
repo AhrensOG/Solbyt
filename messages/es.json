@@ -95,24 +95,33 @@
       "description": "Soluciones digitales que han transformado negocios como el tuyo",
       "items": [
         {
-          "title": "Hello Flatmate",
-          "description": "Plataforma para encontrar compañeros de piso compatibles con tus necesidades y estilo de vida.",
-          "tags": ["Desarrollo Web", "UX/UI", "React"]
+          "title": "HelloFlatmate",
+          "description": "Rediseño del sistema de gestión de alquileres compartidos, eliminando tareas manuales y mejorando la eficiencia.",
+          "tags": [
+            "Automatización",
+            "Gestión Digital",
+            "Plataforma Personalizada"
+          ]
         },
         {
           "title": "Viaje Seguro",
-          "description": "Aplicación que proporciona información en tiempo real sobre la seguridad en diferentes destinos turísticos.",
-          "tags": ["App Móvil", "API", "Geolocalización"]
+          "description": "Plataforma de reservas y gestión de pasajeros con códigos QR, diseñada para modernizar y optimizar el servicio de transporte.",
+          "tags": [
+            "Expansión Comercial",
+            "Reservas Online",
+            "QR y Gestión Automática"
+          ]
         },
         {
-          "title": "Clean Net",
-          "description": "Sistema de gestión para empresas de limpieza que optimiza rutas y recursos para maximizar la eficiencia.",
-          "tags": ["Software a Medida", "Automatización", "Dashboard"]
+          "title": "CleanNet",
+          "description": "Digitalización completa de empresa de limpieza: sitio optimizado, integración de WhatsApp y captación de clientes online.",
+          "tags": ["Presencia Digital", "SEO y Conversión", "Contacto WhatsApp"]
         }
       ],
       "button": "Ver más",
-      "call_to_action": "¿Te gustaría ver más de nuestros proyectos o discutir cómo podemos ayudarte con el tuyo?",
-      "call_to_action_button": "Contactar para más información"
+      "call_to_action": "Conozca nuestro portafolio de proyectos destacados y descubra cómo podemos impulsar el éxito de su negocio.",
+      "call_to_action_button": "Ver Proyectos",
+      "call_to_action_link": "/proyectos"
     },
     "cta": {
       "title": "¿Listo para transformar tu negocio con soluciones digitales?",

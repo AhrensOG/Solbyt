@@ -89,24 +89,33 @@
       "description": "Des solutions numériques qui ont transformé des entreprises comme la vôtre",
       "items": [
         {
-          "title": "Hello Flatmate",
-          "description": "Plateforme pour trouver des colocataires compatibles avec vos besoins et votre style de vie.",
-          "tags": ["Développement Web", "UX/UI", "React"]
+          "title": "HelloFlatmate",
+          "description": "Refonte du système de gestion des locations partagées, éliminant les tâches manuelles et augmentant l’efficacité.",
+          "tags": [
+            "Automatisation",
+            "Gestion Numérique",
+            "Plateforme Personnalisée"
+          ]
         },
         {
           "title": "Viaje Seguro",
-          "description": "Application fournissant des informations en temps réel sur la sécurité dans différentes destinations touristiques.",
-          "tags": ["App Mobile", "API", "Géolocalisation"]
+          "description": "Plateforme de réservation et de gestion des passagers avec QR codes, conçue pour moderniser et optimiser les services de transport.",
+          "tags": [
+            "Expansion Commerciale",
+            "Réservation En Ligne",
+            "QR & Gestion Automatisée"
+          ]
         },
         {
-          "title": "Clean Net",
-          "description": "Système de gestion pour les entreprises de nettoyage, optimisant les itinéraires et les ressources pour une efficacité maximale.",
-          "tags": ["Logiciel Sur Mesure", "Automatisation", "Dashboard"]
+          "title": "CleanNet",
+          "description": "Transformation digitale complète d’une entreprise de nettoyage : site optimisé, intégration WhatsApp et acquisition de clients en ligne.",
+          "tags": ["Présence Digitale", "SEO & Conversion", "Contact WhatsApp"]
         }
       ],
       "button": "Voir plus",
-      "call_to_action": "Souhaitez-vous découvrir davantage nos projets ou discuter de la manière dont nous pouvons vous accompagner ?",
-      "call_to_action_button": "Nous contacter pour en savoir plus"
+      "call_to_action": "Découvrez notre portefeuille de projets phares et voyez comment nous pouvons stimuler la réussite de votre entreprise.",
+      "call_to_action_button": "Voir les Projets",
+      "call_to_action_link": "/projets"
     },
     "cta": {
       "title": "Prêt à transformer votre entreprise grâce à des solutions numériques ?",

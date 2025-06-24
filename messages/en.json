@@ -89,24 +89,29 @@
       "description": "Digital solutions that have transformed businesses like yours",
       "items": [
         {
-          "title": "Hello Flatmate",
-          "description": "Platform to find flatmates compatible with your needs and lifestyle.",
-          "tags": ["Web Development", "UX/UI", "React"]
+          "title": "HelloFlatmate",
+          "description": "Redesigned shared rental management system, eliminating manual tasks and boosting efficiency.",
+          "tags": ["Automation", "Digital Management", "Custom Platform"]
         },
         {
           "title": "Viaje Seguro",
-          "description": "App providing real-time safety information about various tourist destinations.",
-          "tags": ["Mobile App", "API", "Geolocation"]
+          "description": "Booking and passenger management platform with QR codes, designed to modernize and optimize transportation services.",
+          "tags": [
+            "Commercial Expansion",
+            "Online Booking",
+            "QR & Automated Management"
+          ]
         },
         {
-          "title": "Clean Net",
-          "description": "Management system for cleaning companies to optimize routes and resources for maximum efficiency.",
-          "tags": ["Custom Software", "Automation", "Dashboard"]
+          "title": "CleanNet",
+          "description": "Complete digital transformation for a cleaning company: optimized website, WhatsApp integration, and customer acquisition online.",
+          "tags": ["Digital Presence", "SEO & Conversion", "WhatsApp Contact"]
         }
       ],
       "button": "See more",
-      "call_to_action": "Would you like to see more of our projects or discuss how we can help with yours?",
-      "call_to_action_button": "Contact for more info"
+      "call_to_action": "Explore our portfolio of featured projects and see how we can drive success for your business.",
+      "call_to_action_button": "View Projects",
+      "call_to_action_link": "/projects"
     },
     "cta": {
       "title": "Ready to transform your business with digital solutions?",

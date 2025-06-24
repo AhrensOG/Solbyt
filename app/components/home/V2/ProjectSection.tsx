@@ -13,19 +13,19 @@ const ProjectsSection: React.FC = () => {
     {
       title: translation("items.0.title"),
       description: translation("items.0.description"),
-      image: "/img_placeholder.webp",
+      image: "/projects/hfm.png",
       tags: translation.raw("items.0.tags") as string[],
     },
     {
       title: translation("items.1.title"),
       description: translation("items.1.description"),
-      image: "/img_placeholder.webp",
+      image: "/projects/vs.png",
       tags: translation.raw("items.1.tags") as string[],
     },
     {
       title: translation("items.2.title"),
       description: translation("items.2.description"),
-      image: "/img_placeholder.webp",
+      image: "/projects/cleannet.png",
       tags: translation.raw("items.2.tags") as string[],
     },
   ];
@@ -63,12 +63,13 @@ const ProjectsSection: React.FC = () => {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all group">
               <div className="relative h-60 w-full overflow-hidden">
                 <Image
-                  src={project.image || "/placeholder.svg"}
+                  src={project.image || "/img_placeholder.webp"}
                   alt={project.title}
                   title={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-black/20" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-solbyt-purple-600">
@@ -84,9 +85,6 @@ const ProjectsSection: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                <button className="text-solbyt-blue-500 hover:text-solbyt-blue-500 hover:bg-blue-50 p-0 flex items-center">
-                  {translation("button")}
-                </button>
               </div>
             </motion.div>
           ))}
@@ -102,7 +100,7 @@ const ProjectsSection: React.FC = () => {
             {translation("call_to_action")}
           </p>
           <Link
-            href="https://calendly.com/solbyt-tech/30min"
+            href={translation("call_to_action_link")}
             target="_blank"
             className="bg-solbyt-blue-500 hover:bg-blue-600 text-white sm:text-lg font-medium px-6 py-3 rounded-lg shadow transition-colors duration-300">
             {translation("call_to_action_button")}
